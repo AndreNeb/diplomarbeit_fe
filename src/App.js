@@ -24,7 +24,8 @@ function App() {
             <img src={logo} className="App-logo" alt="logo"/>
           </div>
           <div className="middle-section">
-
+              <input/>
+              <input/>
           </div>
           <div className="right-section">
 
