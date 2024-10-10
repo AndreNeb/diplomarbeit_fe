@@ -5,11 +5,9 @@
     position: fixed;
     top: 55px;
     justify-content: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-
-
 
     border-right-width: 1px;
     border-right-style: solid;
