@@ -1,7 +1,10 @@
 .left-bar-general {
-    background-color: blanchedalmond;
     max-width: 231px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 90px;
+    z-index: 100;
+
+
+
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(228, 228, 228);
 }
