@@ -50,6 +50,7 @@
 
 .right-section {
     width: 180px;
+    margin-right: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +60,4 @@
 .login {
     margin-right: 24px;
     height: 30px;
-
-
-
 }
