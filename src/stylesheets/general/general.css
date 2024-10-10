@@ -6,5 +6,18 @@ div {
 }
 
 button {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+}
 
+p {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+search::placeholder {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
 }
