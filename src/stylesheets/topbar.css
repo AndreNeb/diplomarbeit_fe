@@ -1,21 +1,27 @@
 .header {
+    height: 55px;
+    background-color: white;
     display: flex;
-    background-color: green;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top:0;
+    left:0;
+
 }
 
 .left-section {
-    background-color: orange;
+    background-color: white;
     display: flex;
     align-items: center;
 }
 
 .middle-section {
-    background-color: lightgreen;
+    background-color: white;
 }
 .right-section {
-    background-color: red;
+    background-color: white;
 }
 
 .login {
