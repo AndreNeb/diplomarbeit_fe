@@ -23,6 +23,10 @@ function App() {
           </div>
         </div>
 
+        <div className="left-bar-general">
+
+        </div>
+
 
         </body>
       </>
