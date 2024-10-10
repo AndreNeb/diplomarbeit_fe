@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.div {
+div {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
 }
 
-.body {
+body {
 
 }
-.button {
+button {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
 }
 
-.p {
+p {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
 
-.search::placeholder {
+search::placeholder {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
 }
