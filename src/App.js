@@ -1,6 +1,7 @@
-import './App.css';
+
 import logo from './pictures/login-picture.jpg'
 import hamburger from './pictures/hamburger-menu.png';
+import notification from './pictures/Notification-bell.png';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
@@ -25,6 +26,7 @@ function App() {
               <input className= "search-bar" type ="text" placeholder="Suchen" />
           </div>
           <div className="right-section">
+              <img src={notification} className="notification" alt="Notification"/>
             <img src= {logo} className="login" alt="login"/>
           </div>
         </div>

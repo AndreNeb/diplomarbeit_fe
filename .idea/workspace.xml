@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar added" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Added Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728031577894</updated>
       <workItem from="1728565856844" duration="1659000" />
-      <workItem from="1728573665457" duration="1570000" />
+      <workItem from="1728573665457" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -186,15 +191,7 @@
       <option name="project" value="LOCAL" />
       <updated>1728574309778</updated>
     </task>
-    <task id="LOCAL-00012" summary="Leftbar added">
-      <option name="closed" value="true" />
-      <created>1728575222136</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1728575222136</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +201,6 @@
     <MESSAGE value="Body3" />
     <MESSAGE value="Topbar" />
     <MESSAGE value="Added Files" />
-    <MESSAGE value="Leftbar added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leftbar added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Files" />
   </component>
 </project>

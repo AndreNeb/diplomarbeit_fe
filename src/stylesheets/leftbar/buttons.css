@@ -6,10 +6,9 @@ button {
     border: none;
     display: inline-block;
     text-align: center;
-    transition-duration: 0.45s;
+    transition-duration: 0.15s;
     cursor: pointer;
     margin-bottom: 35px;
-    margin-left: 10px;
     background-color: #2ea8dd;
 
     width: 210px;
