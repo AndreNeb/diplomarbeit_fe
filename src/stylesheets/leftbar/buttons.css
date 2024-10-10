@@ -1,0 +1,66 @@
+
+button {
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.45s;
+    cursor: pointer;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    background-color: #2ea8dd;
+
+    width: 210px;
+    height: 48px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+.startseite-button {
+    margin-top: 55px;
+}
+
+
+
+
+.regeln-button {
+    display: inline-block;
+}
+/* Für die zusätzlichen Buttons, die erscheinen, wenn man "Regeln" hovert */
+.button-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.hidden-buttons {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.5s ease;
+}
+
+.extra-button {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    width: 170px;
+}
+
+.button-container:hover .hidden-buttons {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    opacity: 1;
+}
