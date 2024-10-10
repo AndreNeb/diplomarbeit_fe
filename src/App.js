@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './pictures/logo.svg';
 import login from './pictures/login-picture.jpg';
 import './App.css';
 import './stylesheets/topbar.css';
@@ -21,6 +21,8 @@ function App() {
             <img src={login} className="login" alt="login"/>
           </div>
         </div>
+
+
         </body>
       </>
   );

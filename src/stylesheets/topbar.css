@@ -6,7 +6,7 @@
 }
 
 .left-section {
-    background-color: green;
+    background-color: orange;
     display: flex;
     align-items: center;
 }
@@ -19,5 +19,8 @@
 }
 
 .login {
-
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border-width: 0;
 }
