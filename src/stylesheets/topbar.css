@@ -6,27 +6,60 @@
     justify-content: space-between;
 
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
 
 }
 
 .left-section {
-    background-color: white;
     display: flex;
     align-items: center;
 }
 
-.middle-section {
-    background-color: white;
+.hamburger-menu {
+    height: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+    border-radius: 30px;
+}
+
 .right-section {
-    background-color: white;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .login {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    border-width: 0;
+    margin-right: 24px;
+    height: 30px;
+
+
+
 }
