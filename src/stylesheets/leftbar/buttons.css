@@ -26,10 +26,10 @@ button:hover {
     margin-top: 35px;
 }
 
-
 .regeln-button {
     display: inline-block;
 }
+
 /* Für die zusätzlichen Buttons, die erscheinen, wenn man "Regeln" hovert */
 .button-container {
     display: inline-block;
@@ -41,6 +41,8 @@ button:hover {
 .hidden-buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -51,13 +53,12 @@ button:hover {
     font-size: 16px;
     padding: 8px 15px;
     margin-bottom: 15px;
-    margin-left: 30px;
     width: 170px;
+
 }
 
 .button-container:hover .hidden-buttons {
     display: flex;
-    flex-direction: column;
     max-height: 300px;
     opacity: 1;
 }
