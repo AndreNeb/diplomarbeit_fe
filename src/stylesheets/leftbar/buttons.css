@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 button {
-    font-family: "Quicksand", sans-serif;
     color: white;
     font-size: 26px;
     border-radius: 10px;
@@ -16,7 +14,6 @@ button {
 
     width: 210px;
     height: 48px;
-
 }
 
 button:hover {
@@ -29,7 +26,6 @@ button:hover {
 .startseite-button {
     margin-top: 55px;
 }
-
 
 
 
