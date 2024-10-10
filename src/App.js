@@ -22,7 +22,29 @@ function App() {
         </div>
 
         <div className="left-bar-general">
-
+            <button className="startseite-button">
+                Startseite
+            </button>
+            <br/>
+            <button className="personal-space-button">
+                Personal Space
+            </button>
+            <br/>
+            <button className="support-button">
+                Support
+            </button>
+            <br/>
+            <div className="button-container">
+                <button className="regeln-button">Regeln</button>
+                <div className="hidden-buttons">
+                    <button className="extra-button">Fachspezifische</button>
+                    <button className="extra-button">Kind</button>
+                    <button className="extra-button">Lunge</button>
+                    <button className="extra-button">Herz</button>
+                    <button className="extra-button">Magen</button>
+                    <button className="extra-button">Beine</button>
+                </div>
+            </div>
         </div>
 
 
