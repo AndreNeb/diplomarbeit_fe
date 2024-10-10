@@ -1,13 +1,23 @@
-.topbarGeneral {
+.header {
     display: flex;
-    background-color: lightblue;
+    background-color: green;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.leftSection {
+.left-section {
     background-color: green;
     display: flex;
     align-items: center;
+}
+
+.middle-section {
+    background-color: lightgreen;
+}
+.right-section {
+    background-color: red;
+}
+
+.login {
 
 }

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
+import login from './pictures/login-picture.jpg';
 import './App.css';
-//import './stylsheets/topbar.css';
+import './stylesheets/topbar.css';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               <input className= "search-bar" type ="text" placeholder="Suchen" />
           </div>
           <div className="right-section">
-
+            <img src={login} className="login" alt="login"/>
           </div>
         </div>
         </body>
