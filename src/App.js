@@ -1,4 +1,4 @@
-import './App.css';
+
 import logo from './pictures/login-picture.jpg'
 import hamburger from './pictures/hamburger-menu.png';
 import './stylesheets/topbar/topbar.css';
