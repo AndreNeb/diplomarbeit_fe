@@ -1,5 +1,8 @@
 import './App.css';
-import './stylesheets/topbar.css';
+import './stylesheets/topbar/topbar.css';
+import './stylesheets/leftbar/buttons.css'
+import './stylesheets/leftbar/leftbar.css'
+import './stylesheets/general/general.css'
 
 function App() {
   return (

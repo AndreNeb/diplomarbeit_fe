@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Added Files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728031577894</updated>
       <workItem from="1728565856844" duration="2451000" />
+      <workItem from="1728571849852" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -133,15 +135,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728567810031</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Files">
+      <option name="closed" value="true" />
+      <created>1728571908968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728571908968</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Files">
+      <option name="closed" value="true" />
+      <created>1728572157824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728572157824</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Files" />
     <MESSAGE value="Added Left navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Left navbar" />
+    <MESSAGE value="Added Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Files" />
   </component>
 </project>
