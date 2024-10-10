@@ -18,6 +18,7 @@ function App() {
         <div className="header">
           <div className="left-section">
             <img src={hamburger} className="hamburger-menu" alt="Menu"/>
+              <div className="tooltip"></div>
 
           </div>
           <div className="middle-section">
