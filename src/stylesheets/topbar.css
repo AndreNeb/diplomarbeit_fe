@@ -1,0 +1,13 @@
+.topbarGeneral {
+    display: flex;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.leftSection {
+    background-color: green;
+    display: flex;
+    align-items: center;
+
+}
