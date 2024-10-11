@@ -5,6 +5,9 @@ import regeln from './pictures/regeln.png';
 import info from './pictures/info.png';
 import support from './pictures/support.png';
 import patienten from './pictures/patienten.png';
+import maske from './pictures/maske.png';
+import spritze from './pictures/spritze.png';
+import wartezimmer from './pictures/wartezimmer.png';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
@@ -57,6 +60,9 @@ function App() {
                         <div className="small-widgets-text-middle">70 &#037;</div>
                         <div className="small-widgets-text-bottom">8 / 9 Belegt</div>
                     </div>
+                    <div>
+                        <img src={maske} className="small-widgets-picture-layout" alt="OP - Maske"/>
+                    </div>
                 </div>
                 <div className="general-small-widget-layout small-widget3">
                     <div className="small-widgets-color small-widget3-color-patienten">
@@ -67,6 +73,9 @@ function App() {
                         <div className="small-widgets-text-middle">400</div>
                         <div className="small-widgets-text-bottom">4,5 &#037;</div>
                     </div>
+                    <div>
+                        <img src={spritze} className="small-widgets-picture-layout" alt="Spritze"/>
+                    </div>
                 </div>
                 <div className="general-small-widget-layout small-widget4">
                     <div className="small-widgets-color small-widget4-color-patienten">
@@ -74,9 +83,11 @@ function App() {
                     </div>
                     <div className="small-widgets-text">
                         <div className="small-widgets-text-top">Wartezimmer</div>
-                        <div className="small-widgets-text-middle">11 Patienten</div>
+                        <div className="small-widgets-text-middle">9 Patienten</div>
                         <div className="small-widgets-text-bottom">Gut belegt</div>
-
+                    </div>
+                    <div>
+                        <img src={wartezimmer} className="small-widgets-picture-layout wartezimmer-picture-layout" alt="Wartezimmer"/>
                     </div>
                 </div>
             </div>
