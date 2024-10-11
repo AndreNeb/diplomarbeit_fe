@@ -14,6 +14,7 @@
 }
 
 .general-small-widget-layout {
+    position: relative;
     display: flex;
     border-width: 1px;
     border-style: solid;
@@ -25,7 +26,6 @@
     transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transform-origin: bottom;
 
-
 }
 
 .general-small-widget-layout:hover {
@@ -34,9 +34,13 @@
 }
 
 .small-widgets-picture-layout {
+    position: absolute;
+    right: 20px;
+    top: 30px;
     width: 60px;
     height: 60px;
-    margin-left: 5vh;
+
+    background-color: red;
 }
 
 .small-widgets-text {
@@ -47,6 +51,8 @@
     width: 50%;
     height: 110px;
     border-radius: 15px;
+
+    background-color: #9a43dd;
 
 }
 
@@ -116,7 +122,7 @@
 
 .small-widget4 {
     border-color: #dd2e2e;
-    background-color: white;
+    background-color: orange;
     color: black;
 }
 
