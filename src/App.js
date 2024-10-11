@@ -17,19 +17,20 @@ function App() {
         </header>
         <body>
         <div className="header">
-          <div className="left-section">
-            <img src={hamburger} className="hamburger-menu" alt="Menu"/>
-              <div className="tooltip"></div>
+            <div className="left-section">
+                <img src={hamburger} className="hamburger-menu" alt="Menu"/>
+                <div className="tooltip"></div>
 
-          </div>
-          <div className="middle-section">
-              <input className= "search-bar" type ="text" placeholder="Suchen" />
-          </div>
-          <div className="right-section">
-              <img src={notification} className="notification" alt="Notification"/>
-            <img src= {logo} className="login" alt="login"/>
-          </div>
+            </div>
+            <div className="middle-section">
+                <input className="search-bar" type="text" placeholder="Suchen"/>
+            </div>
+            <div className="right-section">
+                <img src={notification} className="notification" alt="Notification"/>
+                <img src={logo} className="login" alt="login"/>
+            </div>
         </div>
+
 
         <div className="left-bar-general">
             <button className="startseite-button">
@@ -59,8 +60,8 @@ function App() {
 
 
         </body>
-      </>
-  );
+    </>
+    );
 }
 
 export default App;
