@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Piktogramme bei den small widgets richten sich jetzt richtig aus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
     </list>
@@ -416,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728662522774</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
+      <option name="closed" value="true" />
+      <created>1728664288551</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1728664288551</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -449,6 +457,7 @@
     <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
     <MESSAGE value="Finished small Widgets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished small Widgets" />
+    <MESSAGE value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
   </component>
 </project>
