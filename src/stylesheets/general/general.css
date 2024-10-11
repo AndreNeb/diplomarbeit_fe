@@ -9,6 +9,14 @@ body {
     margin-top: 95px;
     background-color: #f1eded;
 }
+span {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+}
+pre {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+}
 button {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;

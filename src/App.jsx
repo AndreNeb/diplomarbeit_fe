@@ -34,10 +34,47 @@ function App() {
             </div>
 
             <div className="small-widgets-general">
-                <div className="small-widget">Patienten</div>
-                <div className="small-widget">OP - Auslastung</div>
-                <div className="small-widget">Narkosen</div>
-                <div className="small-widget">Wartezimmer</div>
+                <div className="small-widget1">
+                    <div className="small-widget1-color-patienten">
+                        &nbsp;
+                    </div>
+                    <div className="small-widget1-text-patienten">
+                        <div>Patienten</div>
+                        <div>4500</div>
+                        <div>&#43;8.5 &#037;</div>
+                    </div>
+                </div>
+                <div className="small-widget2">
+                    <div className="small-widget2-color-patienten">
+                        &nbsp;
+                    </div>
+                    <div className="small-widget2-text-patienten">
+                        <div>OP - Auslastung</div>
+                        <div>70 &#037;</div>
+                        <div>8 / 9 Belegt</div>
+                    </div>
+                </div>
+                <div className="small-widget3">
+                    <div className="small-widget3-color-patienten">
+                        &nbsp;
+                    </div>
+                    <div className="small-widget3-text-patienten">
+                        <div>Narkosen</div>
+                        <div>400</div>
+                        <div>4.5 &#037;</div>
+                    </div>
+                </div>
+                <div className="small-widget4">
+                    <div className="small-widget4-color-patienten">
+                        &nbsp;
+                    </div>
+                    <div className="small-widget4-text-patienten">
+                        <div>Wartezimmer</div>
+                        <div>11 Patienten</div>
+                        <div>Gut belegt</div>
+
+                    </div>
+                </div>
             </div>
 
             <div className="big-widgets-general">
