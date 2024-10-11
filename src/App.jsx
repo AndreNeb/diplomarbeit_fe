@@ -76,9 +76,6 @@ function App() {
                     <div>
                         <img src={spritze} className="small-widgets-picture-layout" alt="Spritze"/>
                     </div>
-                    <div>
-                        <img src={spritze} className="small-widgets-picture-layout" alt="Spritze"/>
-                    </div>
                 </div>
                 <div className="general-small-widget-layout small-widget4">
                     <div className="small-widgets-color small-widget4-color-patienten">
