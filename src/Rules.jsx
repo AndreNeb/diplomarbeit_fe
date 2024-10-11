@@ -8,9 +8,8 @@ import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
-import './stylesheets/homepage-widgets/calendar.css';
 import './stylesheets/homepage-widgets/widgets-general.css';
-import './stylesheets/homepage-widgets/small-widgets.css';
+
 
 
 function App() {
@@ -34,8 +33,8 @@ function App() {
                 </div>
             </div>
 
-            <div>
-
+            <div className="left-bar-general">
+                <div className="generell-buttons">Kind</div>
             </div>
             <div>
 

@@ -8,9 +8,8 @@ import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
-import './stylesheets/homepage-widgets/calendar.css';
-import './stylesheets/homepage-widgets/widgets-general.css';
 import './stylesheets/homepage-widgets/small-widgets.css';
+import './stylesheets/homepage-widgets/big-widgets.css';
 
 function App() {
     return (
