@@ -50,11 +50,6 @@
 
 
 
-
-
-
-
-
 .small-widget2 {
     display: flex;
     border-width: 1px;
@@ -123,8 +118,6 @@
 
 
 
-
-
 .small-widget4 {
     display: flex;
     border-width: 1px;
@@ -154,6 +147,3 @@
     justify-content: center;
     max-height: 60px;
 }
-
-
-

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Added small widgets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +30,12 @@
     &quot;assignee&quot;: &quot;Matteo500219&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AndreNeb/diplomarbeit_fe.git&quot;,
-    &quot;accountId&quot;: &quot;ded94e49-c306-47c6-8047-7104070e7c5f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AndreNeb/diplomarbeit_fe.git",
+    "accountId": "d70321cd-429b-43c5-b7a2-73882bbca8a2"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -61,7 +62,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/matte/Library/Application Support/JetBrains/WebStorm2024.2/node/versions/20.18.0/bin/node",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "npm.npm start.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs",
@@ -132,6 +133,7 @@
       <updated>1728031577894</updated>
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
+      <workItem from="1728648125727" duration="2406000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -341,9 +343,18 @@
       <option name="project" value="LOCAL" />
       <updated>1728638461722</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added small widgets">
+      <option name="closed" value="true" />
+      <created>1728638799516</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1728638799516</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers>
       <YouTrack url="https://wuev06.youtrack.cloud">
+        <option name="defaultSearch" value="website" />
         <username>random</username>
       </YouTrack>
     </servers>
