@@ -1,4 +1,4 @@
-.small-widgets-general {
+.small-widgets-outer-div {
     display: grid;
     flex-direction: row;
     align-items: center;
@@ -10,140 +10,113 @@
     column-gap: 20px;
     row-gap: 40px;
     margin-bottom: 40px;
+
 }
 
+.general-small-widget-layout {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: left;
+    height: 120px;
 
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transform-origin: bottom;
+}
 
+.general-small-widget-layout:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.small-widgets-picture-layout {
+    width: 60px;
+    height: 60px;
+}
+
+.small-widgets-text {
+    margin-left: 15px;
+    color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50%;
+    height: 110px;
+    border-radius: 15px;
+}
+
+.small-widgets-text-top {
+    margin-top: 10px;
+    color: gray;
+}
+
+.small-widgets-text-middle {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.small-widgets-text-bottom { /* Hier muss noch eine Logik ergänzt werden. Für jetzt sind alle Texte grün. */
+    color: #077507;
+}
+
+.small-widgets-color {
+    margin-left: 20px;
+    margin-right: 13px;
+    border-radius: 30px;
+    height: 95px;
+    width: 8px;
+    justify-content: start;
+}
 
 
 .small-widget1 {
-    display: flex;
-    border-width: 1px;
     border-color: #309be1;
-    border-style: solid;
     background-color: white;
     color: black;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: left;
-    height: 70px;
 }
 
-.small-widget1-color-patienten{
-    margin-left: 12px;
-    margin-right: 12px;
+
+.small-widget1-color-patienten {
     background-color: #309be1;
     color: #309be1;
-    border-radius: 30px;
-    height: 45px;
-    width: 7px;
-    justify-content: start;
 }
-.small-widget1-text-patienten{
-    margin-left: 12px;
-    color: black;
-    justify-content: center;
-    max-height: 60px;
-}
-
-
-
 
 
 .small-widget2 {
-    display: flex;
-    border-width: 1px;
     border-color: #9a43dd;
-    border-style: solid;
     background-color: white;
     color: black;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: left;
-    height: 70px;
 }
 
-.small-widget2-color-patienten{
-    margin-left: 12px;
-    margin-right: 12px;
+.small-widget2-color-patienten {
     background-color: #9a43dd;
     color: #9a43dd;
-    border-radius: 30px;
-    height: 45px;
-    width: 7px;
-    justify-content: start;
 }
-.small-widget2-text-patienten{
-    margin-left: 12px;
-    color: black;
-    justify-content: center;
-    max-height: 60px;
-}
-
-
-
 
 
 .small-widget3 {
-    display: flex;
-    border-width: 1px;
     border-color: #3bdd48;
-    border-style: solid;
     background-color: white;
     color: black;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: left;
-    height: 70px;
 }
 
-.small-widget3-color-patienten{
-    margin-left: 12px;
-    margin-right: 12px;
+.small-widget3-color-patienten {
     background-color: #3bdd48;
     color: #3bdd48;
-    border-radius: 30px;
-    height: 45px;
-    width: 7px;
-    justify-content: start;
 }
-.small-widget3-text-patienten{
-    margin-left: 12px;
-    color: black;
-    justify-content: center;
-    max-height: 60px;
-}
-
-
-
 
 
 .small-widget4 {
-    display: flex;
-    border-width: 1px;
     border-color: #dd2e2e;
-    border-style: solid;
     background-color: white;
     color: black;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: left;
-    height: 70px;
 }
 
-.small-widget4-color-patienten{
-    margin-left: 12px;
-    margin-right: 12px;
+.small-widget4-color-patienten {
     background-color: #dd2e2e;
     color: #dd2e2e;
-    border-radius: 30px;
-    height: 45px;
-    width: 7px;
-    justify-content: start;
-}
-.small-widget4-text-patienten{
-    margin-left: 12px;
-    color: black;
-    justify-content: center;
-    max-height: 60px;
 }
