@@ -6,20 +6,30 @@
     margin: 30px;
     margin-top: 55px;
     height: 60vh;
+
 }
 
 .big-widget {
     display: flex;
     background-color: white;
     color: black;
-    border-radius: 30px;
+    border-radius: 15px;
     align-items: center;
     justify-content: center;
     flex: 1;
     height: 60vh;
     cursor: pointer;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transform-origin: bottom;
 }
 
 .big-widget:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
 
+@media (max-width: 800px) {
+    .big-widgets-general {
+        grid-template-columns: 1fr;
+    }
 }
