@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar">
+      <change afterPath="$PROJECT_DIR$/src/pictures/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/language.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/login-picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/regeln.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/support.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/Notification-bell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/hamburger-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/hamburger-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728031577894</updated>
       <workItem from="1728565856844" duration="1659000" />
-      <workItem from="1728579397289" duration="5178000" />
+      <workItem from="1728579397289" duration="7609000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -237,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728583855048</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728625949376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728625949376</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

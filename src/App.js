@@ -1,7 +1,10 @@
 
-import logo from './pictures/login-picture.jpg'
-import hamburger from './pictures/hamburger-menu.png';
-import notification from './pictures/Notification-bell.png';
+import login from './pictures/login-picture.png'
+import logo from './pictures/hamburger-menu.png';
+import language from './pictures/language.png';
+import regeln from './pictures/regeln.png';
+import info from './pictures/info.png';
+import support from './pictures/support.png';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
@@ -18,16 +21,17 @@ function App() {
         <body>
         <div className="header">
             <div className="left-section">
-                <img src={hamburger} className="hamburger-menu" alt="Menu"/>
-                <div className="tooltip"></div>
-
+                <img src={logo} className="logo" alt="Logo"/>
+                <img src={regeln} className="regeln" alt="Regeln"/>
+                <img src={info} className="info" alt="Info"/>
+                <img src={support} className="support" alt="Support"/>
             </div>
             <div className="middle-section">
                 <input className="search-bar" type="text" placeholder="Suchen"/>
             </div>
             <div className="right-section">
-                <img src={notification} className="notification" alt="Notification"/>
-                <img src={logo} className="login" alt="login"/>
+                <img src={language} className="language" alt="language"/>
+                <img src={login} className="login" alt="login"/>
             </div>
         </div>
 
