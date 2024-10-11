@@ -40,11 +40,11 @@ function App() {
                 <div className="small-widget">Wartezimmer</div>
             </div>
 
-            <div className="widgets">
-                loll
-                <div className="calendar">lol</div>
+            <div className="big-widgets-general">
 
-                <div className="mail">123</div>
+                <div className="big-widget">Calendar</div>
+
+                <div className="big-widget">Mail</div>
             </div>
             </body>
         </>
