@@ -1,5 +1,4 @@
-
-import login from './pictures/login-picture.png'
+import login from './pictures/login-picture.png';
 import logo from './pictures/hamburger-menu.png';
 import language from './pictures/language.png';
 import regeln from './pictures/regeln.png';
@@ -11,16 +10,13 @@ import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
 import './stylesheets/homepage-widgets/calendar.css';
 import './stylesheets/homepage-widgets/widgets-general.css';
-import './stylesheets/homepage-widgets/small-widgets.css'
-
-
+import './stylesheets/homepage-widgets/small-widgets.css';
 
 function App() {
     return (
-        <>
-            <header>
 
-            </header>
+        <>
+            <header></header>
             <body>
             <div className="header">
                 <div className="left-section">
@@ -38,7 +34,6 @@ function App() {
                 </div>
             </div>
 
-
             <div className="small-widgets-general">
                 <div className="small-widget">hola1</div>
                 <div className="small-widget">hola2</div>
@@ -46,23 +41,15 @@ function App() {
                 <div className="small-widget">hola4</div>
             </div>
 
-
             <div className="widgets">
                 loll
-                <div className="calendar">
-                    lol
-                </div>
+                <div className="calendar">lol</div>
 
-                <div className="mail">
-                    123
-                </div>
-
+                <div className="mail">123</div>
             </div>
-
-
-
             </body>
         </>
+
     );
 }
 
