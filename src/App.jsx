@@ -9,8 +9,7 @@ import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
-import './stylesheets/homepage-widgets/calendar.css';
-import './stylesheets/homepage-widgets/widgets-general.css';
+import './stylesheets/homepage-widgets/big-widgets.css';
 import './stylesheets/homepage-widgets/small-widgets.css'
 
 
@@ -47,14 +46,13 @@ function App() {
             </div>
 
 
-            <div className="widgets">
-                loll
-                <div className="calendar">
-                    lol
+            <div className="big-widgets-general">
+                <div className="big-widget">
+                    Calendar
                 </div>
 
-                <div className="mail">
-                    123
+                <div className="big-widget">
+                    Mail
                 </div>
 
             </div>

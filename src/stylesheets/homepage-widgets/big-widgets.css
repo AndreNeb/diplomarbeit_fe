@@ -1,0 +1,21 @@
+.big-widgets-general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 30px;
+    margin-top: 55px;
+    height: 60vh;
+}
+
+.big-widget {
+    display: flex;
+    background-color: #4794cd;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 60vh;
+    cursor: pointer;
+}
