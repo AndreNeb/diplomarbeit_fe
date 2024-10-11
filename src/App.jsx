@@ -10,6 +10,7 @@ import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
 import './stylesheets/homepage-widgets/small-widgets.css';
 import './stylesheets/homepage-widgets/big-widgets.css';
+import rules from "./Rules";
 
 function App() {
     return (
@@ -20,9 +21,9 @@ function App() {
             <div className="header">
                 <div className="left-section">
                     <img src={logo} className="logo" alt="Logo"/>
-                    <img src={regeln} className="regeln" alt="Regeln"/>
-                    <img src={info} className="info" alt="Info"/>
-                    <img src={support} className="support" alt="Support"/>
+                    <img src={regeln}  className="regeln" alt="Regeln"/>
+                    <img src={info}  className="info" alt="Info"/>
+                    <img src={support}  className="support" alt="Support"/>
                 </div>
                 <div className="middle-section">
                     <input className="search-bar" type="text" placeholder="Suchen"/>
@@ -40,15 +41,13 @@ function App() {
                 <div className="small-widget">Wartezimmer</div>
             </div>
 
-            <div className="widgets">
-                loll
-                <div className="calendar">lol</div>
+            <div className="big-widgets-general">
+                <div className="big-widget">lol</div>
 
-                <div className="mail">123</div>
+                <div className="big-widget">123</div>
             </div>
             </body>
         </>
-
     );
 }
 
