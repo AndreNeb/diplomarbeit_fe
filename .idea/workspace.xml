@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Small widgets on the Homepage edited">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Added big widgets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/widgets-general.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +251,7 @@
       <workItem from="1728594237183" duration="347000" />
       <workItem from="1728625562291" duration="7000" />
       <workItem from="1728625572503" duration="36000" />
-      <workItem from="1728625619501" duration="6657000" />
+      <workItem from="1728625619501" duration="6887000" />
     </task>
     <task id="LOCAL-00012" summary="Leftbar added">
       <option name="closed" value="true" />
@@ -311,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728630289310</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added big widgets">
+      <option name="closed" value="true" />
+      <created>1728632321576</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728632321576</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -332,6 +338,7 @@
     <MESSAGE value="Added Files" />
     <MESSAGE value="Leftbar added" />
     <MESSAGE value="Small widgets on the Homepage edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small widgets on the Homepage edited" />
+    <MESSAGE value="Added big widgets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added big widgets" />
   </component>
 </project>
