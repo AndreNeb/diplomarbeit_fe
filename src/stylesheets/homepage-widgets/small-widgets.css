@@ -24,6 +24,8 @@
 
     transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transform-origin: bottom;
+
+
 }
 
 .general-small-widget-layout:hover {
@@ -32,9 +34,9 @@
 }
 
 .small-widgets-picture-layout {
-    margin-right: 20px;
     width: 60px;
     height: 60px;
+    margin-left: 5vh;
 }
 
 .small-widgets-text {
@@ -45,6 +47,7 @@
     width: 50%;
     height: 110px;
     border-radius: 15px;
+
 }
 
 .small-widgets-text-top {
