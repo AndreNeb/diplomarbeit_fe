@@ -1,7 +1,6 @@
 .small-widgets-general {
     display: grid;
     flex-direction: row;
-    background-color: red;
     align-items: center;
     justify-content: space-evenly;
 
@@ -10,15 +9,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
+    margin-bottom: 40px;
 }
 
 .small-widget {
     display: flex;
-    background-color: blue;
+    background-color: #4794cd;
     color: white;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
     height: 55px;
-    cursor: pointer;
 }
