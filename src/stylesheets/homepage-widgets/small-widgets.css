@@ -32,13 +32,9 @@
 }
 
 .small-widgets-picture-layout {
-    margin-left: 5px;
+    margin-right: 20px;
     width: 60px;
     height: 60px;
-}
-
-.wartezimmer-picture-layout {
-    margin-left: 20px;
 }
 
 .small-widgets-text {
@@ -58,7 +54,7 @@
 
 .small-widgets-text-middle {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 8px;
     margin-bottom: 8px;
 
