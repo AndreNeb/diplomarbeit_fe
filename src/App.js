@@ -40,10 +40,10 @@ function App() {
 
 
         <div className="small-widgets-general">
-            <div className="try">hola1</div>
-            <div className="try">hola2</div>
-            <div className="try">hola3</div>
-            <div className="try">hola4</div>
+            <div className="small-widget">hola1</div>
+            <div className="small-widget">hola2</div>
+            <div className="small-widget">hola3</div>
+            <div className="small-widget">hola4</div>
         </div>
 
 

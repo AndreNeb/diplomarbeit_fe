@@ -12,12 +12,13 @@
     row-gap: 40px;
 }
 
-.try{
+.small-widget {
     display: flex;
     background-color: blue;
     color: white;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
+    height: 55px;
+    cursor: pointer;
 }
