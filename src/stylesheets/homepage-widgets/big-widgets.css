@@ -1,11 +1,10 @@
 .big-widgets-general {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
     column-gap: 20px;
     row-gap: 40px;
     margin: 30px;
-    margin-top: 55px;
-    height: 60vh;
+    height: 39vh;
 
 }
 
@@ -17,7 +16,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    height: 60vh;
+    height: 39vh;
     cursor: pointer;
     transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transform-origin: bottom;

@@ -99,6 +99,12 @@ function App() {
 
                 <div className="big-widget">Mail</div>
             </div>
+            <div className="big-widgets-general">
+
+                <div className="big-widget">Calendar</div>
+
+                <div className="big-widget">Mail</div>
+            </div>
             </body>
         </>
 
