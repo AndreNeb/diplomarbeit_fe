@@ -41,8 +41,8 @@ function App() {
             <div className="small-widgets-general">
                 <div className="small-widget">Patienten</div>
                 <div className="small-widget">OP - Auslastung</div>
-                <div className="small-widget">hola3</div>
-                <div className="small-widget">hola4</div>
+                <div className="small-widget">Narkosen</div>
+                <div className="small-widget">Wartezimmer</div>
             </div>
 
 
