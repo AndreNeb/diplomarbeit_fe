@@ -76,7 +76,6 @@ function App() {
                     <div>
                         <img src={spritze} className="small-widgets-picture-layout" alt="Spritze"/>
                     </div>
-
                 </div>
                 <div className="general-small-widget-layout small-widget4">
                     <div className="small-widgets-color small-widget4-color-patienten">
@@ -88,7 +87,7 @@ function App() {
                         <div className="small-widgets-text-bottom">Gut belegt</div>
                     </div>
                     <div>
-                        <img src={wartezimmer} className="small-widgets-picture-layout" alt="Wartezimmer"/>
+                        <img src={wartezimmer} className="small-widgets-picture-layout wartezimmer-picture-layout" alt="Wartezimmer"/>
                     </div>
                 </div>
             </div>
