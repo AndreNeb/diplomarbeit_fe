@@ -6,6 +6,9 @@ import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
+import './stylesheets/homepage-widgets/calendar.css';
+import './stylesheets/homepage-widgets/widgets-general.css';
+import './stylesheets/homepage-widgets/small-widgets.css'
 
 
 
@@ -32,31 +35,26 @@ function App() {
         </div>
 
 
-        <div className="left-bar-general">
-            <button className="startseite-button">
-                Startseite
-            </button>
-            <br/>
-            <button className="personal-space-button">
-                Personal Space
-            </button>
-            <br/>
-            <button className="support-button">
-                Support
-            </button>
-            <br/>
-            <div className="button-container">
-                <button className="regeln-button">Regeln</button>
-                <div className="hidden-buttons">
-                    <button className="extra-button">Fachspezifische</button>
-                    <button className="extra-button">Kind</button>
-                    <button className="extra-button">Lunge</button>
-                    <button className="extra-button">Herz</button>
-                    <button className="extra-button">Magen</button>
-                    <button className="extra-button">Beine</button>
-                </div>
-            </div>
+        <div className="small-widgets-general">
+            <div className="try">hola1</div>
+            <div className="try">hola2</div>
+            <div className="try">hola3</div>
+            <div className="try">hola4</div>
         </div>
+
+
+        <div className="widgets">
+            loll
+            <div className="calendar">
+                lol
+            </div>
+
+            <div className="mail">
+                123
+            </div>
+
+        </div>
+
 
 
         </body>
