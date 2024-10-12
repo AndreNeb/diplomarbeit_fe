@@ -1,0 +1,39 @@
+Sprachen werden standardmässig in Englisch angezeigt;
+Folgende Files müssen immer importiert werden:
+
+    import './i18n'
+    import {useTranslation} from "react-i18next";
+
+Und der beginn von jeder Seite muss so aussehen:
+
+    function App() {
+
+        const {t} =useTranslation();
+
+        const { i18n } = useTranslation();
+        const changeLanguage = (lang) => {
+            i18n.changeLanguage(lang);
+        };
+
+Damit die Sprachen übersetzt werden können, müssen Codenamen vergeben werden und danach die Übersetzung!
+Syntax:
+
+{
+  "searchbar-placeholder": "Search...",
+  "rules": "Rules",
+  "survey": "Survey",
+  "info": "Info",
+  "support": "Support",
+  "language": "Change language",
+  "login": "Login",
+  "patient": "Patients",
+  "op-workload": "OP-Workload",
+  "unavailable": "used",
+  "anesthesia": "Anesthesia",
+  "waiting-room": "Waiting Room",
+  "waiting-room-usage": "Well-used"
+}
+
+Statt dem Text folgendes einfügen
+Umsetzungssyntax:
+        {t('name der im json-File steht und übersetzt werden')}

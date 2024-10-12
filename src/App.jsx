@@ -18,9 +18,21 @@ import './stylesheets/general/general.css';
 import './stylesheets/homepage-widgets/small-widgets.css';
 import './stylesheets/homepage-widgets/big-widgets.css';
 import RulesPage from './RulesPage';
+import SupportPage from "./SupportPage";
+import InfoPage from "./InfoPage";
+import './i18n'
+import {useTranslation} from "react-i18next";
 
 
 function App() {
+
+    const {t} =useTranslation();
+
+    const { i18n } = useTranslation();
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+    };
+
     return (
         <Router>
             <>
@@ -32,20 +44,35 @@ function App() {
                                 <img src={logo} className="logo" alt="Logo"/>
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
-                                        <button className="Rules-Button">
+                                        <button className="Button-topbar">
                                             <img src={regeln} className="regeln" alt="Regeln"/>
                                         </button>
 
                                     </Link>
                                 </div>
-                                <img src={info} className="info" alt="Info"/>
-                                <img src={support} className="support" alt="Support"/>
+                                <div className="topbar-functional-divs">
+                                    <Link to="/InfoPage">
+                                        <button className="Button-topbar">
+                                            <img src={info} className="info" alt="Info"/>
+                                        </button>
+
+                                    </Link>
+                                </div>
+                                <div className="topbar-functional-divs">
+                                    <Link to="/SupportPage">
+                                        <button className="Button-topbar">
+                                            <img src={support} className="support" alt="Support"/>
+                                        </button>
+
+                                    </Link>
+                                </div>
+
                             </div>
                             <div className="middle-section">
-                                <input className="search-bar" type="text" placeholder="Suchen..."/>
+                                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
                             </div>
                             <div className="right-section">
-                                <img src={language} className="language" alt="language"/>
+                                <img src={language} className="language" alt={t('language')}/>
                                 <img src={login} className="login" alt="login"/>
                             </div>
                         </div>
@@ -56,7 +83,7 @@ function App() {
                                     &nbsp;
                                 </div>
                                 <div className="small-widgets-text">
-                                    <div className="small-widgets-text-top">Patienten</div>
+                                    <div className="small-widgets-text-top">{t('patient')}</div>
                                     <div className="small-widgets-text-middle">4.500</div>
                                     <div className="small-widgets-text-bottom">&uarr; &#43;8,5 &#037;</div>
                                 </div>
@@ -69,9 +96,9 @@ function App() {
                                     &nbsp;
                                 </div>
                                 <div className="small-widgets-text">
-                                    <div className="small-widgets-text-top">OP - Auslastung</div>
+                                    <div className="small-widgets-text-top">{t('op-workload')}</div>
                                     <div className="small-widgets-text-middle">70 &#037;</div>
-                                    <div className="small-widgets-text-bottom">8 / 9 Belegt</div>
+                                    <div className="small-widgets-text-bottom">8 / 9 {t('unavailable')}</div>
                                 </div>
                                 <div>
                                     <img src={maske} className="small-widgets-picture-layout" alt="OP - Maske"/>
@@ -82,7 +109,7 @@ function App() {
                                     &nbsp;
                                 </div>
                                 <div className="small-widgets-text">
-                                    <div className="small-widgets-text-top">Narkosen</div>
+                                    <div className="small-widgets-text-top">{t('anesthesia')}</div>
                                     <div className="small-widgets-text-middle">400</div>
                                     <div className="small-widgets-text-bottom">&darr; 4,5 &#037;</div>
                                 </div>
@@ -95,9 +122,9 @@ function App() {
                                     &nbsp;
                                 </div>
                                 <div className="small-widgets-text">
-                                    <div className="small-widgets-text-top">Wartezimmer</div>
-                                    <div className="small-widgets-text-middle">9 Patienten</div>
-                                    <div className="small-widgets-text-bottom">Gut belegt</div>
+                                    <div className="small-widgets-text-top">{t('waiting-room')}</div>
+                                    <div className="small-widgets-text-middle">9 {t('patients')}</div>
+                                    <div className="small-widgets-text-bottom">  {t('waiting-room-usage')}</div>
                                 </div>
                                 <div>
                                     <img src={wartezimmer}
@@ -122,7 +149,8 @@ function App() {
                         </body>}/>
 
                     <Route path="/rulesPage" element={<RulesPage/>}/>
-
+                    <Route path="/infoPage" element={<InfoPage/>}/>
+                    <Route path="/supportPage" element={<SupportPage/>}/>
                 </Routes>
             </>
 
