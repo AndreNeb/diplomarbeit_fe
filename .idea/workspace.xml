@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="RulesPage internationalisiert">
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Edited support / Contact form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,14 +146,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00002" summary="Added Files">
-      <option name="closed" value="true" />
-      <created>1728566135063</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1728566135063</updated>
     </task>
     <task id="LOCAL-00003" summary="Added Files">
       <option name="closed" value="true" />
@@ -392,7 +376,7 @@
       <workItem from="1728744749526" duration="1152000" />
       <workItem from="1728749314720" duration="38000" />
       <workItem from="1728750104190" duration="49000" />
-      <workItem from="1728752148770" duration="9307000" />
+      <workItem from="1728752148770" duration="9422000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -562,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728754253879</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Edited support / Contact form">
+      <option name="closed" value="true" />
+      <created>1728761531594</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1728761531594</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -602,6 +594,7 @@
     <MESSAGE value="reMarkable Hintergrundfarbe" />
     <MESSAGE value="Finished Leftbar bei der Rules - Seite" />
     <MESSAGE value="RulesPage internationalisiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="RulesPage internationalisiert" />
+    <MESSAGE value="Edited support / Contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited support / Contact form" />
   </component>
 </project>
