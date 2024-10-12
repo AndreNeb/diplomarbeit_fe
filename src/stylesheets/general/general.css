@@ -8,7 +8,7 @@ div {
 body {
     margin: 0;
     padding-top: 47px;
-    background-color: #f1eded;
+    background-color: rgba(250,246,240,255);
     cursor: default;
 }
 span {
