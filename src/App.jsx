@@ -1,3 +1,7 @@
+import './i18n'
+import { useTranslation } from "react-i18next";
+
+
 import React from "react";
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
@@ -20,8 +24,8 @@ import './stylesheets/homepage-widgets/big-widgets.css';
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
-import './i18n'
-import {useTranslation} from "react-i18next";
+
+
 
 
 function App() {

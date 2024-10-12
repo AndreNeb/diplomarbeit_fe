@@ -12,9 +12,21 @@ import login from "./pictures/login-picture.png";
 import hamburger from "./pictures/hamburger-menu.png";
 
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 function RulesPage() {
+
+    const {t} =useTranslation();
+
+    const { i18n } = useTranslation();
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+    };
+
+
     return (
+
+
         <body className="rules">
 
 
@@ -56,7 +68,7 @@ function RulesPage() {
             <div className="left-bar-general">
                 <div className="first-sidebar-section">
                     <div className="searchbar-menu">
-                        <input className="search-bar" type="text" placeholder="Suchen..."/>
+                        <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
                     </div>
 
                     <div className="hamburger-menu">
@@ -66,18 +78,18 @@ function RulesPage() {
 
 
                 <div className="button-section">
-                    <button className="button-general">Kind</button>
-                    <button className="button-general">Lunge</button>
-                    <button className="button-general">Herz</button>
-                    <button className="button-general">Magen</button>
-                    <button className="button-general">Bein</button>
-                    <button className="button-general">Arme</button>
-                    <button className="button-general">Leber</button>
-                    <button className="button-general">Galle</button>
-                    <button className="button-general">Niere</button>
-                    <button className="button-general">Gehirn</button>
-                    <button className="button-general">Fachspezifische</button>
-                    <button className="button-general">Sonstige</button>
+                    <button className="button-general">{t('child')}</button>
+                    <button className="button-general">{t('lung')}</button>
+                    <button className="button-general">{t('heart')}</button>
+                    <button className="button-general">{t('stomach')}</button>
+                    <button className="button-general">{t('leg')}</button>
+                    <button className="button-general">{t('arms')}</button>
+                    <button className="button-general">{t('liver')}</button>
+                    <button className="button-general">{t('gallbladder')}</button>
+                    <button className="button-general">{t('kidney')}</button>
+                    <button className="button-general">{t('brain')}</button>
+                    <button className="button-general">{t('specialized')}</button>
+                    <button className="button-general">{t('other')}</button>
 
 
                 </div>

@@ -12,7 +12,20 @@
   "unavailable": "Belegt",
   "anesthesia": "Narkose",
   "waiting-room": "Wartezimmer",
-  "waiting-room-usage": "Gut belegt"
+  "waiting-room-usage": "Gut belegt",
+
+  "child": "Kind",
+  "lung": "Lunge",
+  "heart": "Herz",
+  "stomach": "Magen",
+  "leg": "Bein",
+  "arms": "Arme",
+  "liver": "Leber",
+  "gallbladder": "Galle",
+  "kidney": "Niere",
+  "brain": "Gehirn",
+  "specialized": "Fachspezifische",
+  "other": "Sonstige"
 }
 
 

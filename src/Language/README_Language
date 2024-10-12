@@ -1,4 +1,4 @@
-Sprachen werden standardmässig in Englisch angezeigt;
+Sprachen werden standardmäßig in Englisch angezeigt;
 Folgende Files müssen immer importiert werden:
 
     import './i18n'
@@ -37,3 +37,11 @@ Syntax:
 Statt dem Text folgendes einfügen
 Umsetzungssyntax:
         {t('name der im json-File steht und übersetzt werden')}
+
+
+
+
+        Funktion um Language zu toggeln:
+
+        <button onClick={() => changeLanguage('de')}>Deutsch</button>
+        <button onClick={() => changeLanguage('en')}>English</button>

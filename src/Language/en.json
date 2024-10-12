@@ -12,5 +12,19 @@
   "unavailable": "used",
   "anesthesia": "Anesthesia",
   "waiting-room": "Waiting Room",
-  "waiting-room-usage": "Well-used"
+  "waiting-room-usage": "Well-used",
+
+  "child": "Child",
+  "lung": "Lung",
+  "heart": "Heart",
+  "stomach": "Stomach",
+  "leg": "Leg",
+  "arms": "Arms",
+  "liver": "Liver",
+  "gallbladder": "Gallbladder",
+  "kidney": "Kidney",
+  "brain": "Brain",
+  "specialized": "Specialized",
+  "other": "Other"
+
 }
