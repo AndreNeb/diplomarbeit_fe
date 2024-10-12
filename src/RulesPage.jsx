@@ -16,23 +16,40 @@ import React from "react";
 function RulesPage() {
     return (
         <body className="rules">
-        <div>
-            <div className="header">
-                <div className="left-section">
-                    <img src={logo} className="logo" alt="Logo"/>
-                    <div className="topbar-functional-divs">
 
-                        <button className="Rules-Button">
+
+        <div className="header">
+            <div className="left-section">
+                <img src={logo} className="logo" alt="Logo"/>
+                <div className="topbar-functional-divs">
+                    <Link to="/RulesPage">
+                        <button className="Button-topbar">
                             <img src={regeln} className="regeln" alt="Regeln"/>
                         </button>
-                    </div>
-                    <img src={info} className="info" alt="Info"/>
-                    <img src={support} className="support" alt="Support"/>
+                    </Link>
                 </div>
-                <div className="right-section">
-                    <img src={language} className="language" alt="language"/>
-                    <img src={login} className="login" alt="login"/>
+                <div className="topbar-functional-divs">
+                    <Link to="/InfoPage">
+                        <button className="Button-topbar">
+                            <img src={info} className="info" alt="Info"/>
+                        </button>
+
+                    </Link>
                 </div>
+                <div className="topbar-functional-divs">
+                    <Link to="/SupportPage">
+                        <button className="Button-topbar">
+                            <img src={support} className="support" alt="Support"/>
+                        </button>
+
+                    </Link>
+                </div>
+
+            </div>
+
+            <div className="right-section">
+                <img src={language} className="language" alt={('language')}/>
+                <img src={login} className="login" alt="login"/>
             </div>
 
 
