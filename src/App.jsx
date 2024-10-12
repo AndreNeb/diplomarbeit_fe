@@ -1,5 +1,5 @@
 import './i18n'
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 
 import React from "react";
@@ -26,13 +26,11 @@ import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
 
 
-
-
 function App() {
 
-    const {t} =useTranslation();
+    const {t} = useTranslation();
 
-    const { i18n } = useTranslation();
+    const {i18n} = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
@@ -45,27 +43,30 @@ function App() {
                         <body className="homepage">
                         <div className="header">
                             <div className="left-section">
-                                <img src={logo} className="logo" alt="Logo"/>
+                                <Link to="/">
+                                    <img src={logo} className="logo" alt="Logo"/>
+                                </Link>
+
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
-                                        <button className="Button-topbar">
-                                            <img src={regeln} className="regeln" alt="Regeln"/>
-                                        </button>
+
+                                        <img src={regeln} className="regeln" alt="Regeln"/>
+
                                     </Link>
                                 </div>
                                 <div className="topbar-functional-divs">
                                     <Link to="/InfoPage">
-                                        <button className="Button-topbar">
-                                            <img src={info} className="info" alt="Info"/>
-                                        </button>
+
+                                        <img src={info} className="info" alt="Info"/>
+
 
                                     </Link>
                                 </div>
                                 <div className="topbar-functional-divs">
                                     <Link to="/SupportPage">
-                                        <button className="Button-topbar">
-                                            <img src={support} className="support" alt="Support"/>
-                                        </button>
+
+                                        <img src={support} className="support" alt="Support"/>
+
 
                                     </Link>
                                 </div>
