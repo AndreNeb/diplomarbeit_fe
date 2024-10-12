@@ -5,12 +5,38 @@ div {
     font-weight: 500;
 }
 
-body {
+
+body.homepage {
     margin: 0;
-    padding-top: 47px;
+    padding-top: 95px;
     background-color: rgba(250,246,240,255);
     cursor: default;
 }
+
+body.rules {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Scrollen wird komplett verhindert */
+
+    background-color: rgba(250,246,240,255);
+    background-image: radial-gradient(#000 1px, transparent 1px);
+    background-size: 20px 20px;
+    cursor: default;
+}
+
+body.rules::before { /* Dies ist für den nicht-gepunkteten-beigen Untergrund bei der Regeln - Leftbar */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 275px;
+    height: 100%;
+    background-color: rgba(250,246,240,255);
+    pointer-events: none;
+}
+
 span {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;

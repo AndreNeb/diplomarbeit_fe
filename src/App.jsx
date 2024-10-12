@@ -26,7 +26,7 @@ function App() {
             <>
                 <Routes>
                     <Route path="/" element={
-                        <body>
+                        <body className="homepage">
                         <div className="header">
                             <div className="left-section">
                                 <img src={logo} className="logo" alt="Logo"/>
@@ -35,7 +35,6 @@ function App() {
                                         <button className="Rules-Button">
                                             <img src={regeln} className="regeln" alt="Regeln"/>
                                         </button>
-
                                     </Link>
                                 </div>
                                 <img src={info} className="info" alt="Info"/>

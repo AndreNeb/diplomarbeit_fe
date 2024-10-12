@@ -1,15 +1,66 @@
 .left-bar-general {
-    width: 250px;
+    width: 256px;
     background-color: white;
     z-index: 200;
     position: fixed;
-    top: 55px;
-    justify-content: center;
+    top: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgb(228, 228, 228);
+    border-radius: 30px;
+    margin: 10px;
+    margin-left: 17px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 202, 202);
+
+
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.first-sidebar-section {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.hamburger-menu-picture {
+    height: 30px;
+    cursor: pointer;
+}
+.searchbar-menu {
+    background-color: transparent;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.hamburger-menu {
+    background-color: transparent;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    margin-left: 8px;
+}
+
+
+.button-section {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
 }

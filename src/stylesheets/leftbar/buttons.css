@@ -1,23 +1,26 @@
 
 .button-general {
-    color: white;
+    color: black;
     font-size: 26px;
-    border-radius: 10px;
-    border: none;
+    border-radius: 15px;
     display: inline-block;
     text-align: center;
     transition-duration: 0.15s;
     cursor: pointer;
     margin-bottom: 35px;
-    background-color: #2ea8dd;
+    background-color: white;
+
+    border-width: 1px;
+    border-style: solid;
+    align-items: center;
 
     width: 210px;
     height: 48px;
 }
 
 button:hover {
-    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 
