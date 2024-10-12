@@ -50,6 +50,7 @@
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
 
+    cursor: pointer;
 }
 
 .top-leftbar-section {
