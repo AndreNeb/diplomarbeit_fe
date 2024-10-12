@@ -3,64 +3,67 @@
     background-color: white;
     z-index: 200;
     position: fixed;
-    top: 57px;
+    top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     border-radius: 30px;
-    margin-left: 14px;
-    margin-top: 17px;
+    margin: 17px;
+
     border-width: 1px;
     border-style: solid;
     border-color: rgb(204, 202, 202);
+
+
     height: 90%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.left-bar-backdiv {
-    width: 275px;
-    background-color: rgba(250, 246, 240, 255);
-    z-index: 190;
-    height: 100%;
-    position: fixed;
-    top: 57px;
-    
-}
-
-.left-bar-hidden {
-    background-color: white;
-    z-index: 200;
-    position: fixed;
-    top: 57px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 30px;
-    margin-left: 14px;
-    margin-top: 17px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 202, 202);
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
-    transform: translateX(0);
+}
+
+.left-bar-hidden {
+
+    background-color: white;
+    z-index: 200;
+    position: fixed;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 30px;
+    margin: 17px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 202, 202);
+
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    backface-visibility: hidden;
+
+    cursor: pointer;
 }
 
 .top-leftbar-section {
     display: flex;
     flex-direction: row;
+
 }
+
 
 .hamburger-menu-picture {
     height: 30px;
     cursor: pointer;
+
 }
 
 .searchbar-menu {
@@ -72,6 +75,7 @@
     align-items: center;
     flex-grow: 1;
     padding: 10px;
+
 }
 
 .hamburger-menu {
