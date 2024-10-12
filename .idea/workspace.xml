@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Finished Leftbar bei der Rules - Seite">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="RulesPage internationalisiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/README_Language" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/README_Language" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WICHTIGES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -399,7 +390,8 @@
       <workItem from="1728670318414" duration="23000" />
       <workItem from="1728672691930" duration="5019000" />
       <workItem from="1728677734210" duration="757000" />
-      <workItem from="1728719891678" duration="16205000" />
+      <workItem from="1728719891678" duration="16553000" />
+      <workItem from="1728744749526" duration="1152000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -529,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728739859437</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="RulesPage internationalisiert">
+      <option name="closed" value="true" />
+      <created>1728743000445</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743000445</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -568,6 +568,7 @@
     <MESSAGE value="Deletet unneccessary files" />
     <MESSAGE value="reMarkable Hintergrundfarbe" />
     <MESSAGE value="Finished Leftbar bei der Rules - Seite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Leftbar bei der Rules - Seite" />
+    <MESSAGE value="RulesPage internationalisiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="RulesPage internationalisiert" />
   </component>
 </project>
