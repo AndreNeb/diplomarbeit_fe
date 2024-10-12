@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
@@ -13,6 +13,9 @@ import hamburger from "./pictures/hamburger-menu.png";
 import React, {useState} from 'react';
 
 import {useTranslation} from "react-i18next";
+import InfoPage from "./InfoPage";
+import SupportPage from "./SupportPage";
+import App from "./App";
 
 function RulesPage() {
 
@@ -32,31 +35,26 @@ function RulesPage() {
     return (
 
         <>
+
             <body className="rules">
             < div className="header">
                 <div className="left-section">
-                    <img src={logo} className="logo" alt="Logo"/>
+                    <Link to="/">
+                        <img src={logo} className="logo" alt="Logo"/>
+                    </Link>
                     <div className="topbar-functional-divs">
                         <Link to="/RulesPage">
-                            <button className="Button-topbar">
-                                <img src={regeln} className="regeln" alt="Regeln"/>
-                            </button>
+                            <img src={regeln} className="regeln" alt="Regeln"/>
                         </Link>
                     </div>
                     <div className="topbar-functional-divs">
                         <Link to="/InfoPage">
-                            <button className="Button-topbar">
-                                <img src={info} className="info" alt="Info"/>
-                            </button>
-
+                            <img src={info} className="info" alt="Info"/>
                         </Link>
                     </div>
                     <div className="topbar-functional-divs">
                         <Link to="/SupportPage">
-                            <button className="Button-topbar">
-                                <img src={support} className="support" alt="Support"/>
-                            </button>
-
+                            <img src={support} className="support" alt="Support"/>
                         </Link>
                     </div>
 
@@ -69,31 +67,33 @@ function RulesPage() {
 
 
                 {showSidebar ? (
-                    <div className="left-bar-shown" id="shownSidebar">
-                        <div className="top-leftbar-section">
-                            <div className="hamburger-menu">
-                                <img src={hamburger} onClick={handleClick} className="hamburger-menu-picture"
-                                     alt="Hamburger menu"/>
+                    <div className="left-bar-backdiv">
+                        <div className="left-bar-shown " id="shownSidebar">
+                            <div className="top-leftbar-section">
+                                <div className="hamburger-menu">
+                                    <img src={hamburger} onClick={handleClick}
+                                         className="hamburger-menu-picture"
+                                         alt="Hamburger menu"/>
+                                </div>
+                                <div className="searchbar-menu">
+                                    <input className="search-bar" type="text"
+                                           placeholder={t('searchbar-placeholder')}/>
+                                </div>
                             </div>
-                            <div className="searchbar-menu">
-                                <input className="search-bar" type="text"
-                                       placeholder={t('searchbar-placeholder')}/>
+                            <div className="button-section">
+                                <button className="button-general">{t('child')}</button>
+                                <button className="button-general">{t('lung')}</button>
+                                <button className="button-general">{t('heart')}</button>
+                                <button className="button-general">{t('stomach')}</button>
+                                <button className="button-general">{t('leg')}</button>
+                                <button className="button-general">{t('arms')}</button>
+                                <button className="button-general">{t('liver')}</button>
+                                <button className="button-general">{t('gallbladder')}</button>
+                                <button className="button-general">{t('kidney')}</button>
+                                <button className="button-general">{t('brain')}</button>
+                                <button className="button-general">{t('specialized')}</button>
+                                <button className="button-general">{t('other')}</button>
                             </div>
-
-                        </div>
-                        <div className="button-section">
-                            <button className="button-general">{t('child')}</button>
-                            <button className="button-general">{t('lung')}</button>
-                            <button className="button-general">{t('heart')}</button>
-                            <button className="button-general">{t('stomach')}</button>
-                            <button className="button-general">{t('leg')}</button>
-                            <button className="button-general">{t('arms')}</button>
-                            <button className="button-general">{t('liver')}</button>
-                            <button className="button-general">{t('gallbladder')}</button>
-                            <button className="button-general">{t('kidney')}</button>
-                            <button className="button-general">{t('brain')}</button>
-                            <button className="button-general">{t('specialized')}</button>
-                            <button className="button-general">{t('other')}</button>
                         </div>
                     </div>
                 ) : (
@@ -102,10 +102,16 @@ function RulesPage() {
                             <img src={hamburger} onClick={handleClick} className="hamburger-menu-picture"
                                  alt="Hamburger menu"/>
                         </div>
-                    </div>)}
+                    </div>
+                )}
+
             </div>
             </body>
-        </>);
+
+        </>
+
+    )
+        ;
 }
 
 export default RulesPage;
