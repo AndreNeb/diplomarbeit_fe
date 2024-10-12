@@ -5,9 +5,10 @@ div {
     font-weight: 500;
 }
 
-body{
+body {
 background-color: rgba(250,246,240,255)
 }
+
 body.homepage {
     margin: 0;
     padding-top: 95px;

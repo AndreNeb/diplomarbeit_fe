@@ -49,6 +49,7 @@
     box-sizing: border-box;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
+
 }
 
 .top-leftbar-section {
@@ -87,7 +88,6 @@
 }
 
 .button-section {
-
     overflow-y: auto;
     overflow-x: hidden;
     margin-top: 15px;
