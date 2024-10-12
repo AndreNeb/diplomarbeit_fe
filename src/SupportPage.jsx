@@ -40,28 +40,25 @@ function SupportPage() {
 
         <div className="header">
             <div className="left-section">
-                <img src={logo} className="logo" alt="Logo"/>
+                <Link to="/">
+                    <img src={logo} className="logo" alt="Logo"/>
+                </Link>
+
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
-                        <button className="Button-topbar">
-                            <img src={regeln} className="regeln" alt="Regeln"/>
-                        </button>
+
+                        <img src={regeln} className="regeln" alt="Regeln"/>
+
                     </Link>
                 </div>
                 <div className="topbar-functional-divs">
                     <Link to="/InfoPage">
-                        <button className="Button-topbar">
-                            <img src={info} className="info" alt="Info"/>
-                        </button>
-
+                        <img src={info} className="info" alt="Info"/>
                     </Link>
                 </div>
                 <div className="topbar-functional-divs">
                     <Link to="/SupportPage">
-                        <button className="Button-topbar">
-                            <img src={support} className="support" alt="Support"/>
-                        </button>
-
+                        <img src={support} className="support" alt="Support"/>
                     </Link>
                 </div>
 
