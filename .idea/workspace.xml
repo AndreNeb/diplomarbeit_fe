@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Finished Leftbar bei der Rules - Seite">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Finished small Widgets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/README_Language" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/README_Language" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WICHTIGES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +17,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX File" />
-        <option value="HTML File" />
-        <option value="package.json" />
         <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="package.json" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -68,12 +61,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe/src/pictures&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -111,9 +103,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Language" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/pictures" />
       <recent name="$PROJECT_DIR$/src" />
@@ -399,7 +393,7 @@
       <workItem from="1728670318414" duration="23000" />
       <workItem from="1728672691930" duration="5019000" />
       <workItem from="1728677734210" duration="757000" />
-      <workItem from="1728719891678" duration="16205000" />
+      <workItem from="1728719891678" duration="2322000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -489,57 +483,20 @@
       <option name="project" value="LOCAL" />
       <updated>1728719928519</updated>
     </task>
-    <task id="LOCAL-00040" summary="reMarkable Hintergrundfarbe">
+    <task id="LOCAL-00040" summary="Finished small Widgets">
       <option name="closed" value="true" />
-      <created>1728723583642</created>
+      <created>1728730335799</created>
       <option name="number" value="00040" />
       <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1728723583642</updated>
+      <updated>1728730335799</updated>
     </task>
-    <task id="LOCAL-00041" summary="Finished Leftbar bei der Rules - Seite">
-      <option name="closed" value="true" />
-      <created>1728733041399</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1728733041399</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Finished Leftbar bei der Rules - Seite">
-      <option name="closed" value="true" />
-      <created>1728739239672</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1728739239672</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Finished Leftbar bei der Rules - Seite">
-      <option name="closed" value="true" />
-      <created>1728739264065</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1728739264065</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Finished Leftbar bei der Rules - Seite">
-      <option name="closed" value="true" />
-      <created>1728739859437</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1728739859437</updated>
-    </task>
-    <option name="localTasksCounter" value="45" />
+    <option name="localTasksCounter" value="41" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
-    <servers>
-      <YouTrack url="https://wuev06.youtrack.cloud">
-        <option name="defaultSearch" value="website" />
-        <username>random</username>
-      </YouTrack>
-    </servers>
+    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -562,12 +519,10 @@
     <MESSAGE value="Added big widgets" />
     <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
-    <MESSAGE value="Finished small Widgets" />
     <MESSAGE value="Searchbar verbessert, Regeln als Funktion hinzugefügt, generelle verbesserungen" />
     <MESSAGE value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
     <MESSAGE value="Deletet unneccessary files" />
-    <MESSAGE value="reMarkable Hintergrundfarbe" />
-    <MESSAGE value="Finished Leftbar bei der Rules - Seite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Leftbar bei der Rules - Seite" />
+    <MESSAGE value="Finished small Widgets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished small Widgets" />
   </component>
 </project>
