@@ -19,7 +19,6 @@ body.rules {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden; /* Scrollen wird komplett verhindert */
 
     background-color: rgba(250,246,240,255);
     background-image: radial-gradient(#000 1px, transparent 1px);

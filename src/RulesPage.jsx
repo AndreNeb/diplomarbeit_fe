@@ -97,7 +97,7 @@ function RulesPage() {
                         </div>
                     </div>
                 ) : (
-                    <div className="left-bar-hidden" id="hiddenSidebar">
+                    <div className="left-bar-hidden" id="hiddenSidebar" onClick={handleClick}>
                         <div className="hamburger-menu">
                             <img src={hamburger} onClick={handleClick} className="hamburger-menu-picture"
                                  alt="Hamburger menu"/>

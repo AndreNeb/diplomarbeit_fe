@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Finished small Widgets">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar-Rules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728730335799</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Leftbar-Rules">
+      <option name="closed" value="true" />
+      <created>1728753146326</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1728753146326</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -523,6 +530,7 @@
     <MESSAGE value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
     <MESSAGE value="Deletet unneccessary files" />
     <MESSAGE value="Finished small Widgets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished small Widgets" />
+    <MESSAGE value="Leftbar-Rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leftbar-Rules" />
   </component>
 </project>
