@@ -125,3 +125,15 @@
     background-color: #dd2e2e;
     color: #dd2e2e;
 }
+
+@media (max-width: 1500px) {
+    .small-widgets-outer-div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .small-widgets-outer-div {
+        grid-template-columns: 1fr ;
+    }
+}
