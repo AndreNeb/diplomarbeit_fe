@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar-Rules">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +506,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728754229381</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728761223327</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1728761223327</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -534,7 +538,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Files" />
     <MESSAGE value="Body3" />
-    <MESSAGE value="Topbar" />
     <MESSAGE value="Added big widgets" />
     <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
@@ -543,6 +546,7 @@
     <MESSAGE value="Deletet unneccessary files" />
     <MESSAGE value="Finished small Widgets" />
     <MESSAGE value="Leftbar-Rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leftbar-Rules" />
+    <MESSAGE value="Topbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topbar" />
   </component>
 </project>
