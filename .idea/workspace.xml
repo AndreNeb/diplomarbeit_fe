@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Edited support / Contact form" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Edited support / Contact form">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,14 +149,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00011" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728573351908</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1728573351908</updated>
     </task>
     <task id="LOCAL-00012" summary="Topbar">
       <option name="closed" value="true" />
@@ -317,6 +312,8 @@
       <workItem from="1728802380007" duration="1185000" />
       <workItem from="1728806478323" duration="7000" />
       <workItem from="1728806603052" duration="2287000" />
+      <workItem from="1728836538316" duration="1345000" />
+      <workItem from="1728845892654" duration="617000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -558,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728829388477</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Edited support / Contact form">
+      <option name="closed" value="true" />
+      <created>1728836600684</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1728836600684</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

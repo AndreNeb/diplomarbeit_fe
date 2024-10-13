@@ -20,8 +20,6 @@
 .topbar-functional-divs {
     justify-content: center;
     align-items: center;
-
-
 }
 
 .left-section {
@@ -60,6 +58,7 @@
     width: 0;
     border-radius: 30px;
     outline: none;
+
 }
 
 
