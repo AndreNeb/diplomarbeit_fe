@@ -11,8 +11,18 @@ import support from './pictures/support.png';
 import language from './pictures/language.png';
 import login from './pictures/login-picture.png';
 import './InfoPage';
+import document from "./pictures/document.png";
+import moon from "./pictures/moon.png";
+import sun from "./pictures/sun.png";
 
 function SupportPage() {
+
+    const [showdarklight, setDarklight] = useState(true);
+
+    const Mode = () => {
+        setDarklight(!showdarklight);
+    };
+
     const [btnText, setBtnText] = useState('Submit');
     const [isActive, setIsActive] = useState(false);
     const [formStatus, setFormStatus] = useState('');
@@ -60,30 +70,46 @@ function SupportPage() {
         <div className="header">
             <div className="left-section">
                 <Link to="/">
-                    <img src={logo} className="logo" alt="Logo" />
+                    <img src={logo} className="logo" alt="Logo"/>
                 </Link>
+
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
-                        <img src={regeln} className="regeln" alt="Regeln" />
+
+                        <img src={regeln} className="icons-left" alt="Rules"/>
+
                     </Link>
-                </div>
-                <div className="topbar-functional-divs">
+
+
+                    <Link to="/DocumentPage">
+
+                        <img src={document} className="icons-left" alt="Document"/>
+
+                    </Link>
+
+
                     <Link to="/InfoPage">
-                        <img src={info} className="info" alt="Info" />
+                        <img src={info} className="icons-left" alt="Info"/>
                     </Link>
-                </div>
-                <div className="topbar-functional-divs">
+
+
                     <Link to="/SupportPage">
-                        <img src={support} className="support" alt="Support" />
+                        <img src={support} className="icons-left" alt="Support"/>
                     </Link>
+
                 </div>
             </div>
             <div className="middle-section">
-                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')} />
+                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
             </div>
             <div className="right-section">
-                <img src={language} className="language" alt={t('language')} />
-                <img src={login} className="login" alt="login" />
+                {showdarklight ? (
+                    <img onClick={Mode} src={moon} className="mode" alt="Mode"/>
+                ) : (
+                    <img onClick={Mode} src={sun} className="mode" alt="Mode"/>
+                )}
+                <img src={language} className="icons-right" alt={t('language')}/>
+                <img src={login} className="login" alt="login"/>
             </div>
         </div>
 
@@ -91,16 +117,18 @@ function SupportPage() {
             <form onSubmit={handleSubmit}>
                 <div className="text-fields-container">
                     <input type="text" id="name" name="name" className="contact-inputs" placeholder="Name" required/>
-                    <input type="email" id="email" name="email" className="contact-inputs" placeholder="E-Mail" required/>
-                    <textarea id="message" name="message" className="contact-messages" placeholder="Nachricht" required></textarea>
+                    <input type="email" id="email" name="email" className="contact-inputs" placeholder="E-Mail"
+                           required/>
+                    <textarea id="message" name="message" className="contact-messages" placeholder="Nachricht"
+                              required></textarea>
                 </div>
 
                 <div>
-                    <button type="submit" className={classNames('submit-button', { active: isActive })}>
+                    <button type="submit" className={classNames('submit-button', {active: isActive})}>
                         <p>{btnText}</p>
                         <div className="check-box">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
                             </svg>
                         </div>
                     </button>
