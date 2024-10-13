@@ -9,7 +9,8 @@
     justify-content: space-between;
 
     border-radius: 30px;
-    margin: 17px;
+    margin-left:14px;
+    margin-top:14px;
 
     border-width: 1px;
     border-style: solid;
@@ -36,7 +37,8 @@
     justify-content: space-between;
 
     border-radius: 30px;
-    margin: 17px;
+    margin-left:14px;
+    margin-top:14px;
 
     border-width: 1px;
     border-style: solid;
@@ -52,7 +54,17 @@
 
     cursor: pointer;
 }
+.left-bar-backdiv{
 
+        position: fixed;
+        top: 57px;
+        left: 0;
+        bottom: 0;
+        width: 275px;
+        height: 100%;
+        background-color: rgba(250, 246, 240, 255);
+
+}
 .top-leftbar-section {
     display: flex;
     flex-direction: row;

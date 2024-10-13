@@ -27,17 +27,7 @@ body.rules {
     cursor: default;
 }
 
-body.rules::before { /* Dies ist für den nicht-gepunkteten-beigen Untergrund bei der Regeln - Leftbar */
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 275px;
-    height: 100%;
-    background-color: rgba(250, 246, 240, 255);
-    pointer-events: none;
-}
+
 
 body.support{
     display: flex;
