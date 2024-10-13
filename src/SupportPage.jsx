@@ -1,106 +1,115 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/supportpage/support.css';
-import classNames from "classnames";
-import {useTranslation} from "react-i18next";
-import logo from "./pictures/hamburger-menu.png";
-import {Link} from "react-router-dom";
-import regeln from "./pictures/regeln.png";
-import info from "./pictures/info.png";
-import support from "./pictures/support.png";
-import language from "./pictures/language.png";
-import login from "./pictures/login-picture.png";
+import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
+import logo from './pictures/hamburger-menu.png';
+import { Link } from 'react-router-dom';
+import regeln from './pictures/regeln.png';
+import info from './pictures/info.png';
+import support from './pictures/support.png';
+import language from './pictures/language.png';
+import login from './pictures/login-picture.png';
+import './InfoPage';
 
 function SupportPage() {
-
-    const [btnText, setBtnText] = useState("Submit");
+    const [btnText, setBtnText] = useState('Submit');
     const [isActive, setIsActive] = useState(false);
+    const [formStatus, setFormStatus] = useState('');
 
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-    const handleClick = () => {
-        setBtnText("Thanks");
-        setIsActive(true);
+        const formData = new FormData(event.target); // Holt die Formular-Daten
 
+        try {
+            // Sende die Daten an die Formspree-API
+            const response = await fetch('https://formspree.io/f/movqqjlb', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
+            });
 
-        setTimeout(() => {
-            window.location.reload();
-        }, 1000);
+            if (response.ok) {
+                setFormStatus('Danke für Ihre Nachricht! Wir melden uns bald.');
+                setBtnText('Thanks');
+                setIsActive(true);
+
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3500);
+
+            } else {
+                setFormStatus('Es gab ein Problem beim Absenden des Formulars.');
+            }
+        } catch (error) {
+            setFormStatus('Fehler beim Absenden. Bitte versuchen Sie es später erneut.');
+        }
     };
 
-    const {t} = useTranslation();
-
-    const {i18n} = useTranslation();
+    const { t } = useTranslation();
+    const { i18n } = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
 
     return (
         <body className="support">
-
-
         <div className="header">
             <div className="left-section">
                 <Link to="/">
-                    <img src={logo} className="logo" alt="Logo"/>
+                    <img src={logo} className="logo" alt="Logo" />
                 </Link>
-
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
-
-                        <img src={regeln} className="regeln" alt="Regeln"/>
-
+                        <img src={regeln} className="regeln" alt="Regeln" />
                     </Link>
                 </div>
                 <div className="topbar-functional-divs">
                     <Link to="/InfoPage">
-                        <img src={info} className="info" alt="Info"/>
+                        <img src={info} className="info" alt="Info" />
                     </Link>
                 </div>
                 <div className="topbar-functional-divs">
                     <Link to="/SupportPage">
-                        <img src={support} className="support" alt="Support"/>
+                        <img src={support} className="support" alt="Support" />
                     </Link>
                 </div>
-
             </div>
             <div className="middle-section">
-                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')} />
             </div>
             <div className="right-section">
-                <img src={language} className="language" alt={t('language')}/>
-                <img src={login} className="login" alt="login"/>
+                <img src={language} className="language" alt={t('language')} />
+                <img src={login} className="login" alt="login" />
             </div>
         </div>
 
-
         <div className="field-container">
-
-            <form action="https://api.web3forms.com/submit" method="POST">
-
+            <form onSubmit={handleSubmit}>
                 <div className="text-fields-container">
-                    <input type="hidden" name="access_key" value="28d7253d-5b46-4f9b-8884-a5add3df99f0"/>
-                    <input type="text" id="name" name="fname" className="contact-inputs" placeholder="Name"/>
-                    <input type="text" id="e-mail" name="fname" className="contact-inputs" placeholder="E - Mail"/>
-                    <textarea id="message" name="fname" className="contact-messages" placeholder="Nachricht"/>
+                    <input type="text" id="name" name="name" className="contact-inputs" placeholder="Name" required/>
+                    <input type="email" id="email" name="email" className="contact-inputs" placeholder="E-Mail" required/>
+                    <textarea id="message" name="message" className="contact-messages" placeholder="Nachricht" required></textarea>
                 </div>
 
                 <div>
-                    <button id="btn" onClick={handleClick}
-                            className={classNames("submit-button", {"active": isActive})}>
-                        <p id="btnText">{btnText}</p>
+                    <button type="submit" className={classNames('submit-button', { active: isActive })}>
+                        <p>{btnText}</p>
                         <div className="check-box">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg>
                         </div>
                     </button>
                 </div>
             </form>
+            {formStatus && <p className="form-status">{formStatus}</p>}
         </div>
-
         </body>
-    )
-        ;
+    );
 }
 
 export default SupportPage;
