@@ -81,6 +81,7 @@
 .searchbar-menu {
     background-color: transparent;
     border-radius: 15px;
+    outline: none;
     height: 30px;
     display: flex;
     justify-content: center;
