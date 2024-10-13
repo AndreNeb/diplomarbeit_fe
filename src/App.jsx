@@ -2,7 +2,7 @@ import './i18n'
 import {useTranslation} from "react-i18next";
 
 
-import React from "react";
+import React, {useState} from "react";
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import login from './pictures/login-picture.png';
@@ -15,6 +15,9 @@ import patienten from './pictures/patienten.png';
 import maske from './pictures/maske.png';
 import spritze from './pictures/spritze.png';
 import wartezimmer from './pictures/wartezimmer.png';
+import document from './pictures/document.png';
+import moon from './pictures/moon.png';
+import sun from './pictures/sun.png';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
@@ -24,6 +27,7 @@ import './stylesheets/homepage-widgets/big-widgets.css';
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
+import DocumentPage from "./DocumentPage";
 
 
 function App() {
@@ -33,6 +37,12 @@ function App() {
     const {i18n} = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
+    };
+
+    const [showdarklight, setDarklight] = useState(true);
+
+    const Mode = () => {
+        setDarklight(!showdarklight);
     };
 
     return (
@@ -50,33 +60,39 @@ function App() {
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
 
-                                        <img src={regeln} className="regeln" alt="Regeln"/>
+                                        <img src={regeln} className="icons-left" alt="Rules"/>
 
                                     </Link>
-                                </div>
-                                <div className="topbar-functional-divs">
+
+
+                                    <Link to="/DocumentPage">
+
+                                        <img src={document} className="icons-left" alt="Document"/>
+
+                                    </Link>
+
+
                                     <Link to="/InfoPage">
-
-                                        <img src={info} className="info" alt="Info"/>
-
-
+                                        <img src={info} className="icons-left" alt="Info"/>
                                     </Link>
-                                </div>
-                                <div className="topbar-functional-divs">
+
+
                                     <Link to="/SupportPage">
-
-                                        <img src={support} className="support" alt="Support"/>
-
-
+                                        <img src={support} className="icons-left" alt="Support"/>
                                     </Link>
-                                </div>
 
+                                </div>
                             </div>
                             <div className="middle-section">
                                 <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
                             </div>
                             <div className="right-section">
-                                <img src={language} className="language" alt={t('language')}/>
+                                {showdarklight ? (
+                                    <img onClick={Mode} src={moon} className="mode" alt="Mode"/>
+                                ) : (
+                                    <img onClick={Mode} src={sun} className="mode" alt="Mode"/>
+                                )}
+                                <img src={language} className="icons-right" alt={t('language')}/>
                                 <img src={login} className="login" alt="login"/>
                             </div>
                         </div>
@@ -153,6 +169,7 @@ function App() {
                         </body>}/>
 
                     <Route path="/rulesPage" element={<RulesPage/>}/>
+                    <Route path="/documentPage" element={<DocumentPage/>}/>
                     <Route path="/infoPage" element={<InfoPage/>}/>
                     <Route path="/supportPage" element={<SupportPage/>}/>
                 </Routes>

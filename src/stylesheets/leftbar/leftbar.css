@@ -65,6 +65,8 @@
         background-color: rgba(250, 246, 240, 255);
 
 }
+
+
 .top-leftbar-section {
     display: flex;
     flex-direction: row;
@@ -76,6 +78,10 @@
     height: 30px;
     cursor: pointer;
 
+}
+.arrow-left{
+    height: 30px;
+    cursor: pointer;
 }
 
 .searchbar-menu {
@@ -92,6 +98,16 @@
 }
 
 .hamburger-menu {
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.arrow-menu{
     background-color: transparent;
     border-radius: 15px;
     display: flex;
