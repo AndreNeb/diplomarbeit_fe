@@ -77,8 +77,8 @@ function App() {
                                     </Link>
 
 
-                                    <Link to="/SupportPage">
-                                        <img src={support} className="icons-left" alt="Support"/>
+                                    <Link to="/SupportPage" className="icon-link">
+                                            <img src={support} className="icons-left" alt="Support"/>
                                     </Link>
 
                                 </div>

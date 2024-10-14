@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/supportpage/support.css';
 import classNames from 'classnames';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import logo from './pictures/hamburger-menu.png';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import regeln from './pictures/regeln.png';
 import info from './pictures/info.png';
 import support from './pictures/support.png';
@@ -34,9 +34,7 @@ function SupportPage() {
         try {
             // Sende die Daten an die Formspree-API
             const response = await fetch('https://formspree.io/f/movqqjlb', {
-                method: 'POST',
-                body: formData,
-                headers: {
+                method: 'POST', body: formData, headers: {
                     Accept: 'application/json',
                 },
             });
@@ -47,8 +45,8 @@ function SupportPage() {
                 setIsActive(true);
 
                 setTimeout(() => {
-                    window.location.reload();
-                }, 3500);
+                    window.location.reload(); // Seite neu laden nach 3000 ms
+                }, 3000);
 
             } else {
                 setFormStatus('Es gab ein Problem beim Absenden des Formulars.');
@@ -58,71 +56,71 @@ function SupportPage() {
         }
     };
 
-    const { t } = useTranslation();
-    const { i18n } = useTranslation();
+    const {t} = useTranslation();
+    const {i18n} = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
 
-    return (
-        <body className="support">
-        <div className="header">
-            <div className="left-section">
-                <Link to="/">
-                    <img src={logo} className="logo" alt="Logo"/>
+    return (<body className="support">
+    <div className="header">
+        <div className="left-section">
+            <Link to="/">
+                <img src={logo} className="logo" alt="Logo"/>
+            </Link>
+
+            <div className="topbar-functional-divs">
+                <Link to="/RulesPage">
+
+                    <img src={regeln} className="icons-left" alt="Rules"/>
+
                 </Link>
 
-                <div className="topbar-functional-divs">
-                    <Link to="/RulesPage">
 
-                        <img src={regeln} className="icons-left" alt="Rules"/>
+                <Link to="/DocumentPage">
 
-                    </Link>
+                    <img src={document} className="icons-left" alt="Document"/>
 
-
-                    <Link to="/DocumentPage">
-
-                        <img src={document} className="icons-left" alt="Document"/>
-
-                    </Link>
+                </Link>
 
 
-                    <Link to="/InfoPage">
-                        <img src={info} className="icons-left" alt="Info"/>
-                    </Link>
+                <Link to="/InfoPage">
+                    <img src={info} className="icons-left" alt="Info"/>
+                </Link>
 
 
-                    <Link to="/SupportPage">
-                        <img src={support} className="icons-left" alt="Support"/>
-                    </Link>
+                <Link to="/SupportPage">
+                    <img src={support} className="icons-left" alt="Support"/>
+                </Link>
 
-                </div>
-            </div>
-            <div className="middle-section">
-                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
-            </div>
-            <div className="right-section">
-                {showdarklight ? (
-                    <img onClick={Mode} src={moon} className="mode" alt="Mode"/>
-                ) : (
-                    <img onClick={Mode} src={sun} className="mode" alt="Mode"/>
-                )}
-                <img src={language} className="icons-right" alt={t('language')}/>
-                <img src={login} className="login" alt="login"/>
             </div>
         </div>
+        <div className="middle-section">
+            <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+        </div>
+        <div className="right-section">
+            {showdarklight ? (<img onClick={Mode} src={moon} className="mode" alt="Mode"/>) : (
+                <img onClick={Mode} src={sun} className="mode" alt="Mode"/>)}
+            <img src={language} className="icons-right" alt={t('language')}/>
+            <img src={login} className="login" alt="login"/>
+        </div>
+    </div>
 
+
+    <div className="general-container">
+        <span className="text">Haben Sie Fragen?</span>
         <div className="field-container">
             <form onSubmit={handleSubmit}>
                 <div className="text-fields-container">
-                    <input type="text" id="name" name="name" className="contact-inputs" placeholder="Name" required/>
+                    <input type="text" id="name" name="name" className="contact-inputs" placeholder="Name"
+                           required/>
                     <input type="email" id="email" name="email" className="contact-inputs" placeholder="E-Mail"
                            required/>
                     <textarea id="message" name="message" className="contact-messages" placeholder="Nachricht"
                               required></textarea>
                 </div>
 
-                <div>
+                <div className="button-container">
                     <button type="submit" className={classNames('submit-button', {active: isActive})}>
                         <p>{btnText}</p>
                         <div className="check-box">
@@ -133,10 +131,11 @@ function SupportPage() {
                     </button>
                 </div>
             </form>
-            {formStatus && <p className="form-status">{formStatus}</p>}
         </div>
-        </body>
-    );
+    </div>
+    {formStatus && <p className="form-status">{formStatus}</p>}
+
+    </body>);
 }
 
 export default SupportPage;

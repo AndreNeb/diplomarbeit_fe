@@ -20,8 +20,6 @@
 .topbar-functional-divs {
     justify-content: center;
     align-items: center;
-
-
 }
 
 .left-section {
@@ -38,6 +36,7 @@
 .icons-left {
     height: 30px;
     margin-left: 45px;
+    display:inline-block;
 }
 
 
@@ -60,8 +59,13 @@
     width: 0;
     border-radius: 30px;
     outline: none;
+    font-family: "Quicksand", sans-serif, Arial;
 }
 
+.icon-link {
+    display:inline-flex;
+
+}
 
 .search-bar:hover {
     transform: scale(1.001, 1.001);
