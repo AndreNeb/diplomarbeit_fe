@@ -10,7 +10,6 @@ import info from './pictures/info.png';
 import support from './pictures/support.png';
 import language from './pictures/language.png';
 import login from './pictures/login-picture.png';
-import './InfoPage';
 import document from "./pictures/document.png";
 import moon from "./pictures/moon.png";
 import sun from "./pictures/sun.png";

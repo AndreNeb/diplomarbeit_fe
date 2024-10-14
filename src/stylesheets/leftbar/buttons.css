@@ -18,6 +18,27 @@
     height: 48px;
 }
 
+.button-middle {
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+
+    color: black;
+    background-color: white;
+    font-size: 26px;
+    border-style: solid;
+    border-radius: 15px;
+
+    transition-duration: 0.15s;
+
+    width: 210px;
+    height: 50px;
+    margin-bottom: 35px;
+    border-width: 1px;
+
+    cursor: default;
+}
+
 button:hover {
     transform: scale(1.01, 1.01);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -33,7 +54,6 @@ button:hover {
     display: inline-block;
 }
 
-/* Für die zusätzlichen Buttons, die erscheinen, wenn man "Regeln" hovert */
 .button-container {
     display: inline-block;
     flex-direction: column;
