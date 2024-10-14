@@ -37,7 +37,8 @@ body.support {
     margin: 0;
     cursor: default;
 
-    overflow-y: hidden;
+
+    /*overflow-y: hidden;*/
 }
 
 span {
