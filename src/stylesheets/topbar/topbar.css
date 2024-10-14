@@ -36,6 +36,7 @@
 .icons-left {
     height: 30px;
     margin-left: 45px;
+    display:inline-block;
 }
 
 
@@ -61,6 +62,10 @@
 
 }
 
+.icon-link {
+    display:inline-flex;
+
+}
 
 .search-bar:hover {
     transform: scale(1.001, 1.001);

@@ -29,10 +29,15 @@ body.rules {
 
 
 
-body.support{
+body.support {
     display: flex;
     justify-content: center;
-    margin-top: 7%;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: default;
+
+    overflow-y: hidden;
 }
 
 span {
