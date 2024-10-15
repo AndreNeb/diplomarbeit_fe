@@ -194,7 +194,6 @@ function App() {
                             <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
                                 <div className="menu-items">
 
-
                                     <a href="#contact" onClick={toggleMenu}>Home</a>
                                     <Link to="/RulesPage">
                                         <a href="#about" onClick={toggleMenu}>Regeln</a>
@@ -205,7 +204,6 @@ function App() {
                                     <a href="#contact" onClick={toggleMenu}>Logout</a>
                                 </div>
                             </div>
-
 
                         </div>}/>
 
