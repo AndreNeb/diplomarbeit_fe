@@ -17,13 +17,20 @@ import sun from "./pictures/sun.png";
 
 function SupportPage() {
 
+    const {t} = useTranslation();
+    const {i18n} = useTranslation();
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+    };
+
     const [showdarklight, setDarklight] = useState(true);
 
     const Mode = () => {
         setDarklight(!showdarklight);
     };
 
-    const [btnText, setBtnText] = useState('Submit');
+
+    const [btnText, setBtnText] = useState(t('submit'));
     const [isActive, setIsActive] = useState(false);
     const [formStatus, setFormStatus] = useState('');
 
@@ -33,7 +40,7 @@ function SupportPage() {
         const formData = new FormData(event.target); // Holt die Formular-Daten
 
         try {
-            // Sende die Daten an die Formspree-API
+            // Sende die Daten an die Formspree - API
             const response = await fetch('https://formspree.io/f/movqqjlb', {
                 method: 'POST', body: formData, headers: {
                     Accept: 'application/json',
@@ -41,27 +48,22 @@ function SupportPage() {
             });
 
             if (response.ok) {
-                setFormStatus('Danke für Ihre Nachricht! Wir melden uns bald.');
-                setBtnText('Thanks');
+                setBtnText(t('thanks'));
                 setIsActive(true);
 
-                setTimeout(() => {
-                    window.location.reload(); // Seite neu laden nach 3000 ms
-                }, 3000);
 
             } else {
-                setFormStatus('Es gab ein Problem beim Absenden des Formulars.');
+                setBtnText(t('error'))
+
+                setTimeout(() => {
+                    window.location.reload(); // Seite neu laden nach 3 s
+                }, 3000);
             }
         } catch (error) {
-            setFormStatus('Fehler beim Absenden. Bitte versuchen Sie es später erneut.');
+
         }
     };
 
-    const {t} = useTranslation();
-    const {i18n} = useTranslation();
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    };
 
     return (<body className="support">
     <div className="header">
@@ -72,23 +74,16 @@ function SupportPage() {
 
             <div className="topbar-functional-divs">
                 <Link to="/RulesPage">
-
                     <img src={regeln} className="icons-left" alt="Rules"/>
-
                 </Link>
-
 
                 <Link to="/DocumentPage">
-
                     <img src={document} className="icons-left" alt="Document"/>
-
                 </Link>
-
 
                 <Link to="/InfoPage">
                     <img src={info} className="icons-left" alt="Info"/>
                 </Link>
-
 
                 <Link to="/SupportPage">
                     <img src={support} className="icons-left" alt="Support"/>
@@ -109,29 +104,33 @@ function SupportPage() {
 
 
     <div className="general-container">
-        <span className="text">Haben Sie Fragen?</span>
-        <div className="field-container">
-            <form onSubmit={handleSubmit}>
-                <div className="text-fields-container">
-                    <input type="text" id="name" name="name" className="contact-inputs" placeholder="Name"
-                           required/>
-                    <input type="email" id="email" name="email" className="contact-inputs" placeholder="E-Mail"
-                           required/>
-                    <textarea id="message" name="message" className="contact-messages" placeholder="Nachricht"
-                              required></textarea>
-                </div>
+        <div className="general-inner-container">
+            <span className="text">{t('support-text')}</span>
+            <div className="field-container">
 
-                <div className="button-container">
-                    <button type="submit" className={classNames('submit-button', {active: isActive})}>
-                        <p>{btnText}</p>
-                        <div className="check-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-            </form>
+                <form onSubmit={handleSubmit}>
+                    <div className="text-fields-container">
+                        <input type="text" name="name" className="contact-inputs" placeholder={t('name')}
+                               required/>
+                        <input type="email" name="email" className="contact-inputs" placeholder={t('email')}
+                               required/>
+                        <textarea name="message" className="contact-messages" placeholder={t('message')}
+                                  required></textarea>
+                    </div>
+
+
+                    <div className="button-container">
+                        <button type="submit" className={classNames('submit-button', {active: isActive})}>
+                            <p>{btnText}</p>
+                            <div className="check-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     {formStatus && <p className="form-status">{formStatus}</p>}

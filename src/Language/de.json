@@ -25,7 +25,15 @@
   "kidney": "Niere",
   "brain": "Gehirn",
   "specialized": "Fachspezifische",
-  "other": "Sonstige"
+  "other": "Sonstige",
+
+  "support-text": "Haben Sie Fragen?",
+  "name": "Name",
+  "email": "E - Mail",
+  "message": "Nachricht",
+  "submit": "Senden",
+  "thanks": "Vielen Dank",
+  "error": "Ein Fehler ist aufgetreten"
 }
 
 
