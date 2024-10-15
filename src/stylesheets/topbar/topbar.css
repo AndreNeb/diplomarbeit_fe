@@ -36,7 +36,7 @@
 .icons-left {
     height: 30px;
     margin-left: 45px;
-    display:inline-block;
+    display: inline-block;
 }
 
 
@@ -63,7 +63,7 @@
 }
 
 .icon-link {
-    display:inline-flex;
+    display: inline-flex;
 
 }
 
@@ -90,13 +90,13 @@
     margin-right: 35px;
 }
 
-.mode{
+.mode {
     margin-right: 45px;
     height: 30px;
     cursor: pointer;
 }
+
 .icons-right {
     margin-right: 45px;
     height: 40px;
 }
-

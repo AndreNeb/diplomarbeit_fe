@@ -4,8 +4,7 @@
     column-gap: 20px;
     row-gap: 40px;
     margin: 30px;
-    height: 39vh;
-
+    height: auto;
 }
 
 .big-widget {
@@ -24,7 +23,7 @@
 
 .big-widget:hover {
     transform: scale(1.01, 1.01);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 800px) {

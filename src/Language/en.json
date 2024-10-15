@@ -25,5 +25,13 @@
   "kidney": "Kidney",
   "brain": "Brain",
   "specialized": "Specialized",
-  "other": "Other"
+  "other": "Other",
+
+  "support-text": "Any questions?",
+  "name": "Name",
+  "email": "E - Mail",
+  "message": "Message",
+  "submit": "Submit",
+  "thanks": "Thanks",
+  "error": "An error has occurred"
 }

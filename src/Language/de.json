@@ -8,7 +8,7 @@
   "login": "Anmeldung",
   "patient": "Patient",
   "patients": "Patienten",
-  "op-workload": "OP-Auslastung",
+  "op-workload": "OP - Auslastung",
   "unavailable": "Belegt",
   "anesthesia": "Narkose",
   "waiting-room": "Wartezimmer",
@@ -25,7 +25,15 @@
   "kidney": "Niere",
   "brain": "Gehirn",
   "specialized": "Fachspezifische",
-  "other": "Sonstige"
+  "other": "Sonstige",
+
+  "support-text": "Haben Sie Fragen?",
+  "name": "Name",
+  "email": "E - Mail",
+  "message": "Nachricht",
+  "submit": "Senden",
+  "thanks": "Vielen Dank",
+  "error": "Ein Fehler ist aufgetreten"
 }
 
 

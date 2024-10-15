@@ -24,6 +24,7 @@ import './stylesheets/leftbar/buttons.css';
 import './stylesheets/general/general.css';
 import './stylesheets/homepage-widgets/small-widgets.css';
 import './stylesheets/homepage-widgets/big-widgets.css';
+import './stylesheets/homepage-widgets/copyrighttext.css';
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
@@ -59,16 +60,12 @@ function App() {
 
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
-
                                         <img src={regeln} className="icons-left" alt="Rules"/>
-
                                     </Link>
 
 
                                     <Link to="/DocumentPage">
-
                                         <img src={document} className="icons-left" alt="Document"/>
-
                                     </Link>
 
 
@@ -78,7 +75,7 @@ function App() {
 
 
                                     <Link to="/SupportPage" className="icon-link">
-                                            <img src={support} className="icons-left" alt="Support"/>
+                                        <img src={support} className="icons-left" alt="Support"/>
                                     </Link>
 
                                 </div>
@@ -157,14 +154,21 @@ function App() {
                         <div className="big-widgets-general">
 
                             <div className="big-widget">Calendar</div>
+                            <div className="big-widget">Arbeitszeit</div>
 
-                            <div className="big-widget">Mail</div>
+
                         </div>
-                        <div className="big-widgets-general">
 
-                            <div className="big-widget">Calendar</div>
-
-                            <div className="big-widget">Mail</div>
+                        <div className="copyright-text-outer-div">
+                            <div className="copyright-text-inner-div">
+                                <div>&copy; 2024</div>
+                                <br/>
+                                Feichtenschlager,
+                                Nebauer,
+                                Würcher
+                                <div className="htl">HTBLuVA Salzburg</div>
+                            <br/>
+                            </div>
                         </div>
                         </body>}/>
 

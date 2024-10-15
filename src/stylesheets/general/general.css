@@ -12,8 +12,10 @@ body {
 body.homepage {
     margin: 0;
     padding-top: 95px;
+    padding-bottom: -95px;
     background-color: rgba(250, 246, 240, 255);
     cursor: default;
+    overflow: hidden;
 }
 
 body.rules {
@@ -39,7 +41,7 @@ body.support {
     cursor: default;
 
 
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
 }
 
 span {
