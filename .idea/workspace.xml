@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocumentPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,14 +151,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00004" summary="Added Files">
-      <option name="closed" value="true" />
-      <created>1728567254250</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1728567254250</updated>
     </task>
     <task id="LOCAL-00005" summary="Topbar">
       <option name="closed" value="true" />
@@ -376,7 +365,7 @@
       <workItem from="1728766543444" duration="1388000" />
       <workItem from="1728815084106" duration="88000" />
       <workItem from="1728817721179" duration="10001000" />
-      <workItem from="1728836760092" duration="16676000" />
+      <workItem from="1728836760092" duration="20738000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -562,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728930614140</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Leftbar">
+      <option name="closed" value="true" />
+      <created>1728998804730</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1728998804730</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -594,8 +591,8 @@
     <MESSAGE value="Deletet unneccessary files" />
     <MESSAGE value="Finished small Widgets" />
     <MESSAGE value="Leftbar-Rules" />
-    <MESSAGE value="Leftbar" />
     <MESSAGE value="Topbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Topbar" />
+    <MESSAGE value="Leftbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leftbar" />
   </component>
 </project>

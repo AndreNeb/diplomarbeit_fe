@@ -189,12 +189,8 @@ function RulesPage() {
                 )}
 
                 {currentDiv === 'Category' && (
-                    <div className="right-section-rules-hidden">
-                        <div className="name-section" id="shownSidebar3">
                             <div onClick={() => handleCategoriesClick(t('child'))}
                                  className="frame-rules">{t('support')}</div>
-                        </div>
-                    </div>
                 )}
 
                 {currentDiv === 'BuildPage' && (

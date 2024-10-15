@@ -10,13 +10,12 @@
     border-radius: 30px;
     margin-left: 14px;
     margin-top: 14px;
-
+    bottom:14px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(204, 202, 202);
 
 
-    height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px;
@@ -67,6 +66,7 @@
 .left-bar-size-add{
     width: 72px;
     height:130px;
+
 }
 
 .left-bar-backdiv {
@@ -111,12 +111,9 @@
 .right-section-rules-hidden {
     z-index: 200;
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
     top: 74px;
-    margin-left: 7%;
-    width: 93%;
+    margin-left: 102px;
+    margin-right: 102px;
     height: 100%;
 
 }
@@ -127,22 +124,18 @@
     position: fixed;
     top: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 
     border-radius: 30px;
-    margin-left: 14px;
+    left: 115px;
     margin-top: 14px;
+    right: 30px;
+    bottom: 14px;
 
     border-width: 1px;
     border-style: solid;
     border-color: rgb(204, 202, 202);
 
-
-    height: 90%;
-    width:90%;
-    overflow-y: auto;
-    overflow-x: hidden;
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
