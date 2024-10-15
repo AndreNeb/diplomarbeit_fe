@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar">
-      <change afterPath="$PROJECT_DIR$/src/pictures/delete-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/delete-bright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/plus-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/plus-bright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/safe-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/safe-bright.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
     </list>
@@ -160,14 +154,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added Files">
-      <option name="closed" value="true" />
-      <created>1728566140883</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1728566140883</updated>
     </task>
     <task id="LOCAL-00004" summary="Added Files">
       <option name="closed" value="true" />
@@ -390,7 +376,7 @@
       <workItem from="1728766543444" duration="1388000" />
       <workItem from="1728815084106" duration="88000" />
       <workItem from="1728817721179" duration="10001000" />
-      <workItem from="1728836760092" duration="12288000" />
+      <workItem from="1728836760092" duration="16676000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -568,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728841669629</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728930614140</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930614140</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

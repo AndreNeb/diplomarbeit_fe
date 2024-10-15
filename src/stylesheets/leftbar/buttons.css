@@ -1,5 +1,5 @@
 
-.button-general {
+.button-general-leftbar{
     color: black;
     font-size: 26px;
     border-radius: 15px;
@@ -14,8 +14,13 @@
     border-style: solid;
     align-items: center;
 
-    width: 210px;
+    width: 214px;
     height: 48px;
+}
+
+.button-general-leftbar:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .button-middle {
@@ -31,7 +36,7 @@
 
     transition-duration: 0.15s;
 
-    width: 210px;
+    width: 214px;
     height: 50px;
     margin-bottom: 35px;
     border-width: 1px;

@@ -6,7 +6,6 @@
     top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     border-radius: 30px;
     margin-left: 14px;
@@ -48,10 +47,26 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px;
+
     box-sizing: border-box;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
     cursor: pointer;
+}
+
+.left-bar-size-main{
+    width: 72px;
+    height:72px;
+}
+
+.left-bar-size-build{
+    width: 72px;
+    height:250px;
+}
+
+.left-bar-size-add{
+    width: 72px;
+    height:130px;
 }
 
 .left-bar-backdiv {
@@ -90,7 +105,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   padding-right: 12px;
+    padding-right: 10px;
 
 }
 .right-section-rules-hidden {
@@ -142,15 +157,21 @@
 
 }
 
-.hamburger-menu-picture {
+.menu-picture {
     height: 30px;
     cursor: pointer;
 
 }
 
 .arrow-left {
-    height: 30px;
+    height: 40px;
     cursor: pointer;
+}
+
+.plus-menu-picture {
+    height: 40px;
+    cursor: pointer;
+
 }
 
 .searchbar-menu {
@@ -166,9 +187,8 @@
 
 }
 
-.hamburger-menu {
+.menu {
     background-color: transparent;
-    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,11 +198,10 @@
 
 .arrow-menu {
     background-color: transparent;
-    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .button-section {
