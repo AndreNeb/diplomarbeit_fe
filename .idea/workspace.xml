@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Support finished.">
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Impressum hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,14 +154,6 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
-    <task id="LOCAL-00018" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628394801</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628394801</updated>
-    </task>
     <task id="LOCAL-00019" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728628922609</created>
@@ -287,7 +278,7 @@
       <workItem from="1728934759649" duration="1000" />
       <workItem from="1728938064816" duration="27000" />
       <workItem from="1728984995637" duration="172000" />
-      <workItem from="1728999316228" duration="8704000" />
+      <workItem from="1728999316228" duration="9334000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -585,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729009684327</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Impressum hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1729011450425</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1729011450425</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -628,6 +627,7 @@
     <MESSAGE value="Edited support / Contact form" />
     <MESSAGE value="Finished Design of Support. i18n is still missing" />
     <MESSAGE value="Support finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="Support finished." />
+    <MESSAGE value="Impressum hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impressum hinzugefügt" />
   </component>
 </project>

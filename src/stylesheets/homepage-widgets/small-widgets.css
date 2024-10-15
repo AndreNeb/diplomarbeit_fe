@@ -126,7 +126,7 @@
     color: #dd2e2e;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1410px) {
     .small-widgets-outer-div {
         grid-template-columns: 1fr 1fr;
     }

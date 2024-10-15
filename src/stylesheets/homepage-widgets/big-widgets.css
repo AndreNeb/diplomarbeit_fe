@@ -4,8 +4,7 @@
     column-gap: 20px;
     row-gap: 40px;
     margin: 30px;
-    height: 39vh;
-
+    height: auto;
 }
 
 .big-widget {
@@ -30,6 +29,5 @@
 @media (max-width: 800px) {
     .big-widgets-general {
         grid-template-columns: 1fr;
-
     }
 }
