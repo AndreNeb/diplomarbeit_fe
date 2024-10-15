@@ -1,0 +1,42 @@
+.copyright-text-outer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 0;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    width: 100%;
+
+
+}
+
+.copyright-text-inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 320px;
+    height: 100px;
+
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+
+    color: black;
+    background-color: white;
+
+    padding: 8px;
+}
+
+.htl{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
