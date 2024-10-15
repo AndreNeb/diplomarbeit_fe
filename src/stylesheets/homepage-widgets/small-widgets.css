@@ -11,6 +11,8 @@
     row-gap: 40px;
     margin-bottom: 40px;
 
+    margin-top: 70px;
+
 }
 
 .general-small-widget-layout {
@@ -30,7 +32,7 @@
 
 .general-small-widget-layout:hover {
     transform: scale(1.01, 1.01);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .small-widgets-picture-layout {

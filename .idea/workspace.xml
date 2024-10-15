@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Impressum hinzugefügt">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Problem mit überlappenden big widgets gelöst">
+      <change afterPath="$PROJECT_DIR$/src/pictures/apple.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +100,11 @@
     "timeTracker.isWhenProjectClosedEnabled": "false",
     "timeTracker.issueId": "DA_01-78",
     "timeTracker.issueIdReadable": "DA_01-78",
-    "timeTracker.pausedTime": "9",
+    "timeTracker.pausedTime": "1",
     "timeTracker.query": "",
     "timeTracker.recordedTime": "0",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729003987650",
+    "timeTracker.startTime": "1729018295377",
     "timeTracker.timeInMills": "0",
     "timeTracker.type": "Entwicklung",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
@@ -153,14 +159,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00019" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628922609</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628922609</updated>
     </task>
     <task id="LOCAL-00020" summary="Topbar">
       <option name="closed" value="true" />
@@ -248,7 +246,7 @@
       <option name="presentableId" value="DA_01-78" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1728930141655</updated>
+      <updated>1729018288027</updated>
       <workItem from="1728651349950" duration="8618000" />
       <workItem from="1728660086076" duration="822000" />
       <workItem from="1728670318414" duration="23000" />
@@ -278,7 +276,7 @@
       <workItem from="1728934759649" duration="1000" />
       <workItem from="1728938064816" duration="27000" />
       <workItem from="1728984995637" duration="172000" />
-      <workItem from="1728999316228" duration="9334000" />
+      <workItem from="1728999316228" duration="17830000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -584,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729011450425</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Problem mit überlappenden big widgets gelöst">
+      <option name="closed" value="true" />
+      <created>1729012087606</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1729012087606</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -628,6 +634,7 @@
     <MESSAGE value="Finished Design of Support. i18n is still missing" />
     <MESSAGE value="Support finished." />
     <MESSAGE value="Impressum hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impressum hinzugefügt" />
+    <MESSAGE value="Problem mit überlappenden big widgets gelöst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem mit überlappenden big widgets gelöst" />
   </component>
 </project>
