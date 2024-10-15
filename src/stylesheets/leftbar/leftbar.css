@@ -130,7 +130,7 @@
     left: 115px;
     margin-top: 14px;
     right: 30px;
-    bottom: 14px;
+    bottom: 30px;
 
     border-width: 1px;
     border-style: solid;
@@ -146,7 +146,8 @@
     z-index: 200;
     position: fixed;
     top: 74px;
-
+    left: 290px;
+    display: flex;
 
 }
 
