@@ -194,13 +194,10 @@ function RulesPage() {
                 )}
 
                 {currentDiv === 'BuildPage' && (
-
-                    <div className="right-section-rules">
                         <div className="name-section" id="shownSidebar3">
                             <button
                                     className="button-middle">{t('child')}</button>
                         </div>
-                    </div>
                 )}
 
                 {currentDiv === 'BuildPage' && (
