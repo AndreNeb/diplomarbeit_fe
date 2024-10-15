@@ -11,6 +11,9 @@ import language from "./pictures/language.png";
 import login from "./pictures/login-picture.png";
 import hamburger from "./pictures/hamburger-menu.png";
 import arrowleft from "./pictures/arrow-left.png";
+import plusdark from "./pictures/plus-black.png";
+import safedark from "./pictures/safe-black.png";
+import deletedark from "./pictures/delete-black.png";
 
 import React, {useState} from 'react';
 
@@ -42,26 +45,30 @@ function RulesPage() {
         setShowSpecificSidebar(!showSpecificSidebar);
     };
 */
-    const [currentDiv, setCurrentDiv] = useState('div1'); // initial div1 sichtbar
+    const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
 
     const handleMainClick = () => {
-        setCurrentDiv('div1');
+        setCurrentDiv('MainPage');
     };
 
     const handleHamburgerClick = () => {
-        setCurrentDiv('div2');
+        setCurrentDiv('Leftbar-hidden-MainPage');
     };
 
-    // Funktion für den Button im ersten Div (wechsel zu div3)
     const handleCategoriesClick = () => {
-        setCurrentDiv('div3');
+        setCurrentDiv('Category');
     };
 
-    const handleHamburgerCategoriesClick = () => {
-        setCurrentDiv('div4');
+    const handlePlusClick = () => {
+        setCurrentDiv('BuildPage');
+    };
+
+    const handleHamburgerRulesBuildClick = () => {
+        setCurrentDiv('Leftbar-hidden-RulesPage');
     };
 
     const [showdarklight, setDarklight] = useState(true);
+
 
     const Mode = () => {
         setDarklight(!showdarklight);
@@ -92,11 +99,9 @@ function RulesPage() {
 
                         </Link>
 
-
                         <Link to="/InfoPage">
                             <img src={info} className="icons-left" alt="Info"/>
                         </Link>
-
 
                         <Link to="/SupportPage">
                             <img src={support} className="icons-left" alt="Support"/>
@@ -118,13 +123,13 @@ function RulesPage() {
                 </div>
 
 
-                {currentDiv === 'div1' && (
+                {currentDiv === 'MainPage' && (
                     <div className="left-bar-backdiv">
                         <div className="left-bar-shown" id="shownSidebar2">
                             <div className="top-leftbar-section">
-                                <div className="hamburger-menu">
+                                <div className="menu">
                                     <img src={hamburger} onClick={handleHamburgerClick}
-                                         className="hamburger-menu-picture"
+                                         className="menu-picture"
                                          alt="Hamburger menu"/>
                                 </div>
                                 <div className="searchbar-menu">
@@ -133,76 +138,144 @@ function RulesPage() {
                             </div>
                             <div className="button-section">
                                 <button onClick={() => handleCategoriesClick(t('child'))}
-                                        className="button-general">{t('child')}</button>
+                                        className="button-general-leftbar">{t('child')}</button>
                                 <button onClick={() => handleCategoriesClick(t('lung'))}
-                                        className="button-general">{t('lung')}</button>
+                                        className="button-general-leftbar">{t('lung')}</button>
                                 <button onClick={() => handleCategoriesClick(t('heart'))}
-                                        className="button-general">{t('heart')}</button>
+                                        className="button-general-leftbar">{t('heart')}</button>
                                 <button onClick={() => handleCategoriesClick(t('stomach '))}
-                                        className="button-general">{t('stomach')}</button>
+                                        className="button-general-leftbar">{t('stomach')}</button>
                                 <button onClick={() => handleCategoriesClick(t('leg'))}
-                                        className="button-general">{t('leg')}</button>
+                                        className="button-general-leftbar">{t('leg')}</button>
                                 <button onClick={() => handleCategoriesClick(t('arms'))}
-                                        className="button-general">{t('arms')}</button>
+                                        className="button-general-leftbar">{t('arms')}</button>
                                 <button onClick={() => handleCategoriesClick(t('liver'))}
-                                        className="button-general">{t('liver')}</button>
+                                        className="button-general-leftbar">{t('liver')}</button>
                                 <button onClick={() => handleCategoriesClick(t('gallbladder'))}
-                                        className="button-general">{t('gallbladder')}</button>
+                                        className="button-general-leftbar">{t('gallbladder')}</button>
                                 <button onClick={() => handleCategoriesClick(t('kidney'))}
-                                        className="button-general">{t('kidney')}</button>
+                                        className="button-general-leftbar">{t('kidney')}</button>
                                 <button onClick={() => handleCategoriesClick(t('brain'))}
-                                        className="button-general">{t('brain')}</button>
+                                        className="button-general-leftbar">{t('brain')}</button>
                                 <button onClick={() => handleCategoriesClick(t('specialized'))}
-                                        className="button-general">{t('specialized')}</button>
+                                        className="button-general-leftbar">{t('specialized')}</button>
                                 <button onClick={() => handleCategoriesClick(t('other'))}
-                                        className="button-general">{t('other')}</button>
+                                        className="button-general-leftbar">{t('other')}</button>
                             </div>
                         </div>
                     </div>
                 )}
-                {currentDiv === 'div2' && (
-                    <div className="left-bar-hidden" id="hiddenSidebar2" >
-                        <div className="hamburger-menu">
-                            <img src={hamburger} onClick={handleMainClick} className="hamburger-menu-picture"
+                {currentDiv === 'Leftbar-hidden-MainPage' && (
+                    <div className="left-bar-hidden left-bar-size-main" id="hiddenSidebar2">
+                        <div className="menu">
+                            <img src={hamburger} onClick={handleMainClick} className="menu-picture"
                                  alt="Hamburger menu"/>
                         </div>
                     </div>
                 )}
-                {currentDiv === 'div3' && (
-                    <div className="left-bar-backdiv">
-                        <div className="left-bar-shown" id="shownSidebar2">
-                            <div className="top-leftbar-section">
-
-                                <div className="arrow-menu">
-                                    <img src={arrowleft} onClick={handleMainClick}
-                                         className="arrow-left"
-                                         alt="Arrow left"/>
-                                </div>
-                                <div className="hamburger-menu">
-                                    <img src={hamburger} onClick={handleHamburgerCategoriesClick}
-                                         className="hamburger-menu-picture"
-                                         alt="Hamburger menu"/>
-                                </div>
-
-                                <div className="searchbar-menu">
-                                    <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
-                {currentDiv === 'div4' && (
-                    <div className="left-bar-hidden" id="hiddenSidebar2" >
+                {currentDiv === 'Category' && (
+                    <div className="left-bar-hidden left-bar-size-add" id="hiddenSidebar2">
                         <div className="arrow-menu">
                             <img src={arrowleft} onClick={handleMainClick}
                                  className="arrow-left"
                                  alt="Arrow left"/>
                         </div>
-                        <div className="hamburger-menu">
-                            <img src={hamburger} onClick={handleCategoriesClick} className="hamburger-menu-picture"
+                        <div className="menu">
+                            <img src={plusdark} onClick={handlePlusClick} className="plus-menu-picture"
+                                 alt="Plus menu"/>
+                        </div>
+                    </div>
+
+                )}
+
+                {currentDiv === 'Category' && (
+                            <div onClick={() => handleCategoriesClick(t('child'))}
+                                 className="frame-rules">{t('support')}</div>
+                )}
+
+                {currentDiv === 'BuildPage' && (
+
+                    <div className="right-section-rules">
+                        <div className="name-section" id="shownSidebar3">
+                            <button
+                                    className="button-middle">{t('child')}</button>
+                        </div>
+                    </div>
+                )}
+
+                {currentDiv === 'BuildPage' && (
+                    <div className="left-bar-backdiv">
+                        <div className="left-bar-shown" id="shownSidebar2">
+                            <div className="rules-section">
+                                <div className="arrow-menu">
+                                    <img src={arrowleft} onClick={handleMainClick}
+                                         className="arrow-left"
+                                         alt="Arrow left"/>
+                                </div>
+                                <div className="menu">
+                                    <img src={safedark} className="menu-picture"
+                                         alt="Safe menu"/>
+                                </div>
+                                <div className="menu">
+                                    <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+                                         alt="Delete menu"/>
+                                </div>
+                                <div className="menu">
+                                    <img src={hamburger} onClick={handleHamburgerRulesBuildClick}
+                                         className="menu-picture"
+                                         alt="Hamburger menu"/>
+                                </div>
+                            </div>
+                            <div className="button-section">
+                                <button onClick={() => handleCategoriesClick(t('child'))}
+                                        className="button-general-leftbar">{t('child')}</button>
+                                <button onClick={() => handleCategoriesClick(t('lung'))}
+                                        className="button-general-leftbar">{t('lung')}</button>
+                                <button onClick={() => handleCategoriesClick(t('heart'))}
+                                        className="button-general-leftbar">{t('heart')}</button>
+                                <button onClick={() => handleCategoriesClick(t('stomach '))}
+                                        className="button-general-leftbar">{t('stomach')}</button>
+                                <button onClick={() => handleCategoriesClick(t('leg'))}
+                                        className="button-general-leftbar">{t('leg')}</button>
+                                <button onClick={() => handleCategoriesClick(t('arms'))}
+                                        className="button-general-leftbar">{t('arms')}</button>
+                                <button onClick={() => handleCategoriesClick(t('liver'))}
+                                        className="button-general-leftbar">{t('liver')}</button>
+                                <button onClick={() => handleCategoriesClick(t('gallbladder'))}
+                                        className="button-general-leftbar">{t('gallbladder')}</button>
+                                <button onClick={() => handleCategoriesClick(t('kidney'))}
+                                        className="button-general-leftbar">{t('kidney')}</button>
+                                <button onClick={() => handleCategoriesClick(t('brain'))}
+                                        className="button-general-leftbar">{t('brain')}</button>
+                                <button onClick={() => handleCategoriesClick(t('specialized'))}
+                                        className="button-general-leftbar">{t('specialized')}</button>
+                                <button onClick={() => handleCategoriesClick(t('other'))}
+                                        className="button-general-leftbar">{t('other')}</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+                {currentDiv === 'Leftbar-hidden-RulesPage' && (
+                    <div className="left-bar-hidden left-bar-size-build" id="hiddenSidebar2">
+                        <div className="arrow-menu">
+                            <img src={arrowleft} onClick={handleMainClick}
+                                 className="arrow-left"
+                                 alt="Arrow left"/>
+                        </div>
+                        <div className="menu">
+                            <img src={safedark} onClick={handlePlusClick} className="menu-picture"
+                                 alt="Safe menu"/>
+                        </div>
+                        <div className="menu">
+                            <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+                                 alt="Delete menu"/>
+                        </div>
+                        <div className="menu">
+                            <img src={hamburger} onClick={handlePlusClick} className="menu-picture"
                                  alt="Hamburger menu"/>
                         </div>
                     </div>
+
                 )}
             </div>
             </body>

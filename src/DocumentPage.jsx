@@ -5,7 +5,7 @@ function RulesPage() {
     return (
         <div className="lol">
             <Link to="/">
-                <button className="button-general">Document</button>
+                <button className="button-general-leftbar">Document</button>
             </Link>
         </div>
     );
