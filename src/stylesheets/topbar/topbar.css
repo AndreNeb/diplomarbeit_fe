@@ -206,15 +206,12 @@
 }
 
 
-/* Menülinks */
 .menu-items {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-
-/* Animierte Menülinks */
 .menu-items a {
     color: gray;
     font-size: 30px;
@@ -224,7 +221,7 @@
     transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Animation beim Öffnen des Menüs */
+
 .menu-overlay.open .menu-items a {
     opacity: 1;
     transform: translateY(0);
@@ -254,26 +251,23 @@
     transition-delay: 0.9s;
 }
 
-/* Hover-Effekte für Links */
+
 .menu-items a:hover {
     text-shadow: 0.1px 0.1px 4px rgba(0, 0, 0, 0.15);
     color: black;
 }
 
-/* Media Query für kleine Bildschirme */
+
 @media screen and (max-width: 800px) {
 
-    /* Hamburger-Menü wird bei kleinen Bildschirmen angezeigt */
     .hamburger-menu {
-        display: block; /* Nur bei kleinen Bildschirmen sichtbar */
+        display: block;
     }
 
-    /* Das Header-Menü wird ausgeblendet */
     .header {
         display: none;
     }
 
-    /* Das Overlay-Menü wird ebenfalls angezeigt */
     .menu-overlay {
         display: flex;
     }

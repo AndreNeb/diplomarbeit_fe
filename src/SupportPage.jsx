@@ -50,13 +50,16 @@ function SupportPage() {
                 setBtnText(t('thanks'));
                 setIsActive(true);
 
+                setTimeout(() => {
+                    window.location.reload(); // Seite neu laden nach 3 s
+                }, 4000);
 
             } else {
                 setBtnText(t('error'))
 
                 setTimeout(() => {
                     window.location.reload(); // Seite neu laden nach 3 s
-                }, 3000);
+                }, 4000);
             }
         } catch (error) {
 

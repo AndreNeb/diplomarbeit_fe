@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar angepasst, min width für Topbar, Buttons neu designed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar angepasst, min width für Topbar, Buttons neu designed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,49 +55,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.Rules.jsx.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe/src/pictures",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
-    "timeTracker.comment": "",
-    "timeTracker.inactivityPeriodInMills": "600000",
-    "timeTracker.isAutoTrackingEnable": "false",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "true",
-    "timeTracker.isPaused": "false",
-    "timeTracker.isPostAfterCommitEnabled": "false",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
-    "timeTracker.isWhenProjectClosedEnabled": "false",
-    "timeTracker.issueId": "DA_01-78",
-    "timeTracker.issueIdReadable": "DA_01-78",
-    "timeTracker.pausedTime": "0",
-    "timeTracker.query": "",
-    "timeTracker.recordedTime": "0",
-    "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729061166055",
-    "timeTracker.timeInMills": "0",
-    "timeTracker.type": "Entwicklung",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe/src/pictures&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1729061166055&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pictures" />
@@ -149,14 +146,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00023" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728632645163</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1728632645163</updated>
     </task>
     <task id="LOCAL-00024" summary="Added big widgets">
       <option name="closed" value="true" />
@@ -243,7 +232,7 @@
       <workItem from="1728938064816" duration="27000" />
       <workItem from="1728984995637" duration="172000" />
       <workItem from="1728999316228" duration="18811000" />
-      <workItem from="1729061162692" duration="1044000" />
+      <workItem from="1729061162692" duration="3065000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -581,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729022776401</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Topbar angepasst, min width für Topbar, Buttons neu designed">
+      <option name="closed" value="true" />
+      <created>1729062276468</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1729062276468</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
