@@ -33,5 +33,8 @@
   "message": "Message",
   "submit": "Submit",
   "thanks": "Thanks",
-  "error": "An error has occurred"
+  "error": "An error has occurred",
+
+  "logo": "Logo",
+  "documents": "Documents"
 }

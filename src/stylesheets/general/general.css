@@ -15,7 +15,7 @@ body.homepage {
     padding-bottom: -95px;
     background-color: rgba(250, 246, 240, 255);
     cursor: default;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 body.rules {

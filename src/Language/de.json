@@ -32,8 +32,11 @@
   "email": "E - Mail",
   "message": "Nachricht",
   "submit": "Senden",
-  "thanks": "Vielen Dank",
-  "error": "Ein Fehler ist aufgetreten"
+  "thanks": "Danke",
+  "error": "Ein Fehler ist aufgetreten",
+
+  "logo": "Logo",
+  "documents": "Dokumente"
 }
 
 

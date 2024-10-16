@@ -21,6 +21,7 @@ import {useTranslation} from "react-i18next";
 import document from "./pictures/document.png";
 import moon from "./pictures/moon.png";
 import sun from "./pictures/sun.png";
+import apple from "./pictures/apple.png";
 
 
 function RulesPage() {
@@ -74,37 +75,38 @@ function RulesPage() {
         setDarklight(!showdarklight);
     };
 
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
 
     return (
 
         <>
 
             <body className="rules">
-            < div className="header">
+            <div className="header">
                 <div className="left-section">
                     <Link to="/">
-                        <img src={logo} className="logo" alt="Logo"/>
+                        <img src={apple} className="logo" alt={t('logo')}/>
                     </Link>
 
                     <div className="topbar-functional-divs">
                         <Link to="/RulesPage">
-
-                            <img src={regeln} className="icons-left" alt="Rules"/>
-
+                            <img src={regeln} className="icons" alt={t('rules')}/>
                         </Link>
 
                         <Link to="/DocumentPage">
-
-                            <img src={document} className="icons-left" alt="Document"/>
-
+                            <img src={document} className="icons" alt={t('documents')}/>
                         </Link>
 
                         <Link to="/InfoPage">
-                            <img src={info} className="icons-left" alt="Info"/>
+                            <img src={info} className="icons" alt={t('info')}/>
                         </Link>
 
                         <Link to="/SupportPage">
-                            <img src={support} className="icons-left" alt="Support"/>
+                            <img src={support} className="icons" alt={t('support')}/>
                         </Link>
 
                     </div>
@@ -114,12 +116,12 @@ function RulesPage() {
                 </div>
                 <div className="right-section">
                     {showdarklight ? (
-                        <img onClick={Mode} src={moon} className="mode" alt="Mode"/>
+                        <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
                     ) : (
-                        <img onClick={Mode} src={sun} className="mode" alt="Mode"/>
+                        <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
                     )}
-                    <img src={language} className="icons-right" alt={t('language')}/>
-                    <img src={login} className="login" alt="login"/>
+                    <img src={language} className="icons" alt={t('language')}/>
+                    <img src={login} className="icons" alt="login"/>
                 </div>
 
 
@@ -133,7 +135,8 @@ function RulesPage() {
                                          alt="Hamburger menu"/>
                                 </div>
                                 <div className="searchbar-menu">
-                                    <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                                    <input className="search-bar" type="text"
+                                           placeholder={t('searchbar-placeholder')}/>
                                 </div>
                             </div>
                             <div className="button-section">
@@ -189,14 +192,14 @@ function RulesPage() {
                 )}
 
                 {currentDiv === 'Category' && (
-                            <div onClick={() => handleCategoriesClick(t('child'))}
-                                 className="frame-rules">{t('support')}</div>
+                    <div onClick={() => handleCategoriesClick(t('child'))}
+                         className="frame-rules">{t('support')}</div>
                 )}
 
                 {currentDiv === 'BuildPage' && (
                         <div className="name-section" id="shownSidebar3">
                             <button
-                                    className="button-middle">{t('child')}</button>
+                                className="button-middle">{t('child')}</button>
                         </div>
                 )}
 
@@ -274,6 +277,36 @@ function RulesPage() {
                     </div>
 
                 )}
+            </div>
+
+
+            <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
+                <div className="hamburger-menu-div">
+                    <button className="hamburger-button" onClick={toggleMenu}>
+                        {/* Hamburger Icon */}
+                        <span className="hamburger-icon"></span>
+                        <span className="hamburger-icon"></span>
+                        <span className="hamburger-icon"></span>
+                    </button>
+
+                    <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
+                </div>
+            </div>
+
+            {/* Das Menü, das den gesamten Bildschirm abdeckt */}
+            <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
+                <div className="menu-items">
+
+
+                    <a href="#contact" onClick={toggleMenu}>Home</a>
+                    <Link to="/RulesPage">
+                        <a href="#about" onClick={toggleMenu}>Regeln</a>
+                    </Link>
+                    <a href="#about" onClick={toggleMenu}>Dokumente</a>
+                    <a href="#services" onClick={toggleMenu}>Info</a>
+                    <a href="#contact" onClick={toggleMenu}>Support</a>
+                    <a href="#contact" onClick={toggleMenu}>Logout</a>
+                </div>
             </div>
             </body>
 

@@ -3,7 +3,6 @@ import './stylesheets/leftbar/buttons.css';
 import './stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';
-import logo from './pictures/hamburger-menu.png';
 import {Link} from 'react-router-dom';
 import regeln from './pictures/regeln.png';
 import info from './pictures/info.png';
@@ -13,6 +12,7 @@ import login from './pictures/login-picture.png';
 import document from "./pictures/document.png";
 import moon from "./pictures/moon.png";
 import sun from "./pictures/sun.png";
+import apple from "./pictures/apple.png";
 
 function SupportPage() {
 
@@ -63,29 +63,33 @@ function SupportPage() {
         }
     };
 
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (<body className="support">
     <div className="header">
         <div className="left-section">
             <Link to="/">
-                <img src={logo} className="logo" alt="Logo"/>
+                <img src={apple} className="logo" alt={t('logo')}/>
             </Link>
 
             <div className="topbar-functional-divs">
                 <Link to="/RulesPage">
-                    <img src={regeln} className="icons-left" alt="Rules"/>
+                    <img src={regeln} className="icons" alt={t('rules')}/>
                 </Link>
 
                 <Link to="/DocumentPage">
-                    <img src={document} className="icons-left" alt="Document"/>
+                    <img src={document} className="icons" alt={t('documents')}/>
                 </Link>
 
                 <Link to="/InfoPage">
-                    <img src={info} className="icons-left" alt="Info"/>
+                    <img src={info} className="icons" alt={t('info')}/>
                 </Link>
 
                 <Link to="/SupportPage">
-                    <img src={support} className="icons-left" alt="Support"/>
+                    <img src={support} className="icons" alt={t('support')}/>
                 </Link>
 
             </div>
@@ -94,10 +98,13 @@ function SupportPage() {
             <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
         </div>
         <div className="right-section">
-            {showdarklight ? (<img onClick={Mode} src={moon} className="mode" alt="Mode"/>) : (
-                <img onClick={Mode} src={sun} className="mode" alt="Mode"/>)}
-            <img src={language} className="icons-right" alt={t('language')}/>
-            <img src={login} className="login" alt="login"/>
+            {showdarklight ? (
+                <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
+            ) : (
+                <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
+            )}
+            <img src={language} className="icons" alt={t('language')}/>
+            <img src={login} className="icons" alt="login"/>
         </div>
     </div>
 
@@ -134,6 +141,35 @@ function SupportPage() {
     </div>
     {formStatus && <p className="form-status">{formStatus}</p>}
 
+
+    <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
+        <div className="hamburger-menu-div">
+            <button className="hamburger-button" onClick={toggleMenu}>
+                {/* Hamburger Icon */}
+                <span className="hamburger-icon"></span>
+                <span className="hamburger-icon"></span>
+                <span className="hamburger-icon"></span>
+            </button>
+
+            <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
+        </div>
+    </div>
+
+    {/* Das Menü, das den gesamten Bildschirm abdeckt */}
+    <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
+        <div className="menu-items">
+
+
+            <a href="#contact" onClick={toggleMenu}>Home</a>
+            <Link to="/RulesPage">
+                <a href="#about" onClick={toggleMenu}>Regeln</a>
+            </Link>
+            <a href="#about" onClick={toggleMenu}>Dokumente</a>
+            <a href="#services" onClick={toggleMenu}>Info</a>
+            <a href="#contact" onClick={toggleMenu}>Support</a>
+            <a href="#contact" onClick={toggleMenu}>Logout</a>
+        </div>
+    </div>
     </body>);
 }
 
