@@ -151,14 +151,6 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
-    <task id="LOCAL-00008" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728571874403</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1728571874403</updated>
-    </task>
     <task id="LOCAL-00009" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728571910145</created>
@@ -341,7 +333,8 @@
       <workItem from="1728815084106" duration="88000" />
       <workItem from="1728817721179" duration="10001000" />
       <workItem from="1728836760092" duration="24381000" />
-      <workItem from="1729056937816" duration="3625000" />
+      <workItem from="1729056937816" duration="3685000" />
+      <workItem from="1729063914276" duration="962000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -559,7 +552,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729058071415</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Leftbar">
+      <option name="closed" value="true" />
+      <created>1729063861394</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1729063861394</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
