@@ -36,7 +36,11 @@
   "error": "Ein Fehler ist aufgetreten",
 
   "logo": "Logo",
-  "documents": "Dokumente"
+  "documents": "Dokumente",
+
+  "log-text": "Einloggen",
+  "username": "Benutzername",
+  "password": "Passwort"
 }
 
 

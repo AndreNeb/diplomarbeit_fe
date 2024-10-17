@@ -36,5 +36,8 @@
   "error": "An error has occurred",
 
   "logo": "Logo",
-  "documents": "Documents"
+  "documents": "Documents",
+  "log-text": "Log in",
+  "username": "Username",
+  "password": "Password"
 }

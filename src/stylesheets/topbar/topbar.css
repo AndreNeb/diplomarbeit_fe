@@ -134,17 +134,17 @@
     left: 0;
     z-index: 900;
 
-    background-color: rgba(250, 246, 240, 255)
+    background-color: rgba(250, 246, 240, 255);
 }
 
 .logo-in-hamburger-menu{
     height: 35px;
-    margin-right: 45%
+    margin-right: 45%;
 }
 
 
 .hamburger-button {
-    background: none;
+   /* background: none;
 
     border: none;
     border-radius: 9px;
@@ -161,6 +161,9 @@
     position: absolute;
     right: 0;
     margin-right: 30px;
+    background-color: green; */
+
+
 }
 
 .hamburger-icon {
@@ -264,6 +267,7 @@
         display: block;
     }
 
+
     .header {
         display: none;
     }
@@ -271,4 +275,5 @@
     .menu-overlay {
         display: flex;
     }
+
 }

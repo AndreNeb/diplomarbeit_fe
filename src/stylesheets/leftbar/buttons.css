@@ -1,5 +1,5 @@
 
-.button-general-leftbar{
+.button-general-leftbar {
     color: black;
     font-size: 26px;
     border-radius: 15px;
@@ -16,6 +16,7 @@
 
     width: 214px;
     height: 48px;
+
 }
 
 .button-general-leftbar:hover{

@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar angepasst, min width für Topbar, Buttons neu designed">
+      <change afterPath="$PROJECT_DIR$/src/LogInOutPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/loginoutpage/loginout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="tsconfig.json" />
         <option value="package.json" />
         <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,7 +51,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/AndreNeb/diplomarbeit_fe.git&quot;,
-    &quot;accountId&quot;: &quot;ded94e49-c306-47c6-8047-7104070e7c5f&quot;
+    &quot;accountId&quot;: &quot;d70321cd-429b-43c5-b7a2-73882bbca8a2&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -335,6 +346,9 @@
       <workItem from="1728836760092" duration="24381000" />
       <workItem from="1729056937816" duration="3685000" />
       <workItem from="1729063914276" duration="962000" />
+      <workItem from="1729084068807" duration="606000" />
+      <workItem from="1729092657765" duration="866000" />
+      <workItem from="1729158814699" duration="14871000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
