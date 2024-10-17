@@ -260,6 +260,29 @@
     color: black;
 }
 
+.icons-tooltip{
+    display:flex;
+    justify-content: center;
+}
+.tooltip{
+    position: absolute;
+    background-color: lightgray;
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    bottom: -28px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.icons-tooltip:hover .tooltip {
+    opacity: 1;
+}
 
 @media screen and (max-width: 800px) {
 

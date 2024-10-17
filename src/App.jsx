@@ -69,19 +69,31 @@ function App() {
 
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
-                                        <img src={regeln} className="icons" alt={t('rules')}/>
+                                        <div className="icons-tooltip">
+                                            <img src={regeln} className="icons" alt={t('rules')}/>
+                                            <div className="tooltip">{t('rules')}</div>
+                                        </div>
                                     </Link>
 
                                     <Link to="/DocumentPage">
-                                        <img src={document} className="icons" alt={t('documents')}/>
+                                        <div className="icons-tooltip">
+                                            <img src={document} className="icons" alt={t('documents')}/>
+                                            <div className="tooltip">{t('documents')}</div>
+                                        </div>
                                     </Link>
 
                                     <Link to="/InfoPage">
-                                        <img src={info} className="icons" alt={t('info')}/>
+                                        <div className="icons-tooltip">
+                                            <img src={info} className="icons" alt={t('info')}/>
+                                            <div className="tooltip">{t('info')}</div>
+                                        </div>
                                     </Link>
 
                                     <Link to="/SupportPage">
-                                        <img src={support} className="icons" alt={t('support')}/>
+                                        <div className="icons-tooltip">
+                                            <img src={support} className="icons" alt={t('support')}/>
+                                            <div className="tooltip">{t('support')}</div>
+                                        </div>
                                     </Link>
 
                                 </div>
