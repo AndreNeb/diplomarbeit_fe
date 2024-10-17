@@ -36,7 +36,14 @@
   "error": "Ein Fehler ist aufgetreten",
 
   "logo": "Logo",
-  "documents": "Dokumente"
+  "documents": "Dokumente",
+
+  "NameCategories": "Kategorie",
+  "RuleName": "Name",
+  "RuleNumber": "Nummer",
+  "Author": "Ersteller",
+  "Date": "Datum"
+
 }
 
 
