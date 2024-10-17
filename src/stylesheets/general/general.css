@@ -1,24 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 div {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
 }
 
-body {
+
+
+body.light {
     background-color: rgba(250, 246, 240, 255);
     width: 100%;
     height: 100vh;
 }
 
-body.homepage {
-    width: 100%;
-    height: 100vh;
-    cursor: default;
-
-    overflow-x: hidden;
-
+body.dark {
+    background-color: black;
 }
+
+
+
+
+
+/* Light Mode für die Startpage */
+.homepage.light {
+    background-color: rgba(250, 246, 240, 255);
+    height: 100vh;
+}
+
+.homepage.light .small-widget1,
+.homepage.light .small-widget2,
+.homepage.light .small-widget3,
+.homepage.light .small-widget4 {
+    background-color: white;
+}
+
+.homepage.light .big-widget {
+background-color: white;
+}
+
+
+/* Dark Mode für die Startpage */
+
+.homepage.dark {
+    background-color: black;
+    height: 100vh;
+}
+
+.homepage.dark .small-widget1,
+.homepage.dark .small-widget2,
+.homepage.dark .small-widget3,
+.homepage.dark .small-widget4 {
+    background-color: rgba(250, 246, 240, 255);
+    border-color: rgba(250, 246, 240, 255);
+}
+
+.homepage.dark .big-widget {
+    background-color: rgba(250, 246, 240, 255);
+}
+
+
+.homepage.dark .header {
+    background-color: black;
+    border-width: 1px;
+    border-color: white;
+}
+
+.homepage.dark .search-bar{
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
+.homepage.dark .search-bar::placeholder{
+    color: white;
+}
+
+
+
+
+
+
+
 
 body.rules {
     margin: 0;

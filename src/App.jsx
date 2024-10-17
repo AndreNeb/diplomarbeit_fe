@@ -2,7 +2,7 @@ import './i18n'
 import {useTranslation} from "react-i18next";
 
 
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {BrowserRouter as Router, Route, Routes, Link, useNavigate} from "react-router-dom";
 
 import login from './pictures/login-picture.png';
@@ -14,11 +14,17 @@ import patienten from './pictures/patienten.png';
 import maske from './pictures/maske.png';
 import spritze from './pictures/spritze.png';
 import wartezimmer from './pictures/wartezimmer.png';
-import document from './pictures/document.png';
+import documentImage from './pictures/document.png';
 import moon from './pictures/moon.png';
 import sun from './pictures/sun.png';
 import apple from './pictures/apple.png';
 import hamburger from './pictures/hamburger-menu.png';
+import supportBlack from './pictures/support-blackMode.png';
+import infoBlack from './pictures/info-blackMode.png';
+import documentBlack from './pictures/document-blackMode.png';
+import regelnBlack from './pictures/regeln-blackMode.png';
+import languageBlack from './pictures/language-blackMode.png';
+import loginBlack from './pictures/login-picture-blackMode.png';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/leftbar/leftbar.css';
 import './stylesheets/leftbar/buttons.css';
@@ -41,8 +47,7 @@ function App() {
         i18n.changeLanguage(lang);
     };
 
-    const [
-        showdarklight, setDarklight] = useState(true);
+    const [showdarklight, setDarklight] = useState(true);
 
     const Mode = () => {
         setDarklight(!showdarklight);
@@ -55,12 +60,38 @@ function App() {
     };
 
 
-    return (
-        <Router>
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem('darkMode');
+        return savedMode ? JSON.parse(savedMode) : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    });
+
+
+
+    const toggleDarkMode = () => {
+        setDarkMode(prevMode => !prevMode);  // Der Zustand wird umgeschaltet
+
+    };
+
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+        document.body.className = darkMode ? 'dark' : 'light';
+    }, [darkMode]);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => setDarkMode(e.matches);
+
+        mediaQuery.addEventListener('change', handleChange);
+
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, []);
+
+
+    return (<Router>
             <>
                 <Routes>
                     <Route path="/" element={
-                        <body className="homepage">
+                        <body className={`homepage ${darkMode ? 'dark' : 'light'}`}>
                         <div className="header">
                             <div className="left-section">
                                 <Link to="/">
@@ -70,28 +101,28 @@ function App() {
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
                                         <div className="icons-tooltip">
-                                            <img src={regeln} className="icons" alt={t('rules')}/>
+                                            <img src={darkMode ? regelnBlack : regeln} className="icons" alt={t('rules')}/>
                                             <div className="tooltip">{t('rules')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/DocumentPage">
                                         <div className="icons-tooltip">
-                                            <img src={document} className="icons" alt={t('documents')}/>
+                                            <img src={darkMode ? documentBlack : documentImage} className="icons" alt={t('documents')}/>
                                             <div className="tooltip">{t('documents')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/InfoPage">
                                         <div className="icons-tooltip">
-                                            <img src={info} className="icons" alt={t('info')}/>
+                                            <img src={darkMode ? infoBlack : info} className="icons mode" alt={t('info')}/>
                                             <div className="tooltip">{t('info')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/SupportPage">
                                         <div className="icons-tooltip">
-                                            <img src={support} className="icons" alt={t('support')}/>
+                                            <img src={darkMode ? supportBlack : support} className="icons mode" alt={t('support')}/>
                                             <div className="tooltip">{t('support')}</div>
                                         </div>
                                     </Link>
@@ -99,18 +130,18 @@ function App() {
                                 </div>
                             </div>
                             <div className="middle-section">
-                                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                                <input className="search-bar" type="text"
+                                       placeholder={t('searchbar-placeholder')}/>
                             </div>
                             <div className="right-section">
-                                {showdarklight ? (
-                                    <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
-                                ) : (
-                                    <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
-                                )}
-                                <img src={language} className="icons" alt={t('language')}/>
+
+                                <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className="icons mode"
+                                     alt="Mode"/>
+
+                                <img src={darkMode ? languageBlack : language} className="icons" alt={t('language')}/>
 
                                 <Link to="/LogInOutPage">
-                                    <img src={login} className="icons" alt="login"/>
+                                    <img src={darkMode ? loginBlack : login} className="icons" alt="login"/>
                                 </Link>
                             </div>
                         </div>
@@ -126,7 +157,8 @@ function App() {
                                         <div className="small-widgets-text-bottom">&uarr; &#43;8,5 &#037;</div>
                                     </div>
                                     <div>
-                                        <img src={patienten} className="small-widgets-picture-layout" alt="Patienten"/>
+                                        <img src={patienten} className="small-widgets-picture-layout"
+                                             alt="Patienten"/>
                                     </div>
                                 </div>
                                 <div className="general-small-widget-layout small-widget2">
@@ -136,10 +168,12 @@ function App() {
                                     <div className="small-widgets-text">
                                         <div className="small-widgets-text-top">{t('op-workload')}</div>
                                         <div className="small-widgets-text-middle">70 &#037;</div>
-                                        <div className="small-widgets-text-bottom">8 / 9 {t('unavailable')}</div>
+                                        <div className="small-widgets-text-bottom">8 /
+                                            9 {t('unavailable')}</div>
                                     </div>
                                     <div>
-                                        <img src={maske} className="small-widgets-picture-layout" alt="OP - Maske"/>
+                                        <img src={maske} className="small-widgets-picture-layout"
+                                             alt="OP - Maske"/>
                                     </div>
                                 </div>
                                 <div className="general-small-widget-layout small-widget3">
@@ -152,7 +186,8 @@ function App() {
                                         <div className="small-widgets-text-bottom">&darr; 4,5 &#037;</div>
                                     </div>
                                     <div>
-                                        <img src={spritze} className="small-widgets-picture-layout" alt="Spritze"/>
+                                        <img src={spritze} className="small-widgets-picture-layout"
+                                             alt="Spritze"/>
                                     </div>
                                 </div>
                                 <div className="general-small-widget-layout small-widget4">
@@ -162,7 +197,8 @@ function App() {
                                     <div className="small-widgets-text">
                                         <div className="small-widgets-text-top">{t('waiting-room')}</div>
                                         <div className="small-widgets-text-middle">9 {t('patients')}</div>
-                                        <div className="small-widgets-text-bottom">  {t('waiting-room-usage')}</div>
+                                        <div
+                                            className="small-widgets-text-bottom">  {t('waiting-room-usage')}</div>
                                     </div>
                                     <div>
                                         <img src={wartezimmer}
@@ -212,8 +248,9 @@ function App() {
                                 <a href="#contact" onClick={toggleMenu}>Logout</a>
                             </div>
                         </div>
-
-                        </body>}/>
+                        </body>
+                    }
+                    />
 
                     <Route path="/rulesPage" element={<RulesPage/>}/>
                     <Route path="/documentPage" element={<DocumentPage/>}/>
@@ -221,11 +258,11 @@ function App() {
                     <Route path="/supportPage" element={<SupportPage/>}/>
                     <Route path="/loginoutpage" element={<LogInOutPage/>}/>
                 </Routes>
+
             </>
 
         </Router>
     );
-
 }
 
 export default App;

@@ -3,16 +3,15 @@
     grid-template-columns: 5fr 3fr;
     column-gap: 1em;
 
-
-    height: calc(100vh - 300px);
+    height: calc(100vh - 350px);
 
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;
+
 
 }
 
-.big-widget{
+.big-widget {
     display: flex;
     flex-direction: column;
     justify-content: center;
