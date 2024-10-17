@@ -3,6 +3,7 @@ import './stylesheets/loginoutpage/loginout.css';
 import React, {useState} from "react";
 import {useTranslation} from "react-i18next";
 import classNames from "classnames";
+import axios from 'axios';
 
 function LogInOutPage() {
     const {t} = useTranslation();
@@ -59,6 +60,7 @@ function LogInOutPage() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <body>
         <div className="general-log-field">
