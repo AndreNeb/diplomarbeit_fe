@@ -92,55 +92,68 @@ function RulesPage() {
                     </Link>
 
                     <div className="topbar-functional-divs">
-                        <Link to="/RulesPage">
-                            <img src={regeln} className="icons" alt={t('rules')}/>
-                        </Link>
+                            <Link to="/RulesPage">
+                                <div className="icons-tooltip">
+                                    <img src={regeln} className="icons" alt={t('rules')}/>
+                                    <div className="tooltip">{t('rules')}</div>
+                                </div>
+                            </Link>
 
-                        <Link to="/DocumentPage">
-                            <img src={document} className="icons" alt={t('documents')}/>
-                        </Link>
+                            <Link to="/DocumentPage">
+                                <div className="icons-tooltip">
+                                    <img src={document} className="icons" alt={t('documents')}/>
+                                    <div className="tooltip">{t('documents')}</div>
+                                </div>
+                            </Link>
 
-                        <Link to="/InfoPage">
-                            <img src={info} className="icons" alt={t('info')}/>
-                        </Link>
+                            <Link to="/InfoPage">
+                                <div className="icons-tooltip">
+                                    <img src={info} className="icons" alt={t('info')}/>
+                                    <div className="tooltip">{t('info')}</div>
+                                </div>
+                            </Link>
 
-                        <Link to="/SupportPage">
-                            <img src={support} className="icons" alt={t('support')}/>
-                        </Link>
+                            <Link to="/SupportPage">
+                                <div className="icons-tooltip">
+                                    <img src={support} className="icons" alt={t('support')}/>
+                                    <div className="tooltip">{t('support')}</div>
+                                </div>
+                            </Link>
 
+
+                        </div>
                     </div>
-                </div>
-                <div className="middle-section">
-                    <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
-                </div>
-                <div className="right-section">
-                    {showdarklight ? (
-                        <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
-                    ) : (
-                        <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
-                    )}
-                    <img src={language} className="icons" alt={t('language')}/>
-                    <img src={login} className="icons" alt="login"/>
-                </div>
+                    <div className="middle-section">
+                        <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                    </div>
+                    <div className="right-section">
+                        {showdarklight ? (
+                            <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
+                        ) : (
+                            <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
+                        )}
+                        <img src={language} className="icons" alt={t('language')}/>
+                        <img src={login} className="icons" alt="login"/>
+                    </div>
 
 
-                {currentDiv === 'MainPage' && (
-                    <div className="left-bar-backdiv">
-                        <div className="left-bar-shown" id="shownSidebar2">
-                            <div className="top-leftbar-section">
-                                <div className="menu">
-                                    <img src={hamburger} onClick={handleHamburgerClick}
-                                         className="menu-picture"
-                                         alt="Hamburger menu"/>
+                    {currentDiv === 'MainPage' && (
+                        <div className="left-bar-backdiv">
+                            <div className="left-bar-shown" id="shownSidebar2">
+                                <div className="top-leftbar-section">
+                                    <div className="menu">
+                                        <img src={hamburger} onClick={handleHamburgerClick}
+                                             className="menu-picture"
+                                             alt="Hamburger menu"/>
+                                    </div>
+                                    <div className="searchbar-menu">
+                                        <input className="search-bar" type="text"
+                                               placeholder={t('searchbar-placeholder')}/>
+                                    </div>
                                 </div>
-                                <div className="searchbar-menu">
-                                    <input className="search-bar" type="text"
-                                           placeholder={t('searchbar-placeholder')}/>
-                                </div>
-                            </div>
-                            <div className="button-section">
-                                <button onClick={() => handleCategoriesClick(t('child'))}
-                                        className="button-general-leftbar">{t('child')}</button>
+                                <div className="button-section">
+                                    <button onClick={() => handleCategoriesClick(t('child'))}
+                                            className="button-general-leftbar">{t('child')}</button>
                                 <button onClick={() => handleCategoriesClick(t('lung'))}
                                         className="button-general-leftbar">{t('lung')}</button>
                                 <button onClick={() => handleCategoriesClick(t('heart'))}
