@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar angepasst, min width für Topbar, Buttons neu designed">
-      <change afterPath="$PROJECT_DIR$/src/LogInOutPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/loginoutpage/loginout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/copyrighttext.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,14 +153,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00009" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728571910145</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1728571910145</updated>
     </task>
     <task id="LOCAL-00010" summary="Topbar">
       <option name="closed" value="true" />
@@ -348,7 +332,7 @@
       <workItem from="1729063914276" duration="962000" />
       <workItem from="1729084068807" duration="606000" />
       <workItem from="1729092657765" duration="866000" />
-      <workItem from="1729158814699" duration="14871000" />
+      <workItem from="1729158814699" duration="18054000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -574,7 +558,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729063861394</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Topbar angepasst, min width für Topbar, Buttons neu designed">
+      <option name="closed" value="true" />
+      <created>1729176126500</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1729176126500</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -608,6 +600,7 @@
     <MESSAGE value="Leftbar-Rules" />
     <MESSAGE value="Topbar" />
     <MESSAGE value="Leftbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leftbar" />
+    <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
   </component>
 </project>

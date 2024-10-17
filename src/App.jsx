@@ -160,9 +160,10 @@ function App() {
                                 </div>
                             </div>
 
+
                             <div className="big-widgets-general">
 
-                                <div className="big-widget">Calendar</div>
+                                <div className="big-widget">Kalender</div>
                                 <div className="big-widget">Arbeitszeit</div>
 
 

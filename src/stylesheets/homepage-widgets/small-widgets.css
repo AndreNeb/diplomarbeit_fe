@@ -7,15 +7,11 @@
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 40px;
-    margin-top: 0;
+    margin-top: 100px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
-
-
-    background-color: #3bdd48;
-
 }
 
 .general-small-widget-layout {
