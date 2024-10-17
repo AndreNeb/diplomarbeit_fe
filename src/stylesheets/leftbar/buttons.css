@@ -25,9 +25,6 @@
 }
 
 .button-middle {
-    align-items: center;
-    display: inline-block;
-    text-align: center;
 
     position: fixed;
 
@@ -41,11 +38,10 @@
 
     width: 214px;
     height: 50px;
-    left:50%;
-    right:50%;
     border-width: 1px;
 
     cursor: default;
+
 }
 
 button:hover {

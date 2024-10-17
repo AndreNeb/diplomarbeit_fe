@@ -264,12 +264,12 @@
 @media screen and (max-width: 800px) {
 
     .hamburger-menu {
-        display: block;
+        display: none;
     }
 
 
     .header {
-        display: none;
+        display: block;
     }
 
     .menu-overlay {

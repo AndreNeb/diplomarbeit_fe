@@ -32,20 +32,10 @@ function RulesPage() {
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
-    /*
-    const [showSidebar, setShowSidebar] = useState(true);
-    const [showSpecificSidebar, setShowSpecificSidebar] = useState(true);
+
     const [text, setText] = useState("");
 
-    const handleClickMenu = () => {
-        setShowSidebar(!showSidebar);
-    };
 
-    const handleClickOptions = (message) => {
-        setText(message)
-        setShowSpecificSidebar(!showSpecificSidebar);
-    };
-*/
     const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
 
     const handleMainClick = () => {
@@ -56,8 +46,9 @@ function RulesPage() {
         setCurrentDiv('Leftbar-hidden-MainPage');
     };
 
-    const handleCategoriesClick = () => {
+    const handleCategoriesClick = (message) => {
         setCurrentDiv('Category');
+        setText(message)
     };
 
     const handlePlusClick = () => {
@@ -80,6 +71,14 @@ function RulesPage() {
         setIsOpen(!isOpen);
     };
 
+    const styles = {
+        box: {
+            width: "20%",
+            boxSizing: "border-box", // Funktioniert in React, camelCase!
+            wordWrap: "break-word",  // Funktioniert ebenfalls in React, camelCase!
+            overflowWrap: "break-word", // Unterstützt den Umbruch von langen Wörtern
+        },
+    };
 
     return (
 
@@ -192,22 +191,60 @@ function RulesPage() {
                 )}
 
                 {currentDiv === 'Category' && (
-                    <div onClick={() => handleCategoriesClick(t('child'))}
-                         className="frame-rules">{t('support')}</div>
+                    <div className="frame-rules">
+                        <div className="rules-header">
+                            <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                        </div>
+                        <div className="rules-body-categories">
+                            <div  className="content-divs-header" style={styles.box}>
+                                {t('NameCategories')}
+                            </div>
+                            <div  className="content-divs-header" style={styles.box}>
+                                {t('RuleName')}
+                            </div>
+                            <div  className="content-divs-header" style={styles.box}>
+                                {t('RuleNumber')}
+                            </div>
+                            <div  className="content-divs-header" style={styles.box}>
+                                {t('Author')}
+                            </div>
+                            <div  className="content-divs-header-rightest" style={styles.box}>
+                                {t('Date')}
+                            </div>
+                        </div>
+                        <div className="rules-body-content">
+                            <div className="content-divs" style={styles.box}>
+                                test
+                                </div>
+                            <div className="content-divs" style={styles.box}>
+                                {t('RuleName')}
+                            </div>
+                            <div className="content-divs" style={styles.box}>
+                                {t('RuleNumber')}
+                            </div>
+                            <div className="content-divs" style={styles.box}>
+                                {t('Author')}
+                            </div>
+                            <div className="content-divs-rightest" style={styles.box}>
+                                {t('Date')}
+                            </div>
+                        </div>
+
+                    </div>
                 )}
 
                 {currentDiv === 'BuildPage' && (
-                        <div className="name-section" id="shownSidebar3">
-                            <button
-                                className="button-middle">{t('child')}</button>
-                        </div>
+                    <div className="name-section" id="shownSidebar3">
+                        <button
+                            className="button-middle">{text}</button>
+                    </div>
                 )}
 
                 {currentDiv === 'BuildPage' && (
                     <div className="left-bar-backdiv">
                         <div className="left-bar-shown" id="shownSidebar2">
                             <div className="rules-section">
-                                <div className="arrow-menu">
+                            <div className="arrow-menu">
                                     <img src={arrowleft} onClick={handleMainClick}
                                          className="arrow-left"
                                          alt="Arrow left"/>

@@ -39,5 +39,11 @@
   "documents": "Documents",
   "log-text": "Log in",
   "username": "Username",
-  "password": "Password"
+  "password": "Password",
+
+  "NameCategories": "Category",
+  "RuleName": "Name",
+  "RuleNumber": "Number",
+  "Author": "Author",
+  "Date": "Date"
 }

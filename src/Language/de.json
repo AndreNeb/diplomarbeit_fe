@@ -40,7 +40,14 @@
 
   "log-text": "Einloggen",
   "username": "Benutzername",
-  "password": "Passwort"
+  "password": "Passwort",
+
+  "NameCategories": "Kategorie",
+  "RuleName": "Name",
+  "RuleNumber": "Nummer",
+  "Author": "Ersteller",
+  "Date": "Datum"
+
 }
 
 
