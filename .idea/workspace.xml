@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Rules overview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,14 +149,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00010" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728572349768</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1728572349768</updated>
     </task>
     <task id="LOCAL-00011" summary="Topbar">
       <option name="closed" value="true" />
@@ -335,7 +320,7 @@
       <workItem from="1729063914276" duration="962000" />
       <workItem from="1729071720597" duration="663000" />
       <workItem from="1729075438271" duration="692000" />
-      <workItem from="1729162008414" duration="12520000" />
+      <workItem from="1729162008414" duration="14004000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -569,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729071728583</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Rules overview">
+      <option name="closed" value="true" />
+      <created>1729174621117</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1729174621117</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -603,6 +596,7 @@
     <MESSAGE value="Leftbar-Rules" />
     <MESSAGE value="Topbar" />
     <MESSAGE value="Leftbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leftbar" />
+    <MESSAGE value="Rules overview" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rules overview" />
   </component>
 </project>
