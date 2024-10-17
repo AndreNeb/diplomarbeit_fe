@@ -5,15 +5,22 @@ div {
 }
 
 
+/* Sodass auch die verschiedenen Bilder, ... einen sanften Übergang haben */
+.header, .widgets, .icons, .tooltip, .hamburger-menu, .menu-items {
+    transition: background-color 1.2s ease, color 1.2s ease, box-shadow 1.2s ease;
+}
+
 
 body.light {
     background-color: rgba(250, 246, 240, 255);
     width: 100%;
     height: 100vh;
+    transition: background-color 1.2s ease
 }
 
 body.dark {
     background-color: black;
+    transition: background-color 1.2s ease
 }
 
 
@@ -24,6 +31,7 @@ body.dark {
 .homepage.light {
     background-color: rgba(250, 246, 240, 255);
     height: 100vh;
+    transition: background-color 1.2s ease
 }
 
 .homepage.light .small-widget1,
@@ -31,10 +39,27 @@ body.dark {
 .homepage.light .small-widget3,
 .homepage.light .small-widget4 {
     background-color: white;
+    transition: background-color 1.2s ease
 }
 
 .homepage.light .big-widget {
 background-color: white;
+    transition: background-color 1.2s ease
+}
+
+.homepage.light .header {
+    background-color: white;
+    transition: background-color 1.2s ease
+}
+
+.homepage.light .search-bar{
+    border-width: 1px;
+    border-style: solid;
+    transition: background-color 1.2s ease
+}
+.homepage.dark .search-bar::placeholder{
+    color: white;
+    transition: background-color 1.2s ease
 }
 
 
@@ -43,6 +68,7 @@ background-color: white;
 .homepage.dark {
     background-color: black;
     height: 100vh;
+    transition: background-color 1.2s ease
 }
 
 .homepage.dark .small-widget1,
@@ -51,10 +77,12 @@ background-color: white;
 .homepage.dark .small-widget4 {
     background-color: rgba(250, 246, 240, 255);
     border-color: rgba(250, 246, 240, 255);
+    transition: background-color 1.2s ease
 }
 
 .homepage.dark .big-widget {
     background-color: rgba(250, 246, 240, 255);
+    transition: background-color 1.2s ease
 }
 
 
@@ -62,6 +90,7 @@ background-color: white;
     background-color: black;
     border-width: 1px;
     border-color: white;
+    transition: background-color 1.2s ease
 }
 
 .homepage.dark .search-bar{
@@ -69,9 +98,11 @@ background-color: white;
     border-width: 1px;
     border-style: solid;
     border-color: white;
+    transition: background-color 1.2s ease
 }
 .homepage.dark .search-bar::placeholder{
     color: white;
+    transition: background-color 1.2s ease
 }
 
 

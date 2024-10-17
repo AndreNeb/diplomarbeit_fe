@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pictures/document-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/info-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/language-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/regeln-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/support-blackMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24,_18_56_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24__18_56__Changes_.xml" beforeDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Dark mode auf der Homepage; design dazu morgen besprechen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,14 +150,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00013" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728581335620</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1728581335620</updated>
     </task>
     <task id="LOCAL-00014" summary="Topbar">
       <option name="closed" value="true" />
@@ -317,7 +299,7 @@
       <workItem from="1729084068807" duration="606000" />
       <workItem from="1729092657765" duration="866000" />
       <workItem from="1729158814699" duration="18888000" />
-      <workItem from="1729185542387" duration="9153000" />
+      <workItem from="1729185542387" duration="9877000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -575,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729179923096</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Dark mode auf der Homepage; design dazu morgen besprechen">
+      <option name="closed" value="true" />
+      <created>1729196505898</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1729196505899</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -615,6 +605,7 @@
     <MESSAGE value="Leftbar" />
     <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
-    <option name="LAST_COMMIT_MESSAGE" value="Big widgets für jeden Bildschirm angepasst" />
+    <MESSAGE value="Dark mode auf der Homepage; design dazu morgen besprechen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dark mode auf der Homepage; design dazu morgen besprechen" />
   </component>
 </project>
