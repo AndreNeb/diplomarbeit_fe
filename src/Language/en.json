@@ -37,6 +37,9 @@
 
   "logo": "Logo",
   "documents": "Documents",
+  "log-text": "Log in",
+  "username": "Username",
+  "password": "Password",
 
   "NameCategories": "Category",
   "RuleName": "Name",

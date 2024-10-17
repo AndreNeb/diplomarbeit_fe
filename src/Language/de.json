@@ -38,6 +38,10 @@
   "logo": "Logo",
   "documents": "Dokumente",
 
+  "log-text": "Einloggen",
+  "username": "Benutzername",
+  "password": "Passwort",
+
   "NameCategories": "Kategorie",
   "RuleName": "Name",
   "RuleNumber": "Nummer",

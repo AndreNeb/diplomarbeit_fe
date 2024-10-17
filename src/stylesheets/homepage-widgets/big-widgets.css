@@ -1,10 +1,26 @@
+.widgets {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Die erste Zeile ist auto, die zweite nimmt den restlichen Platz (1fr) */
+    align-items: center;
+
+    width: 90%;
+    height: 80%;
+
+    margin: 10% auto;
+
+    background-color: blue;
+}
+
 .big-widgets-general {
     display: grid;
     grid-template-columns: 5fr 3fr;
+    grid-template-rows: 1fr; /* Das Grid-Layout in diesem Div */
+
     column-gap: 20px;
     row-gap: 40px;
-    margin: 30px;
-    height: auto;
+
+    height: 500px;
+
 }
 
 .big-widget {
@@ -14,8 +30,13 @@
     border-radius: 15px;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    height: 39vh;
+
+
+    min-height: 0; /* Verhindert, dass der Inhalt die Höhe begrenzt */
+    height: 100%; /* Füllt die gesamte Höhe aus */
+    flex-grow: 1; /* Erlaubt den Widgets, sich zu dehnen */
+
+
     cursor: pointer;
     transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transform-origin: bottom;
@@ -29,5 +50,9 @@
 @media (max-width: 800px) {
     .big-widgets-general {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+        margin-bottom: 500px;
     }
+
 }

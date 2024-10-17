@@ -22,6 +22,7 @@
     box-sizing: border-box;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
+
 }
 
 .left-bar-hidden {
