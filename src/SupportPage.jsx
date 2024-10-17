@@ -79,60 +79,72 @@ function SupportPage() {
             </Link>
 
             <div className="topbar-functional-divs">
-                <Link to="/RulesPage">
-                    <img src={regeln} className="icons" alt={t('rules')}/>
-                </Link>
+                    <Link to="/RulesPage">
+                        <div className="icons-tooltip">
+                            <img src={regeln} className="icons" alt={t('rules')}/>
+                            <div className="tooltip">{t('rules')}</div>
+                        </div>
+                    </Link>
 
-                <Link to="/DocumentPage">
-                    <img src={document} className="icons" alt={t('documents')}/>
-                </Link>
+                    <Link to="/DocumentPage">
+                        <div className="icons-tooltip">
+                            <img src={document} className="icons" alt={t('documents')}/>
+                            <div className="tooltip">{t('documents')}</div>
+                        </div>
+                    </Link>
 
-                <Link to="/InfoPage">
-                    <img src={info} className="icons" alt={t('info')}/>
-                </Link>
+                    <Link to="/InfoPage">
+                        <div className="icons-tooltip">
+                            <img src={info} className="icons" alt={t('info')}/>
+                            <div className="tooltip">{t('info')}</div>
+                        </div>
+                    </Link>
 
-                <Link to="/SupportPage">
-                    <img src={support} className="icons" alt={t('support')}/>
-                </Link>
+                    <Link to="/SupportPage">
+                        <div className="icons-tooltip">
+                            <img src={support} className="icons" alt={t('support')}/>
+                            <div className="tooltip">{t('support')}</div>
+                        </div>
+                    </Link>
 
+                </div>
+            </div>
+            <div className="middle-section">
+                <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+            </div>
+            <div className="right-section">
+                {showdarklight ? (
+                    <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
+                ) : (
+                    <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
+                )}
+                <img src={language} className="icons" alt={t('language')}/>
+                <img src={login} className="icons" alt="login"/>
             </div>
         </div>
-        <div className="middle-section">
-            <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
-        </div>
-        <div className="right-section">
-            {showdarklight ? (
-                <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
-            ) : (
-                <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
-            )}
-            <img src={language} className="icons" alt={t('language')}/>
-            <img src={login} className="icons" alt="login"/>
-        </div>
-    </div>
 
 
-    <div className="general-container">
-        <div className="general-inner-container">
-            <span className="text">{t('support-text')}</span>
-            <div className="field-container">
+        <div className="general-container">
+            <div className="general-inner-container">
+                <span className="text">{t('support-text')}</span>
+                <div className="field-container">
 
-                <form onSubmit={handleSubmit}>
-                    <div className="text-fields-container">
-                        <input type="text" name="name" className="contact-inputs" placeholder={t('name')}
-                               required/>
-                        <input type="email" name="email" className="contact-inputs" placeholder={t('email')}
-                               required/>
-                        <textarea name="message" className="contact-messages" placeholder={t('message')}
-                                  required></textarea>
-                    </div>
+                    <form onSubmit={handleSubmit}>
+                        <div className="text-fields-container">
+                            <input type="text" name="name" className="contact-inputs" placeholder={t('name')}
+                                   required/>
+                            <input type="email" name="email" className="contact-inputs" placeholder={t('email')}
+                                   required/>
+                            <textarea name="message" className="contact-messages" placeholder={t('message')}
+                                      required></textarea>
+                        </div>
 
 
-                    <div className="button-container">
-                        <button type="submit" className={classNames('submit-button', {active: isActive})}>
-                            <p>{btnText}</p>
-                            <div className="check-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <div className="button-container">
+                            <button type="submit" className={classNames('submit-button', {active: isActive})}>
+                                <p>{btnText}</p>
+                                <div className="check-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                                     <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
                                 </svg>
                             </div>

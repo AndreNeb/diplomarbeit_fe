@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Rules overview">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24,_16_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24__16_00__Changes_.xml" beforeDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Tooltips">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogInOutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,14 +152,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00012" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728574280274</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1728574280274</updated>
     </task>
     <task id="LOCAL-00013" summary="Topbar">
       <option name="closed" value="true" />
@@ -320,7 +308,7 @@
       <workItem from="1729071720597" duration="663000" />
       <workItem from="1729075438271" duration="692000" />
       <workItem from="1729162008414" duration="14529000" />
-      <workItem from="1729177143339" duration="2340000" />
+      <workItem from="1729177143339" duration="2659000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -570,7 +558,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729176136809</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Tooltips">
+      <option name="closed" value="true" />
+      <created>1729179505824</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1729179505824</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -605,6 +601,7 @@
     <MESSAGE value="Topbar" />
     <MESSAGE value="Leftbar" />
     <MESSAGE value="Rules overview" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rules overview" />
+    <MESSAGE value="Tooltips" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tooltips" />
   </component>
 </project>

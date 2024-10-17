@@ -265,6 +265,7 @@
     justify-content: center;
 }
 .tooltip{
+    z-index:300;
     position: absolute;
     background-color: lightgray;
     color: black;
