@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DarkModeContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_24,_09_48_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_24__09_48__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogInOutPage.jsx" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst">
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +150,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00018" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628394801</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628394801</updated>
     </task>
     <task id="LOCAL-00019" summary="Topbar">
       <option name="closed" value="true" />
@@ -585,9 +565,17 @@
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
       <updated>1729272014270</updated>
-      <workItem from="1729254554684" duration="12446000" />
+      <workItem from="1729254554684" duration="12520000" />
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst">
+      <option name="closed" value="true" />
+      <created>1729273451131</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1729273451131</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -631,6 +619,7 @@
     <MESSAGE value="Dark mode auf der Homepage; design dazu morgen besprechen" />
     <MESSAGE value="Smoother Übergang" />
     <MESSAGE value="Bilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bilder" />
+    <MESSAGE value="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst" />
   </component>
 </project>

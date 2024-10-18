@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
@@ -6,7 +6,7 @@ import arrowleft from "./pictures/lightMode/arrow-left_lightMode.png";
 import plusdark from "./pictures/lightMode/plus_lightMode.png";
 import safedark from "./pictures/lightMode/safe_lightMode.png";
 import deletedark from "./pictures/lightMode/delete_lightMode.png";
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {useTranslation} from "react-i18next";
 import apple from './pictures/other/apple.png';
 import hamburger from './pictures/other/hamburger-menu.png';

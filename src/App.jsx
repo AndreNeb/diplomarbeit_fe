@@ -1,6 +1,6 @@
 import './i18n'
 
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes, Link, useNavigate} from "react-router-dom";
 
 import './stylesheets/topbar/topbar.css';
