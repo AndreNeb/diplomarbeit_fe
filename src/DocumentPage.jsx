@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './stylesheets/Rules/leftbar/buttons.css';
+import './stylesheets/document//document.css';
 
 function RulesPage() {
     return (
@@ -7,7 +8,9 @@ function RulesPage() {
             <Link to="/">
                 <button className="button-general-leftbar">Document</button>
             </Link>
+
         </div>
+
     );
 }
 

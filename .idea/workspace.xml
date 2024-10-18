@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Umstrukturierung">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_24,_09_48_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_24__09_48__Changes_.xml" beforeDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Add-Rules">
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/arrow-right_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/english_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/france_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/german_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/italian_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/spanish_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/lightMode/arrow_right_lightMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scratches/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/document/document.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocumentPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/Build-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/Rules-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/Rules-overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +31,8 @@
       <list>
         <option value="package.json" />
         <option value="JSX File" />
-        <option value="CSS File" />
         <option value="tsconfig.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,7 +57,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -65,60 +71,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/Language&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
-    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
-    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
-    &quot;timeTracker.comment&quot;: &quot;&quot;,
-    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
-    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
-    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;true&quot;,
-    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
-    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
-    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
-    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,
-    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,
-    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.query&quot;: &quot;&quot;,
-    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
-    &quot;timeTracker.startTime&quot;: &quot;1728670322905&quot;,
-    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
-    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.Rules.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/pictures/darkMode",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.npm start.executor": "Run",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "spentTimePerTaskStorage.store": "{}",
+    "timeTracker.activityTracker": "null",
+    "timeTracker.comment": "",
+    "timeTracker.inactivityPeriodInMills": "600000",
+    "timeTracker.isAutoTrackingEnable": "false",
+    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
+    "timeTracker.isManualTrackingEnable": "true",
+    "timeTracker.isPaused": "false",
+    "timeTracker.isPostAfterCommitEnabled": "false",
+    "timeTracker.isPostedScheduled": "true",
+    "timeTracker.isRunning": "false",
+    "timeTracker.isScheduledEnabled": "false",
+    "timeTracker.isWhenProjectClosedEnabled": "false",
+    "timeTracker.issueId": "DA_01-78",
+    "timeTracker.issueIdReadable": "DA_01-78",
+    "timeTracker.pausedTime": "0",
+    "timeTracker.query": "",
+    "timeTracker.recordedTime": "0",
+    "timeTracker.scheduledPeriod": "19:00:0",
+    "timeTracker.startTime": "1728670322905",
+    "timeTracker.timeInMills": "0",
+    "timeTracker.type": "Entwicklung",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "SVG"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
+      <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
       <recent name="$PROJECT_DIR$/src/Language" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
+      <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
+      <recent name="$PROJECT_DIR$/src/scratches" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/stylesheets/Rules" />
-      <recent name="$PROJECT_DIR$/src/stylesheets/Rules/leftbar" />
-      <recent name="$PROJECT_DIR$/src/stylesheets" />
-      <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -159,14 +172,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00013" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728581335620</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1728581335620</updated>
     </task>
     <task id="LOCAL-00014" summary="Topbar">
       <option name="closed" value="true" />
@@ -317,7 +322,7 @@
       <workItem from="1729158814699" duration="18687000" />
       <workItem from="1729234937863" duration="4418000" />
       <workItem from="1729239368262" duration="1275000" />
-      <workItem from="1729240763252" duration="3500000" />
+      <workItem from="1729240763252" duration="16194000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -575,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729234613865</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Add-Rules">
+      <option name="closed" value="true" />
+      <created>1729253921912</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1729253921912</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -612,6 +625,7 @@
     <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Umstrukturierung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Umstrukturierung" />
+    <MESSAGE value="Add-Rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add-Rules" />
   </component>
 </project>

@@ -1,5 +1,7 @@
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
+import {ReactComponent as ArrowSvg} from "./scratches/arrow.svg";
+
 import './stylesheets/Rules/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/Rules/Rules-overview.css';
@@ -16,7 +18,7 @@ import plusdark from "./pictures/lightMode/plus_lightMode.png";
 import safedark from "./pictures/lightMode/safe_lightMode.png";
 import deletedark from "./pictures/lightMode/delete_lightMode.png";
 
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import {useTranslation} from "react-i18next";
 import document from "./pictures/lightMode/document_lightMode.png";
@@ -36,6 +38,8 @@ function RulesPage() {
     };
 
     const [text, setText] = useState("");
+
+    const [buttonTexts, setButtonTexts] = useState([]);
 
 
     const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
@@ -75,8 +79,9 @@ function RulesPage() {
 
     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
-    const handleAddDiv = () => {
+    const handleAddDiv = (message) => {
         setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+        setButtonTexts([...buttonTexts, `${message}`]);
     };
 
 
@@ -88,6 +93,18 @@ function RulesPage() {
             overflowWrap: "break-word", // Unterstützt den Umbruch von langen Wörtern
         },
     };
+    const stylesadd = {
+        add: {
+            display: "flex",
+            flexWrap: "wrap", // Elemente umbrechen
+
+            justifyContent: "flex-start", // Start der Buttons links ausrichten
+            alignItems: "center",
+            alignContent: "flex-start",
+            boxSizing: "border-box",
+        },
+    };
+
 
     return (
 
@@ -101,68 +118,68 @@ function RulesPage() {
                     </Link>
 
                     <div className="topbar-functional-divs">
-                            <Link to="/RulesPage">
-                                <div className="icons-tooltip">
-                                    <img src={regeln} className="icons" alt={t('rules')}/>
-                                    <div className="tooltip">{t('rules')}</div>
-                                </div>
-                            </Link>
+                        <Link to="/RulesPage">
+                            <div className="icons-tooltip">
+                                <img src={regeln} className="icons" alt={t('rules')}/>
+                                <div className="tooltip">{t('rules')}</div>
+                            </div>
+                        </Link>
 
-                            <Link to="/DocumentPage">
-                                <div className="icons-tooltip">
-                                    <img src={document} className="icons" alt={t('documents')}/>
-                                    <div className="tooltip">{t('documents')}</div>
-                                </div>
-                            </Link>
+                        <Link to="/DocumentPage">
+                            <div className="icons-tooltip">
+                                <img src={document} className="icons" alt={t('documents')}/>
+                                <div className="tooltip">{t('documents')}</div>
+                            </div>
+                        </Link>
 
-                            <Link to="/InfoPage">
-                                <div className="icons-tooltip">
-                                    <img src={info} className="icons" alt={t('info')}/>
-                                    <div className="tooltip">{t('info')}</div>
-                                </div>
-                            </Link>
+                        <Link to="/InfoPage">
+                            <div className="icons-tooltip">
+                                <img src={info} className="icons" alt={t('info')}/>
+                                <div className="tooltip">{t('info')}</div>
+                            </div>
+                        </Link>
 
-                            <Link to="/SupportPage">
-                                <div className="icons-tooltip">
-                                    <img src={support} className="icons" alt={t('support')}/>
-                                    <div className="tooltip">{t('support')}</div>
-                                </div>
-                            </Link>
+                        <Link to="/SupportPage">
+                            <div className="icons-tooltip">
+                                <img src={support} className="icons" alt={t('support')}/>
+                                <div className="tooltip">{t('support')}</div>
+                            </div>
+                        </Link>
 
 
-                        </div>
                     </div>
-                    <div className="middle-section">
-                        <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
-                    </div>
-                    <div className="right-section">
-                        {showdarklight ? (
-                            <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
-                        ) : (
-                            <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
-                        )}
-                        <img src={language} className="icons" alt={t('language')}/>
-                        <img src={login} className="icons" alt="login"/>
-                    </div>
+                </div>
+                <div className="middle-section">
+                    <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
+                </div>
+                <div className="right-section">
+                    {showdarklight ? (
+                        <img onClick={Mode} src={moon} className="icons mode" alt="Mode"/>
+                    ) : (
+                        <img onClick={Mode} src={sun} className="icons mode" alt="Mode"/>
+                    )}
+                    <img src={language} className="icons" alt={t('language')}/>
+                    <img src={login} className="icons" alt="login"/>
+                </div>
 
 
-                    {currentDiv === 'MainPage' && (
-                        <div className="left-bar-backdiv">
-                            <div className="left-bar-shown" id="shownSidebar2">
-                                <div className="top-leftbar-section">
-                                    <div className="menu">
-                                        <img src={hamburger} onClick={handleHamburgerClick}
-                                             className="menu-picture"
-                                             alt="Hamburger menu"/>
-                                    </div>
-                                    <div className="searchbar-menu">
-                                        <input className="search-bar" type="text"
-                                               placeholder={t('searchbar-placeholder')}/>
-                                    </div>
+                {currentDiv === 'MainPage' && (
+                    <div className="left-bar-backdiv">
+                        <div className="left-bar-shown" id="shownSidebar2">
+                            <div className="top-leftbar-section">
+                                <div className="menu">
+                                    <img src={hamburger} onClick={handleHamburgerClick}
+                                         className="menu-picture"
+                                         alt="Hamburger menu"/>
                                 </div>
-                                <div className="button-section">
-                                    <button onClick={() => handleCategoriesClick(t('child'))}
-                                            className="button-general-leftbar">{t('child')}</button>
+                                <div className="searchbar-menu">
+                                    <input className="search-bar" type="text"
+                                           placeholder={t('searchbar-placeholder')}/>
+                                </div>
+                            </div>
+                            <div className="button-section">
+                                <button onClick={() => handleCategoriesClick(t('child'))}
+                                        className="button-general-leftbar">{t('child')}</button>
                                 <button onClick={() => handleCategoriesClick(t('lung'))}
                                         className="button-general-leftbar">{t('lung')}</button>
                                 <button onClick={() => handleCategoriesClick(t('heart'))}
@@ -218,26 +235,26 @@ function RulesPage() {
                             <input className="search-bar" type="text" placeholder={t('searchbar-placeholder')}/>
                         </div>
                         <div className="rules-body-categories">
-                            <div  className="content-divs-header" style={styles.box}>
+                            <div className="content-divs-header" style={styles.box}>
                                 {t('NameCategories')}
                             </div>
-                            <div  className="content-divs-header" style={styles.box}>
+                            <div className="content-divs-header" style={styles.box}>
                                 {t('RuleName')}
                             </div>
-                            <div  className="content-divs-header" style={styles.box}>
+                            <div className="content-divs-header" style={styles.box}>
                                 {t('RuleNumber')}
                             </div>
-                            <div  className="content-divs-header" style={styles.box}>
+                            <div className="content-divs-header" style={styles.box}>
                                 {t('Author')}
                             </div>
-                            <div  className="content-divs-header-rightest" style={styles.box}>
+                            <div className="content-divs-header-rightest" style={styles.box}>
                                 {t('Date')}
                             </div>
                         </div>
                         <div className="rules-body-content">
                             <div className="content-divs" style={styles.box}>
                                 test
-                                </div>
+                            </div>
                             <div className="content-divs" style={styles.box}>
                                 {t('RuleName')}
                             </div>
@@ -266,7 +283,7 @@ function RulesPage() {
                     <div className="left-bar-backdiv">
                         <div className="left-bar-shown" id="shownSidebar2">
                             <div className="rules-section">
-                            <div className="arrow-menu">
+                                <div className="arrow-menu">
                                     <img src={arrowleft} onClick={handleMainClick}
                                          className="arrow-left"
                                          alt="Arrow left"/>
@@ -288,28 +305,31 @@ function RulesPage() {
                             <div className="button-section">
                                 <button onClick={() => handleAddDiv(t('if'))}
                                         className="button-general-leftbar">{t('if')}</button>
-                                <button onClick={() => handleCategoriesClick(t('and'))}
+                                <button onClick={() => handleAddDiv(t('and'))}
                                         className="button-general-leftbar">{t('and')}</button>
-                                <button onClick={() => handleCategoriesClick(t('or'))}
+                                <button onClick={() => handleAddDiv(t('or'))}
                                         className="button-general-leftbar">{t('or')}</button>
-                                <button onClick={() => handleCategoriesClick(t('text'))}
+                                <button onClick={() => handleAddDiv(t('text'))}
                                         className="button-general-leftbar">{t('text')}</button>
-                                <button onClick={() => handleCategoriesClick(t('greater than'))}
+                                <button onClick={() => handleAddDiv(t('greater than'))}
                                         className="button-general-leftbar">{t('greater than')}</button>
-                                <button onClick={() => handleCategoriesClick(t('less than'))}
+                                <button onClick={() => handleAddDiv(t('less than'))}
                                         className="button-general-leftbar">{t('less than')}</button>
-                                <button onClick={() => handleCategoriesClick(t('equal'))}
+                                <button onClick={() => handleAddDiv(t('equal'))}
                                         className="button-general-leftbar">{t('equal')}</button>
                             </div>
-                            <div className="frame-add">
-                                <div className="grid-add">
-                                    {divs.map((div, index) => (
-                                        <div key={index} className="grid-different-button" >
-                                                <button className="button-middle">test</button>
+                            <div className="frame-add" style={stylesadd.add}>
+                                {divs.map((div, index) => (
+                                    <div key={index} className="grid-different-button">
+                                        <button className="query-button">{buttonTexts[index]}</button>
+                                        <div>
+                                            <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+                                                 alt="Delete menu"/>
                                         </div>
+                                    </div>
 
-                                    ))}
-                                </div>
+
+                                ))}
                             </div>
                         </div>
                     </div>
