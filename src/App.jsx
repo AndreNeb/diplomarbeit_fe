@@ -47,11 +47,7 @@ function App() {
         i18n.changeLanguage(lang);
     };
 
-    const [showdarklight, setDarklight] = useState(true);
 
-    const Mode = () => {
-        setDarklight(!showdarklight);
-    };
 
 
     const [isOpen, setIsOpen] = useState(false);
@@ -65,26 +61,21 @@ function App() {
         return savedMode ? JSON.parse(savedMode) : window.matchMedia('(prefers-color-scheme: dark)').matches;
     });
 
-
-
     const toggleDarkMode = () => {
-        setDarkMode(prevMode => !prevMode);  // Der Zustand wird umgeschaltet
-
+        setDarkMode(prevMode => !prevMode);
     };
 
     useEffect(() => {
+        // Setze die Dark Mode Klasse auf den body und die aktuelle Seite
         localStorage.setItem('darkMode', JSON.stringify(darkMode));
-        document.body.className = darkMode ? 'dark' : 'light';
+        document.body.className = darkMode ? 'dark' : 'light';  // Body Dark Mode
+
+        // Wenn du spezifische Seitenklassen wie 'homepage', 'rules' etc. verwendest
+        const pageElement = document.querySelector('.homepage');  // oder rulesPage, supportPage je nach Route
+        if (pageElement) {
+            pageElement.className = `homepage ${darkMode ? 'dark' : 'light'}`;
+        }
     }, [darkMode]);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const handleChange = (e) => setDarkMode(e.matches);
-
-        mediaQuery.addEventListener('change', handleChange);
-
-        return () => mediaQuery.removeEventListener('change', handleChange);
-    }, []);
 
 
     return (<Router>

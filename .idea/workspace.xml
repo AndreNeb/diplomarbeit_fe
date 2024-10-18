@@ -4,41 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/document_darkMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/rules_darkMode.png" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Bilder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/apple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/arrow-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/arrow-left_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/delete-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/delete_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/delete-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/delete_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/document-blackMode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/document.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/document_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/hamburger-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/hamburger-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/info-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/info_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/info_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/language-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/language_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/language.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/language_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/login-picture_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/login-picture_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/maske.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/maske.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/moon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/moon_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/patienten.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/patienten.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/plus-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/plus_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/plus-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/plus_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/regeln-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/regeln_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/regeln.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/regeln_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/safe-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/safe_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/safe-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/safe_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/spritze.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/spritze.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/sun.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/sun_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/support-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/support_darkMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/support.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/support_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/wartezimmer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/wartezimmer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/darkMode/info_darkMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/info_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/darkMode/language_darkMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/language_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/darkMode/login-picture_darkMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/login-picture_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/darkMode/support_darkMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/support_darkMode.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,14 +160,6 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
-    <task id="LOCAL-00015" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728582455198</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1728582455198</updated>
-    </task>
     <task id="LOCAL-00016" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728583855048</created>
@@ -327,7 +294,7 @@
       <workItem from="1729092657765" duration="866000" />
       <workItem from="1729158814699" duration="18888000" />
       <workItem from="1729185542387" duration="10038000" />
-      <workItem from="1729230192200" duration="3975000" />
+      <workItem from="1729230192200" duration="9295000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -601,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729196989147</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Bilder">
+      <option name="closed" value="true" />
+      <created>1729234461839</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1729234461839</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -644,6 +619,7 @@
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Dark mode auf der Homepage; design dazu morgen besprechen" />
     <MESSAGE value="Smoother Übergang" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smoother Übergang" />
+    <MESSAGE value="Bilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bilder" />
   </component>
 </project>
