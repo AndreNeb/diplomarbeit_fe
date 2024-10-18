@@ -51,7 +51,6 @@ function Header() {
                     <Link to="/DocumentPage">
                         <div className="icons-tooltip">
                             <img src={darkMode ? documentBlack : documentImage} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
-                            <div className="tooltip">{t('info')}</div>
                             <div className="tooltip">{t('documents')}</div>
                         </div>
                     </Link>
