@@ -4,9 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Dark mode auf der Homepage; design dazu morgen besprechen">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/document_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/rules_darkMode.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/apple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/arrow-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/arrow-left_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/delete-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/delete_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/delete-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/delete_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/document-blackMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/document.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/document_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/hamburger-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/hamburger-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/info-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/info_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/info_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/language-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/language_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/language.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/language_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/login-picture_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/login-picture_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/maske.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/maske.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/moon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/moon_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/patienten.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/patienten.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/plus-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/plus_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/plus-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/plus_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/regeln-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/regeln_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/regeln.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/regeln_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/safe-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/safe_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/safe-bright.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/safe_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/spritze.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/spritze.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/sun.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/sun_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/support-blackMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/darkMode/support_darkMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/support.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/support_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/wartezimmer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/wartezimmer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,58 +91,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.Rules.jsx.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
-    "timeTracker.comment": "",
-    "timeTracker.inactivityPeriodInMills": "600000",
-    "timeTracker.isAutoTrackingEnable": "false",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "false",
-    "timeTracker.isPaused": "false",
-    "timeTracker.isPostAfterCommitEnabled": "false",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
-    "timeTracker.isWhenProjectClosedEnabled": "false",
-    "timeTracker.issueId": "DA_01-78",
-    "timeTracker.issueIdReadable": "DA_01-78",
-    "timeTracker.pausedTime": "0",
-    "timeTracker.query": "",
-    "timeTracker.recordedTime": "0",
-    "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729185545983",
-    "timeTracker.timeInMills": "0",
-    "timeTracker.type": "Entwicklung",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1729185545983&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
+      <recent name="$PROJECT_DIR$/src/pictures/other" />
+      <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
       <recent name="$PROJECT_DIR$/src/pictures" />
       <recent name="$PROJECT_DIR$/src/Language" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -150,14 +184,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00014" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728581920416</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1728581920416</updated>
     </task>
     <task id="LOCAL-00015" summary="Topbar">
       <option name="closed" value="true" />
@@ -275,6 +301,7 @@
       <branch name="main" repository="$PROJECT_DIR$" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727465054608</created>
       <option name="issue" value="true" />
@@ -283,7 +310,7 @@
       <option name="presentableId" value="DA_01-78" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1728677346802</updated>
+      <updated>1729232863808</updated>
       <workItem from="1728651349950" duration="8618000" />
       <workItem from="1728660086076" duration="822000" />
       <workItem from="1728670318414" duration="23000" />
@@ -299,7 +326,8 @@
       <workItem from="1729084068807" duration="606000" />
       <workItem from="1729092657765" duration="866000" />
       <workItem from="1729158814699" duration="18888000" />
-      <workItem from="1729185542387" duration="9877000" />
+      <workItem from="1729185542387" duration="10038000" />
+      <workItem from="1729230192200" duration="3975000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -565,13 +593,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729196505899</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Smoother Übergang">
+      <option name="closed" value="true" />
+      <created>1729196989147</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1729196989147</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers>
       <YouTrack url="https://wuev06.youtrack.cloud">
+        <option name="defaultSearch" value="website" />
         <username>random</username>
       </YouTrack>
     </servers>
@@ -606,6 +643,7 @@
     <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Dark mode auf der Homepage; design dazu morgen besprechen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dark mode auf der Homepage; design dazu morgen besprechen" />
+    <MESSAGE value="Smoother Übergang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smoother Übergang" />
   </component>
 </project>

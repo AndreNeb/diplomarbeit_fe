@@ -4,15 +4,15 @@ import './stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
-import regeln from './pictures/regeln.png';
-import info from './pictures/info.png';
-import support from './pictures/support.png';
-import language from './pictures/language.png';
-import login from './pictures/login-picture.png';
-import document from "./pictures/document.png";
-import moon from "./pictures/moon.png";
-import sun from "./pictures/sun.png";
-import apple from "./pictures/apple.png";
+import regeln from './pictures/lightMode/regeln_lightMode.png';
+import info from './pictures/lightMode/info_lightMode.png';
+import support from './pictures/lightMode/support_lightMode.png';
+import language from './pictures/lightMode/language_lightMode.png';
+import login from './pictures/lightMode/login-picture_lightMode.png';
+import document from "./pictures/lightMode/document_lightMode.png";
+import moon from "./pictures/lightMode/moon_lightMode.png";
+import sun from "./pictures/darkMode/sun_darkMode.png";
+import apple from "./pictures/other/apple.png";
 
 function SupportPage() {
 

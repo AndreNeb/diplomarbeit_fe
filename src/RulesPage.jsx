@@ -3,25 +3,25 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
 
-import logo from "./pictures/hamburger-menu.png";
-import regeln from "./pictures/regeln.png";
-import info from "./pictures/info.png";
-import support from "./pictures/support.png";
-import language from "./pictures/language.png";
-import login from "./pictures/login-picture.png";
-import hamburger from "./pictures/hamburger-menu.png";
-import arrowleft from "./pictures/arrow-left.png";
-import plusdark from "./pictures/plus-black.png";
-import safedark from "./pictures/safe-black.png";
-import deletedark from "./pictures/delete-black.png";
+import logo from "./pictures/other/hamburger-menu.png";
+import regeln from "./pictures/lightMode/regeln_lightMode.png";
+import info from "./pictures/lightMode/info_lightMode.png";
+import support from "./pictures/lightMode/support_lightMode.png";
+import language from "./pictures/lightMode/language_lightMode.png";
+import login from "./pictures/lightMode/login-picture_lightMode.png";
+import hamburger from "./pictures/other/hamburger-menu.png";
+import arrowleft from "./pictures/lightMode/arrow-left_lightMode.png";
+import plusdark from "./pictures/lightMode/plus_lightMode.png";
+import safedark from "./pictures/lightMode/safe_lightMode.png";
+import deletedark from "./pictures/lightMode/delete_lightMode.png";
 
 import React, {useState} from 'react';
 
 import {useTranslation} from "react-i18next";
-import document from "./pictures/document.png";
-import moon from "./pictures/moon.png";
-import sun from "./pictures/sun.png";
-import apple from "./pictures/apple.png";
+import document from "./pictures/lightMode/document_lightMode.png";
+import moon from "./pictures/lightMode/moon_lightMode.png";
+import sun from "./pictures/darkMode/sun_darkMode.png";
+import apple from "./pictures/other/apple.png";
 
 
 function RulesPage() {
