@@ -24,8 +24,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
-    /*background-color: rebeccapurple;*/
 }
 
 .left-section {
@@ -48,9 +46,8 @@
     height: 35px;
     padding: 3px;
     border-radius: 9px;
-
-    /*background-color: greenyellow;*/
 }
+
 
 .icons:hover {
     transform: scale(1.01, 1.01);
