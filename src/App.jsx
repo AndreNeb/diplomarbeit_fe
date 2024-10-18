@@ -4,8 +4,11 @@ import React, {useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes, Link, useNavigate} from "react-router-dom";
 
 import './stylesheets/topbar/topbar.css';
-import './stylesheets/leftbar/leftbar.css';
-import './stylesheets/leftbar/buttons.css';
+import './stylesheets/topbar/topbar.css';
+import './stylesheets/Rules/leftbar/buttons.css'
+import './stylesheets/Rules/leftbar/leftbar.css'
+import './stylesheets/Rules/Build-grid.css'
+import './stylesheets/Rules/Rules-overview.css';
 import './stylesheets/general/general.css';
 import './stylesheets/homepage-widgets/small-widgets.css';
 import './stylesheets/homepage-widgets/big-widgets.css';

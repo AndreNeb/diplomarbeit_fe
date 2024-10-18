@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,14 +153,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00019" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628922609</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628922609</updated>
     </task>
     <task id="LOCAL-00020" summary="Topbar">
       <option name="closed" value="true" />
@@ -575,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729273451131</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst">
+      <option name="closed" value="true" />
+      <created>1729273849328</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1729273849329</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
