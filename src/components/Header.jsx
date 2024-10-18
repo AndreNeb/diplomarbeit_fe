@@ -33,7 +33,8 @@ function Header() {
 
     return (
 
-        <div className="header">
+        <div className="header"
+             style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
                 <Link to="/">
                     <img src={apple} className="logo" alt={t('logo')}/>
@@ -72,8 +73,17 @@ function Header() {
                 </div>
             </div>
             <div className="middle-section">
-                <input className="search-bar" type="text"
-                       placeholder={t('searchbar-placeholder')}/>
+                <input
+                    className={`search-bar ${darkMode ? 'dark' : 'light'}`}
+                    type="text"
+                    placeholder={t('searchbar-placeholder')}
+                    style={{
+                        backgroundColor: darkMode ? 'black' : 'white',
+                        color: darkMode ? 'white' : 'black',
+                        borderColor: darkMode ? 'white' : 'rgb(192, 192, 192)'
+                    }}
+                />
+
             </div>
             <div className="right-section">
 

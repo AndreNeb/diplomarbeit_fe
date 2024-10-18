@@ -29,7 +29,7 @@ function Home() {
 
     return (
 
-        <body className={`homepage ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "black" : "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
+        <body className={`homepage ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "" : "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
         <Header/>
 
         <div className="small-widgets-outer-div">
