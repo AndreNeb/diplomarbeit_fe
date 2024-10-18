@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pictures/document-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/info-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/language-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/regeln-blackMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/support-blackMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24,_18_56_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_10_24__18_56__Changes_.xml" beforeDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Big widgets für jeden Bildschirm angepasst">
+      <change afterPath="$PROJECT_DIR$/src/Language/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Language/fr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Language/it.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/Rules/Build-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/Rules/Rules-overview.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/login-picture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Language/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +30,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="tsconfig.json" />
         <option value="package.json" />
-        <option value="CSS File" />
         <option value="JSX File" />
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -74,7 +78,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andrenebauer/Documents/HTBLuVA/5 AHBG/Diplomarbeit_Code/diplomarbeit_fe",
+    "last_opened_file_path": "/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/Language",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,7 +94,7 @@
     "timeTracker.inactivityPeriodInMills": "600000",
     "timeTracker.isAutoTrackingEnable": "false",
     "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "false",
+    "timeTracker.isManualTrackingEnable": "true",
     "timeTracker.isPaused": "false",
     "timeTracker.isPostAfterCommitEnabled": "false",
     "timeTracker.isPostedScheduled": "true",
@@ -103,7 +107,7 @@
     "timeTracker.query": "",
     "timeTracker.recordedTime": "0",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729185545983",
+    "timeTracker.startTime": "1728670322905",
     "timeTracker.timeInMills": "0",
     "timeTracker.type": "Entwicklung",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
@@ -112,14 +116,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Language" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/stylesheets/Rules" />
+      <recent name="$PROJECT_DIR$/src/stylesheets/Rules/leftbar" />
+      <recent name="$PROJECT_DIR$/src/stylesheets" />
       <recent name="$PROJECT_DIR$/src/pictures" />
       <recent name="$PROJECT_DIR$/src/Language" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -160,6 +166,14 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
+    </task>
+    <task id="LOCAL-00012" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728574280274</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728574280274</updated>
     </task>
     <task id="LOCAL-00013" summary="Topbar">
       <option name="closed" value="true" />
@@ -292,7 +306,6 @@
     <task active="true" id="DA_01-78" summary="Grundfunktionen Website ">
       <branch name="main" repository="$PROJECT_DIR$" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727465054608</created>
       <option name="issue" value="true" />
@@ -316,8 +329,7 @@
       <workItem from="1729063914276" duration="962000" />
       <workItem from="1729084068807" duration="606000" />
       <workItem from="1729092657765" duration="866000" />
-      <workItem from="1729158814699" duration="18888000" />
-      <workItem from="1729185542387" duration="9153000" />
+      <workItem from="1729158814699" duration="18687000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -567,24 +579,12 @@
       <option name="project" value="LOCAL" />
       <updated>1729179576187</updated>
     </task>
-    <task id="LOCAL-00060" summary="Big widgets für jeden Bildschirm angepasst">
-      <option name="closed" value="true" />
-      <created>1729179923096</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1729179923096</updated>
-    </task>
-    <option name="localTasksCounter" value="61" />
+    <option name="localTasksCounter" value="60" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
-    <servers>
-      <YouTrack url="https://wuev06.youtrack.cloud">
-        <username>random</username>
-      </YouTrack>
-    </servers>
+    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />

@@ -1,7 +1,8 @@
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
-import './stylesheets/leftbar/buttons.css';
+import './stylesheets/Rules/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
+import './stylesheets/Rules/Rules-overview.css';
 
 import logo from "./pictures/hamburger-menu.png";
 import regeln from "./pictures/regeln.png";
@@ -277,30 +278,21 @@ function RulesPage() {
                                 </div>
                             </div>
                             <div className="button-section">
-                                <button onClick={() => handleCategoriesClick(t('child'))}
-                                        className="button-general-leftbar">{t('child')}</button>
-                                <button onClick={() => handleCategoriesClick(t('lung'))}
-                                        className="button-general-leftbar">{t('lung')}</button>
-                                <button onClick={() => handleCategoriesClick(t('heart'))}
-                                        className="button-general-leftbar">{t('heart')}</button>
-                                <button onClick={() => handleCategoriesClick(t('stomach '))}
-                                        className="button-general-leftbar">{t('stomach')}</button>
-                                <button onClick={() => handleCategoriesClick(t('leg'))}
-                                        className="button-general-leftbar">{t('leg')}</button>
-                                <button onClick={() => handleCategoriesClick(t('arms'))}
-                                        className="button-general-leftbar">{t('arms')}</button>
-                                <button onClick={() => handleCategoriesClick(t('liver'))}
-                                        className="button-general-leftbar">{t('liver')}</button>
-                                <button onClick={() => handleCategoriesClick(t('gallbladder'))}
-                                        className="button-general-leftbar">{t('gallbladder')}</button>
-                                <button onClick={() => handleCategoriesClick(t('kidney'))}
-                                        className="button-general-leftbar">{t('kidney')}</button>
-                                <button onClick={() => handleCategoriesClick(t('brain'))}
-                                        className="button-general-leftbar">{t('brain')}</button>
-                                <button onClick={() => handleCategoriesClick(t('specialized'))}
-                                        className="button-general-leftbar">{t('specialized')}</button>
-                                <button onClick={() => handleCategoriesClick(t('other'))}
-                                        className="button-general-leftbar">{t('other')}</button>
+                                <button onClick={() => handleCategoriesClick(t('if'))}
+                                        className="button-general-leftbar">{t('if')}</button>
+                                <button onClick={() => handleCategoriesClick(t('and'))}
+                                        className="button-general-leftbar">{t('and')}</button>
+                                <button onClick={() => handleCategoriesClick(t('or'))}
+                                        className="button-general-leftbar">{t('or')}</button>
+                                <button onClick={() => handleCategoriesClick(t('text'))}
+                                        className="button-general-leftbar">{t('text')}</button>
+                                <button onClick={() => handleCategoriesClick(t('greater than'))}
+                                        className="button-general-leftbar">{t('greater than')}</button>
+                                <button onClick={() => handleCategoriesClick(t('less than'))}
+                                        className="button-general-leftbar">{t('less than')}</button>
+                                <button onClick={() => handleCategoriesClick(t('equal'))}
+                                        className="button-general-leftbar">{t('equal')}</button>
+
                             </div>
                         </div>
                     </div>

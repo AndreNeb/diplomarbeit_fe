@@ -45,5 +45,13 @@
   "RuleName": "Name",
   "RuleNumber": "Number",
   "Author": "Author",
-  "Date": "Date"
+  "Date": "Date",
+
+  "if": "IF",
+  "and": "AND",
+  "or": "OR",
+  "greater than": ">",
+  "less than": "<",
+  "equal": "=",
+  "text": "TEXT"
 }
