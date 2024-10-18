@@ -14,9 +14,6 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(228, 228, 228);
-
-    /*background-color: red;*/
-
 }
 
 .topbar-functional-divs {
@@ -31,8 +28,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
-    /*background-color: green;*/
 }
 
 .logo {
@@ -42,10 +37,15 @@
     background-color: white;
 }
 
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
 .icons {
+    border-radius: 10px;
     height: 35px;
     padding: 3px;
-    border-radius: 9px;
 }
 
 
@@ -54,7 +54,6 @@
      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 .middle-section {
     flex: 1;
     margin-left: 25px;
@@ -62,8 +61,6 @@
     max-width: 40%;
     display: flex;
     align-items: center;
-
-    /*background-color: yellow;*/
 }
 
 .search-bar {
@@ -100,8 +97,6 @@
     justify-content: space-between;
     gap: 30px;
     margin-right: 30px;
-
-    /*background-color: yellow;*/
 }
 
 .mode {

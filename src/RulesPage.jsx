@@ -2,33 +2,15 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import './stylesheets/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
-
 import arrowleft from "./pictures/lightMode/arrow-left_lightMode.png";
 import plusdark from "./pictures/lightMode/plus_lightMode.png";
 import safedark from "./pictures/lightMode/safe_lightMode.png";
 import deletedark from "./pictures/lightMode/delete_lightMode.png";
-
 import React, {useEffect, useState} from 'react';
-
 import {useTranslation} from "react-i18next";
-
-
-import login from './pictures/lightMode/login-picture_lightMode.png';
-import language from './pictures/lightMode/language_lightMode.png';
-import regeln from './pictures/lightMode/regeln_lightMode.png';
-import info from './pictures/lightMode/info_lightMode.png';
-import support from './pictures/lightMode/support_lightMode.png';
-import documentImage from './pictures/lightMode/document_lightMode.png';
-import moon from './pictures/lightMode/moon_lightMode.png';
-import sun from './pictures/darkMode/sun_darkMode.png';
 import apple from './pictures/other/apple.png';
 import hamburger from './pictures/other/hamburger-menu.png';
-import supportBlack from './pictures/darkMode/support_darkMode.png';
-import infoBlack from './pictures/darkMode/info_darkMode.png';
-import documentBlack from './pictures/darkMode/document_darkMode.png';
-import regelnBlack from './pictures/darkMode/rules_darkMode.png';
-import languageBlack from './pictures/darkMode/language_darkMode.png';
-import loginBlack from './pictures/darkMode/login-picture_darkMode.png';
+import Header from "./components/Header";
 
 
 
@@ -91,27 +73,6 @@ function RulesPage() {
     };
 
 
-    const [darkMode, setDarkMode] = useState(() => {
-        const savedMode = localStorage.getItem('darkMode');
-        return savedMode ? JSON.parse(savedMode) : window.matchMedia('(prefers-color-scheme: dark)').matches;
-    });
-
-    const toggleDarkMode = () => {
-        setDarkMode(prevMode => !prevMode);
-    };
-
-    useEffect(() => {
-        // Setze die Dark Mode Klasse auf den body und die aktuelle Seite
-        localStorage.setItem('darkMode', JSON.stringify(darkMode));
-        document.body.className = darkMode ? 'dark' : 'light';  // Body Dark Mode
-
-        // Wenn du spezifische Seitenklassen wie 'homepage', 'rules' etc. verwendest
-        const pageElement = document.querySelector('.homepage');  // oder rulesPage, supportPage je nach Route
-        if (pageElement) {
-            pageElement.className = `homepage ${darkMode ? 'dark' : 'light'}`;
-        }
-    }, [darkMode]);
-
 
 
     return (
@@ -119,60 +80,8 @@ function RulesPage() {
         <>
 
             <body className="rules">
-            <div className="header">
-                <div className="left-section">
-                    <Link to="/">
-                        <img src={apple} className="logo" alt={t('logo')}/>
-                    </Link>
 
-                    <div className="topbar-functional-divs">
-                        <Link to="/RulesPage">
-                            <div className="icons-tooltip">
-                                <img src={darkMode ? regelnBlack : regeln} className="icons" alt={t('rules')}/>
-                                <div className="tooltip">{t('rules')}</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/DocumentPage">
-                            <div className="icons-tooltip">
-                                <img src={darkMode ? documentBlack : documentImage} className="icons"
-                                     alt={t('documents')}/>
-                                <div className="tooltip">{t('documents')}</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/InfoPage">
-                            <div className="icons-tooltip">
-                                <img src={darkMode ? infoBlack : info} className="icons mode" alt={t('info')}/>
-                                <div className="tooltip">{t('info')}</div>
-                            </div>
-                        </Link>
-
-                        <Link to="/SupportPage">
-                            <div className="icons-tooltip">
-                                <img src={darkMode ? supportBlack : support} className="icons mode" alt={t('support')}/>
-                                <div className="tooltip">{t('support')}</div>
-                            </div>
-                        </Link>
-
-                    </div>
-                </div>
-                <div className="middle-section">
-                    <input className="search-bar" type="text"
-                           placeholder={t('searchbar-placeholder')}/>
-                </div>
-                <div className="right-section">
-
-                    <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className="icons mode"
-                         alt="Mode"/>
-
-                    <img src={darkMode ? languageBlack : language} className="icons" alt={t('language')}/>
-
-                    <Link to="/LogInOutPage">
-                        <img src={darkMode ? loginBlack : login} className="icons" alt="login"/>
-                    </Link>
-                </div>
-            </div>
+            <Header/>
 
             {currentDiv === 'MainPage' && (
                 <div className="left-bar-backdiv">

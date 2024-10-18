@@ -1,9 +1,7 @@
-import {Link} from "react-router-dom";
 import './stylesheets/loginoutpage/loginout.css';
 import React, {useState} from "react";
 import {useTranslation} from "react-i18next";
 import classNames from "classnames";
-import axios from 'axios';
 
 function LogInOutPage() {
     const {t} = useTranslation();
@@ -11,13 +9,6 @@ function LogInOutPage() {
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
-
-    const [showdarklight, setDarklight] = useState(true);
-
-    const Mode = () => {
-        setDarklight(!showdarklight);
-    };
-
 
     const [btnText, setBtnText] = useState(t('log-text'));
     const [isActive, setIsActive] = useState(false);
@@ -62,8 +53,8 @@ function LogInOutPage() {
     };
 
     return (
-        <body>
-        <div className="general-log-field">
+
+        <body className="general-log-field">
             <div className="general-inner-log-field">
                 <span className="log-text">{t('log-text')}</span>
 
@@ -94,7 +85,6 @@ function LogInOutPage() {
 
 
             </div>
-        </div>
         </body>
     );
 }
