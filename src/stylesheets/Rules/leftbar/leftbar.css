@@ -3,13 +3,12 @@
     background-color: white;
     z-index: 200;
     position: fixed;
-    top: 60px;
+    top: 74px;
     display: flex;
     flex-direction: column;
 
     border-radius: 30px;
     margin-left: 14px;
-    margin-top: 14px;
     bottom: 14px;
     border-width: 1px;
     border-style: solid;

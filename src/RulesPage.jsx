@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 import './stylesheets/Rules/leftbar/buttons.css';
 import './stylesheets/topbar/topbar.css';
 import './stylesheets/Rules/Rules-overview.css';
+import './stylesheets/Rules/Build-grid.css'
 
-import logo from "./pictures/other/hamburger-menu.png";
 import regeln from "./pictures/lightMode/regeln_lightMode.png";
 import info from "./pictures/lightMode/info_lightMode.png";
 import support from "./pictures/lightMode/support_lightMode.png";
@@ -30,6 +30,7 @@ function RulesPage() {
     const {t} = useTranslation();
 
     const {i18n} = useTranslation();
+
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
@@ -71,6 +72,13 @@ function RulesPage() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
+
+    const handleAddDiv = () => {
+        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+    };
+
 
     const styles = {
         box: {
@@ -278,7 +286,7 @@ function RulesPage() {
                                 </div>
                             </div>
                             <div className="button-section">
-                                <button onClick={() => handleCategoriesClick(t('if'))}
+                                <button onClick={() => handleAddDiv(t('if'))}
                                         className="button-general-leftbar">{t('if')}</button>
                                 <button onClick={() => handleCategoriesClick(t('and'))}
                                         className="button-general-leftbar">{t('and')}</button>
@@ -292,7 +300,16 @@ function RulesPage() {
                                         className="button-general-leftbar">{t('less than')}</button>
                                 <button onClick={() => handleCategoriesClick(t('equal'))}
                                         className="button-general-leftbar">{t('equal')}</button>
+                            </div>
+                            <div className="frame-add">
+                                <div className="grid-add">
+                                    {divs.map((div, index) => (
+                                        <div key={index} className="grid-different-button" >
+                                                <button className="button-middle">test</button>
+                                        </div>
 
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

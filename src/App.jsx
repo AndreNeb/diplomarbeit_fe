@@ -40,17 +40,17 @@ import LogInOutPage from "./LogInOutPage";
 
 function App() {
 
+    const [lanuageAppearance, setlanuageAppearance] = useState('Default'); // initial div1 sichtbar
+
+    const changelanguageAppearance = (type) => {
+        setlanuageAppearance(type);
+    };
+
     const {t} = useTranslation();
 
     const {i18n} = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
-    };
-
-    const [showdarklight, setDarklight] = useState(true);
-
-    const Mode = () => {
-        setDarklight(!showdarklight);
     };
 
 
@@ -64,7 +64,6 @@ function App() {
         const savedMode = localStorage.getItem('darkMode');
         return savedMode ? JSON.parse(savedMode) : window.matchMedia('(prefers-color-scheme: dark)').matches;
     });
-
 
 
     const toggleDarkMode = () => {
@@ -101,28 +100,32 @@ function App() {
                                 <div className="topbar-functional-divs">
                                     <Link to="/RulesPage">
                                         <div className="icons-tooltip">
-                                            <img src={darkMode ? regelnBlack : regeln} className="icons" alt={t('rules')}/>
+                                            <img src={darkMode ? regelnBlack : regeln} className="icons"
+                                                 alt={t('rules')}/>
                                             <div className="tooltip">{t('rules')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/DocumentPage">
                                         <div className="icons-tooltip">
-                                            <img src={darkMode ? documentBlack : documentImage} className="icons" alt={t('documents')}/>
+                                            <img src={darkMode ? documentBlack : documentImage} className="icons"
+                                                 alt={t('documents')}/>
                                             <div className="tooltip">{t('documents')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/InfoPage">
                                         <div className="icons-tooltip">
-                                            <img src={darkMode ? infoBlack : info} className="icons mode" alt={t('info')}/>
+                                            <img src={darkMode ? infoBlack : info} className="icons mode"
+                                                 alt={t('info')}/>
                                             <div className="tooltip">{t('info')}</div>
                                         </div>
                                     </Link>
 
                                     <Link to="/SupportPage">
                                         <div className="icons-tooltip">
-                                            <img src={darkMode ? supportBlack : support} className="icons mode" alt={t('support')}/>
+                                            <img src={darkMode ? supportBlack : support} className="icons mode"
+                                                 alt={t('support')}/>
                                             <div className="tooltip">{t('support')}</div>
                                         </div>
                                     </Link>
@@ -134,17 +137,19 @@ function App() {
                                        placeholder={t('searchbar-placeholder')}/>
                             </div>
                             <div className="right-section">
-
                                 <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className="icons mode"
                                      alt="Mode"/>
 
-                                <img src={darkMode ? languageBlack : language} className="icons" alt={t('language')}/>
+                                <img src={darkMode ? languageBlack : language}
+                                     className="icons language " alt={t('language')}/>
+
 
                                 <Link to="/LogInOutPage">
                                     <img src={darkMode ? loginBlack : login} className="icons" alt="login"/>
                                 </Link>
                             </div>
                         </div>
+
                         <div className="widgets">
                             <div className="small-widgets-outer-div">
                                 <div className="general-small-widget-layout small-widget1">
@@ -234,7 +239,8 @@ function App() {
                             </div>
                         </div>
 
-                        {/* Das Menü, das den gesamten Bildschirm abdeckt */}
+                        {/* Das Menü, das den gesamten Bildschirm abdeckt */
+                        }
                         <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
                             <div className="menu-items">
 
@@ -262,7 +268,8 @@ function App() {
             </>
 
         </Router>
-    );
+    )
+        ;
 }
 
 export default App;
