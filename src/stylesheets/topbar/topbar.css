@@ -14,9 +14,6 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(228, 228, 228);
-
-    /*background-color: red;*/
-
 }
 
 .topbar-functional-divs {
@@ -31,8 +28,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
-    /*background-color: green;*/
 }
 
 .logo {
@@ -42,18 +37,22 @@
     background-color: white;
 }
 
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
 .icons {
+    border-radius: 10px;
     height: 35px;
     padding: 3px;
-    border-radius: 9px;
 }
 
 
 .icons:hover {
     transform: scale(1.01, 1.01);
-     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
-
 
 .middle-section {
     flex: 1;
@@ -62,9 +61,9 @@
     max-width: 40%;
     display: flex;
     align-items: center;
-
-    /*background-color: yellow;*/
 }
+
+
 
 .search-bar {
     flex: 1;
@@ -73,26 +72,35 @@
     font-size: 16px;
     border: 1px solid rgb(192, 192, 192);
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-    width: 0;
     border-radius: 30px;
     outline: none;
     font-family: "Quicksand", sans-serif, Arial;
+    transition: background-color 1.1s ease, color 1.1s ease, box-shadow 0.3s ease;
 }
 
-.icon-link {
-    background-color: rgb(192, 192, 192);
-}
-
-.search-bar:hover {
-    transform: scale(1.001, 1.001);
+.search-bar.light:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.search-bar::placeholder {
+.search-bar.dark:hover {
+    box-shadow: 0 0 8px white;
+}
+
+.search-bar.light::placeholder {
     font-family: "Quicksand", sans-serif, Arial;
     font-weight: 500;
     font-style: italic;
 }
+
+.search-bar.dark::placeholder {
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+
+
 
 .right-section {
     display: flex;
@@ -100,8 +108,6 @@
     justify-content: space-between;
     gap: 30px;
     margin-right: 30px;
-
-    /*background-color: yellow;*/
 }
 
 .mode {
