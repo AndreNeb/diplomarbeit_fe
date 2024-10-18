@@ -1,4 +1,4 @@
-import './stylesheets/loginoutpage/loginout.css';
+import '../stylesheets/loginoutpage/loginout.css';
 import React, {useState} from "react";
 import {useTranslation} from "react-i18next";
 import classNames from "classnames";

@@ -1,15 +1,15 @@
 import React, {useContext, useState} from 'react';
 
 import {Link} from "react-router-dom";
-import apple from "./pictures/other/apple.png";
-import patienten from "./pictures/other/patienten.png";
-import maske from "./pictures/other/maske.png";
-import spritze from "./pictures/other/spritze.png";
-import wartezimmer from "./pictures/other/wartezimmer.png";
-import hamburger from "./pictures/other/hamburger-menu.png";
+import apple from "../pictures/other/apple.png";
+import patienten from "../pictures/other/patienten.png";
+import maske from "../pictures/other/maske.png";
+import spritze from "../pictures/other/spritze.png";
+import wartezimmer from "../pictures/other/wartezimmer.png";
+import hamburger from "../pictures/other/hamburger-menu.png";
 import {useTranslation} from "react-i18next";
-import Header from './components/Header';
-import {DarkModeContext} from './components/DarkModeContext';
+import Header from '../components/Header';
+import {DarkModeContext} from '../components/DarkModeContext';
 
 
 function Home() {

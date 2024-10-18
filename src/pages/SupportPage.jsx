@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
-import './stylesheets/Rules/leftbar/buttons.css';
-import './stylesheets/supportpage/support.css';
+import '../stylesheets/Rules/leftbar/buttons.css';
+import '../stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';
 import {HashRouter, Link} from 'react-router-dom';
-import regeln from './pictures/lightMode/regeln_lightMode.png';
-import info from './pictures/lightMode/info_lightMode.png';
-import support from './pictures/lightMode/support_lightMode.png';
-import language from './pictures/lightMode/language_lightMode.png';
-import login from './pictures/lightMode/login-picture_lightMode.png';
-import document from "./pictures/lightMode/document_lightMode.png";
-import moon from "./pictures/lightMode/moon_lightMode.png";
-import sun from "./pictures/darkMode/sun_darkMode.png";
-import apple from "./pictures/other/apple.png";
-import Header from "./components/Header";
+import regeln from '../pictures/lightMode/regeln_lightMode.png';
+import info from '../pictures/lightMode/info_lightMode.png';
+import support from '../pictures/lightMode/support_lightMode.png';
+import language from '../pictures/lightMode/language_lightMode.png';
+import login from '../pictures/lightMode/login-picture_lightMode.png';
+import document from "../pictures/lightMode/document_lightMode.png";
+import moon from "../pictures/lightMode/moon_lightMode.png";
+import sun from "../pictures/darkMode/sun_darkMode.png";
+import apple from "../pictures/other/apple.png";
+import Header from "../components/Header";
 
 function SupportPage() {
 

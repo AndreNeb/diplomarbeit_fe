@@ -1,19 +1,19 @@
 import {Link} from "react-router-dom";
 
-import './stylesheets/topbar/topbar.css';
-import './stylesheets/Rules/leftbar/buttons.css'
-import './stylesheets/Rules/leftbar/leftbar.css'
-import './stylesheets/Rules/Build-grid.css'
-import './stylesheets/Rules/Rules-overview.css';
-import arrowleft from "./pictures/lightMode/arrow-left_lightMode.png";
-import plusdark from "./pictures/lightMode/plus_lightMode.png";
-import safedark from "./pictures/lightMode/safe_lightMode.png";
-import deletedark from "./pictures/lightMode/delete_lightMode.png";
+import '../stylesheets/topbar/topbar.css';
+import '../stylesheets/Rules/leftbar/buttons.css'
+import '../stylesheets/Rules/leftbar/leftbar.css'
+import '../stylesheets/Rules/Build-grid.css'
+import '../stylesheets/Rules/Rules-overview.css';
+import arrowleft from "../pictures/lightMode/arrow-left_lightMode.png";
+import plusdark from "../pictures/lightMode/plus_lightMode.png";
+import safedark from "../pictures/lightMode/safe_lightMode.png";
+import deletedark from "../pictures/lightMode/delete_lightMode.png";
 import React, {useState} from 'react';
 import {useTranslation} from "react-i18next";
-import apple from './pictures/other/apple.png';
-import hamburger from './pictures/other/hamburger-menu.png';
-import Header from "./components/Header";
+import apple from '../pictures/other/apple.png';
+import hamburger from '../pictures/other/hamburger-menu.png';
+import Header from "../components/Header";
 
 
 

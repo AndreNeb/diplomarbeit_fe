@@ -1,24 +1,24 @@
-import './i18n'
+import '../components/i18n'
 
 import React, {useEffect} from "react";
 import {BrowserRouter as Router, Route, Routes, Link, useNavigate} from "react-router-dom";
 
-import './stylesheets/topbar/topbar.css';
-import './stylesheets/topbar/topbar.css';
-import './stylesheets/Rules/leftbar/buttons.css'
-import './stylesheets/Rules/leftbar/leftbar.css'
-import './stylesheets/Rules/Build-grid.css'
-import './stylesheets/Rules/Rules-overview.css';
-import './stylesheets/general/general.css';
-import './stylesheets/homepage-widgets/small-widgets.css';
-import './stylesheets/homepage-widgets/big-widgets.css';
+import '../stylesheets/topbar/topbar.css';
+import '../stylesheets/topbar/topbar.css';
+import '../stylesheets/Rules/leftbar/buttons.css'
+import '../stylesheets/Rules/leftbar/leftbar.css'
+import '../stylesheets/Rules/Build-grid.css'
+import '../stylesheets/Rules/Rules-overview.css';
+import '../stylesheets/general/general.css';
+import '../stylesheets/homepage-widgets/small-widgets.css';
+import '../stylesheets/homepage-widgets/big-widgets.css';
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
 import DocumentPage from "./DocumentPage";
 import LogInOutPage from "./LogInOutPage";
 import Home from "./Home";
-import {DarkModeProvider} from "./components/DarkModeContext";
+import {DarkModeProvider} from "../components/DarkModeContext";
 
 
 function App() {

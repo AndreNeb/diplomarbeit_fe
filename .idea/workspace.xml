@@ -6,9 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/README_Language" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/README_Language" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Language/it.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/it.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/i18n.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +121,11 @@
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/preinstalled" />
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
       <recent name="$PROJECT_DIR$/src/pictures/other" />
-      <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
-      <recent name="$PROJECT_DIR$/src/pictures" />
-      <recent name="$PROJECT_DIR$/src/Language" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
