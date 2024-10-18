@@ -103,6 +103,12 @@
     cursor: pointer;
 }
 
+.language {
+    cursor: pointer;
+}
+
+
+
 
 /* Hamburger-Menü standardmäßig ausgeblendet */
 .hamburger-menu {
@@ -273,9 +279,12 @@
     pointer-events: none;
     white-space: nowrap;
 }
+
 .icons-tooltip:hover .tooltip {
     opacity: 1;
 }
+
+
 
 @media screen and (max-width: 800px) {
 
