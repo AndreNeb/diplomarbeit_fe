@@ -37,7 +37,8 @@ function Home() {
         <Header/>
 
         <div className="small-widgets-outer-div">
-            <div className="general-small-widget-layout small-widget1" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
+            <div
+                className={`general-small-widget-layout small-widget1 ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget1-color-patienten">
                     &nbsp;
                 </div>
@@ -51,7 +52,7 @@ function Home() {
                          alt="Patienten"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget2" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
+            <div className={`general-small-widget-layout small-widget2 ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget2-color-patienten">
                     &nbsp;
                 </div>
@@ -66,7 +67,7 @@ function Home() {
                          alt="OP - Maske"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget3" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
+            <div className={`general-small-widget-layout small-widget3 ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget3-color-patienten">
                     &nbsp;
                 </div>
@@ -80,7 +81,7 @@ function Home() {
                          alt="Spritze"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget4" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
+            <div className={`general-small-widget-layout small-widget4 ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget4-color-patienten">
                     &nbsp;
                 </div>

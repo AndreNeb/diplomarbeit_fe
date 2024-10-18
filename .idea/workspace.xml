@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Hover bei Search-bar">
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/waitingroom_darkMode.png" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Small Widgets finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/other/wartezimmer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/waitingroom_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,14 +153,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00025" summary="Added big widgets">
-      <option name="closed" value="true" />
-      <created>1728634641155</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1728634641156</updated>
     </task>
     <task id="LOCAL-00026" summary="Added small widgets">
       <option name="closed" value="true" />
@@ -578,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729280612744</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Small Widgets finished">
+      <option name="closed" value="true" />
+      <created>1729281068099</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1729281068099</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -625,6 +625,7 @@
     <MESSAGE value="Topbar wiederverwendbar gemacht &amp; Homepage an Darkmode angepasst" />
     <MESSAGE value="Cleaned up code" />
     <MESSAGE value="Hover bei Search-bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hover bei Search-bar" />
+    <MESSAGE value="Small Widgets finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Widgets finished" />
   </component>
 </project>
