@@ -2,9 +2,12 @@ import React, {useContext, useState} from 'react';
 
 import {Link} from "react-router-dom";
 import apple from "../pictures/other/apple.png";
-import patienten from "../pictures/other/patienten.png";
-import maske from "../pictures/other/maske.png";
-import spritze from "../pictures/other/spritze.png";
+import patienten from "../pictures/lightMode/patients_lightMode.png";
+import patientenBlack from "../pictures/darkMode/patients_darkMode.png";
+import maske from "../pictures/lightMode/mask_lightMode.png";
+import maskeBlack from "../pictures/darkMode/mask_darkMode.png";
+import spritze from "../pictures/lightMode/syringe_lightMode.png";
+import spritzeBlack from "../pictures/darkMode/syringe_darkMode.png";
 import wartezimmer from "../pictures/other/wartezimmer.png";
 import hamburger from "../pictures/other/hamburger-menu.png";
 import {useTranslation} from "react-i18next";
@@ -33,58 +36,57 @@ function Home() {
         <Header/>
 
         <div className="small-widgets-outer-div">
-            <div className="general-small-widget-layout small-widget1" style={{backgroundColor: darkMode ? "rgba(250, 246, 240, 255)" : "white", transition: "background-color 1.1s ease"}}>
+            <div className="general-small-widget-layout small-widget1" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget1-color-patienten">
                     &nbsp;
                 </div>
                 <div className="small-widgets-text">
-                    <div className="small-widgets-text-top">{t('patient')}</div>
-                    <div className="small-widgets-text-middle">4.500</div>
-                    <div className="small-widgets-text-bottom">&uarr; &#43;8,5 &#037;</div>
+                    <div className="small-widgets-text-top" style={{color: darkMode ? "white":"gray", transition: "color 1.1s ease"}}>{t('patient')}</div>
+                    <div className="small-widgets-text-middle" style={{color: darkMode ? "white":"black", transition: "color 1.1s ease"}}>4.500</div>
+                    <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>&uarr; &#43;8,5 &#037;</div>
                 </div>
                 <div>
-                    <img src={patienten} className="small-widgets-picture-layout"
+                    <img src={darkMode ? patientenBlack : patienten} className="small-widgets-picture-layout"
                          alt="Patienten"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget2" style={{backgroundColor: darkMode ? "rgba(250, 246, 240, 255)" : "white", transition: "background-color 1.1s ease"}}>
+            <div className="general-small-widget-layout small-widget2" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget2-color-patienten">
                     &nbsp;
                 </div>
                 <div className="small-widgets-text">
-                    <div className="small-widgets-text-top">{t('op-workload')}</div>
-                    <div className="small-widgets-text-middle">70 &#037;</div>
-                    <div className="small-widgets-text-bottom">8 /
+                    <div className="small-widgets-text-top" style={{color: darkMode ? "white":"gray", transition: "color 1.1s ease"}}>{t('op-workload')}</div>
+                    <div className="small-widgets-text-middle" style={{color: darkMode ? "white":"black", transition: "color 1.1s ease"}}>70 &#037;</div>
+                    <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>8 /
                         9 {t('unavailable')}</div>
                 </div>
                 <div>
-                    <img src={maske} className="small-widgets-picture-layout"
+                    <img src={darkMode ? maskeBlack : maske} className="small-widgets-picture-layout"
                          alt="OP - Maske"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget3" style={{backgroundColor: darkMode ? "rgba(250, 246, 240, 255)" : "white", transition: "background-color 1.1s ease"}}>
+            <div className="general-small-widget-layout small-widget3" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget3-color-patienten">
                     &nbsp;
                 </div>
                 <div className="small-widgets-text">
-                    <div className="small-widgets-text-top">{t('anesthesia')}</div>
-                    <div className="small-widgets-text-middle">400</div>
-                    <div className="small-widgets-text-bottom">&darr; 4,5 &#037;</div>
+                    <div className="small-widgets-text-top" style={{color: darkMode ? "white":"gray", transition: "color 1.1s ease"}}>{t('anesthesia')}</div>
+                    <div className="small-widgets-text-middle" style={{color: darkMode ? "white":"black", transition: "color 1.1s ease"}}>400</div>
+                    <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>&darr; 4,5 &#037;</div>
                 </div>
                 <div>
-                    <img src={spritze} className="small-widgets-picture-layout"
+                    <img src={darkMode ? spritzeBlack : spritze} className="small-widgets-picture-layout"
                          alt="Spritze"/>
                 </div>
             </div>
-            <div className="general-small-widget-layout small-widget4" style={{backgroundColor: darkMode ? "rgba(250, 246, 240, 255)" : "white", transition: "background-color 1.1s ease"}}>
+            <div className="general-small-widget-layout small-widget4" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                 <div className="small-widgets-color small-widget4-color-patienten">
                     &nbsp;
                 </div>
                 <div className="small-widgets-text">
-                    <div className="small-widgets-text-top">{t('waiting-room')}</div>
-                    <div className="small-widgets-text-middle">9 {t('patients')}</div>
-                    <div
-                        className="small-widgets-text-bottom">  {t('waiting-room-usage')}</div>
+                    <div className="small-widgets-text-top" style={{color: darkMode ? "white":"gray", transition: "color 1.1s ease"}}>{t('waiting-room')}</div>
+                    <div className="small-widgets-text-middle" style={{color: darkMode ? "white":"black", transition: "color 1.1s ease"}}>9 {t('patients')}</div>
+                    <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>{t('waiting-room-usage')}</div>
                 </div>
                 <div>
                     <img src={wartezimmer}
