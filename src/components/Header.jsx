@@ -43,14 +43,14 @@ function Header() {
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
                         <div className="icons-tooltip icon-container">
-                            <img src={darkMode ? regelnBlack : regeln} className="icons mode" alt={t('info')}/>
+                            <img src={darkMode ? regelnBlack : regeln} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
                             <div className="tooltip">{t('rules')}</div>
                         </div>
                     </Link>
 
                     <Link to="/DocumentPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? documentBlack : documentImage} className="icons mode" alt={t('info')}/>
+                            <img src={darkMode ? documentBlack : documentImage} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
                             <div className="tooltip">{t('info')}</div>
                             <div className="tooltip">{t('documents')}</div>
                         </div>
@@ -58,14 +58,14 @@ function Header() {
 
                     <Link to="/InfoPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? infoBlack : info} className="icons mode" alt={t('info')}/>
+                            <img src={darkMode ? infoBlack : info} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
                             <div className="tooltip">{t('info')}</div>
                         </div>
                     </Link>
 
                     <Link to="/SupportPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? supportBlack : support} className="icons mode" alt={t('support')}/>
+                            <img src={darkMode ? supportBlack : support} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('support')}/>
                             <div className="tooltip">{t('support')}</div>
                         </div>
                     </Link>
@@ -87,13 +87,13 @@ function Header() {
             </div>
             <div className="right-section">
 
-                <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className="icons mode"
+                <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}
                      alt="Mode"/>
 
-                <img src={darkMode ? languageBlack : language} className="icons" alt={t('language')}/>
+                <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('language')}/>
 
                 <Link to="/LogInOutPage">
-                    <img src={darkMode ? loginBlack : login} className="icons" alt="login"/>
+                    <img src={darkMode ? loginBlack : login} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt="login"/>
                 </Link>
             </div>
         </div>);
