@@ -1,0 +1,397 @@
+Index: src/App.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import './i18n'\nimport { useTranslation } from \"react-i18next\";\n\n\nimport React from \"react\";\nimport {BrowserRouter as Router, Route, Routes, Link} from \"react-router-dom\";\n\nimport login from './pictures/login-picture.png';\nimport logo from './pictures/hamburger-menu.png';\nimport language from './pictures/language.png';\nimport regeln from './pictures/regeln.png';\nimport info from './pictures/info.png';\nimport support from './pictures/support.png';\nimport patienten from './pictures/patienten.png';\nimport maske from './pictures/maske.png';\nimport spritze from './pictures/spritze.png';\nimport wartezimmer from './pictures/wartezimmer.png';\nimport './stylesheets/topbar/topbar.css';\nimport './stylesheets/leftbar/leftbar.css';\nimport './stylesheets/leftbar/buttons.css';\nimport './stylesheets/general/general.css';\nimport './stylesheets/homepage-widgets/small-widgets.css';\nimport './stylesheets/homepage-widgets/big-widgets.css';\nimport RulesPage from './RulesPage';\nimport SupportPage from \"./SupportPage\";\nimport InfoPage from \"./InfoPage\";\n\n\n\n\nfunction App() {\n\n    const {t} =useTranslation();\n\n    const { i18n } = useTranslation();\n    const changeLanguage = (lang) => {\n        i18n.changeLanguage(lang);\n    };\n\n    return (\n        <Router>\n            <>\n                <Routes>\n                    <Route path=\"/\" element={\n                        <body className=\"homepage\">\n                        <div className=\"header\">\n                            <div className=\"left-section\">\n                                <img src={logo} className=\"logo\" alt=\"Logo\"/>\n                                <div className=\"topbar-functional-divs\">\n                                    <Link to=\"/RulesPage\">\n                                        <button className=\"Button-topbar\">\n                                            <img src={regeln} className=\"regeln\" alt=\"Regeln\"/>\n                                        </button>\n                                    </Link>\n                                </div>\n                                <div className=\"topbar-functional-divs\">\n                                    <Link to=\"/InfoPage\">\n                                        <button className=\"Button-topbar\">\n                                            <img src={info} className=\"info\" alt=\"Info\"/>\n                                        </button>\n\n                                    </Link>\n                                </div>\n                                <div className=\"topbar-functional-divs\">\n                                    <Link to=\"/SupportPage\">\n                                        <button className=\"Button-topbar\">\n                                            <img src={support} className=\"support\" alt=\"Support\"/>\n                                        </button>\n\n                                    </Link>\n                                </div>\n\n                            </div>\n                            <div className=\"middle-section\">\n                                <input className=\"search-bar\" type=\"text\" placeholder={t('searchbar-placeholder')}/>\n                            </div>\n                            <div className=\"right-section\">\n                                <img src={language} className=\"language\" alt={t('language')}/>\n                                <img src={login} className=\"login\" alt=\"login\"/>\n                            </div>\n                        </div>\n\n                        <div className=\"small-widgets-outer-div\">\n                            <div className=\"general-small-widget-layout small-widget1\">\n                                <div className=\"small-widgets-color small-widget1-color-patienten\">\n                                    &nbsp;\n                                </div>\n                                <div className=\"small-widgets-text\">\n                                    <div className=\"small-widgets-text-top\">{t('patient')}</div>\n                                    <div className=\"small-widgets-text-middle\">4.500</div>\n                                    <div className=\"small-widgets-text-bottom\">&uarr; &#43;8,5 &#037;</div>\n                                </div>\n                                <div>\n                                    <img src={patienten} className=\"small-widgets-picture-layout\" alt=\"Patienten\"/>\n                                </div>\n                            </div>\n                            <div className=\"general-small-widget-layout small-widget2\">\n                                <div className=\"small-widgets-color small-widget2-color-patienten\">\n                                    &nbsp;\n                                </div>\n                                <div className=\"small-widgets-text\">\n                                    <div className=\"small-widgets-text-top\">{t('op-workload')}</div>\n                                    <div className=\"small-widgets-text-middle\">70 &#037;</div>\n                                    <div className=\"small-widgets-text-bottom\">8 / 9 {t('unavailable')}</div>\n                                </div>\n                                <div>\n                                    <img src={maske} className=\"small-widgets-picture-layout\" alt=\"OP - Maske\"/>\n                                </div>\n                            </div>\n                            <div className=\"general-small-widget-layout small-widget3\">\n                                <div className=\"small-widgets-color small-widget3-color-patienten\">\n                                    &nbsp;\n                                </div>\n                                <div className=\"small-widgets-text\">\n                                    <div className=\"small-widgets-text-top\">{t('anesthesia')}</div>\n                                    <div className=\"small-widgets-text-middle\">400</div>\n                                    <div className=\"small-widgets-text-bottom\">&darr; 4,5 &#037;</div>\n                                </div>\n                                <div>\n                                    <img src={spritze} className=\"small-widgets-picture-layout\" alt=\"Spritze\"/>\n                                </div>\n                            </div>\n                            <div className=\"general-small-widget-layout small-widget4\">\n                                <div className=\"small-widgets-color small-widget4-color-patienten\">\n                                    &nbsp;\n                                </div>\n                                <div className=\"small-widgets-text\">\n                                    <div className=\"small-widgets-text-top\">{t('waiting-room')}</div>\n                                    <div className=\"small-widgets-text-middle\">9 {t('patients')}</div>\n                                    <div className=\"small-widgets-text-bottom\">  {t('waiting-room-usage')}</div>\n                                </div>\n                                <div>\n                                    <img src={wartezimmer}\n                                         className=\"small-widgets-picture-layout wartezimmer-picture-layout\"\n                                         alt=\"Wartezimmer\"/>\n                                </div>\n                            </div>\n                        </div>\n\n                        <div className=\"big-widgets-general\">\n\n                            <div className=\"big-widget\">Calendar</div>\n\n                            <div className=\"big-widget\">Mail</div>\n                        </div>\n                        <div className=\"big-widgets-general\">\n\n                            <div className=\"big-widget\">Calendar</div>\n\n                            <div className=\"big-widget\">Mail</div>\n                        </div>\n                        </body>}/>\n\n                    <Route path=\"/rulesPage\" element={<RulesPage/>}/>\n                    <Route path=\"/infoPage\" element={<InfoPage/>}/>\n                    <Route path=\"/supportPage\" element={<SupportPage/>}/>\n                </Routes>\n            </>\n\n        </Router>\n    );\n}\n\nexport default App;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.jsx b/src/App.jsx
+--- a/src/App.jsx	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/src/App.jsx	(date 1728759223946)
+@@ -1,5 +1,5 @@
+ import './i18n'
+-import { useTranslation } from "react-i18next";
++import {useTranslation} from "react-i18next";
+ 
+ 
+ import React from "react";
+@@ -26,13 +26,11 @@
+ import InfoPage from "./InfoPage";
+ 
+ 
+-
+-
+ function App() {
+ 
+-    const {t} =useTranslation();
++    const {t} = useTranslation();
+ 
+-    const { i18n } = useTranslation();
++    const {i18n} = useTranslation();
+     const changeLanguage = (lang) => {
+         i18n.changeLanguage(lang);
+     };
+@@ -45,7 +43,11 @@
+                         <body className="homepage">
+                         <div className="header">
+                             <div className="left-section">
++
++
+                                 <img src={logo} className="logo" alt="Logo"/>
++
++
+                                 <div className="topbar-functional-divs">
+                                     <Link to="/RulesPage">
+                                         <button className="Button-topbar">
+Index: src/stylesheets/topbar/topbar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.header {\n    height: 55px;\n    background-color: white;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 100;\n\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(228, 228, 228);\n\n}\n\n.topbar-functional-divs {\n    margin-right: 30px;\n    justify-content: center;\n    align-items: center;\n\n\n}\n\n.Button-topbar {\n    justify-content: center;\n    background-color: transparent;\n    align-items: center;\n    padding-left: 0;\n    margin-left: 5px;\n    width: 28px;\n    height: 33px;\n    border-radius: 20px;\n    border: none;\n    margin-right: 8px;\n    cursor: pointer;\n}\n\n\n.left-section {\n    display: flex;\n    align-items: center;\n}\n\n.logo {\n    height: 30px;\n    margin-left: 35px;\n    margin-right: 35px;\n}\n\n.regeln {\n    height: 30px;\n    margin-left: 0;\n}\n\n.info {\n    height: 30px;\n    margin-right: 35px;\n}\n\n.support {\n    height: 30px;\n    margin-right: 30px;\n}\n\n.middle-section {\n    flex: 1;\n    margin-left: 25px;\n    margin-right: 25px;\n    max-width: 40%;\n    display: flex;\n    align-items: center;\n}\n\n.search-bar {\n    flex: 1;\n    height: 30px;\n    padding-left: 10px;\n    font-size: 16px;\n    border: 1px solid rgb(192, 192, 192);\n    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n    width: 0;\n    border-radius: 30px;\n}\n\n.search-bar:hover {\n    transform: scale(1.001, 1.001);\n    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n}\n\n.search-bar::placeholder {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n    font-style: italic;\n}\n\n.right-section {\n    margin-left: 24px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-shrink: 0;\n\n}\n\n.login {\n    height: 30px;\n    margin-right: 35px;\n}\n\n.language {\n    margin-right: 30px;\n    height: 40px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/topbar/topbar.css b/src/stylesheets/topbar/topbar.css
+--- a/src/stylesheets/topbar/topbar.css	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/src/stylesheets/topbar/topbar.css	(date 1728759156695)
+@@ -48,22 +48,22 @@
+ .logo {
+     height: 30px;
+     margin-left: 35px;
+-    margin-right: 35px;
++
+ }
+ 
+ .regeln {
+     height: 30px;
+-    margin-left: 0;
++    margin-left: 35px;
+ }
+ 
+ .info {
+     height: 30px;
+-    margin-right: 35px;
++    margin-left: 35px;
+ }
+ 
+ .support {
+     height: 30px;
+-    margin-right: 30px;
++    margin-left: 35px;
+ }
+ 
+ .middle-section {
+Index: src/stylesheets/general/general.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');\n\ndiv {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n}\n\nbody{\nbackground-color: rgba(250,246,240,255)\n}\nbody.homepage {\n    margin: 0;\n    padding-top: 95px;\n    background-color: rgba(250,246,240,255);\n    cursor: default;\n}\n\nbody.rules {\n    margin: 0;\n    padding: 0;\n    height: 100vh;\n\n    background-color: rgba(250,246,240,255);\n    background-image: radial-gradient(#000 1px, transparent 1px);\n    background-size: 20px 20px;\n    cursor: default;\n}\n\nbody.rules::before { /* Dies ist für den nicht-gepunkteten-beigen Untergrund bei der Regeln - Leftbar */\n    content: \"\";\n    position: fixed;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    width: 275px;\n    height: 100%;\n    background-color: rgba(250,246,240,255);\n    pointer-events: none;\n}\n\nspan {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n}\npre {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n}\n\nbutton {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n}\n\np {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n    margin: 0;\n    padding: 0;\n}\n\nsearch::placeholder {\n    font-family: \"Quicksand\", sans-serif, Arial;\n    font-weight: 500;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/general/general.css b/src/stylesheets/general/general.css
+--- a/src/stylesheets/general/general.css	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/src/stylesheets/general/general.css	(date 1728755603377)
+@@ -26,17 +26,6 @@
+     cursor: default;
+ }
+ 
+-body.rules::before { /* Dies ist für den nicht-gepunkteten-beigen Untergrund bei der Regeln - Leftbar */
+-    content: "";
+-    position: fixed;
+-    top: 0;
+-    left: 0;
+-    bottom: 0;
+-    width: 275px;
+-    height: 100%;
+-    background-color: rgba(250,246,240,255);
+-    pointer-events: none;
+-}
+ 
+ span {
+     font-family: "Quicksand", sans-serif, Arial;
+Index: src/stylesheets/leftbar/leftbar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.left-bar-shown {\n    width: 256px;\n    background-color: white;\n    z-index: 200;\n    position: fixed;\n    top: 60px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n\n    border-radius: 30px;\n    margin: 17px;\n\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(204, 202, 202);\n\n\n    height: 90%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px;\n    box-sizing: border-box;\n    transition: opacity 3s ease-in-out, transform 3s ease-in-out;\n    backface-visibility: hidden;\n}\n\n.left-bar-hidden {\n\n    background-color: white;\n    z-index: 200;\n    position: fixed;\n    top: 60px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n\n    border-radius: 30px;\n    margin: 17px;\n\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(204, 202, 202);\n\n\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px;\n    box-sizing: border-box;\n    transition: opacity 3s ease-in-out, transform 3s ease-in-out;\n    backface-visibility: hidden;\n}\n\n.top-leftbar-section {\n    display: flex;\n    flex-direction: row;\n\n\n}\n\n\n.hamburger-menu-picture {\n    height: 30px;\n    cursor: pointer;\n\n}\n\n.searchbar-menu {\n    background-color: transparent;\n    border-radius: 15px;\n    height: 30px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    padding: 10px;\n\n}\n\n.hamburger-menu {\n    background-color: transparent;\n    border-radius: 15px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 10px;\n}\n\n.button-section {\n\n    overflow-y: auto;\n    overflow-x: hidden;\n    margin-top: 15px;\n    padding: 10px;\n    box-sizing: border-box;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/leftbar/leftbar.css b/src/stylesheets/leftbar/leftbar.css
+--- a/src/stylesheets/leftbar/leftbar.css	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/src/stylesheets/leftbar/leftbar.css	(date 1728759317654)
+@@ -3,66 +3,63 @@
+     background-color: white;
+     z-index: 200;
+     position: fixed;
+-    top: 60px;
++    top: 57px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+-
+     border-radius: 30px;
+-    margin: 17px;
+-
++    margin-left: 14px;
++    margin-top: 17px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgb(204, 202, 202);
+-
+-
+     height: 90%;
+     overflow-y: auto;
+     overflow-x: hidden;
+     padding: 10px;
+     box-sizing: border-box;
+-    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+-    backface-visibility: hidden;
++}
++
++.left-bar-backdiv {
++    width: 275px;
++    background-color: rgba(250, 246, 240, 255);
++    z-index: 190;
++    height: 100%;
++    position: fixed;
++    top: 57px;
+ }
+ 
+ .left-bar-hidden {
+-
+     background-color: white;
+     z-index: 200;
+     position: fixed;
+-    top: 60px;
++    top: 57px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+-
+     border-radius: 30px;
+-    margin: 17px;
+-
++    margin-left: 14px;
++    margin-top: 17px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgb(204, 202, 202);
+-
+-
+     overflow-y: auto;
+     overflow-x: hidden;
+     padding: 10px;
+     box-sizing: border-box;
+     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+     backface-visibility: hidden;
++    transform: translateX(0);
+ }
+ 
+ .top-leftbar-section {
+     display: flex;
+     flex-direction: row;
+-
+-
+ }
+-
+ 
+ .hamburger-menu-picture {
+     height: 30px;
+     cursor: pointer;
+-
+ }
+ 
+ .searchbar-menu {
+@@ -74,7 +71,6 @@
+     align-items: center;
+     flex-grow: 1;
+     padding: 10px;
+-
+ }
+ 
+ .hamburger-menu {
+@@ -87,7 +83,6 @@
+ }
+ 
+ .button-section {
+-
+     overflow-y: auto;
+     overflow-x: hidden;
+     margin-top: 15px;
+Index: src/RulesPage.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {Link} from \"react-router-dom\";\n\nimport './stylesheets/leftbar/buttons.css';\nimport './stylesheets/topbar/topbar.css';\n\nimport logo from \"./pictures/hamburger-menu.png\";\nimport regeln from \"./pictures/regeln.png\";\nimport info from \"./pictures/info.png\";\nimport support from \"./pictures/support.png\";\nimport language from \"./pictures/language.png\";\nimport login from \"./pictures/login-picture.png\";\nimport hamburger from \"./pictures/hamburger-menu.png\";\nimport React, {useState} from 'react';\n\nimport {useTranslation} from \"react-i18next\";\n\nfunction RulesPage() {\n\n    const {t} = useTranslation();\n\n    const {i18n} = useTranslation();\n    const changeLanguage = (lang) => {\n        i18n.changeLanguage(lang);\n    };\n\n    const [showSidebar, setShowSidebar] = useState(true);\n\n    const handleClick = () => {\n        setShowSidebar(!showSidebar);\n    };\n\n    return (\n\n        <>\n            <body className=\"rules\">\n            < div className=\"header\">\n                <div className=\"left-section\">\n                    <img src={logo} className=\"logo\" alt=\"Logo\"/>\n                    <div className=\"topbar-functional-divs\">\n                        <Link to=\"/RulesPage\">\n                            <button className=\"Button-topbar\">\n                                <img src={regeln} className=\"regeln\" alt=\"Regeln\"/>\n                            </button>\n                        </Link>\n                    </div>\n                    <div className=\"topbar-functional-divs\">\n                        <Link to=\"/InfoPage\">\n                            <button className=\"Button-topbar\">\n                                <img src={info} className=\"info\" alt=\"Info\"/>\n                            </button>\n\n                        </Link>\n                    </div>\n                    <div className=\"topbar-functional-divs\">\n                        <Link to=\"/SupportPage\">\n                            <button className=\"Button-topbar\">\n                                <img src={support} className=\"support\" alt=\"Support\"/>\n                            </button>\n\n                        </Link>\n                    </div>\n\n                </div>\n\n                <div className=\"right-section\">\n                    <img src={language} className=\"language\" alt={('language')}/>\n                    <img src={login} className=\"login\" alt=\"login\"/>\n                </div>\n\n\n                {showSidebar ? (\n                    <div className=\"left-bar-shown\" id=\"shownSidebar\">\n                        <div className=\"top-leftbar-section\">\n                            <div className=\"hamburger-menu\">\n                                <img src={hamburger} onClick={handleClick} className=\"hamburger-menu-picture\"\n                                     alt=\"Hamburger menu\"/>\n                            </div>\n                            <div className=\"searchbar-menu\">\n                                <input className=\"search-bar\" type=\"text\"\n                                       placeholder={t('searchbar-placeholder')}/>\n                            </div>\n\n                        </div>\n                        <div className=\"button-section\">\n                            <button className=\"button-general\">{t('child')}</button>\n                            <button className=\"button-general\">{t('lung')}</button>\n                            <button className=\"button-general\">{t('heart')}</button>\n                            <button className=\"button-general\">{t('stomach')}</button>\n                            <button className=\"button-general\">{t('leg')}</button>\n                            <button className=\"button-general\">{t('arms')}</button>\n                            <button className=\"button-general\">{t('liver')}</button>\n                            <button className=\"button-general\">{t('gallbladder')}</button>\n                            <button className=\"button-general\">{t('kidney')}</button>\n                            <button className=\"button-general\">{t('brain')}</button>\n                            <button className=\"button-general\">{t('specialized')}</button>\n                            <button className=\"button-general\">{t('other')}</button>\n                        </div>\n                    </div>\n                ) : (\n                    <div className=\"left-bar-hidden\" id=\"hiddenSidebar\" onClick={handleClick}>\n                        <div className=\"hamburger-menu\">\n                            <img src={hamburger} onClick={handleClick} className=\"hamburger-menu-picture\"\n                                 alt=\"Hamburger menu\"/>\n                        </div>\n                    </div>)}\n            </div>\n            </body>\n        </>);\n}\n\nexport default RulesPage;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/RulesPage.jsx b/src/RulesPage.jsx
+--- a/src/RulesPage.jsx	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/src/RulesPage.jsx	(date 1728759127646)
+@@ -1,4 +1,4 @@
+-import {Link} from "react-router-dom";
++import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+ 
+ import './stylesheets/leftbar/buttons.css';
+ import './stylesheets/topbar/topbar.css';
+@@ -13,6 +13,9 @@
+ import React, {useState} from 'react';
+ 
+ import {useTranslation} from "react-i18next";
++import InfoPage from "./InfoPage";
++import SupportPage from "./SupportPage";
++import App from "./App";
+ 
+ function RulesPage() {
+ 
+@@ -32,16 +35,25 @@
+     return (
+ 
+         <>
++
+             <body className="rules">
+             < div className="header">
+                 <div className="left-section">
+-                    <img src={logo} className="logo" alt="Logo"/>
++
++
++
++                            <img src={logo} className="logo" alt="Logo"/>
++
++
+                     <div className="topbar-functional-divs">
+                         <Link to="/RulesPage">
+                             <button className="Button-topbar">
+                                 <img src={regeln} className="regeln" alt="Regeln"/>
+                             </button>
++
+                         </Link>
++
++
+                     </div>
+                     <div className="topbar-functional-divs">
+                         <Link to="/InfoPage">
+@@ -63,37 +75,39 @@
+                 </div>
+ 
+                 <div className="right-section">
+-                    <img src={language} className="language" alt={('language')}/>
++                <img src={language} className="language" alt={('language')}/>
+                     <img src={login} className="login" alt="login"/>
+                 </div>
+ 
+ 
+                 {showSidebar ? (
+-                    <div className="left-bar-shown" id="shownSidebar">
+-                        <div className="top-leftbar-section">
+-                            <div className="hamburger-menu">
+-                                <img src={hamburger} onClick={handleClick} className="hamburger-menu-picture"
+-                                     alt="Hamburger menu"/>
+-                            </div>
+-                            <div className="searchbar-menu">
+-                                <input className="search-bar" type="text"
+-                                       placeholder={t('searchbar-placeholder')}/>
+-                            </div>
+-
+-                        </div>
+-                        <div className="button-section">
+-                            <button className="button-general">{t('child')}</button>
+-                            <button className="button-general">{t('lung')}</button>
+-                            <button className="button-general">{t('heart')}</button>
+-                            <button className="button-general">{t('stomach')}</button>
+-                            <button className="button-general">{t('leg')}</button>
+-                            <button className="button-general">{t('arms')}</button>
+-                            <button className="button-general">{t('liver')}</button>
+-                            <button className="button-general">{t('gallbladder')}</button>
+-                            <button className="button-general">{t('kidney')}</button>
+-                            <button className="button-general">{t('brain')}</button>
+-                            <button className="button-general">{t('specialized')}</button>
+-                            <button className="button-general">{t('other')}</button>
++                    <div className="left-bar-backdiv">
++                        <div className="left-bar-shown " id="shownSidebar">
++                            <div className="top-leftbar-section">
++                                <div className="hamburger-menu">
++                                    <img src={hamburger} onClick={handleClick}
++                                         className="hamburger-menu-picture"
++                                         alt="Hamburger menu"/>
++                                </div>
++                                <div className="searchbar-menu">
++                                    <input className="search-bar" type="text"
++                                           placeholder={t('searchbar-placeholder')}/>
++                                </div>
++                            </div>
++                            <div className="button-section">
++                                <button className="button-general">{t('child')}</button>
++                                <button className="button-general">{t('lung')}</button>
++                                <button className="button-general">{t('heart')}</button>
++                                <button className="button-general">{t('stomach')}</button>
++                                <button className="button-general">{t('leg')}</button>
++                                <button className="button-general">{t('arms')}</button>
++                                <button className="button-general">{t('liver')}</button>
++                                <button className="button-general">{t('gallbladder')}</button>
++                                <button className="button-general">{t('kidney')}</button>
++                                <button className="button-general">{t('brain')}</button>
++                                <button className="button-general">{t('specialized')}</button>
++                                <button className="button-general">{t('other')}</button>
++                            </div>
+                         </div>
+                     </div>
+                 ) : (
+@@ -102,10 +116,16 @@
+                             <img src={hamburger} onClick={handleClick} className="hamburger-menu-picture"
+                                  alt="Hamburger menu"/>
+                         </div>
+-                    </div>)}
++                    </div>
++                )}
++
+             </div>
+             </body>
+-        </>);
++
++        </>
++
++    )
++        ;
+ }
+ 
+ export default RulesPage;
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2a781fba-3240-44f3-9db1-f8e4dff7d6b5\" name=\"Changes\" comment=\"Leftbar-Rules\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/stylesheets/general/general.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/stylesheets/general/general.css\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"CSS File\" />\n        <option value=\"tsconfig.json\" />\n        <option value=\"package.json\" />\n        <option value=\"JSX File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Matteo500219&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/AndreNeb/diplomarbeit_fe.git&quot;,\n    &quot;accountId&quot;: &quot;d70321cd-429b-43c5-b7a2-73882bbca8a2&quot;\n  }\n}</component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"DEPENDENCY_CHECKER_PROBLEMS_TAB\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"2nFPTCbZQSI9AgsTCvvaTuPftQs\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <OptionsSetting value=\"false\" id=\"Update\" />\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src&quot;,\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,\n    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,\n    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,\n    &quot;timeTracker.comment&quot;: &quot;&quot;,\n    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,\n    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,\n    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,\n    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;true&quot;,\n    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,\n    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,\n    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,\n    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,\n    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,\n    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,\n    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,\n    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,\n    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,\n    &quot;timeTracker.query&quot;: &quot;&quot;,\n    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,\n    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,\n    &quot;timeTracker.startTime&quot;: &quot;1728670322905&quot;,\n    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,\n    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,\n    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n      <recent name=\"$PROJECT_DIR$/src/pictures\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/Language\" />\n      <recent name=\"$PROJECT_DIR$/public\" />\n      <recent name=\"$PROJECT_DIR$/src/pictures\" />\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"npm.npm start\">\n    <configuration name=\"Debug Application\" type=\"JavascriptDebugType\" uri=\"http://localhost:3000\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"npm start\" type=\"js.build_tools.npm\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"start\" />\n      </scripts>\n      <node-interpreter value=\"$APPLICATION_CONFIG_DIR$/node/versions/20.15.0/bin/node\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"JavaScript Debug.Debug Application\" />\n      <item itemvalue=\"npm.npm start\" />\n    </list>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task id=\"Default\" summary=\"Default task\">\n      <branch name=\"main\" repository=\"$PROJECT_DIR$\" original=\"true\" />\n      <changelist id=\"2a781fba-3240-44f3-9db1-f8e4dff7d6b5\" name=\"Changes\" comment=\"\" />\n      <created>1728031577894</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1728651349781</updated>\n      <workItem from=\"1728565856844\" duration=\"1659000\" />\n      <workItem from=\"1728579397289\" duration=\"12242000\" />\n      <workItem from=\"1728648125727\" duration=\"2802000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Added Files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728565949370</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728565949370</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added Files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728566135063</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728566135063</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Added Files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728566140883</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728566140883</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Added Files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728567254250</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728567254250</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728568759234</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728568759234</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728569679029</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728569679029</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728571484997</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728571484997</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728571874403</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728571874403</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728571910145</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728571910145</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728572349768</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728572349768</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728573351908</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728573351908</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728574280274</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728574280274</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728581335620</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728581335620</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728581920416</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728581920416</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728582455198</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728582455198</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728583855048</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728583855048</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728625949376</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728625949376</updated>\n    </task>\n    <task id=\"LOCAL-00018\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728628394801</created>\n      <option name=\"number\" value=\"00018\" />\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728628394801</updated>\n    </task>\n    <task id=\"LOCAL-00019\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728628922609</created>\n      <option name=\"number\" value=\"00019\" />\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728628922609</updated>\n    </task>\n    <task id=\"LOCAL-00020\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728628960832</created>\n      <option name=\"number\" value=\"00020\" />\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728628960833</updated>\n    </task>\n    <task id=\"LOCAL-00021\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728629233406</created>\n      <option name=\"number\" value=\"00021\" />\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728629233406</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728630282250</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728630282250</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\"Topbar\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728632645163</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728632645163</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\"Added big widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728634576346</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728634576346</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\"Added big widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728634641155</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728634641156</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"Added small widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728638461722</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728638461722</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"Added small widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728638799516</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728638799516</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"Added small widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728650959346</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728650959346</updated>\n    </task>\n    <task active=\"true\" id=\"DA_01-78\" summary=\"Grundfunktionen Website \">\n      <branch name=\"main\" repository=\"$PROJECT_DIR$\" />\n      <branch name=\"main\" repository=\"$PROJECT_DIR$\" original=\"true\" />\n      <changelist id=\"2a781fba-3240-44f3-9db1-f8e4dff7d6b5\" name=\"Changes\" comment=\"\" />\n      <created>1727465054608</created>\n      <option name=\"issue\" value=\"true\" />\n      <url>https://wuev06.youtrack.cloud/issue/DA_01-78</url>\n      <option name=\"number\" value=\"78\" />\n      <option name=\"presentableId\" value=\"DA_01-78\" />\n      <option name=\"project\" value=\"DA_01\" />\n      <option name=\"type\" value=\"BUG\" />\n      <updated>1728677346802</updated>\n      <workItem from=\"1728651349950\" duration=\"8618000\" />\n      <workItem from=\"1728660086076\" duration=\"822000\" />\n      <workItem from=\"1728670318414\" duration=\"23000\" />\n      <workItem from=\"1728672691930\" duration=\"5019000\" />\n      <workItem from=\"1728677734210\" duration=\"757000\" />\n      <workItem from=\"1728719891678\" duration=\"2322000\" />\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"Edited small widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728656295288</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728656295288</updated>\n    </task>\n    <task id=\"LOCAL-00030\" summary=\"Finished small Widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728657470405</created>\n      <option name=\"number\" value=\"00030\" />\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728657470405</updated>\n    </task>\n    <task id=\"LOCAL-00031\" summary=\"Finished small Widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728660880224</created>\n      <option name=\"number\" value=\"00031\" />\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728660880225</updated>\n    </task>\n    <task id=\"LOCAL-00032\" summary=\"Finished small Widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728662522773</created>\n      <option name=\"number\" value=\"00032\" />\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728662522774</updated>\n    </task>\n    <task id=\"LOCAL-00033\" summary=\"Piktogramme bei den small widgets richten sich jetzt richtig aus\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728664288551</created>\n      <option name=\"number\" value=\"00033\" />\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728664288551</updated>\n    </task>\n    <task id=\"LOCAL-00034\" summary=\"Piktogramme bei den small widgets richten sich jetzt richtig aus\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728664394781</created>\n      <option name=\"number\" value=\"00034\" />\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728664394781</updated>\n    </task>\n    <task id=\"LOCAL-00035\" summary=\"Piktogramme bei den small widgets richten sich jetzt richtig aus\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728667529743</created>\n      <option name=\"number\" value=\"00035\" />\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728667529743</updated>\n    </task>\n    <task id=\"LOCAL-00036\" summary=\"Piktogramme bei den small widgets richten sich jetzt richtig aus\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728677279716</created>\n      <option name=\"number\" value=\"00036\" />\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728677279716</updated>\n    </task>\n    <task id=\"LOCAL-00037\" summary=\"Deletet unneccessary files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728677685795</created>\n      <option name=\"number\" value=\"00037\" />\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728677685795</updated>\n    </task>\n    <task id=\"LOCAL-00038\" summary=\"Deletet unneccessary files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728680064682</created>\n      <option name=\"number\" value=\"00038\" />\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728680064682</updated>\n    </task>\n    <task id=\"LOCAL-00039\" summary=\"Deletet unneccessary files\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728719928518</created>\n      <option name=\"number\" value=\"00039\" />\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728719928519</updated>\n    </task>\n    <task id=\"LOCAL-00040\" summary=\"Finished small Widgets\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728730335799</created>\n      <option name=\"number\" value=\"00040\" />\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728730335799</updated>\n    </task>\n    <task id=\"LOCAL-00041\" summary=\"Leftbar-Rules\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1728753146326</created>\n      <option name=\"number\" value=\"00041\" />\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1728753146326</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"42\" />\n    <option name=\"clearContext\" value=\"false\" />\n    <option name=\"createChangelist\" value=\"false\" />\n    <option name=\"createBranch\" value=\"false\" />\n    <option name=\"useBranch\" value=\"true\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Added Files\" />\n    <MESSAGE value=\"Body3\" />\n    <MESSAGE value=\"Topbar\" />\n    <MESSAGE value=\"Added big widgets\" />\n    <MESSAGE value=\"Added small widgets\" />\n    <MESSAGE value=\"Edited small widgets\" />\n    <MESSAGE value=\"Searchbar verbessert, Regeln als Funktion hinzugefügt, generelle verbesserungen\" />\n    <MESSAGE value=\"Piktogramme bei den small widgets richten sich jetzt richtig aus\" />\n    <MESSAGE value=\"Deletet unneccessary files\" />\n    <MESSAGE value=\"Finished small Widgets\" />\n    <MESSAGE value=\"Leftbar-Rules\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Leftbar-Rules\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 02636bb5bff7c0abb8084cb2fa098a7dcf7ab11b)
++++ b/.idea/workspace.xml	(date 1728759021109)
+@@ -6,7 +6,11 @@
+   <component name="ChangeListManager">
+     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Leftbar-Rules">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesPage.jsx" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/leftbar/leftbar.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -498,7 +502,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1728753146326</updated>
+     </task>
+-    <option name="localTasksCounter" value="42" />
++    <task id="LOCAL-00042" summary="Leftbar-Rules">
++      <option name="closed" value="true" />
++      <created>1728754229381</created>
++      <option name="number" value="00042" />
++      <option name="presentableId" value="LOCAL-00042" />
++      <option name="project" value="LOCAL" />
++      <updated>1728754229381</updated>
++    </task>
++    <option name="localTasksCounter" value="43" />
+     <option name="clearContext" value="false" />
+     <option name="createChangelist" value="false" />
+     <option name="createBranch" value="false" />
