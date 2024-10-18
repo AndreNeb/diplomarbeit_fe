@@ -18,7 +18,6 @@ import Header from "../components/Header";
 
 
 
-
 function RulesPage() {
 
     const {t} = useTranslation();
@@ -27,6 +26,8 @@ function RulesPage() {
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
+
+    const [buttonTexts, setButtonTexts] = useState([]);
 
     const [text, setText] = useState("");
 
@@ -56,6 +57,13 @@ function RulesPage() {
 
     const [showdarklight, setDarklight] = useState(true);
 
+    const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
+
+    const handleAddDiv = (message) => {
+        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+        setButtonTexts([...buttonTexts, `${message}`]);
+    };
+
 
     const styles = {
         box: {
@@ -65,7 +73,17 @@ function RulesPage() {
             overflowWrap: "break-word", // Unterstützt den Umbruch von langen Wörtern
         },
     };
+    const stylesadd = {
+        add: {
+            display: "flex",
+            flexWrap: "wrap", // Elemente umbrechen
 
+            justifyContent: "flex-start", // Start der Buttons links ausrichten
+            alignItems: "center",
+            alignContent: "flex-start",
+            boxSizing: "border-box",
+        },
+    };
 
 
 
@@ -226,30 +244,33 @@ function RulesPage() {
                             </div>
                         </div>
                         <div className="button-section">
-                            <button onClick={() => handleCategoriesClick(t('child'))}
-                                    className="button-general-leftbar">{t('child')}</button>
-                            <button onClick={() => handleCategoriesClick(t('lung'))}
-                                    className="button-general-leftbar">{t('lung')}</button>
-                            <button onClick={() => handleCategoriesClick(t('heart'))}
-                                    className="button-general-leftbar">{t('heart')}</button>
-                            <button onClick={() => handleCategoriesClick(t('stomach '))}
-                                    className="button-general-leftbar">{t('stomach')}</button>
-                            <button onClick={() => handleCategoriesClick(t('leg'))}
-                                    className="button-general-leftbar">{t('leg')}</button>
-                            <button onClick={() => handleCategoriesClick(t('arms'))}
-                                    className="button-general-leftbar">{t('arms')}</button>
-                            <button onClick={() => handleCategoriesClick(t('liver'))}
-                                    className="button-general-leftbar">{t('liver')}</button>
-                            <button onClick={() => handleCategoriesClick(t('gallbladder'))}
-                                    className="button-general-leftbar">{t('gallbladder')}</button>
-                            <button onClick={() => handleCategoriesClick(t('kidney'))}
-                                    className="button-general-leftbar">{t('kidney')}</button>
-                            <button onClick={() => handleCategoriesClick(t('brain'))}
-                                    className="button-general-leftbar">{t('brain')}</button>
-                            <button onClick={() => handleCategoriesClick(t('specialized'))}
-                                    className="button-general-leftbar">{t('specialized')}</button>
-                            <button onClick={() => handleCategoriesClick(t('other'))}
-                                    className="button-general-leftbar">{t('other')}</button>
+                            <button onClick={() => handleAddDiv(t('if'))}
+                                    className="button-general-leftbar">{t('if')}</button>
+                            <button onClick={() => handleAddDiv(t('and'))}
+                                    className="button-general-leftbar">{t('and')}</button>
+                            <button onClick={() => handleAddDiv(t('or'))}
+                                    className="button-general-leftbar">{t('or')}</button>
+                            <button onClick={() => handleAddDiv(t('text'))}
+                                    className="button-general-leftbar">{t('text')}</button>
+                            <button onClick={() => handleAddDiv(t('greater than'))}
+                                    className="button-general-leftbar">{t('greater than')}</button>
+                            <button onClick={() => handleAddDiv(t('less than'))}
+                                    className="button-general-leftbar">{t('less than')}</button>
+                            <button onClick={() => handleAddDiv(t('equal'))}
+                                    className="button-general-leftbar">{t('equal')}</button>
+                        </div>
+                        <div className="frame-add" style={stylesadd.add}>
+                            {divs.map((div, index) => (
+                                <div key={index} className="grid-different-button">
+                                    <button className="query-button">{buttonTexts[index]}</button>
+                                    <div>
+                                        <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+                                             alt="Delete menu"/>
+                                    </div>
+                                </div>
+
+
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -298,7 +319,7 @@ function RulesPage() {
 
                     <a href="#contact" onClick={toggleMenu}>Home</a>
                     <Link to="/RulesPage">
-                        <a href="#about" onClick={toggleMenu}>Regeln</a>
+                    <a href="#about" onClick={toggleMenu}>Regeln</a>
                     </Link>
                     <a href="#about" onClick={toggleMenu}>Dokumente</a>
                     <a href="#services" onClick={toggleMenu}>Info</a>
