@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="White shadow bei small widgets im Dark mode">
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/arrow-left_darkMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/hamburger-menu_darkMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/lightMode/hamburger-menu_lightMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/other/NARKO_Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WICHTIGES" beforeDir="false" afterPath="$PROJECT_DIR$/src/WICHTIGES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/lightMode/arrow-left_lightMode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/lightMode/arrow-left_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/other/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/other/hamburger-menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Started Dark Mode in Rules" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,14 +157,6 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
-    <task id="LOCAL-00019" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628922609</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628922609</updated>
-    </task>
     <task id="LOCAL-00020" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728628960832</created>
@@ -285,7 +259,7 @@
       <workItem from="1729234937863" duration="4418000" />
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
-      <workItem from="1729343217850" duration="6603000" />
+      <workItem from="1729343217850" duration="7166000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -591,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729343231136</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Started Dark Mode in Rules">
+      <option name="closed" value="true" />
+      <created>1729350392793</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1729350392793</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -630,6 +612,7 @@
     <MESSAGE value="Umstrukturierung" />
     <MESSAGE value="Add-Rules" />
     <MESSAGE value="White shadow bei small widgets im Dark mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="White shadow bei small widgets im Dark mode" />
+    <MESSAGE value="Started Dark Mode in Rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Dark Mode in Rules" />
   </component>
 </project>
