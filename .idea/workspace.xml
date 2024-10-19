@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,22 +156,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00025" summary="Added big widgets">
-      <option name="closed" value="true" />
-      <created>1728634641155</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1728634641156</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added small widgets">
-      <option name="closed" value="true" />
-      <created>1728638461722</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1728638461722</updated>
     </task>
     <task id="LOCAL-00027" summary="Added small widgets">
       <option name="closed" value="true" />
@@ -549,6 +528,7 @@
     </task>
     <task active="true" id="DA_01-79" summary="Websitedesign ">
       <branch name="main" repository="$PROJECT_DIR$" />
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727606892122</created>
       <option name="issue" value="true" />
@@ -558,7 +538,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
       <updated>1729360838422</updated>
-      <workItem from="1729350547448" duration="15734000" />
+      <workItem from="1729350547448" duration="16110000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -584,7 +564,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729364782227</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch">
+      <option name="closed" value="true" />
+      <created>1729366667301</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1729366667301</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Cleaned up code">
+      <option name="closed" value="true" />
+      <created>1729366898515</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1729366898515</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -632,6 +628,8 @@
     <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
     <MESSAGE value="F" />
     <MESSAGE value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
+    <MESSAGE value="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch" />
+    <MESSAGE value="Cleaned up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up code" />
   </component>
 </project>
