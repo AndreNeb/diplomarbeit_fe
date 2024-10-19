@@ -33,8 +33,9 @@
 .logo {
     height: 35px;
     margin-left: 30px;
-
-    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 27px;
 }
 
 .icon-container {

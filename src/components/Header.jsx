@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {DarkModeContext} from './DarkModeContext';
-import apple from "../pictures/other/apple.png";
+import apple from "../pictures/other/NARKO_Logo.png";
 import regelnBlack from "../pictures/darkMode/rules_darkMode.png";
 import regeln from "../pictures/lightMode/regeln_lightMode.png";
 import documentBlack from "../pictures/darkMode/document_darkMode.png";
@@ -37,7 +37,8 @@ function Header() {
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
                 <Link to="/">
-                    <img src={apple} className="logo" alt={t('logo')}/>
+                    <span className="logo" style={{color: darkMode ? "white": "black"}}>N A R K O</span>
+
                 </Link>
 
                 <div className="topbar-functional-divs">

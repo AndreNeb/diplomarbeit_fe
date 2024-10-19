@@ -12,7 +12,7 @@ import login from '../pictures/lightMode/login-picture_lightMode.png';
 import document from "../pictures/lightMode/document_lightMode.png";
 import moon from "../pictures/lightMode/moon_lightMode.png";
 import sun from "../pictures/darkMode/sun_darkMode.png";
-import apple from "../pictures/other/apple.png";
+import apple from "../pictures/other/NARKO_Logo.png";
 import Header from "../components/Header";
 
 function SupportPage() {

@@ -6,6 +6,7 @@ import '../stylesheets/Rules/leftbar/leftbar.css'
 import '../stylesheets/Rules/Build-grid.css'
 import '../stylesheets/Rules/Rules-overview.css';
 import arrowleft from "../pictures/lightMode/arrow-left_lightMode.png";
+import arrowleftBlack from "../pictures/darkMode/arrow-left_darkMode.png";
 import plusdark from "../pictures/lightMode/plus_lightMode.png";
 import safedark from "../pictures/lightMode/safe_lightMode.png";
 import deletedark from "../pictures/lightMode/delete_lightMode.png";
@@ -13,8 +14,9 @@ import arrowrightlight from "../pictures/darkMode/arrow_right_darkMode.png";
 import arrowrightdark from "../pictures/lightMode/arrow_right_lightMode.png";
 import React, {useContext, useState} from 'react';
 import {useTranslation} from "react-i18next";
-import apple from '../pictures/other/apple.png';
-import hamburger from '../pictures/other/hamburger-menu.png';
+import apple from '../pictures/other/NARKO_Logo.png';
+import hamburger from '../pictures/lightMode/hamburger-menu_lightMode.png';
+import hamburgerBlack from '../pictures/darkMode/hamburger-menu_darkMode.png';
 import Header from "../components/Header";
 import {DarkModeContext} from "../components/DarkModeContext";
 
@@ -99,55 +101,58 @@ function RulesPage() {
 
         <>
 
-            <body className="rules">
+            <body className={`rules ${darkMode ? 'dark' : 'light'}`}>
 
             <Header/>
 
             {currentDiv === 'MainPage' && (
-                <div className="left-bar-backdiv">
-                    <div className="left-bar-shown" id="shownSidebar2">
-                        <div className="top-leftbar-section">
+                <div className="left-bar-backdiv" style={{backgroundColor: darkMode ? 'black' : 'rgba(250, 246, 240, 255)', transition: "background-color 1.1s ease"}}>
+                    <div className="left-bar-shown" id="shownSidebar2" style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
+                        <div className="top-leftbar-section" style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
                             <div className="menu">
-                                <img src={hamburger} onClick={handleHamburgerClick}
-                                     className="menu-picture"
+                                <img src={darkMode ? hamburgerBlack : hamburger} onClick={handleHamburgerClick}
+                                     className={`menu-picture ${darkMode ? 'dark' : 'light'} mode`}
                                      alt="Hamburger menu"/>
                             </div>
                             <div className="searchbar-menu">
-                                <input className="search-bar" type="text"
-                                       placeholder={t('searchbar-placeholder')}/>
+                                <input className={`search-bar ${darkMode ? 'dark' : 'light'}`} type="text" placeholder={t('searchbar-placeholder')} style={{
+                                    backgroundColor: darkMode ? 'black' : 'white',
+                                    color: darkMode ? 'white' : 'black',
+                                    borderColor: darkMode ? 'white' : 'rgb(192, 192, 192)'
+                                }}/>
                             </div>
                         </div>
-                        <div className="button-section">
+                        <div className="button-section" style={{backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"}}>
                             <button onClick={() => handleCategoriesClick(t('child'))}
-                                    className="button-general-leftbar">{t('child')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('child')}</button>
                             <button onClick={() => handleCategoriesClick(t('lung'))}
-                                    className="button-general-leftbar">{t('lung')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('lung')}</button>
                             <button onClick={() => handleCategoriesClick(t('heart'))}
-                                    className="button-general-leftbar">{t('heart')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('heart')}</button>
                             <button onClick={() => handleCategoriesClick(t('stomach '))}
-                                    className="button-general-leftbar">{t('stomach')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('stomach')}</button>
                             <button onClick={() => handleCategoriesClick(t('leg'))}
-                                    className="button-general-leftbar">{t('leg')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('leg')}</button>
                             <button onClick={() => handleCategoriesClick(t('arms'))}
-                                    className="button-general-leftbar">{t('arms')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('arms')}</button>
                             <button onClick={() => handleCategoriesClick(t('liver'))}
-                                    className="button-general-leftbar">{t('liver')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('liver')}</button>
                             <button onClick={() => handleCategoriesClick(t('gallbladder'))}
-                                    className="button-general-leftbar">{t('gallbladder')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('gallbladder')}</button>
                             <button onClick={() => handleCategoriesClick(t('kidney'))}
-                                    className="button-general-leftbar">{t('kidney')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('kidney')}</button>
                             <button onClick={() => handleCategoriesClick(t('brain'))}
-                                    className="button-general-leftbar">{t('brain')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('brain')}</button>
                             <button onClick={() => handleCategoriesClick(t('specialized'))}
-                                    className="button-general-leftbar">{t('specialized')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('specialized')}</button>
                             <button onClick={() => handleCategoriesClick(t('other'))}
-                                    className="button-general-leftbar">{t('other')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{backgroundColor: darkMode ? "black" : "white", color: darkMode ? "white": "black", transition: "color 1.1s ease, background-color 1.1s ease"}}>{t('other')}</button>
                         </div>
                     </div>
                 </div>
             )}
             {currentDiv === 'Leftbar-hidden-MainPage' && (
-                <div className="left-bar-hidden left-bar-size-main" id="hiddenSidebar2">
+                <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-main`} id="hiddenSidebar2">
                     <div className="menu">
                         <img src={hamburger} onClick={handleMainClick} className="menu-picture"
                              alt="Hamburger menu"/>
@@ -155,7 +160,7 @@ function RulesPage() {
                 </div>
             )}
             {currentDiv === 'Category' && (
-                <div className="left-bar-hidden left-bar-size-add" id="hiddenSidebar2">
+                <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-add`} id="hiddenSidebar2">
                     <div className="arrow-menu">
                         <img src={arrowleft} onClick={handleMainClick}
                              className="arrow-left"
@@ -281,10 +286,10 @@ function RulesPage() {
                 </div>
             )}
             {currentDiv === 'Leftbar-hidden-RulesPage' && (
-                <div className="left-bar-hidden left-bar-size-build" id="hiddenSidebar2">
+                <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-build`} id="hiddenSidebar2">
                     <div className="arrow-menu">
-                        <img src={arrowleft} onClick={handleMainClick}
-                             className="arrow-left"
+                        <img src={darkMode ? arrowleftBlack : arrowleft} onClick={handleMainClick}
+                             className={`arrow-left ${darkMode ? 'dark' : 'light'} mode`}
                              alt="Arrow left"/>
                     </div>
                     <div className="menu">
@@ -303,7 +308,7 @@ function RulesPage() {
 
             )}
             {currentDiv === 'Text-field' && (
-                <div className="left-bar-hidden left-bar-size-build" id="hiddenSidebar2">
+                <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-build`} id="hiddenSidebar2">
                     <div className="arrow-menu">
                         <img src={arrowleft} onClick={handleMainClick}
                              className="arrow-left"

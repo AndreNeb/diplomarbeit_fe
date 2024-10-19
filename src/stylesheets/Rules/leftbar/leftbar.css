@@ -26,7 +26,6 @@
 
 .left-bar-hidden {
 
-    background-color: white;
     z-index: 200;
     position: fixed;
     top: 60px;
@@ -49,6 +48,14 @@
     backface-visibility: hidden;
     cursor: pointer;
 }
+
+.left-bar-hidden.light {
+    background-color: white;
+}
+.left-bar-hidden.dark {
+    background-color: black;
+}
+
 
 
 .left-bar-size-main {
@@ -83,7 +90,8 @@
 .top-leftbar-section {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    justify-content: start;
 }
 
 .rules-section {
@@ -106,14 +114,36 @@
 
 
 .menu-picture {
+    border-radius: 7px;
     height: 30px;
+    padding: 3px;
     cursor: pointer;
-
 }
+
+.menu-picture.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-picture.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 10px white;
+}
+
 
 .arrow-left {
     height: 40px;
     cursor: pointer;
+    border-radius: 10px;
+}
+.arrow-left.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-left.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
 }
 
 .plus-menu-picture {

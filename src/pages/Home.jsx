@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 
 import {Link} from "react-router-dom";
-import apple from "../pictures/other/apple.png";
+import apple from "../pictures/other/NARKO_Logo.png";
 import patienten from "../pictures/lightMode/patients_lightMode.png";
 import patientenBlack from "../pictures/darkMode/patients_darkMode.png";
 import maske from "../pictures/lightMode/mask_lightMode.png";
@@ -10,7 +10,7 @@ import spritze from "../pictures/lightMode/syringe_lightMode.png";
 import spritzeBlack from "../pictures/darkMode/syringe_darkMode.png";
 import wartezimmer from "../pictures/lightMode/waitingroom_lightMode.png";
 import wartezimmerBlack from "../pictures/darkMode/waitingroom_darkMode.png";
-import hamburger from "../pictures/other/hamburger-menu.png";
+import hamburger from "../pictures/lightMode/hamburger-menu_lightMode.png";
 import {useTranslation} from "react-i18next";
 import Header from '../components/Header';
 import {DarkModeContext} from '../components/DarkModeContext';
