@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../stylesheets/Rules/leftbar/buttons.css';
+import '../stylesheets/rules/leftbar/buttons.css';
 import '../stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';

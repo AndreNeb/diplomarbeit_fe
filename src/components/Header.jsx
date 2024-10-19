@@ -37,35 +37,34 @@ function Header() {
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
                 <Link to="/">
-                    <span className="logo" style={{color: darkMode ? "white": "black"}}>N A R K O</span>
-
+                    <img className="logo" src={apple} alt={t('logo')}/>
                 </Link>
 
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
                         <div className="icons-tooltip icon-container">
-                            <img src={darkMode ? regelnBlack : regeln} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
+                            <img src={darkMode ? regelnBlack : regeln} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}/>
                             <div className="tooltip">{t('rules')}</div>
                         </div>
                     </Link>
 
                     <Link to="/DocumentPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? documentBlack : documentImage} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
+                            <img src={darkMode ? documentBlack : documentImage} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('documents')}/>
                             <div className="tooltip">{t('documents')}</div>
                         </div>
                     </Link>
 
                     <Link to="/InfoPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? infoBlack : info} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('info')}/>
+                            <img src={darkMode ? infoBlack : info} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('info')}/>
                             <div className="tooltip">{t('info')}</div>
                         </div>
                     </Link>
 
                     <Link to="/SupportPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? supportBlack : support} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('support')}/>
+                            <img src={darkMode ? supportBlack : support} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('support')}/>
                             <div className="tooltip">{t('support')}</div>
                         </div>
                     </Link>

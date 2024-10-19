@@ -33,9 +33,6 @@
 .logo {
     height: 35px;
     margin-left: 30px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 27px;
 }
 
 .icon-container {
@@ -82,6 +79,7 @@
     outline: none;
     font-family: "Quicksand", sans-serif, Arial;
     transition: background-color 1.1s ease, color 1.1s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
 .search-bar.light:hover {

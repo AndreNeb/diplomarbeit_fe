@@ -18,17 +18,30 @@
     align-items: center;
     border-radius: 15px;
     cursor: pointer;
-    border: 1px solid lightgrey;
 
-    background-color: white;
-
-    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 1.1s ease, color 1.1s ease;
 }
 
-.big-widget:hover{
+.big-widget.light{
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+}
+
+.big-widget.light:hover{
     transform: scale(1.01, 1.01);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.big-widget.dark{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.big-widget.dark:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
 }
 
 @media (max-width: 800px) {

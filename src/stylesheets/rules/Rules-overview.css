@@ -1,6 +1,5 @@
 
 .frame-rules {
-    background-color: white;
     z-index: 200;
     position: fixed;
     top: 74px;
@@ -18,8 +17,17 @@
 
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out, background-color 1.1s ease, color 1.1s ease;
     backface-visibility: hidden;
+}
+
+.frame-rules.light {
+    background-color: white;
+    color: black;
+}
+.frame-rules.dark {
+    background-color: black;
+    color: white;
 }
 
 .rules-header {

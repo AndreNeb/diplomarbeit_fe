@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../stylesheets/Rules/leftbar/buttons.css';
+import '../stylesheets/rules/leftbar/buttons.css';
 
 function RulesPage() {
     return (

@@ -1,6 +1,6 @@
 .left-bar-shown {
     width: 256px;
-    background-color: white;
+
     z-index: 200;
     position: fixed;
     top: 74px;
@@ -19,9 +19,16 @@
     overflow-x: hidden;
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out, background-color 1.1s ease;
     backface-visibility: hidden;
+}
 
+.left-bar-shown.light {
+    background-color: white;
+}
+
+.left-bar-shown.dark {
+    background-color: black;
 }
 
 .left-bar-hidden {
@@ -31,7 +38,7 @@
     top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
     border-radius: 30px;
     margin-left: 14px;
@@ -44,7 +51,7 @@
     padding: 10px;
 
     box-sizing: border-box;
-    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out, background-color 1.1s ease;
     backface-visibility: hidden;
     cursor: pointer;
 }
@@ -52,10 +59,10 @@
 .left-bar-hidden.light {
     background-color: white;
 }
+
 .left-bar-hidden.dark {
     background-color: black;
 }
-
 
 
 .left-bar-size-main {
@@ -82,8 +89,16 @@
     bottom: 0;
     width: 275px;
     height: 100%;
-    background-color: rgba(250, 246, 240, 255);
+    transition: background-color 1.1s ease;
 
+}
+
+.left-bar-backdiv.light {
+    background-color: rgba(250, 246, 240, 255);
+}
+
+.left-bar-backdiv.dark {
+    background-color: black;
 }
 
 
@@ -99,7 +114,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding-right: 10px;
-
 }
 
 .right-section-rules-hidden {
@@ -111,7 +125,6 @@
     height: 100%;
 
 }
-
 
 .menu-picture {
     border-radius: 7px;
@@ -136,26 +149,37 @@
     cursor: pointer;
     border-radius: 10px;
 }
+
 .arrow-left.light:hover {
     transform: scale(1.01, 1.01);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .arrow-left.dark:hover {
     transform: scale(1.01, 1.01);
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 10px white;
 }
 
 .plus-menu-picture {
     height: 40px;
     cursor: pointer;
+    border-radius: 10px;
+}
 
+.plus-menu-picture.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plus-menu-picture.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
 }
 
 .searchbar-menu {
-    background-color: transparent;
     border-radius: 15px;
     outline: none;
+    overflow: hidden;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -165,7 +189,6 @@
 }
 
 .menu {
-    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;

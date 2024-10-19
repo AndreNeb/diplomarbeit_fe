@@ -32,13 +32,12 @@
 
 
 .button-general-leftbar-add {
-    color: black;
     font-size: 26px;
     border-radius: 15px;
 
     transition-duration: 0.15s;
     cursor: pointer;
-    background-color: white;
+
     margin-bottom: 35px;
     border-width: 1px;
     border-style: solid;
@@ -46,20 +45,40 @@
     overflow-y: scroll;
     width: 214px;
     height: 110px;
+
+    transition: background-color 1.1s ease, color 1.1s ease;
+
 }
 
-.button-general-leftbar:hover,
-.button-general-leftbar-add:hover{
+.button-general-leftbar-add.light {
+    background-color: white;
+    color: black;
+}
+
+.button-general-leftbar-add:hover.light {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-general-leftbar-add.dark {
+    background-color: black;
+    color: white;
+}
+
+.button-general-leftbar-add:hover.dark {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
+}
+
+
+.button-general-leftbar:hover {
     transform: scale(1.01, 1.01);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .button-middle {
-
     position: fixed;
 
-
-    background-color: white;
     font-size: 26px;
     border-style: solid;
     border-radius: 15px;
@@ -72,7 +91,30 @@
 
     cursor: default;
 
+    transition: background-color 1.1s ease, color 1.1s ease;
 }
+
+.button-middle.light {
+    color: black;
+    background-color: white;
+}
+
+.button-middle.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-middle.dark {
+    color: white;
+    background-color: black;
+}
+
+.button-middle.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
+}
+
+
 
 button:hover {
     transform: scale(1.01, 1.01);
