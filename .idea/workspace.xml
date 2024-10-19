@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/other/NARKO_Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pictures/other/NARKO_Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/Rules-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Rules/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/leftbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,14 +156,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00022" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728630282250</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1728630282250</updated>
     </task>
     <task id="LOCAL-00023" summary="Topbar">
       <option name="closed" value="true" />
@@ -592,9 +568,17 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <updated>1729350546883</updated>
-      <workItem from="1729350547448" duration="9537000" />
+      <workItem from="1729350547448" duration="10007000" />
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
+      <option name="closed" value="true" />
+      <created>1729360771782</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1729360771783</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -638,6 +622,7 @@
     <MESSAGE value="Add-Rules" />
     <MESSAGE value="White shadow bei small widgets im Dark mode" />
     <MESSAGE value="Started Dark Mode in Rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Dark Mode in Rules" />
+    <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
   </component>
 </project>
