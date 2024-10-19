@@ -19,8 +19,6 @@ import Header from "../components/Header";
 import {DarkModeContext} from "../components/DarkModeContext";
 
 
-
-
 function RulesPage() {
 
     const {t} = useTranslation();
@@ -58,6 +56,9 @@ function RulesPage() {
         setCurrentDiv('Leftbar-hidden-RulesPage');
     };
 
+    const handleTextFieldClick = () => {
+        setCurrentDiv('TextField');
+    };
     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
     const handleAddDiv = (message) => {
@@ -88,14 +89,10 @@ function RulesPage() {
     };
 
 
-
-
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
-
 
 
     return (
@@ -215,10 +212,28 @@ function RulesPage() {
                 </div>
             )}
 
-            {currentDiv === 'BuildPage' && (
-                <div className="name-section" id="shownSidebar3">
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage') && (
+                <div className={`name-section ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'name-section-big' : 'name-section'}`} id="shownSidebar3">
                     <button
                         className="button-middle">{text}</button>
+                </div>
+            )}
+
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage') && (
+                <div  className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}
+                      style={stylesadd.add}>
+                    {divs.map((div, index) => (
+                        <div key={index} className="grid-different-button">
+                            <button className="query-button">{buttonTexts[index]}</button>
+                            <div className="arrow-right">
+                                <img src={darkMode ? arrowrightlight : arrowrightdark}
+                                     className="arrow-right-size"
+                                     alt="Arrow right"/>
+                            </div>
+                        </div>
+
+
+                    ))}
                 </div>
             )}
 
@@ -245,6 +260,7 @@ function RulesPage() {
                                      alt="Hamburger menu"/>
                             </div>
                         </div>
+
                         <div className="button-section">
                             <button onClick={() => handleAddDiv(t('if'))}
                                     className="button-general-leftbar-add">{t('if')}</button>
@@ -252,7 +268,7 @@ function RulesPage() {
                                     className="button-general-leftbar-add">{t('and')}</button>
                             <button onClick={() => handleAddDiv(t('or'))}
                                     className="button-general-leftbar-add">{t('or')}</button>
-                            <button onClick={() => handleAddDiv(t('text'))}
+                            <button onClick={() => {handleAddDiv(t('text')); handleTextFieldClick(t('text'));}}
                                     className="button-general-leftbar-add">{t('text')}</button>
                             <button onClick={() => handleAddDiv(t('greater than'))}
                                     className="button-general-leftbar-add">{t('greater than')}</button>
@@ -260,20 +276,6 @@ function RulesPage() {
                                     className="button-general-leftbar-add">{t('less than')}</button>
                             <button onClick={() => handleAddDiv(t('equal'))}
                                     className="button-general-leftbar-add">{t('equal')}</button>
-                        </div>
-                        <div className="frame-add" style={stylesadd.add}>
-                            {divs.map((div, index) => (
-                                <div key={index} className="grid-different-button">
-                                    <button className="query-button">{buttonTexts[index]}</button>
-                                    <div className="arrow-right">
-                                        <img src={darkMode ? arrowrightlight : arrowrightdark}
-                                             className="arrow-right-size"
-                                             alt="Arrow right"/>
-                                    </div>
-                                </div>
-
-
-                            ))}
                         </div>
                     </div>
                 </div>
@@ -300,7 +302,28 @@ function RulesPage() {
                 </div>
 
             )}
+            {currentDiv === 'Text-field' && (
+                <div className="left-bar-hidden left-bar-size-build" id="hiddenSidebar2">
+                    <div className="arrow-menu">
+                        <img src={arrowleft} onClick={handleMainClick}
+                             className="arrow-left"
+                             alt="Arrow left"/>
+                    </div>
+                    <div className="menu">
+                        <img src={safedark} onClick={handlePlusClick} className="menu-picture"
+                             alt="Safe menu"/>
+                    </div>
+                    <div className="menu">
+                        <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+                             alt="Delete menu"/>
+                    </div>
+                    <div className="menu">
+                        <img src={hamburger} onClick={handlePlusClick} className="menu-picture"
+                             alt="Hamburger menu"/>
+                    </div>
+                </div>
 
+            )}
 
             <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
                 <div className="hamburger-menu-div">
@@ -322,7 +345,7 @@ function RulesPage() {
 
                     <a href="#contact" onClick={toggleMenu}>Home</a>
                     <Link to="/RulesPage">
-                    <a href="#about" onClick={toggleMenu}>Regeln</a>
+                        <a href="#about" onClick={toggleMenu}>Regeln</a>
                     </Link>
                     <a href="#about" onClick={toggleMenu}>Dokumente</a>
                     <a href="#services" onClick={toggleMenu}>Info</a>
