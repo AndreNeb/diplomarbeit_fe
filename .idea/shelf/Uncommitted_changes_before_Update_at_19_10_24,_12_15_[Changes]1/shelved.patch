@@ -1,0 +1,209 @@
+Index: src/stylesheets/Rules/Build-grid.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n.frame-add{\n    background-color: transparent;\n    z-index: 200;\n    position: fixed;\n    top: 135px;\n    bottom: 15px;\n    left: 300px;\n    right: 30px;\n\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    row-gap: 100px;\n\n\n    overflow-y: auto;\n\n    border-width: 3px;\n    border-style: solid;\n    border-color: red;\n\n    padding: 10px;\n    transition: opacity 3s ease-in-out, transform 3s ease-in-out;\n    backface-visibility: hidden;\n\n\n}\n\n\n.grid-different-button{\n    display: flex;\n    flex-direction: row;\n    margin: 0;\n\n\n}\n\n.query-button{\n    background-color: white;\n    font-size: 26px;\n    border-style: solid;\n    border-radius: 15px;\n\n    transition-duration: 0.15s;\n\n    width: 214px;\n    height: 100px;\n    border-width: 1px;\n\n\n    cursor: default;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/Rules/Build-grid.css b/src/stylesheets/Rules/Build-grid.css
+--- a/src/stylesheets/Rules/Build-grid.css	(revision da6f3cc959f976204864e3c0433696110d6d4dbf)
++++ b/src/stylesheets/Rules/Build-grid.css	(date 1729283809015)
+@@ -3,23 +3,19 @@
+     background-color: transparent;
+     z-index: 200;
+     position: fixed;
+-    top: 135px;
++    top: 145px;
+     bottom: 15px;
+-    left: 300px;
++    left: 305px;
+     right: 30px;
+ 
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+-    row-gap: 100px;
++    row-gap: 50px;
+ 
+ 
+     overflow-y: auto;
+ 
+-    border-width: 3px;
+-    border-style: solid;
+-    border-color: red;
+-
+     padding: 10px;
+     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+     backface-visibility: hidden;
+@@ -45,9 +41,22 @@
+     transition-duration: 0.15s;
+ 
+     width: 214px;
+-    height: 100px;
++    height: 110px;
+     border-width: 1px;
+ 
+ 
+     cursor: default;
++}
++
++.arrow-right{
++    display: flex;
++    flex-direction: row;
++    justify-content: center;
++    align-items: center;
++    margin-left: 30px;
++    margin-right: 30px;
++}
++
++.arrow-right-size{
++    height: 60px;
+ }
+\ No newline at end of file
+Index: src/pages/RulesPage.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {Link} from \"react-router-dom\";\n\nimport '../stylesheets/topbar/topbar.css';\nimport '../stylesheets/Rules/leftbar/buttons.css'\nimport '../stylesheets/Rules/leftbar/leftbar.css'\nimport '../stylesheets/Rules/Build-grid.css'\nimport '../stylesheets/Rules/Rules-overview.css';\nimport arrowleft from \"../pictures/lightMode/arrow-left_lightMode.png\";\nimport plusdark from \"../pictures/lightMode/plus_lightMode.png\";\nimport safedark from \"../pictures/lightMode/safe_lightMode.png\";\nimport deletedark from \"../pictures/lightMode/delete_lightMode.png\";\nimport React, {useState} from 'react';\nimport {useTranslation} from \"react-i18next\";\nimport apple from '../pictures/other/apple.png';\nimport hamburger from '../pictures/other/hamburger-menu.png';\nimport Header from \"../components/Header\";\n\n\n\n\nfunction RulesPage() {\n\n    const {t} = useTranslation();\n\n    const {i18n} = useTranslation();\n    const changeLanguage = (lang) => {\n        i18n.changeLanguage(lang);\n    };\n\n    const [buttonTexts, setButtonTexts] = useState([]);\n\n    const [text, setText] = useState(\"\");\n\n\n    const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar\n\n    const handleMainClick = () => {\n        setCurrentDiv('MainPage');\n    };\n\n    const handleHamburgerClick = () => {\n        setCurrentDiv('Leftbar-hidden-MainPage');\n    };\n\n    const handleCategoriesClick = (message) => {\n        setCurrentDiv('Category');\n        setText(message)\n    };\n\n    const handlePlusClick = () => {\n        setCurrentDiv('BuildPage');\n    };\n\n    const handleHamburgerRulesBuildClick = () => {\n        setCurrentDiv('Leftbar-hidden-RulesPage');\n    };\n\n    const [showdarklight, setDarklight] = useState(true);\n\n    const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält\n\n    const handleAddDiv = (message) => {\n        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren\n        setButtonTexts([...buttonTexts, `${message}`]);\n    };\n\n\n    const styles = {\n        box: {\n            width: \"20%\",\n            boxSizing: \"border-box\", // Funktioniert in React, camelCase!\n            wordWrap: \"break-word\",  // Funktioniert ebenfalls in React, camelCase!\n            overflowWrap: \"break-word\", // Unterstützt den Umbruch von langen Wörtern\n        },\n    };\n    const stylesadd = {\n        add: {\n            display: \"flex\",\n            flexWrap: \"wrap\", // Elemente umbrechen\n\n            justifyContent: \"flex-start\", // Start der Buttons links ausrichten\n            alignItems: \"center\",\n            alignContent: \"flex-start\",\n            boxSizing: \"border-box\",\n        },\n    };\n\n\n\n\n    const [isOpen, setIsOpen] = useState(false);\n    const toggleMenu = () => {\n        setIsOpen(!isOpen);\n    };\n\n\n\n\n    return (\n\n        <>\n\n            <body className=\"rules\">\n\n            <Header/>\n\n            {currentDiv === 'MainPage' && (\n                <div className=\"left-bar-backdiv\">\n                    <div className=\"left-bar-shown\" id=\"shownSidebar2\">\n                        <div className=\"top-leftbar-section\">\n                            <div className=\"menu\">\n                                <img src={hamburger} onClick={handleHamburgerClick}\n                                     className=\"menu-picture\"\n                                     alt=\"Hamburger menu\"/>\n                            </div>\n                            <div className=\"searchbar-menu\">\n                                <input className=\"search-bar\" type=\"text\"\n                                       placeholder={t('searchbar-placeholder')}/>\n                            </div>\n                        </div>\n                        <div className=\"button-section\">\n                            <button onClick={() => handleCategoriesClick(t('child'))}\n                                    className=\"button-general-leftbar\">{t('child')}</button>\n                            <button onClick={() => handleCategoriesClick(t('lung'))}\n                                    className=\"button-general-leftbar\">{t('lung')}</button>\n                            <button onClick={() => handleCategoriesClick(t('heart'))}\n                                    className=\"button-general-leftbar\">{t('heart')}</button>\n                            <button onClick={() => handleCategoriesClick(t('stomach '))}\n                                    className=\"button-general-leftbar\">{t('stomach')}</button>\n                            <button onClick={() => handleCategoriesClick(t('leg'))}\n                                    className=\"button-general-leftbar\">{t('leg')}</button>\n                            <button onClick={() => handleCategoriesClick(t('arms'))}\n                                    className=\"button-general-leftbar\">{t('arms')}</button>\n                            <button onClick={() => handleCategoriesClick(t('liver'))}\n                                    className=\"button-general-leftbar\">{t('liver')}</button>\n                            <button onClick={() => handleCategoriesClick(t('gallbladder'))}\n                                    className=\"button-general-leftbar\">{t('gallbladder')}</button>\n                            <button onClick={() => handleCategoriesClick(t('kidney'))}\n                                    className=\"button-general-leftbar\">{t('kidney')}</button>\n                            <button onClick={() => handleCategoriesClick(t('brain'))}\n                                    className=\"button-general-leftbar\">{t('brain')}</button>\n                            <button onClick={() => handleCategoriesClick(t('specialized'))}\n                                    className=\"button-general-leftbar\">{t('specialized')}</button>\n                            <button onClick={() => handleCategoriesClick(t('other'))}\n                                    className=\"button-general-leftbar\">{t('other')}</button>\n                        </div>\n                    </div>\n                </div>\n            )}\n            {currentDiv === 'Leftbar-hidden-MainPage' && (\n                <div className=\"left-bar-hidden left-bar-size-main\" id=\"hiddenSidebar2\">\n                    <div className=\"menu\">\n                        <img src={hamburger} onClick={handleMainClick} className=\"menu-picture\"\n                             alt=\"Hamburger menu\"/>\n                    </div>\n                </div>\n            )}\n            {currentDiv === 'Category' && (\n                <div className=\"left-bar-hidden left-bar-size-add\" id=\"hiddenSidebar2\">\n                    <div className=\"arrow-menu\">\n                        <img src={arrowleft} onClick={handleMainClick}\n                             className=\"arrow-left\"\n                             alt=\"Arrow left\"/>\n                    </div>\n                    <div className=\"menu\">\n                        <img src={plusdark} onClick={handlePlusClick} className=\"plus-menu-picture\"\n                             alt=\"Plus menu\"/>\n                    </div>\n                </div>\n\n            )}\n\n            {currentDiv === 'Category' && (\n                <div className=\"frame-rules\">\n                    <div className=\"rules-header\">\n                        <input className=\"search-bar\" type=\"text\" placeholder={t('searchbar-placeholder')}/>\n                    </div>\n                    <div className=\"rules-body-categories\">\n                        <div className=\"content-divs-header\" style={styles.box}>\n                            {t('NameCategories')}\n                        </div>\n                        <div className=\"content-divs-header\" style={styles.box}>\n                            {t('RuleName')}\n                        </div>\n                        <div className=\"content-divs-header\" style={styles.box}>\n                            {t('RuleNumber')}\n                        </div>\n                        <div className=\"content-divs-header\" style={styles.box}>\n                            {t('Author')}\n                        </div>\n                        <div className=\"content-divs-header-rightest\" style={styles.box}>\n                            {t('Date')}\n                        </div>\n                    </div>\n                    <div className=\"rules-body-content\">\n                        <div className=\"content-divs\" style={styles.box}>\n                            test\n                        </div>\n                        <div className=\"content-divs\" style={styles.box}>\n                            {t('RuleName')}\n                        </div>\n                        <div className=\"content-divs\" style={styles.box}>\n                            {t('RuleNumber')}\n                        </div>\n                        <div className=\"content-divs\" style={styles.box}>\n                            {t('Author')}\n                        </div>\n                        <div className=\"content-divs-rightest\" style={styles.box}>\n                            {t('Date')}\n                        </div>\n                    </div>\n\n                </div>\n            )}\n\n            {currentDiv === 'BuildPage' && (\n                <div className=\"name-section\" id=\"shownSidebar3\">\n                    <button\n                        className=\"button-middle\">{text}</button>\n                </div>\n            )}\n\n            {currentDiv === 'BuildPage' && (\n                <div className=\"left-bar-backdiv\">\n                    <div className=\"left-bar-shown\" id=\"shownSidebar2\">\n                        <div className=\"rules-section\">\n                            <div className=\"arrow-menu\">\n                                <img src={arrowleft} onClick={handleMainClick}\n                                     className=\"arrow-left\"\n                                     alt=\"Arrow left\"/>\n                            </div>\n                            <div className=\"menu\">\n                                <img src={safedark} className=\"menu-picture\"\n                                     alt=\"Safe menu\"/>\n                            </div>\n                            <div className=\"menu\">\n                                <img src={deletedark} onClick={handlePlusClick} className=\"menu-picture\"\n                                     alt=\"Delete menu\"/>\n                            </div>\n                            <div className=\"menu\">\n                                <img src={hamburger} onClick={handleHamburgerRulesBuildClick}\n                                     className=\"menu-picture\"\n                                     alt=\"Hamburger menu\"/>\n                            </div>\n                        </div>\n                        <div className=\"button-section\">\n                            <button onClick={() => handleAddDiv(t('if'))}\n                                    className=\"button-general-leftbar\">{t('if')}</button>\n                            <button onClick={() => handleAddDiv(t('and'))}\n                                    className=\"button-general-leftbar\">{t('and')}</button>\n                            <button onClick={() => handleAddDiv(t('or'))}\n                                    className=\"button-general-leftbar\">{t('or')}</button>\n                            <button onClick={() => handleAddDiv(t('text'))}\n                                    className=\"button-general-leftbar\">{t('text')}</button>\n                            <button onClick={() => handleAddDiv(t('greater than'))}\n                                    className=\"button-general-leftbar\">{t('greater than')}</button>\n                            <button onClick={() => handleAddDiv(t('less than'))}\n                                    className=\"button-general-leftbar\">{t('less than')}</button>\n                            <button onClick={() => handleAddDiv(t('equal'))}\n                                    className=\"button-general-leftbar\">{t('equal')}</button>\n                        </div>\n                        <div className=\"frame-add\" style={stylesadd.add}>\n                            {divs.map((div, index) => (\n                                <div key={index} className=\"grid-different-button\">\n                                    <button className=\"query-button\">{buttonTexts[index]}</button>\n                                    <div>\n                                        <img src={deletedark} onClick={handlePlusClick} className=\"menu-picture\"\n                                             alt=\"Delete menu\"/>\n                                    </div>\n                                </div>\n\n\n                            ))}\n                        </div>\n                    </div>\n                </div>\n            )}\n            {currentDiv === 'Leftbar-hidden-RulesPage' && (\n                <div className=\"left-bar-hidden left-bar-size-build\" id=\"hiddenSidebar2\">\n                    <div className=\"arrow-menu\">\n                        <img src={arrowleft} onClick={handleMainClick}\n                             className=\"arrow-left\"\n                             alt=\"Arrow left\"/>\n                    </div>\n                    <div className=\"menu\">\n                        <img src={safedark} onClick={handlePlusClick} className=\"menu-picture\"\n                             alt=\"Safe menu\"/>\n                    </div>\n                    <div className=\"menu\">\n                        <img src={deletedark} onClick={handlePlusClick} className=\"menu-picture\"\n                             alt=\"Delete menu\"/>\n                    </div>\n                    <div className=\"menu\">\n                        <img src={hamburger} onClick={handlePlusClick} className=\"menu-picture\"\n                             alt=\"Hamburger menu\"/>\n                    </div>\n                </div>\n\n            )}\n\n\n            <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>\n                <div className=\"hamburger-menu-div\">\n                    <button className=\"hamburger-button\" onClick={toggleMenu}>\n                        {/* Hamburger Icon */}\n                        <span className=\"hamburger-icon\"></span>\n                        <span className=\"hamburger-icon\"></span>\n                        <span className=\"hamburger-icon\"></span>\n                    </button>\n\n                    <img src={apple} className=\"logo-in-hamburger-menu\" alt=\"Logo\"/>\n                </div>\n            </div>\n\n            {/* Das Menü, das den gesamten Bildschirm abdeckt */}\n            <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>\n                <div className=\"menu-items\">\n\n\n                    <a href=\"#contact\" onClick={toggleMenu}>Home</a>\n                    <Link to=\"/RulesPage\">\n                    <a href=\"#about\" onClick={toggleMenu}>Regeln</a>\n                    </Link>\n                    <a href=\"#about\" onClick={toggleMenu}>Dokumente</a>\n                    <a href=\"#services\" onClick={toggleMenu}>Info</a>\n                    <a href=\"#contact\" onClick={toggleMenu}>Support</a>\n                    <a href=\"#contact\" onClick={toggleMenu}>Logout</a>\n                </div>\n            </div>\n            </body>\n\n        </>\n\n    )\n        ;\n}\n\nexport default RulesPage;\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/RulesPage.jsx b/src/pages/RulesPage.jsx
+--- a/src/pages/RulesPage.jsx	(revision da6f3cc959f976204864e3c0433696110d6d4dbf)
++++ b/src/pages/RulesPage.jsx	(date 1729283465347)
+@@ -9,11 +9,14 @@
+ import plusdark from "../pictures/lightMode/plus_lightMode.png";
+ import safedark from "../pictures/lightMode/safe_lightMode.png";
+ import deletedark from "../pictures/lightMode/delete_lightMode.png";
+-import React, {useState} from 'react';
++import arrowrightlight from "../pictures/darkMode/arrow_right_darkMode.png";
++import arrowrightdark from "../pictures/lightMode/arrow_right_lightMode.png";
++import React, {useContext, useState} from 'react';
+ import {useTranslation} from "react-i18next";
+ import apple from '../pictures/other/apple.png';
+ import hamburger from '../pictures/other/hamburger-menu.png';
+ import Header from "../components/Header";
++import {DarkModeContext} from "../components/DarkModeContext";
+ 
+ 
+ 
+@@ -55,8 +58,6 @@
+         setCurrentDiv('Leftbar-hidden-RulesPage');
+     };
+ 
+-    const [showdarklight, setDarklight] = useState(true);
+-
+     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
+ 
+     const handleAddDiv = (message) => {
+@@ -64,6 +65,7 @@
+         setButtonTexts([...buttonTexts, `${message}`]);
+     };
+ 
++    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
+ 
+     const styles = {
+         box: {
+@@ -245,27 +247,28 @@
+                         </div>
+                         <div className="button-section">
+                             <button onClick={() => handleAddDiv(t('if'))}
+-                                    className="button-general-leftbar">{t('if')}</button>
++                                    className="button-general-leftbar-add">{t('if')}</button>
+                             <button onClick={() => handleAddDiv(t('and'))}
+-                                    className="button-general-leftbar">{t('and')}</button>
++                                    className="button-general-leftbar-add">{t('and')}</button>
+                             <button onClick={() => handleAddDiv(t('or'))}
+-                                    className="button-general-leftbar">{t('or')}</button>
++                                    className="button-general-leftbar-add">{t('or')}</button>
+                             <button onClick={() => handleAddDiv(t('text'))}
+-                                    className="button-general-leftbar">{t('text')}</button>
++                                    className="button-general-leftbar-add">{t('text')}</button>
+                             <button onClick={() => handleAddDiv(t('greater than'))}
+-                                    className="button-general-leftbar">{t('greater than')}</button>
++                                    className="button-general-leftbar-add">{t('greater than')}</button>
+                             <button onClick={() => handleAddDiv(t('less than'))}
+-                                    className="button-general-leftbar">{t('less than')}</button>
++                                    className="button-general-leftbar-add">{t('less than')}</button>
+                             <button onClick={() => handleAddDiv(t('equal'))}
+-                                    className="button-general-leftbar">{t('equal')}</button>
++                                    className="button-general-leftbar-add">{t('equal')}</button>
+                         </div>
+                         <div className="frame-add" style={stylesadd.add}>
+                             {divs.map((div, index) => (
+                                 <div key={index} className="grid-different-button">
+                                     <button className="query-button">{buttonTexts[index]}</button>
+-                                    <div>
+-                                        <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
+-                                             alt="Delete menu"/>
++                                    <div className="arrow-right">
++                                        <img src={darkMode ? arrowrightlight : arrowrightdark}
++                                             className="arrow-right-size"
++                                             alt="Arrow right"/>
+                                     </div>
+                                 </div>
+ 
+Index: src/stylesheets/Rules/leftbar/leftbar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.left-bar-shown {\n    width: 256px;\n    background-color: white;\n    z-index: 200;\n    position: fixed;\n    top: 74px;\n    display: flex;\n    flex-direction: column;\n\n    border-radius: 30px;\n    margin-left: 14px;\n    bottom: 14px;\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(204, 202, 202);\n\n\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px;\n    box-sizing: border-box;\n    transition: opacity 3s ease-in-out, transform 3s ease-in-out;\n    backface-visibility: hidden;\n\n}\n\n.left-bar-hidden {\n\n    background-color: white;\n    z-index: 200;\n    position: fixed;\n    top: 60px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n\n    border-radius: 30px;\n    margin-left: 14px;\n    margin-top: 14px;\n\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(204, 202, 202);\n\n\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px;\n\n    box-sizing: border-box;\n    transition: opacity 3s ease-in-out, transform 3s ease-in-out;\n    backface-visibility: hidden;\n    cursor: pointer;\n}\n\n\n.left-bar-size-main {\n    width: 72px;\n    height: 72px;\n}\n\n.left-bar-size-build {\n    width: 72px;\n    height: 250px;\n}\n\n.left-bar-size-add {\n    width: 72px;\n    height: 130px;\n\n}\n\n.left-bar-backdiv {\n\n    position: fixed;\n    top: 57px;\n    left: 0;\n    bottom: 0;\n    width: 275px;\n    height: 100%;\n    background-color: rgba(250, 246, 240, 255);\n\n}\n\n\n.top-leftbar-section {\n    display: flex;\n    flex-direction: row;\n\n}\n\n.rules-section {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding-right: 10px;\n\n}\n\n.right-section-rules-hidden {\n    z-index: 200;\n    position: fixed;\n    top: 74px;\n    margin-left: 102px;\n    margin-right: 102px;\n    height: 100%;\n\n}\n\n\n.menu-picture {\n    height: 30px;\n    cursor: pointer;\n\n}\n\n.arrow-left {\n    height: 40px;\n    cursor: pointer;\n}\n\n.plus-menu-picture {\n    height: 40px;\n    cursor: pointer;\n\n}\n\n.searchbar-menu {\n    background-color: transparent;\n    border-radius: 15px;\n    outline: none;\n    height: 30px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    padding: 10px;\n}\n\n.menu {\n    background-color: transparent;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 10px;\n}\n\n\n.arrow-menu {\n    background-color: transparent;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 5px;\n}\n\n.button-section {\n    overflow-y: auto;\n    overflow-x: hidden;\n    margin-top: 15px;\n    padding: 10px;\n    box-sizing: border-box;\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/Rules/leftbar/leftbar.css b/src/stylesheets/Rules/leftbar/leftbar.css
+--- a/src/stylesheets/Rules/leftbar/leftbar.css	(revision da6f3cc959f976204864e3c0433696110d6d4dbf)
++++ b/src/stylesheets/Rules/leftbar/leftbar.css	(date 1729283442953)
+@@ -42,9 +42,6 @@
+     border-style: solid;
+     border-color: rgb(204, 202, 202);
+ 
+-
+-    overflow-y: auto;
+-    overflow-x: hidden;
+     padding: 10px;
+ 
+     box-sizing: border-box;
+Index: src/stylesheets/Rules/leftbar/buttons.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n.button-general-leftbar {\n    color: black;\n    font-size: 26px;\n    border-radius: 15px;\n    display: inline-block;\n    text-align: center;\n    transition-duration: 0.15s;\n    cursor: pointer;\n    margin-bottom: 35px;\n    background-color: white;\n\n    border-width: 1px;\n    border-style: solid;\n    align-items: center;\n\n    width: 214px;\n    height: 48px;\n\n}\n\n.button-general-leftbar:hover{\n    transform: scale(1.01, 1.01);\n    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);\n}\n\n.button-middle {\n\n    position: fixed;\n\n\n    background-color: white;\n    font-size: 26px;\n    border-style: solid;\n    border-radius: 15px;\n\n    transition-duration: 0.15s;\n\n    width: 214px;\n    height: 50px;\n    border-width: 1px;\n\n    cursor: default;\n\n}\n\nbutton:hover {\n    transform: scale(1.01, 1.01);\n    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);\n}\n\n\n\n.startseite-button {\n    margin-top: 35px;\n}\n\n.regeln-button {\n    display: inline-block;\n}\n\n.button-container {\n    display: inline-block;\n    flex-direction: column;\n    align-items: flex-start;\n    cursor: pointer;\n}\n\n.hidden-buttons {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    max-height: 0;\n    opacity: 0;\n    overflow: hidden;\n    transition: max-height 0.7s ease, opacity 0.5s ease;\n}\n\n.extra-button {\n    font-size: 16px;\n    padding: 8px 15px;\n    margin-bottom: 15px;\n    width: 170px;\n\n}\n\n.button-container:hover .hidden-buttons {\n    display: flex;\n    max-height: 300px;\n    opacity: 1;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/stylesheets/Rules/leftbar/buttons.css b/src/stylesheets/Rules/leftbar/buttons.css
+--- a/src/stylesheets/Rules/leftbar/buttons.css	(revision da6f3cc959f976204864e3c0433696110d6d4dbf)
++++ b/src/stylesheets/Rules/leftbar/buttons.css	(date 1729283820355)
+@@ -19,7 +19,25 @@
+ 
+ }
+ 
+-.button-general-leftbar:hover{
++.button-general-leftbar-add {
++    color: black;
++    font-size: 26px;
++    border-radius: 15px;
++
++    transition-duration: 0.15s;
++    cursor: pointer;
++    background-color: white;
++    margin-bottom: 35px;
++    border-width: 1px;
++    border-style: solid;
++
++    overflow-y: scroll;
++    width: 214px;
++    height: 110px;
++}
++
++.button-general-leftbar:hover,
++.button-general-leftbar-add:hover{
+     transform: scale(1.01, 1.01);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+ }
+@@ -50,7 +68,6 @@
+ }
+ 
+ 
+-
+ .startseite-button {
+     margin-top: 35px;
+ }
