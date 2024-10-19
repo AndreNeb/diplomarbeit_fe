@@ -11,6 +11,7 @@ import spritzeBlack from "../pictures/darkMode/syringe_darkMode.png";
 import wartezimmer from "../pictures/lightMode/waitingroom_lightMode.png";
 import wartezimmerBlack from "../pictures/darkMode/waitingroom_darkMode.png";
 import hamburger from "../pictures/lightMode/hamburger-menu_lightMode.png";
+import hamburgerBlack from "../pictures/darkMode/hamburger-menu_darkMode.png";
 import {useTranslation} from "react-i18next";
 import Header from '../components/Header';
 import {DarkModeContext} from '../components/DarkModeContext';
@@ -109,16 +110,10 @@ function Home() {
 
 
         <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
-            <div className="hamburger-menu-div">
+            <div className={`hamburger-menu-div ${darkMode ? 'dark' : 'light'}`}>
                 <button className="hamburger-button" onClick={toggleMenu}>
-                    {/* Hamburger Icon */}
-                    {/*<span className="hamburger-icon"></span>
-                                        <span className="hamburger-icon"></span>
-                                        <span className="hamburger-icon"></span>*/}
-                    <img src={hamburger} className="icons" alt="HamburgerMenu"/>
-
+                    <img src={darkMode ? hamburgerBlack : hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`} alt="HamburgerMenu"/>
                 </button>
-
                 <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
             </div>
         </div>

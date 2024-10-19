@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="F">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +161,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00024" summary="Added big widgets">
-      <option name="closed" value="true" />
-      <created>1728634576346</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1728634576346</updated>
     </task>
     <task id="LOCAL-00025" summary="Added big widgets">
       <option name="closed" value="true" />
@@ -561,12 +552,13 @@
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727606892122</created>
       <option name="issue" value="true" />
-      <url>diplomarbeit_fe random@https://wuev06.youtrack.cloud/issue/DA_01-79</url>
+      <url>https://wuev06.youtrack.cloud/issue/DA_01-79</url>
       <option name="number" value="79" />
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
-      <updated>1729350546883</updated>
-      <workItem from="1729350547448" duration="13859000" />
+      <option name="type" value="BUG" />
+      <updated>1729360838422</updated>
+      <workItem from="1729350547448" duration="15734000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -584,13 +576,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729360817051</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht">
+      <option name="closed" value="true" />
+      <created>1729364782227</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1729364782227</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers>
       <YouTrack url="https://wuev06.youtrack.cloud">
+        <option name="defaultSearch" value="" />
         <username>random</username>
       </YouTrack>
     </servers>
@@ -630,6 +631,7 @@
     <MESSAGE value="Started Dark Mode in Rules" />
     <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
     <MESSAGE value="F" />
-    <option name="LAST_COMMIT_MESSAGE" value="F" />
+    <MESSAGE value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
   </component>
 </project>

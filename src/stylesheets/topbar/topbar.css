@@ -135,8 +135,17 @@
     top: 0;
     left: 0;
     z-index: 900;
+}
 
+.hamburger-menu-div.dark {
+    border-bottom: 1px solid white;
+}
+
+.hamburger-menu-div.light {
     background-color: rgba(250, 246, 240, 255);
+}
+.hamburger-menu-div.dark {
+    background-color: black;
 }
 
 .logo-in-hamburger-menu {
@@ -146,26 +155,32 @@
 
 
 .hamburger-button {
-    /* background: none;
+    border: none;
+    border-radius: 9px;
 
-     border: none;
-     border-radius: 9px;
+    cursor: pointer;
 
-     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+    padding: 3px;
 
-     width: 37px;
-     height: 35px;
+    height: 40px;
+    width: 40px;
 
-     position: absolute;
-     right: 0;
-     margin-right: 30px;
-     background-color: green; */
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
 
+    box-sizing: border-box;
 
+    background-color: transparent;
+}
+
+.hamburger-menu-picture {
+    height: 30px;
 }
 
 .hamburger-icon {
@@ -174,8 +189,8 @@
     background-color: black;
     margin: 4px 0;
     transition: all 0.3s ease;
-
 }
+
 
 /* Animation für das Hamburger-Icon bei Öffnung */
 .hamburger-button.open .hamburger-icon:nth-child(1) {
