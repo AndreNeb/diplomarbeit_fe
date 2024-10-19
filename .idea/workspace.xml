@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="F">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,16 +87,16 @@
     "timeTracker.isPaused": "false",
     "timeTracker.isPostAfterCommitEnabled": "false",
     "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "true",
+    "timeTracker.isRunning": "false",
     "timeTracker.isScheduledEnabled": "false",
     "timeTracker.isWhenProjectClosedEnabled": "false",
     "timeTracker.issueId": "DA_01-79",
     "timeTracker.issueIdReadable": "DA_01-79",
-    "timeTracker.pausedTime": "14",
+    "timeTracker.pausedTime": "0",
     "timeTracker.query": "",
-    "timeTracker.recordedTime": "0",
+    "timeTracker.recordedTime": "163",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729351008696",
+    "timeTracker.startTime": "1729360835861",
     "timeTracker.timeInMills": "0",
     "timeTracker.type": "Entwicklung",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
@@ -156,14 +162,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00023" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728632645163</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1728632645163</updated>
     </task>
     <task id="LOCAL-00024" summary="Added big widgets">
       <option name="closed" value="true" />
@@ -568,7 +566,7 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <updated>1729350546883</updated>
-      <workItem from="1729350547448" duration="10007000" />
+      <workItem from="1729350547448" duration="13859000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -578,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729360771783</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="F">
+      <option name="closed" value="true" />
+      <created>1729360817051</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1729360817051</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -623,6 +629,7 @@
     <MESSAGE value="White shadow bei small widgets im Dark mode" />
     <MESSAGE value="Started Dark Mode in Rules" />
     <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
+    <MESSAGE value="F" />
+    <option name="LAST_COMMIT_MESSAGE" value="F" />
   </component>
 </project>

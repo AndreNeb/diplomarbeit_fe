@@ -1,19 +1,12 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import '../stylesheets/rules/leftbar/buttons.css';
 import '../stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';
 import {HashRouter, Link} from 'react-router-dom';
-import regeln from '../pictures/lightMode/regeln_lightMode.png';
-import info from '../pictures/lightMode/info_lightMode.png';
-import support from '../pictures/lightMode/support_lightMode.png';
-import language from '../pictures/lightMode/language_lightMode.png';
-import login from '../pictures/lightMode/login-picture_lightMode.png';
-import document from "../pictures/lightMode/document_lightMode.png";
-import moon from "../pictures/lightMode/moon_lightMode.png";
-import sun from "../pictures/darkMode/sun_darkMode.png";
 import apple from "../pictures/other/NARKO_Logo.png";
 import Header from "../components/Header";
+import {DarkModeContext} from "../components/DarkModeContext";
 
 function SupportPage() {
 
@@ -71,31 +64,32 @@ function SupportPage() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
 
     return (
 
-        <body className="support">
+        <body className={`support ${darkMode ? 'dark' : 'light'}`}>
 
         <Header/>
 
-            <div className="general-container">
-                <div className="general-inner-container">
-                    <span className="text">{t('support-text')}</span>
+            <div className="general-container" style={{backgroundColor: darkMode ? "black": "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
+                <div className={`general-inner-container ${darkMode ? 'dark' : 'light'}`}>
+                    <span className={`text ${darkMode ? 'dark' : 'light'}`}>{t('support-text')}</span>
                     <div className="field-container">
 
                         <form onSubmit={handleSubmit}>
                             <div className="text-fields-container">
-                                <input type="text" name="name" className="contact-inputs" placeholder={t('name')}
+                                <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`} placeholder={t('name')}
                                        required/>
-                                <input type="email" name="email" className="contact-inputs" placeholder={t('email')}
+                                <input type="email" name="email" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`} placeholder={t('email')}
                                        required/>
-                                <textarea name="message" className="contact-messages" placeholder={t('message')}
+                                <textarea name="message" className={`contact-messages ${darkMode ? 'dark' : 'light'}`} placeholder={t('message')}
                                           required></textarea>
                             </div>
 
 
                             <div className="button-container">
-                                <button type="submit" className={classNames('submit-button', {active: isActive})}>
+                                <button type="submit" className={classNames('submit-button', darkMode ? 'dark' : 'light', {active: isActive})}>
                                     <p>{btnText}</p>
                                     <div className="check-box">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
