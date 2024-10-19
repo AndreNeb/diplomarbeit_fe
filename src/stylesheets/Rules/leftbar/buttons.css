@@ -19,7 +19,25 @@
 
 }
 
-.button-general-leftbar:hover{
+.button-general-leftbar-add {
+    color: black;
+    font-size: 26px;
+    border-radius: 15px;
+
+    transition-duration: 0.15s;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 35px;
+    border-width: 1px;
+    border-style: solid;
+
+    overflow-y: scroll;
+    width: 214px;
+    height: 110px;
+}
+
+.button-general-leftbar:hover,
+.button-general-leftbar-add:hover{
     transform: scale(1.01, 1.01);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -48,7 +66,6 @@ button:hover {
     transform: scale(1.01, 1.01);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 
 .startseite-button {

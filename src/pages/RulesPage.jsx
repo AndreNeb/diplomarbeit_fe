@@ -9,11 +9,14 @@ import arrowleft from "../pictures/lightMode/arrow-left_lightMode.png";
 import plusdark from "../pictures/lightMode/plus_lightMode.png";
 import safedark from "../pictures/lightMode/safe_lightMode.png";
 import deletedark from "../pictures/lightMode/delete_lightMode.png";
-import React, {useState} from 'react';
+import arrowrightlight from "../pictures/darkMode/arrow_right_darkMode.png";
+import arrowrightdark from "../pictures/lightMode/arrow_right_lightMode.png";
+import React, {useContext, useState} from 'react';
 import {useTranslation} from "react-i18next";
 import apple from '../pictures/other/apple.png';
 import hamburger from '../pictures/other/hamburger-menu.png';
 import Header from "../components/Header";
+import {DarkModeContext} from "../components/DarkModeContext";
 
 
 
@@ -55,8 +58,6 @@ function RulesPage() {
         setCurrentDiv('Leftbar-hidden-RulesPage');
     };
 
-    const [showdarklight, setDarklight] = useState(true);
-
     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
     const handleAddDiv = (message) => {
@@ -64,6 +65,7 @@ function RulesPage() {
         setButtonTexts([...buttonTexts, `${message}`]);
     };
 
+    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
 
     const styles = {
         box: {
@@ -245,27 +247,28 @@ function RulesPage() {
                         </div>
                         <div className="button-section">
                             <button onClick={() => handleAddDiv(t('if'))}
-                                    className="button-general-leftbar">{t('if')}</button>
+                                    className="button-general-leftbar-add">{t('if')}</button>
                             <button onClick={() => handleAddDiv(t('and'))}
-                                    className="button-general-leftbar">{t('and')}</button>
+                                    className="button-general-leftbar-add">{t('and')}</button>
                             <button onClick={() => handleAddDiv(t('or'))}
-                                    className="button-general-leftbar">{t('or')}</button>
+                                    className="button-general-leftbar-add">{t('or')}</button>
                             <button onClick={() => handleAddDiv(t('text'))}
-                                    className="button-general-leftbar">{t('text')}</button>
+                                    className="button-general-leftbar-add">{t('text')}</button>
                             <button onClick={() => handleAddDiv(t('greater than'))}
-                                    className="button-general-leftbar">{t('greater than')}</button>
+                                    className="button-general-leftbar-add">{t('greater than')}</button>
                             <button onClick={() => handleAddDiv(t('less than'))}
-                                    className="button-general-leftbar">{t('less than')}</button>
+                                    className="button-general-leftbar-add">{t('less than')}</button>
                             <button onClick={() => handleAddDiv(t('equal'))}
-                                    className="button-general-leftbar">{t('equal')}</button>
+                                    className="button-general-leftbar-add">{t('equal')}</button>
                         </div>
                         <div className="frame-add" style={stylesadd.add}>
                             {divs.map((div, index) => (
                                 <div key={index} className="grid-different-button">
                                     <button className="query-button">{buttonTexts[index]}</button>
-                                    <div>
-                                        <img src={deletedark} onClick={handlePlusClick} className="menu-picture"
-                                             alt="Delete menu"/>
+                                    <div className="arrow-right">
+                                        <img src={darkMode ? arrowrightlight : arrowrightdark}
+                                             className="arrow-right-size"
+                                             alt="Arrow right"/>
                                     </div>
                                 </div>
 

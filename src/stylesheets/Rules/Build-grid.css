@@ -3,22 +3,18 @@
     background-color: transparent;
     z-index: 200;
     position: fixed;
-    top: 135px;
+    top: 145px;
     bottom: 15px;
-    left: 300px;
+    left: 305px;
     right: 30px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 100px;
+    row-gap: 50px;
 
 
     overflow-y: auto;
-
-    border-width: 3px;
-    border-style: solid;
-    border-color: red;
 
     padding: 10px;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
@@ -45,9 +41,22 @@
     transition-duration: 0.15s;
 
     width: 214px;
-    height: 100px;
+    height: 110px;
     border-width: 1px;
 
 
     cursor: default;
+}
+
+.arrow-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.arrow-right-size{
+    height: 60px;
 }
