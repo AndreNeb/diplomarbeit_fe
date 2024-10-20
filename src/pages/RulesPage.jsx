@@ -15,6 +15,8 @@ import deleteRule from "../pictures/lightMode/delete_lightMode.png";
 import deleteRuleBlack from "../pictures/darkMode/delete_darkMode.png";
 import arrowrightlight from "../pictures/darkMode/arrow_right_darkMode.png";
 import arrowrightdark from "../pictures/lightMode/arrow_right_lightMode.png";
+import ticklight from "../pictures/darkMode/tick_darkMode.png";
+import tickdark from "../pictures/lightMode/tick_lightMode.png";
 import React, {useContext, useState} from 'react';
 import {useTranslation} from "react-i18next";
 import apple from '../pictures/other/NARKO_Logo.png';
@@ -42,6 +44,7 @@ function RulesPage() {
 
     const handleMainClick = () => {
         setCurrentDiv('MainPage');
+        setDivs([]); //Dadurch wird der text bei dem Button text gelöscht und warum auch immer ein anderer eingefügt;
     };
 
     const handleHamburgerClick = () => {
@@ -63,6 +66,7 @@ function RulesPage() {
 
     const handleTextFieldClick = () => {
         setCurrentDiv('TextField');
+
     };
     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
@@ -79,6 +83,7 @@ function RulesPage() {
             wordWrap: "break-word",  // Funktioniert ebenfalls in React, camelCase!
             overflowWrap: "break-word", // Unterstützt den Umbruch von langen Wörtern
         },
+
     };
     const stylesadd = {
         add: {
@@ -104,7 +109,8 @@ function RulesPage() {
 
             <Header/>
 
-            {currentDiv === 'MainPage' && (<div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
+            {currentDiv === 'MainPage' && (
+                <div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
                 <div className={`left-bar-shown ${darkMode ? 'dark' : 'light'}`} id="shownSidebar2" style={{
                     backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"
                 }}>
@@ -146,7 +152,7 @@ function RulesPage() {
                             color: darkMode ? "white" : "black",
                             transition: "color 1.1s ease, background-color 1.1s ease"
                         }}>{t('heart')}</button>
-                        <button onClick={() => handleCategoriesClick(t('stomach '))}
+                        <button onClick={() => handleCategoriesClick(t('stomach'))}
                                 className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
                             backgroundColor: darkMode ? "black" : "white",
                             color: darkMode ? "white" : "black",
@@ -220,7 +226,8 @@ function RulesPage() {
                              alt="Arrow left"/>
                     </div>
                     <div className="menu">
-                        <img src={darkMode ? plusBlack : plus} onClick={handlePlusClick} className={`plus-menu-picture ${darkMode ? 'dark' : 'light'}`}
+                        <img src={darkMode ? plusBlack : plus} onClick={handlePlusClick}
+                             className={`plus-menu-picture ${darkMode ? 'dark' : 'light'}`}
                              alt="Plus menu"/>
                     </div>
                 </div>
@@ -273,75 +280,76 @@ function RulesPage() {
 
             </div>)}
 
-            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage') && (<div
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField') && (<div
                 className={`name-section ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'name-section-big' : 'name-section'}`}
                 id="shownSidebar3">
                 <button
                     className={`button-middle ${darkMode ? 'dark' : 'light'} mode`}>{text}</button>
             </div>)}
 
-            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage') && (<div
-                className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}
-                style={stylesadd.add}>
-                {divs.map((div, index) => (<div key={index} className="grid-different-button">
-                        <button className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
-                        <div className="arrow-right">
-                            <img src={darkMode ? arrowrightlight : arrowrightdark}
-                                 className="arrow-right-size"
-                                 alt="Arrow right"/>
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField') && (
+                <div
+                    className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}
+                    style={stylesadd.add}>
+                    {divs.map((div, index) => (<div key={index} className="grid-different-button">
+                            <button
+                                className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
+                            <div className="arrow-right">
+                                <img src={darkMode ? arrowrightlight : arrowrightdark}
+                                     className="arrow-right-size"
+                                     alt="Arrow right"/>
+                            </div>
+                        </div>
+
+
+                    ))}
+                </div>)}
+
+            {(currentDiv === 'BuildPage' || currentDiv === 'TextField') && (
+                <div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
+                    <div className={`left-bar-shown ${darkMode ? 'dark' : 'light'}`} id="shownSidebar2">
+                        <div className="rules-section">
+                            <div className="arrow-menu">
+                                <img src={darkMode ? arrowleftBlack : arrowleft} onClick={handleMainClick}
+                                     className={`arrow-left ${darkMode ? 'dark' : 'light'}`}
+                                     alt="Arrow left"/>
+                            </div>
+                            <div className="menu">
+                                <img src={darkMode ? safeBlack : safe}
+                                     className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
+                                     alt="Safe menu"/>
+                            </div>
+                            <div className="menu">
+                                <img src={darkMode ? deleteRuleBlack : deleteRule} onClick={handlePlusClick}
+                                     className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
+                                     alt="Delete menu"/>
+                            </div>
+                            <div className="menu">
+                                <img src={darkMode ? hamburgerBlack : hamburger}
+                                     onClick={handleHamburgerRulesBuildClick}
+                                     className={`menu-picture ${darkMode ? 'dark' : 'light'} mode`}
+                                     alt="Hamburger menu"/>
+                            </div>
+                        </div>
+
+                        <div className="button-section">
+                            <button onClick={() => handleAddDiv(t('if'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('if')}</button>
+                            <button onClick={() => handleAddDiv(t('and'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('and')}</button>
+                            <button onClick={() => handleAddDiv(t('or'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('or')}</button>
+                            <button onClick={() => {handleAddDiv(t('text'));handleTextFieldClick(t('text'));}}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('text')}</button>
+                            <button onClick={() => handleAddDiv(t('greater than'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('greater than')}</button>
+                            <button onClick={() => handleAddDiv(t('less than'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('less than')}</button>
+                            <button onClick={() => handleAddDiv(t('equal'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('equal')}</button>
                         </div>
                     </div>
-
-
-                ))}
-            </div>)}
-
-            {currentDiv === 'BuildPage' && (<div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
-                <div className={`left-bar-shown ${darkMode ? 'dark' : 'light'}`} id="shownSidebar2">
-                    <div className="rules-section">
-                        <div className="arrow-menu">
-                            <img src={darkMode ? arrowleftBlack : arrowleft} onClick={handleMainClick}
-                                 className={`arrow-left ${darkMode ? 'dark' : 'light'}`}
-                                 alt="Arrow left"/>
-                        </div>
-                        <div className="menu">
-                            <img src={darkMode ? safeBlack : safe} className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
-                                 alt="Safe menu"/>
-                        </div>
-                        <div className="menu">
-                            <img src={darkMode ? deleteRuleBlack : deleteRule} onClick={handlePlusClick}
-                                 className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
-                                 alt="Delete menu"/>
-                        </div>
-                        <div className="menu">
-                            <img src={darkMode ? hamburgerBlack : hamburger}
-                                 onClick={handleHamburgerRulesBuildClick}
-                                 className={`menu-picture ${darkMode ? 'dark' : 'light'} mode`}
-                                 alt="Hamburger menu"/>
-                        </div>
-                    </div>
-
-                    <div className="button-section">
-                        <button onClick={() => handleAddDiv(t('if'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('if')}</button>
-                        <button onClick={() => handleAddDiv(t('and'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('and')}</button>
-                        <button onClick={() => handleAddDiv(t('or'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('or')}</button>
-                        <button onClick={() => {
-                            handleAddDiv(t('text'));
-                            handleTextFieldClick(t('text'));
-                        }}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('text')}</button>
-                        <button onClick={() => handleAddDiv(t('greater than'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('greater than')}</button>
-                        <button onClick={() => handleAddDiv(t('less than'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('less than')}</button>
-                        <button onClick={() => handleAddDiv(t('equal'))}
-                                className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('equal')}</button>
-                    </div>
-                </div>
-            </div>)}
+                </div>)}
             {currentDiv === 'Leftbar-hidden-RulesPage' && (
                 <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-build`}
                      id="hiddenSidebar2">
@@ -367,31 +375,34 @@ function RulesPage() {
                 </div>
 
             )}
-            {currentDiv === 'Text-field' && (
-                <div className={`left-bar-hidden ${darkMode ? 'dark' : 'light'} left-bar-size-build`}
-                     id="hiddenSidebar2">
-                    <div className="arrow-menu">
-                        <img src={darkMode ? arrowleftBlack : arrowleft} onClick={handleMainClick}
-                             className={`arrow-left ${darkMode ? 'dark' : 'light'}`}
-                             alt="Arrow left"/>
-                    </div>
-                    <div className="menu">
-                        <img src={darkMode ? safeBlack : safe} onClick={handlePlusClick} className="menu-picture"
-                             alt="Safe menu"/>
-                    </div>
-                    <div className="menu">
-                        <img src={darkMode ? deleteRuleBlack : deleteRule} onClick={handlePlusClick}
-                             className="menu-picture"
-                             alt="Delete menu"/>
-                    </div>
-                    <div className="menu">
-                        <img src={darkMode ? hamburgerBlack : hamburger} onClick={handlePlusClick}
-                             className={`menu-picture ${darkMode ? 'dark' : 'light'} mode`}
-                             alt="Hamburger menu"/>
+            {currentDiv === 'TextField' && (
+                <div className={`text-field-frame ${darkMode ? 'dark' : 'light'} `}>
+
+                </div>
+
+            )}
+            {currentDiv === 'TextField' && (
+                <div className="input-frame">
+                    <div className="information-text-field">
+                        <div className="header-text-field">
+                            {t('input')}
+                        </div>
+                        <div className="frame-input">
+                            <input className="input-text-field">
+
+                            </input>
+                            <div className="OK-Button">
+                                <img src={darkMode ? ticklight : tickdark} onClick={handlePlusClick}
+                                     className={` ${darkMode ? 'dark' : 'light'} mode`}
+                                     alt="OK Button"/>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             )}
+
 
             <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
                 <div className="hamburger-menu-div">

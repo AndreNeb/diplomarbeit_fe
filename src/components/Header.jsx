@@ -42,7 +42,7 @@ function Header() {
 
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
-                        <div className="icons-tooltip icon-container">
+                        <div className="icons-tooltip">
                             <img src={darkMode ? regelnBlack : regeln} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}/>
                             <div className="tooltip">{t('rules')}</div>
                         </div>
