@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Add-Rules">
+      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/tick_darkMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/lightMode/tick_lightMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_02_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_52_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_20_56_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_02__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_52__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__20_56__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24,_13_35_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24__13_35__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,12 +55,12 @@
     &quot;assignee&quot;: &quot;Matteo500219&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AndreNeb/diplomarbeit_fe.git",
-    "accountId": "d70321cd-429b-43c5-b7a2-73882bbca8a2"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AndreNeb/diplomarbeit_fe.git&quot;,
+    &quot;accountId&quot;: &quot;ded94e49-c306-47c6-8047-7104070e7c5f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -55,53 +76,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.Rules.jsx.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/pictures/darkMode",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
-    "timeTracker.comment": "",
-    "timeTracker.inactivityPeriodInMills": "600000",
-    "timeTracker.isAutoTrackingEnable": "false",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "true",
-    "timeTracker.isPaused": "false",
-    "timeTracker.isPostAfterCommitEnabled": "false",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
-    "timeTracker.isWhenProjectClosedEnabled": "false",
-    "timeTracker.issueId": "DA_01-79",
-    "timeTracker.issueIdReadable": "DA_01-79",
-    "timeTracker.pausedTime": "0",
-    "timeTracker.query": "",
-    "timeTracker.recordedTime": "163",
-    "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729360835861",
-    "timeTracker.timeInMills": "0",
-    "timeTracker.type": "Entwicklung",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/pictures/darkMode&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1728670322905&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "SVG"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;SVG&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
@@ -111,11 +132,11 @@
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pictures/other" />
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
       <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
       <recent name="$PROJECT_DIR$/src/scratches" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/stylesheets/Rules" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -157,6 +178,70 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
+    <task id="LOCAL-00019" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728628922609</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728628922609</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728628960832</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728628960833</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728629233406</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1728629233406</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728630282250</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728630282250</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728632645163</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1728632645163</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added big widgets">
+      <option name="closed" value="true" />
+      <created>1728634576346</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1728634576346</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added big widgets">
+      <option name="closed" value="true" />
+      <created>1728634641155</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1728634641156</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added small widgets">
+      <option name="closed" value="true" />
+      <created>1728638461722</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1728638461722</updated>
+    </task>
     <task id="LOCAL-00027" summary="Added small widgets">
       <option name="closed" value="true" />
       <created>1728638799516</created>
@@ -173,9 +258,8 @@
       <option name="project" value="LOCAL" />
       <updated>1728650959346</updated>
     </task>
-    <task id="DA_01-78" summary="Grundfunktionen Website ">
+    <task active="true" id="DA_01-78" summary="Grundfunktionen Website ">
       <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727465054608</created>
@@ -185,7 +269,7 @@
       <option name="presentableId" value="DA_01-78" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729350546883</updated>
+      <updated>1728677346802</updated>
       <workItem from="1728651349950" duration="8618000" />
       <workItem from="1728660086076" duration="822000" />
       <workItem from="1728670318414" duration="23000" />
@@ -204,7 +288,8 @@
       <workItem from="1729234937863" duration="4418000" />
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
-      <workItem from="1729343217850" duration="7316000" />
+      <workItem from="1729416634140" duration="1660000" />
+      <workItem from="1729424635394" duration="10079000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -486,111 +571,36 @@
       <option name="project" value="LOCAL" />
       <updated>1729280998598</updated>
     </task>
-    <task id="LOCAL-00064" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00064" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729282884101</created>
+      <created>1729332946291</created>
       <option name="number" value="00064" />
       <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1729282884101</updated>
+      <updated>1729332946291</updated>
     </task>
-    <task id="LOCAL-00065" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00065" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729343225013</created>
+      <created>1729339208564</created>
       <option name="number" value="00065" />
       <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1729343225017</updated>
+      <updated>1729339208564</updated>
     </task>
-    <task id="LOCAL-00066" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00066" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729343231136</created>
+      <created>1729339218023</created>
       <option name="number" value="00066" />
       <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1729343231136</updated>
+      <updated>1729339218023</updated>
     </task>
-    <task id="LOCAL-00067" summary="Started Dark Mode in Rules">
-      <option name="closed" value="true" />
-      <created>1729350392793</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1729350392793</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Started Dark Mode in Rules">
-      <option name="closed" value="true" />
-      <created>1729350436070</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1729350436070</updated>
-    </task>
-    <task active="true" id="DA_01-79" summary="Websitedesign ">
-      <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
-      <created>1727606892122</created>
-      <option name="issue" value="true" />
-      <url>https://wuev06.youtrack.cloud/issue/DA_01-79</url>
-      <option name="number" value="79" />
-      <option name="presentableId" value="DA_01-79" />
-      <option name="project" value="DA_01" />
-      <option name="type" value="BUG" />
-      <updated>1729360838422</updated>
-      <workItem from="1729350547448" duration="16110000" />
-    </task>
-    <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
-      <option name="closed" value="true" />
-      <created>1729360771782</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1729360771783</updated>
-    </task>
-    <task id="LOCAL-00070" summary="F">
-      <option name="closed" value="true" />
-      <created>1729360817051</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1729360817051</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht">
-      <option name="closed" value="true" />
-      <created>1729364782227</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1729364782227</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch">
-      <option name="closed" value="true" />
-      <created>1729366667301</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1729366667301</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Cleaned up code">
-      <option name="closed" value="true" />
-      <created>1729366898515</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1729366898515</updated>
-    </task>
-    <option name="localTasksCounter" value="74" />
+    <option name="localTasksCounter" value="67" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
-    <servers>
-      <YouTrack url="https://wuev06.youtrack.cloud">
-        <option name="defaultSearch" value="" />
-        <username>random</username>
-      </YouTrack>
-    </servers>
+    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -623,13 +633,6 @@
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Umstrukturierung" />
     <MESSAGE value="Add-Rules" />
-    <MESSAGE value="White shadow bei small widgets im Dark mode" />
-    <MESSAGE value="Started Dark Mode in Rules" />
-    <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
-    <MESSAGE value="F" />
-    <MESSAGE value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
-    <MESSAGE value="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch" />
-    <MESSAGE value="Cleaned up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add-Rules" />
   </component>
 </project>

@@ -54,7 +54,8 @@
   "greater than": ">",
   "less than": "<",
   "equal": "=",
-  "text": "TEXT"
+  "text": "TEXT",
+  "input": "Was wollen Sie eingeben?"
 }
 
 

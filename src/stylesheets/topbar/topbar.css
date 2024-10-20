@@ -282,7 +282,7 @@
 }
 
 .tooltip {
-    z-index: 300;
+    z-index: 400;
     position: absolute;
     background-color: lightgray;
     color: black;
