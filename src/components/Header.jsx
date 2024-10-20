@@ -37,7 +37,7 @@ function Header() {
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
                 <Link to="/">
-                    <span style={{color: darkMode ? "white": "black", fontSize: "26px", marginLeft: "30px"}}>N A R K O</span>
+                    <span style={{color: darkMode ? "white": "black", fontSize: "26px", marginLeft: "30px", fontWeight: "600"}}>N A R K O</span>
                 </Link>
 
                 <div className="topbar-functional-divs">

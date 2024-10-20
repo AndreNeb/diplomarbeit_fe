@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Schriftzug anstatt Logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,14 +192,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00031" summary="Finished small Widgets">
-      <option name="closed" value="true" />
-      <created>1728660880224</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1728660880225</updated>
     </task>
     <task id="LOCAL-00032" summary="Finished small Widgets">
       <option name="closed" value="true" />
@@ -581,7 +572,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
       <updated>1729417066046</updated>
-      <workItem from="1729417066212" duration="997000" />
+      <workItem from="1729417066212" duration="1131000" />
     </task>
     <task id="LOCAL-00076" summary="Cleaned up code">
       <option name="closed" value="true" />
@@ -591,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729417197517</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Schriftzug anstatt Logo">
+      <option name="closed" value="true" />
+      <created>1729418104399</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1729418104399</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -641,6 +640,7 @@
     <MESSAGE value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
     <MESSAGE value="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch" />
     <MESSAGE value="Cleaned up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up code" />
+    <MESSAGE value="Schriftzug anstatt Logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schriftzug anstatt Logo" />
   </component>
 </project>
