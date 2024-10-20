@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_52_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_20_56_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_52__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__20_56__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,14 +156,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00028" summary="Added small widgets">
-      <option name="closed" value="true" />
-      <created>1728650959346</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1728650959346</updated>
     </task>
     <task id="DA_01-78" summary="Grundfunktionen Website ">
       <branch name="main" repository="$PROJECT_DIR$" />
@@ -539,7 +523,7 @@
       <option name="type" value="BUG" />
       <updated>1729366619861</updated>
       <workItem from="1729350547448" duration="16484000" />
-      <workItem from="1729415576124" duration="656000" />
+      <workItem from="1729415576124" duration="1232000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -589,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729367006985</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Cleaned up code">
+      <option name="closed" value="true" />
+      <created>1729416785517</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1729416785517</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
