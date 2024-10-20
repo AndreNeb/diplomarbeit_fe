@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Cleaned up code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,22 +193,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00029" summary="Edited small widgets">
-      <option name="closed" value="true" />
-      <created>1728656295288</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1728656295288</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Finished small Widgets">
-      <option name="closed" value="true" />
-      <created>1728657470405</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1728657470405</updated>
     </task>
     <task id="LOCAL-00031" summary="Finished small Widgets">
       <option name="closed" value="true" />
@@ -510,8 +498,9 @@
       <option name="project" value="LOCAL" />
       <updated>1729350436070</updated>
     </task>
-    <task active="true" id="DA_01-79" summary="Websitedesign ">
+    <task id="DA_01-79" summary="Websitedesign ">
       <branch name="main" repository="$PROJECT_DIR$" />
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727606892122</created>
@@ -521,9 +510,9 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729366619861</updated>
+      <updated>1729417066046</updated>
       <workItem from="1729350547448" duration="16484000" />
-      <workItem from="1729415576124" duration="1232000" />
+      <workItem from="1729415576124" duration="1487000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -581,7 +570,28 @@
       <option name="project" value="LOCAL" />
       <updated>1729416785517</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task active="true" id="DA_01-91" summary="Piktogramme">
+      <branch name="main" repository="$PROJECT_DIR$" />
+      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
+      <created>1729367453118</created>
+      <option name="issue" value="true" />
+      <url>https://wuev06.youtrack.cloud/issue/DA_01-91</url>
+      <option name="number" value="91" />
+      <option name="presentableId" value="DA_01-91" />
+      <option name="project" value="DA_01" />
+      <option name="type" value="BUG" />
+      <updated>1729417066046</updated>
+      <workItem from="1729417066212" duration="997000" />
+    </task>
+    <task id="LOCAL-00076" summary="Cleaned up code">
+      <option name="closed" value="true" />
+      <created>1729417197517</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1729417197517</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

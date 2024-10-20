@@ -1,3 +1,5 @@
  {/*<span className="hamburger-icon"></span>
                                         <span className="hamburger-icon"></span>
                                         <span className="hamburger-icon"></span>*/}
+
+                                        <img className="logo" src={apple} alt={t('logo')}/>
