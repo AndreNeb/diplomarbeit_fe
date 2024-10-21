@@ -1,17 +1,23 @@
-import { Link } from "react-router-dom";
-import '../stylesheets/rules/leftbar/buttons.css';
-import HiddenHeader from "../components/HiddenHeader";
-import Header from "../components/Header";
+import * as Imports from '../components/Imports';
+import { ConstVariables } from '../components/ConstVariables';
 
 function RulesPage() {
+    {/*hier können dann die zu importierenden Const importiert werden*/}
+    const {
+
+    } = ConstVariables(); // Verwende den Hook hier
+
     return (
         <body>
-        <Header/>
-        <HiddenHeader/>
+        <Imports.Header/>
+        <Imports.HiddenHeader/>
         <div className="lol">
-            <Link to="/">
+            <Imports.Link to="/">
+                <button className="button-general-leftbar">Info</button>
+            </Imports.Link>
+            <Imports.Link to="/">
                 <button className="button-general-leftbar" style={{marginTop: "60px"}}>Info</button>
-            </Link>
+            </Imports.Link>
         </div>
         </body>
     );
