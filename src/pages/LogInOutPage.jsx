@@ -23,9 +23,16 @@ function LogInOutPage() {
 
     const handleRegister = async () => {
         try {
-            const response = await axios.post('https://152.89.239.166:55555', JSON.stringify({username, password}),
-
-                {headers: {'Content-Type': 'application/json'}});
+            const response = await axios.post('http://127.0.0.1:5000/register', JSON.stringify({username, password}),
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                }
+                });
+            const token = response.data.token;
+            console.log('Token', token);
+            localStorage.setItem('token', token);
+            setLoginMessage('Login successful');
         } catch (error) {
             setLoginMessage('Error by login');
             console.error('Login error:', error);
@@ -89,7 +96,7 @@ function LogInOutPage() {
 
 
                 <div className="button-container">
-                    <button type="submit" onClick={handleRegister} className="submit-button">
+                    <button onClick={handleRegister} className="submit-button">
                         <p>{btnText}</p>
                         <p>{loginMessage}</p>
 
