@@ -21,6 +21,14 @@ function HiddenHeader() {
         setIsOpen(!isOpen);
     };
 
+    const toggleMenuAndNavigate = (path) => {
+        setIsOpen(false);
+
+        setTimeout(() => {
+            window.location.href = path;
+        }, 500);
+    };
+
     return (
         <div>
             <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
@@ -35,23 +43,21 @@ function HiddenHeader() {
                         fontSize: "26px",
                         marginLeft: "30px",
                         fontWeight: "600",
-                        marginRight: "40%"
+                        marginRight: "40%",
+                        fontFamily: "Times New Roman"
                     }}>N A R K O</span>
                 </div>
             </div>
 
 
-            <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
+            <div className={`menu-overlay ${isOpen ? 'open' : ''}`} style={{backgroundColor: darkMode ? 'black' : 'rgba(250, 246, 240, 255)'}}>
                 <div className="menu-items">
-
-                    <a href="#contact" onClick={toggleMenu}>Home</a>
-                    <Link to="/RulesPage">
-                        <a href="#about" onClick={toggleMenu}>Regeln</a>
-                    </Link>
-                    <a href="#about" onClick={toggleMenu}>Dokumente</a>
-                    <a href="#services" onClick={toggleMenu}>Info</a>
-                    <a href="#contact" onClick={toggleMenu}>Support</a>
-                    <a href="#contact" onClick={toggleMenu}>Logout</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/')}>{t('home')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/rulesPage')}>{t('rules')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/documentPage')}>{t('documents')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/infoPage')}>{t('info')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/supportPage')}>{t('support')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/loginoutpage')}>{t('logout')}</a>
                 </div>
             </div>
         </div>

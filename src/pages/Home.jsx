@@ -118,7 +118,7 @@ function Home() {
 
         <div className="big-widgets-general">
             <div className={`big-widget ${darkMode ? 'dark' : 'light'}`}>Kalender</div>
-            <div className={`big-widget ${darkMode ? 'dark' : 'light'}`}>Arbeitszeit</div>
+            <div className={`big-widget ${darkMode ? 'dark' : 'light'}`}>Arbeitszeitersparnis</div>
         </div>
 
         </body>

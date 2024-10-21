@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="HiddenHeader als Component gemacht">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Imports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RulesContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RulesContent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scratches/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/scratches/arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/it.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/it.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +204,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00042" summary="Leftbar-Rules">
-      <option name="closed" value="true" />
-      <created>1728754229381</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1728754229381</updated>
     </task>
     <task id="LOCAL-00043" summary="Topbar">
       <option name="closed" value="true" />
@@ -557,7 +556,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
       <updated>1729532673884</updated>
-      <workItem from="1729514989980" duration="8508000" />
+      <workItem from="1729514989980" duration="16958000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -607,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729530859824</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht.">
+      <option name="closed" value="true" />
+      <created>1729534289215</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1729534289215</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -634,7 +641,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added big widgets" />
     <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
     <MESSAGE value="Searchbar verbessert, Regeln als Funktion hinzugefügt, generelle verbesserungen" />
@@ -659,6 +665,7 @@
     <MESSAGE value="Login" />
     <MESSAGE value="Buttons bei Regel erstellen gemacht" />
     <MESSAGE value="HiddenHeader als Component gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="HiddenHeader als Component gemacht" />
+    <MESSAGE value="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht." />
   </component>
 </project>

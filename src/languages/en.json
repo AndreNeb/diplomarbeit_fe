@@ -6,6 +6,8 @@
   "support": "Support",
   "language": "Change Language",
   "login": "Log In",
+  "logout": "Logout",
+  "home": "Home",
   "patient": "Patient",
   "patients": "Patients",
   "op-workload": "Surgical Workload",

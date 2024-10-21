@@ -131,12 +131,13 @@
     font-family: "Quicksand", sans-serif, Arial;
     min-height: 45px;
 
+
     transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease;
 }
 
 .contact-inputs.light {
     background-color: white;
-    color: gray;
+    color: black;
 }
 
 .contact-inputs.light:hover {
@@ -172,10 +173,7 @@
     width: 80%;
     height: 40%;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 25px;
+    padding: 15px 15px 15px 25px;
 
     border: none;
     outline: none;
@@ -183,6 +181,7 @@
 
     font-size: 20px;
     font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
 
     resize: none;
     overflow-wrap: break-word;
@@ -267,6 +266,10 @@
     cursor: pointer;
 
     margin-top: 45px;
+}
+
+.submit-button.light {
+    border: 1px solid lightgray;
 }
 
 .submit-button.light:hover {

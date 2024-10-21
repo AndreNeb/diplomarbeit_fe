@@ -37,34 +37,44 @@ function Header() {
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
                 <Link to="/">
-                    <span style={{color: darkMode ? "white": "black", fontSize: "26px", marginLeft: "30px", fontWeight: "600"}}>N A R K O</span>
+                    <span style={{
+                        color: darkMode ? "white" : "black",
+                        fontSize: "26px",
+                        marginLeft: "30px",
+                        fontWeight: "600",
+                        fontFamily: "Timed New Roman"
+                    }}>N A R K O</span>
                 </Link>
 
                 <div className="topbar-functional-divs">
                     <Link to="/RulesPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? regelnBlack : regeln} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}/>
+                            <img src={darkMode ? regelnBlack : regeln}
+                                 className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}/>
                             <div className="tooltip">{t('rules')}</div>
                         </div>
                     </Link>
 
                     <Link to="/DocumentPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? documentBlack : documentImage} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('documents')}/>
+                            <img src={darkMode ? documentBlack : documentImage}
+                                 className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('documents')}/>
                             <div className="tooltip">{t('documents')}</div>
                         </div>
                     </Link>
 
                     <Link to="/InfoPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? infoBlack : info} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('info')}/>
+                            <img src={darkMode ? infoBlack : info}
+                                 className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('info')}/>
                             <div className="tooltip">{t('info')}</div>
                         </div>
                     </Link>
 
                     <Link to="/SupportPage">
                         <div className="icons-tooltip">
-                            <img src={darkMode ? supportBlack : support} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('support')}/>
+                            <img src={darkMode ? supportBlack : support}
+                                 className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('support')}/>
                             <div className="tooltip">{t('support')}</div>
                         </div>
                     </Link>
@@ -86,13 +96,16 @@ function Header() {
             </div>
             <div className="right-section">
 
-                <img onClick={toggleDarkMode} src={darkMode ? sun : moon} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}
+                <img onClick={toggleDarkMode} src={darkMode ? sun : moon}
+                     className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}
                      alt="Mode"/>
 
-                <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt={t('language')}/>
+                <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
+                     alt={t('rules')} alt={t('language')}/>
 
                 <Link to="/LogInOutPage">
-                    <img src={darkMode ? loginBlack : login} className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')} alt="login"/>
+                    <img src={darkMode ? loginBlack : login} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
+                         alt={t('rules')} alt="login"/>
                 </Link>
             </div>
         </div>);

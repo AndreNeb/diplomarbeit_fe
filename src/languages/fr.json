@@ -6,6 +6,8 @@
   "support": "Support",
   "language": "Changer de langue",
   "login": "Connexion",
+  "logout": "Déconnexion",
+  "home": "Accueil",
   "patient": "Patient",
   "patients": "Patients",
   "op-workload": "OP - Charge de travail",
@@ -38,7 +40,7 @@
   "logo": "Logo",
   "documents": "Documents",
 
-  "log-text": "Se connecter",
+  "log-text": "Soumettre",
   "username": "Nom d'utilisateur",
   "password": "Mot de passe",
 
