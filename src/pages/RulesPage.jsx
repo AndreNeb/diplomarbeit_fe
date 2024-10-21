@@ -1,4 +1,5 @@
 import * as Imports from '../components/Imports';
+import HiddenHeader from "../components/HiddenHeader";
 
 function RulesPage() {
 
@@ -27,41 +28,12 @@ function RulesPage() {
             <body className={`rules ${darkMode ? 'dark' : 'light'}`}>
 
             <Imports.Header/>
+            <HiddenHeader/>
 
             <Imports.Sidebar
                 darkMode={darkMode}
                 currentDiv={currentDiv}
             />
-
-
-            <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
-                <div className="hamburger-menu-div">
-                    <button className="hamburger-button" onClick={toggleMenu}>
-                        {/* Hamburger Icon */}
-                        <span className="hamburger-icon"></span>
-                        <span className="hamburger-icon"></span>
-                        <span className="hamburger-icon"></span>
-                    </button>
-
-                    <img src={Imports.apple} className="logo-in-hamburger-menu" alt="Logo"/>
-                </div>
-            </div>
-
-            {/* Das Menü, das den gesamten Bildschirm abdeckt */}
-            <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
-                <div className="menu-items">
-
-
-                    <a href="#contact" onClick={toggleMenu}>Home</a>
-                    <Imports.Link to="/RulesPage">
-                        <a href="#about" onClick={toggleMenu}>Regeln</a>
-                    </Imports.Link>
-                    <a href="#about" onClick={toggleMenu}>Dokumente</a>
-                    <a href="#services" onClick={toggleMenu}>Info</a>
-                    <a href="#contact" onClick={toggleMenu}>Support</a>
-                    <a href="#contact" onClick={toggleMenu}>Logout</a>
-                </div>
-            </div>
             </body>
 
         </>

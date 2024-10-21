@@ -1,4 +1,7 @@
 import * as Imports from '../components/Imports';
+import React, {useContext, useState} from 'react';
+
+import HiddenHeader from "../components/HiddenHeader";
 
 
 function Home() {
@@ -20,6 +23,7 @@ function Home() {
 
         <body className={`homepage ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "" : "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
         <Imports.Header/>
+        <HiddenHeader/>
 
         <div className="small-widgets-outer-div">
             <div
@@ -116,6 +120,7 @@ function Home() {
                 <a href="#contact" onClick={toggleMenu}>Logout</a>
             </div>
         </div>
+
         </body>
     );
 }
