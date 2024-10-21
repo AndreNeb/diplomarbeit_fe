@@ -89,7 +89,7 @@ function LogInOutPage() {
 
 
                 <div className="button-container">
-                    <button type="submit" onClick={handleRegister} className={classNames('submit-button')}>
+                    <button type="submit" onClick={handleRegister} className="submit-button">
                         <p>{btnText}</p>
                         <p>{loginMessage}</p>
 
