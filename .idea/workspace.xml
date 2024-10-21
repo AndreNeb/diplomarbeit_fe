@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Schriftzug anstatt Logo">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24,_13_35_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24__13_35__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,14 +192,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00033" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
-      <option name="closed" value="true" />
-      <created>1728664288551</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1728664288551</updated>
     </task>
     <task id="LOCAL-00034" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
       <option name="closed" value="true" />
@@ -494,7 +485,7 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729417066046</updated>
+      <updated>1729439625155</updated>
       <workItem from="1729350547448" duration="16484000" />
       <workItem from="1729415576124" duration="1487000" />
     </task>
@@ -567,6 +558,11 @@
       <updated>1729417066046</updated>
       <workItem from="1729417066212" duration="1175000" />
       <workItem from="1729433353771" duration="249000" />
+      <workItem from="1729439875076" duration="138000" />
+      <workItem from="1729453373482" duration="219000" />
+      <workItem from="1729500377209" duration="109000" />
+      <workItem from="1729503320106" duration="261000" />
+      <workItem from="1729513846814" duration="665000" />
     </task>
     <task id="LOCAL-00076" summary="Cleaned up code">
       <option name="closed" value="true" />
@@ -592,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729418226239</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Schriftzug anstatt Logo">
+      <option name="closed" value="true" />
+      <created>1729439882833</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1729439882833</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
