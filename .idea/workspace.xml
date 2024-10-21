@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht.">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/it.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/it.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/big-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/homepage-widgets/small-widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,14 +191,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00043" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728761223327</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1728761223327</updated>
     </task>
     <task id="LOCAL-00044" summary="Topbar">
       <option name="closed" value="true" />
@@ -556,7 +535,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
       <updated>1729532673884</updated>
-      <workItem from="1729514989980" duration="16958000" />
+      <workItem from="1729514989980" duration="17058000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -614,7 +593,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729534289215</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
+      <option name="closed" value="true" />
+      <created>1729542470312</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1729542470312</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -641,7 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
     <MESSAGE value="Searchbar verbessert, Regeln als Funktion hinzugefügt, generelle verbesserungen" />
     <MESSAGE value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
@@ -666,6 +652,7 @@
     <MESSAGE value="Buttons bei Regel erstellen gemacht" />
     <MESSAGE value="HiddenHeader als Component gemacht" />
     <MESSAGE value="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht." />
+    <MESSAGE value="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,..." />
   </component>
 </project>
