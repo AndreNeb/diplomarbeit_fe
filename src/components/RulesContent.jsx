@@ -52,77 +52,29 @@ function RulesContent() {
                             backgroundColor: darkMode ? "black" : "white", transition: "background-color 1.1s ease"
                         }}>
                             <button onClick={() => handleCategoriesClick(t('child'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('child')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('child')}</button>
                             <button onClick={() => handleCategoriesClick(t('lung'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('lung')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('lung')}</button>
                             <button onClick={() => handleCategoriesClick(t('heart'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('heart')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('heart')}</button>
                             <button onClick={() => handleCategoriesClick(t('stomach'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('stomach')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('stomach')}</button>
                             <button onClick={() => handleCategoriesClick(t('leg'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('leg')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('leg')}</button>
                             <button onClick={() => handleCategoriesClick(t('arms'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('arms')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('arms')}</button>
                             <button onClick={() => handleCategoriesClick(t('liver'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('liver')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('liver')}</button>
                             <button onClick={() => handleCategoriesClick(t('gallbladder'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('gallbladder')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('gallbladder')}</button>
                             <button onClick={() => handleCategoriesClick(t('kidney'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('kidney')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('kidney')}</button>
                             <button onClick={() => handleCategoriesClick(t('brain'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('brain')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('brain')}</button>
                             <button onClick={() => handleCategoriesClick(t('specialized'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('specialized')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('specialized')}</button>
                             <button onClick={() => handleCategoriesClick(t('other'))}
-                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`} style={{
-                                backgroundColor: darkMode ? "black" : "white",
-                                color: darkMode ? "white" : "black",
-                                transition: "color 1.1s ease, background-color 1.1s ease"
-                            }}>{t('other')}</button>
+                                    className={`button-general-leftbar ${darkMode ? 'dark' : 'light'} mode`}>{t('other')}</button>
                         </div>
                     </div>
                 </div>)}
@@ -283,12 +235,12 @@ function RulesContent() {
                     </div>
                     <div className="menu">
                         <img src={darkMode ? Imports.safeBlack : Imports.safe} onClick={handlePlusClick}
-                             className="menu-picture"
+                             className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
                              alt="Save menu"/>
                     </div>
                     <div className="menu">
                         <img src={darkMode ? Imports.deleteRuleBlack : Imports.deleteRule} onClick={handlePlusClick}
-                             className="menu-picture"
+                             className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
                              alt="Delete menu"/>
                     </div>
                     <div className="menu">

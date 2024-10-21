@@ -1,4 +1,4 @@
-// Styles
+// Stylesheets
 import '../stylesheets/topbar/topbar.css';
 import '../stylesheets/rules/leftbar/buttons.css';
 import '../stylesheets/rules/leftbar/leftbar.css';
