@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Buttons bei Regel erstellen gemacht">
-      <change afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="HiddenHeader als Component gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +191,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00040" summary="Finished small Widgets">
-      <option name="closed" value="true" />
-      <created>1728730335799</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1728730335799</updated>
     </task>
     <task id="LOCAL-00041" summary="Leftbar-Rules">
       <option name="closed" value="true" />
@@ -573,7 +559,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
       <updated>1729514989694</updated>
-      <workItem from="1729514989980" duration="4436000" />
+      <workItem from="1729514989980" duration="5585000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -607,7 +593,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729517833564</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="HiddenHeader als Component gemacht">
+      <option name="closed" value="true" />
+      <created>1729519596177</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1729519596177</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -634,7 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Body3" />
     <MESSAGE value="Added big widgets" />
     <MESSAGE value="Added small widgets" />
     <MESSAGE value="Edited small widgets" />
@@ -659,6 +652,7 @@
     <MESSAGE value="Schriftzug anstatt Logo" />
     <MESSAGE value="Login" />
     <MESSAGE value="Buttons bei Regel erstellen gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buttons bei Regel erstellen gemacht" />
+    <MESSAGE value="HiddenHeader als Component gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="HiddenHeader als Component gemacht" />
   </component>
 </project>
