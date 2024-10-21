@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Login">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Buttons bei Regel erstellen gemacht">
+      <change afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JSX File" />
         <option value="tsconfig.json" />
         <option value="CSS File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -192,14 +197,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00039" summary="Deletet unneccessary files">
-      <option name="closed" value="true" />
-      <created>1728719928518</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1728719928519</updated>
     </task>
     <task id="LOCAL-00040" summary="Finished small Widgets">
       <option name="closed" value="true" />
@@ -576,7 +573,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
       <updated>1729514989694</updated>
-      <workItem from="1729514989980" duration="2789000" />
+      <workItem from="1729514989980" duration="4436000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -602,7 +599,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729517454769</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Buttons bei Regel erstellen gemacht">
+      <option name="closed" value="true" />
+      <created>1729517833564</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1729517833564</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -629,7 +634,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Files" />
     <MESSAGE value="Body3" />
     <MESSAGE value="Added big widgets" />
     <MESSAGE value="Added small widgets" />
@@ -654,6 +658,7 @@
     <MESSAGE value="Cleaned up code" />
     <MESSAGE value="Schriftzug anstatt Logo" />
     <MESSAGE value="Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login" />
+    <MESSAGE value="Buttons bei Regel erstellen gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buttons bei Regel erstellen gemacht" />
   </component>
 </project>

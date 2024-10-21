@@ -3,10 +3,9 @@ import '../stylesheets/rules/leftbar/buttons.css';
 import '../stylesheets/supportpage/support.css';
 import classNames from 'classnames';
 import {useTranslation} from 'react-i18next';
-import {HashRouter, Link} from 'react-router-dom';
-import apple from "../pictures/other/NARKO_Logo.png";
 import Header from "../components/Header";
 import {DarkModeContext} from "../components/DarkModeContext";
+import HiddenHeader from "../components/HiddenHeader";
 
 function SupportPage() {
 
@@ -71,68 +70,46 @@ function SupportPage() {
         <body className={`support ${darkMode ? 'dark' : 'light'}`}>
 
         <Header/>
+        <HiddenHeader/>
 
-            <div className="general-container" style={{backgroundColor: darkMode ? "black": "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
-                <div className={`general-inner-container ${darkMode ? 'dark' : 'light'}`}>
-                    <span className={`text ${darkMode ? 'dark' : 'light'}`}>{t('support-text')}</span>
-                    <div className="field-container">
+        <div className="general-container" style={{
+            backgroundColor: darkMode ? "black" : "rgba(250, 246, 240, 255)",
+            transition: "background-color 1.1s ease"
+        }}>
+            <div className={`general-inner-container ${darkMode ? 'dark' : 'light'}`}>
+                <span className={`text ${darkMode ? 'dark' : 'light'}`}>{t('support-text')}</span>
+                <div className="field-container">
 
-                        <form onSubmit={handleSubmit}>
-                            <div className="text-fields-container">
-                                <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`} placeholder={t('name')}
-                                       required/>
-                                <input type="email" name="email" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`} placeholder={t('email')}
-                                       required/>
-                                <textarea name="message" className={`contact-messages ${darkMode ? 'dark' : 'light'}`} placeholder={t('message')}
-                                          required></textarea>
-                            </div>
-
-
-                            <div className="button-container">
-                                <button type="submit" className={classNames('submit-button', darkMode ? 'dark' : 'light', {active: isActive})}>
-                                    <p>{btnText}</p>
-                                    <div className="check-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                {formStatus && <p className="form-status">{formStatus}</p>}
+                    <form onSubmit={handleSubmit}>
+                        <div className="text-fields-container">
+                            <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
+                                   placeholder={t('name')}
+                                   required/>
+                            <input type="email" name="email" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
+                                   placeholder={t('email')}
+                                   required/>
+                            <textarea name="message" className={`contact-messages ${darkMode ? 'dark' : 'light'}`}
+                                      placeholder={t('message')}
+                                      required></textarea>
+                        </div>
 
 
-                <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
-                    <div className="hamburger-menu-div">
-                        <button className="hamburger-button" onClick={toggleMenu}>
-                            {/* Hamburger Icon */}
-                            <span className="hamburger-icon"></span>
-                            <span className="hamburger-icon"></span>
-                            <span className="hamburger-icon"></span>
-                        </button>
-
-                        <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
-                    </div>
-                </div>
-
-                {/* Das Menü, das den gesamten Bildschirm abdeckt */}
-                <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
-                    <div className="menu-items">
-
-
-                        <a href="#contact" onClick={toggleMenu}>Home</a>
-                        <Link to="/RulesPage">
-                            <a href="#about" onClick={toggleMenu}>Regeln</a>
-                        </Link>
-                        <a href="#about" onClick={toggleMenu}>Dokumente</a>
-                        <a href="#services" onClick={toggleMenu}>Info</a>
-                        <a href="#contact" onClick={toggleMenu}>Support</a>
-                        <a href="#contact" onClick={toggleMenu}>Logout</a>
-                    </div>
+                        <div className="button-container">
+                            <button type="submit"
+                                    className={classNames('submit-button', darkMode ? 'dark' : 'light', {active: isActive})}>
+                                <p>{btnText}</p>
+                                <div className="check-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                        <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
+            {formStatus && <p className="form-status">{formStatus}</p>}
+        </div>
         </body>
 
     );

@@ -1,7 +1,5 @@
 import React, {useContext, useState} from 'react';
 
-import {Link} from "react-router-dom";
-import apple from "../pictures/other/NARKO_Logo.png";
 import patienten from "../pictures/lightMode/patients_lightMode.png";
 import patientenBlack from "../pictures/darkMode/patients_darkMode.png";
 import maske from "../pictures/lightMode/mask_lightMode.png";
@@ -10,11 +8,10 @@ import spritze from "../pictures/lightMode/syringe_lightMode.png";
 import spritzeBlack from "../pictures/darkMode/syringe_darkMode.png";
 import wartezimmer from "../pictures/lightMode/waitingroom_lightMode.png";
 import wartezimmerBlack from "../pictures/darkMode/waitingroom_darkMode.png";
-import hamburger from "../pictures/lightMode/hamburger-menu_lightMode.png";
-import hamburgerBlack from "../pictures/darkMode/hamburger-menu_darkMode.png";
 import {useTranslation} from "react-i18next";
 import Header from '../components/Header';
 import {DarkModeContext} from '../components/DarkModeContext';
+import HiddenHeader from "../components/HiddenHeader";
 
 
 function Home() {
@@ -35,7 +32,9 @@ function Home() {
     return (
 
         <body className={`homepage ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "" : "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
+
         <Header/>
+        <HiddenHeader/>
 
         <div className="small-widgets-outer-div">
             <div
@@ -109,36 +108,7 @@ function Home() {
         </div>
 
 
-        <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
-            <div className={`hamburger-menu-div ${darkMode ? 'dark' : 'light'}`}>
-                <button className="hamburger-button" onClick={toggleMenu}>
-                    <img src={darkMode ? hamburgerBlack : hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`}
-                         alt="HamburgerMenu"/>
-                </button>
-                <span style={{
-                    color: darkMode ? "white" : "black",
-                    fontSize: "26px",
-                    marginLeft: "30px",
-                    fontWeight: "600",
-                    marginRight: "40%"
-                }}>N A R K O</span>
-            </div>
-        </div>
 
-        {/* Das Menü, das den gesamten Bildschirm abdeckt */}
-        <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
-            <div className="menu-items">
-
-                <a href="#contact" onClick={toggleMenu}>Home</a>
-                <Link to="/RulesPage">
-                    <a href="#about" onClick={toggleMenu}>Regeln</a>
-                </Link>
-                <a href="#about" onClick={toggleMenu}>Dokumente</a>
-                <a href="#services" onClick={toggleMenu}>Info</a>
-                <a href="#contact" onClick={toggleMenu}>Support</a>
-                <a href="#contact" onClick={toggleMenu}>Logout</a>
-            </div>
-        </div>
         </body>
     );
 }
