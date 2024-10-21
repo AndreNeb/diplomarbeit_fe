@@ -1,7 +1,6 @@
 import '../components/i18n'
 
 import {BrowserRouter as Router, Route, Routes, } from "react-router-dom";
-import * as Imports from '../components/Imports';
 
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";

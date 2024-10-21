@@ -1,8 +1,71 @@
 import * as Imports from '../components/Imports';
+import {useContext, useState} from "react";
 
 export const ConstVariables = () => {
-    const { t } = Imports.useTranslation();
-    const { i18n } = Imports.useTranslation();
+
+
+    const [buttonTexts, setButtonTexts] = useState([]);
+
+    const [text, setText] = useState("");
+
+
+    const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
+
+    const handleMainClick = () => {
+        setCurrentDiv('MainPage');
+        setDivs([]); //Dadurch wird der text bei dem Button text gelöscht und warum auch immer ein anderer eingefügt;
+    };
+
+    const handleHamburgerClick = () => {
+        setCurrentDiv('Leftbar-hidden-MainPage');
+    };
+
+    const handleCategoriesClick = (message) => {
+        setCurrentDiv('Category');
+        setText(message)
+    };
+
+    const handlePlusClick = () => {
+        setCurrentDiv('BuildPage');
+    };
+
+    const handleHamburgerRulesBuildClick = () => {
+        setCurrentDiv('Leftbar-hidden-RulesPage');
+    };
+
+    const handleTextFieldClick = () => {
+        setCurrentDiv('TextField');
+
+    };
+    const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
+
+    const handleAddDiv = (message) => {
+        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+        setButtonTexts([...buttonTexts, `${message}`]);
+    };
+
+    const {darkMode, toggleDarkMode} = useContext(Imports.DarkModeContext);
+
+    const styles = {
+        box: {
+            width: "20%", boxSizing: "border-box", // Funktioniert in React, camelCase!
+            wordWrap: "break-word",  // Funktioniert ebenfalls in React, camelCase!
+            overflowWrap: "break-word", // Unterstützt den Umbruch von langen Wörtern
+        },
+
+    };
+    const stylesadd = {
+        add: {
+            display: "flex", flexWrap: "wrap", // Elemente umbrechen
+
+            justifyContent: "flex-start", // Start der Buttons links ausrichten
+            alignItems: "center", alignContent: "flex-start", boxSizing: "border-box",
+        },
+    };
+
+
+    const {t} = Imports.useTranslation();
+    const {i18n} = Imports.useTranslation();
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
@@ -62,6 +125,22 @@ export const ConstVariables = () => {
         toggleMenu,
         handleSubmit,
         changeLanguage,
+        handleMainClick,
+        handleHamburgerClick,
+        handleCategoriesClick,
+        handlePlusClick,
+        handleHamburgerRulesBuildClick,
+        handleTextFieldClick,
+        handleAddDiv,
+        buttonTexts,
+        text,
+        currentDiv,
+        divs,
+        darkMode,
+        toggleDarkMode,
+        styles,
+        stylesadd,
     };
+
 };
 

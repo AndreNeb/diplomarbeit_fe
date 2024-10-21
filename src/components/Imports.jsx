@@ -17,9 +17,11 @@ export { useTranslation } from 'react-i18next';
 
 // Components
 export { default as Header } from './Header';
+export { default as HiddenHeader } from './HiddenHeader';
 export { DarkModeContext } from './DarkModeContext';
-export { default as Sidebar } from "../components/RulesContent";
+export { default as Rules } from "../components/RulesContent";
 export { default as classNames } from 'classnames';
+
 
 
 // Images

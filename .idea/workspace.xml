@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Add-Rules">
-      <change afterPath="$PROJECT_DIR$/src/components/ConstVariables.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RulesContent.jsx" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Aufräumen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConstVariables.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConstVariables.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Imports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RulesContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RulesContent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -626,6 +624,7 @@
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Umstrukturierung" />
     <MESSAGE value="Add-Rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add-Rules" />
+    <MESSAGE value="Aufräumen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufräumen" />
   </component>
 </project>
