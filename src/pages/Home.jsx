@@ -1,32 +1,16 @@
-import React, {useContext, useState} from 'react';
-
-import {Link} from "react-router-dom";
-import apple from "../pictures/other/NARKO_Logo.png";
-import patienten from "../pictures/lightMode/patients_lightMode.png";
-import patientenBlack from "../pictures/darkMode/patients_darkMode.png";
-import maske from "../pictures/lightMode/mask_lightMode.png";
-import maskeBlack from "../pictures/darkMode/mask_darkMode.png";
-import spritze from "../pictures/lightMode/syringe_lightMode.png";
-import spritzeBlack from "../pictures/darkMode/syringe_darkMode.png";
-import wartezimmer from "../pictures/lightMode/waitingroom_lightMode.png";
-import wartezimmerBlack from "../pictures/darkMode/waitingroom_darkMode.png";
-import hamburger from "../pictures/lightMode/hamburger-menu_lightMode.png";
-import hamburgerBlack from "../pictures/darkMode/hamburger-menu_darkMode.png";
-import {useTranslation} from "react-i18next";
-import Header from '../components/Header';
-import {DarkModeContext} from '../components/DarkModeContext';
+import * as Imports from '../components/Imports';
 
 
 function Home() {
-    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
+    const {darkMode, toggleDarkMode} = Imports.useContext(Imports.DarkModeContext);
 
-    const {t} = useTranslation();
+    const {t} = Imports.useTranslation();
 
-    const {i18n} = useTranslation();
+    const {i18n} = Imports.useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = Imports.useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -35,7 +19,7 @@ function Home() {
     return (
 
         <body className={`homepage ${darkMode ? 'dark' : 'light'}`} style={{backgroundColor: darkMode ? "" : "rgba(250, 246, 240, 255)", transition: "background-color 1.1s ease"}}>
-        <Header/>
+        <Imports.Header/>
 
         <div className="small-widgets-outer-div">
             <div
@@ -49,7 +33,7 @@ function Home() {
                     <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>&uarr; &#43;8,5 &#037;</div>
                 </div>
                 <div>
-                    <img src={darkMode ? patientenBlack : patienten} className="small-widgets-picture-layout"
+                    <img src={darkMode ? Imports.patientenBlack : Imports.patienten} className="small-widgets-picture-layout"
                          alt="Patienten"/>
                 </div>
             </div>
@@ -64,7 +48,7 @@ function Home() {
                         9 {t('unavailable')}</div>
                 </div>
                 <div>
-                    <img src={darkMode ? maskeBlack : maske} className="small-widgets-picture-layout"
+                    <img src={darkMode ? Imports.maskeBlack : Imports.maske} className="small-widgets-picture-layout"
                          alt="OP - Maske"/>
                 </div>
             </div>
@@ -78,7 +62,7 @@ function Home() {
                     <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>&darr; 4,5 &#037;</div>
                 </div>
                 <div>
-                    <img src={darkMode ? spritzeBlack : spritze} className="small-widgets-picture-layout"
+                    <img src={darkMode ? Imports.spritzeBlack : Imports.spritze} className="small-widgets-picture-layout"
                          alt="Spritze"/>
                 </div>
             </div>
@@ -92,7 +76,7 @@ function Home() {
                     <div className="small-widgets-text-bottom" style={{color: darkMode ? "white":"#077507", transition: "color 1.1s ease"}}>{t('waiting-room-usage')}</div>
                 </div>
                 <div>
-                    <img src={darkMode ? wartezimmerBlack : wartezimmer}
+                    <img src={darkMode ? Imports.wartezimmerBlack : Imports.wartezimmer}
                          className="small-widgets-picture-layout wartezimmer-picture-layout"
                          alt="Wartezimmer"/>
                 </div>
@@ -112,9 +96,9 @@ function Home() {
         <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
             <div className={`hamburger-menu-div ${darkMode ? 'dark' : 'light'}`}>
                 <button className="hamburger-button" onClick={toggleMenu}>
-                    <img src={darkMode ? hamburgerBlack : hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`} alt="HamburgerMenu"/>
+                    <img src={darkMode ? Imports.hamburgerBlack : Imports.hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`} alt="HamburgerMenu"/>
                 </button>
-                <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
+                <img src={Imports.apple} className="logo-in-hamburger-menu" alt="Logo"/>
             </div>
         </div>
 
@@ -123,9 +107,9 @@ function Home() {
             <div className="menu-items">
 
                 <a href="#contact" onClick={toggleMenu}>Home</a>
-                <Link to="/RulesPage">
+                <Imports.Link to="/RulesPage">
                     <a href="#about" onClick={toggleMenu}>Regeln</a>
-                </Link>
+                </Imports.Link>
                 <a href="#about" onClick={toggleMenu}>Dokumente</a>
                 <a href="#services" onClick={toggleMenu}>Info</a>
                 <a href="#contact" onClick={toggleMenu}>Support</a>

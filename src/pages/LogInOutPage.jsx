@@ -1,56 +1,13 @@
-import '../stylesheets/loginoutpage/loginout.css';
-import React, {useState} from "react";
-import {useTranslation} from "react-i18next";
-import classNames from "classnames";
+import * as Imports from '../components/Imports';
+import { ConstVariables } from '../components/ConstVariables';
 
 function LogInOutPage() {
-    const {t} = useTranslation();
-    const {i18n} = useTranslation();
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    };
-
-    const [btnText, setBtnText] = useState(t('log-text'));
-    const [isActive, setIsActive] = useState(false);
-    const [formStatus, setFormStatus] = useState('');
-
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(event.target); // Holt die Formular-Daten
-
-        try {
-            // Sende die Daten an die Formspree - API
-            const response = await fetch('https://formspree.io/f/movqqjlb', {
-                method: 'POST', body: formData, headers: {
-                    Accept: 'application/json',
-                },
-            });
-
-            if (response.ok) {
-                setBtnText(t('thanks'));
-                setIsActive(true);
-
-                setTimeout(() => {
-                    window.location.reload(); // Seite neu laden nach 3 s
-                }, 4000);
-
-            } else {
-                setBtnText(t('error'))
-
-                setTimeout(() => {
-                    window.location.reload(); // Seite neu laden nach 3 s
-                }, 4000);
-            }
-        } catch (error) {
-
-        }
-    };
-
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const {
+        btnText,
+        t,
+        isActive,
+        handleSubmit,
+    } = ConstVariables(); // Verwende den Hook hier
 
     return (
 
@@ -71,7 +28,7 @@ function LogInOutPage() {
 
 
                     <div className="button-container">
-                        <button type="submit" className={classNames('submit-button', {active: isActive})}>
+                        <button type="submit" className={Imports.classNames('submit-button', {active: isActive})}>
                             <p>{btnText}</p>
                             <div className="check-box">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">

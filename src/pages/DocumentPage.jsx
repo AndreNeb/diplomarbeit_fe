@@ -1,15 +1,10 @@
-import { Link } from "react-router-dom";
-import '../stylesheets/topbar/topbar.css';
-import '../stylesheets/rules/leftbar/buttons.css'
-import '../stylesheets/rules/leftbar/leftbar.css'
-import '../stylesheets/rules/Build-grid.css'
-import '../stylesheets/rules/Rules-overview.css';
+import * as Imports from '../components/Imports';
 function RulesPage() {
     return (
         <div className="lol">
-            <Link to="/">
+            <Imports.Link to="/">
                 <button className="button-general-leftbar">Document</button>
-            </Link>
+            </Imports.Link>
         </div>
     );
 }

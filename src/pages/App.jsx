@@ -1,17 +1,8 @@
 import '../components/i18n'
 
-import React, {useEffect} from "react";
-import {BrowserRouter as Router, Route, Routes, Link, useNavigate} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes, } from "react-router-dom";
+import * as Imports from '../components/Imports';
 
-import '../stylesheets/topbar/topbar.css';
-import '../stylesheets/topbar/topbar.css';
-import '../stylesheets/rules/leftbar/buttons.css'
-import '../stylesheets/rules/leftbar/leftbar.css'
-import '../stylesheets/rules/Build-grid.css'
-import '../stylesheets/rules/Rules-overview.css';
-import '../stylesheets/general/general.css';
-import '../stylesheets/homepage-widgets/small-widgets.css';
-import '../stylesheets/homepage-widgets/big-widgets.css';
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";

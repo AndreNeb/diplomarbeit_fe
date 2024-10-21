@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
-import '../stylesheets/rules/leftbar/buttons.css';
+import * as Imports from '../components/Imports';
 
 function RulesPage() {
     return (
         <div className="lol">
-            <Link to="/">
+            <Imports.Link to="/">
                 <button className="button-general-leftbar">Info</button>
-            </Link>
+            </Imports.Link>
         </div>
     );
 }

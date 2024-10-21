@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Add-Rules">
-      <change afterPath="$PROJECT_DIR$/src/pictures/darkMode/tick_darkMode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/lightMode/tick_lightMode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_16_52_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24,_20_56_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__16_52__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_24__20_56__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24,_13_35_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_24__13_35__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ConstVariables.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RulesContent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Build-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JSX File" />
         <option value="tsconfig.json" />
         <option value="CSS File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -132,11 +124,11 @@
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/stylesheets/rules" />
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
       <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
       <recent name="$PROJECT_DIR$/src/scratches" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/stylesheets/Rules" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -177,14 +169,6 @@
       <workItem from="1728565856844" duration="1659000" />
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
-    </task>
-    <task id="LOCAL-00019" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728628922609</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1728628922609</updated>
     </task>
     <task id="LOCAL-00020" summary="Topbar">
       <option name="closed" value="true" />
@@ -289,7 +273,8 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729416634140" duration="1660000" />
-      <workItem from="1729424635394" duration="10079000" />
+      <workItem from="1729424635394" duration="11348000" />
+      <workItem from="1729513800103" duration="5687000" />
     </task>
     <task id="LOCAL-00029" summary="Edited small widgets">
       <option name="closed" value="true" />
@@ -595,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729339218023</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Add-Rules">
+      <option name="closed" value="true" />
+      <created>1729438582284</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1729438582284</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
