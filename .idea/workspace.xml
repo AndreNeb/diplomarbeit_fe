@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RulesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RulesPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +192,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00038" summary="Deletet unneccessary files">
-      <option name="closed" value="true" />
-      <created>1728680064682</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1728680064682</updated>
     </task>
     <task id="LOCAL-00039" summary="Deletet unneccessary files">
       <option name="closed" value="true" />
@@ -584,7 +576,7 @@
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
       <updated>1729514989694</updated>
-      <workItem from="1729514989980" duration="2403000" />
+      <workItem from="1729514989980" duration="2789000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -602,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729515857844</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Login">
+      <option name="closed" value="true" />
+      <created>1729517454769</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1729517454769</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -655,17 +655,5 @@
     <MESSAGE value="Schriftzug anstatt Logo" />
     <MESSAGE value="Login" />
     <option name="LAST_COMMIT_MESSAGE" value="Login" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/LogInOutPage.jsx</url>
-          <line>25</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

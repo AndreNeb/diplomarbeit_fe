@@ -359,12 +359,12 @@ function RulesPage() {
                              alt="Arrow left"/>
                     </div>
                     <div className="menu">
-                        <img src={darkMode ? safeBlack : safe} onClick={handlePlusClick} className="menu-picture"
+                        <img src={darkMode ? safeBlack : safe} onClick={handlePlusClick} className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
                              alt="Save menu"/>
                     </div>
                     <div className="menu">
                         <img src={darkMode ? deleteRuleBlack : deleteRule} onClick={handlePlusClick}
-                             className="menu-picture"
+                             className={`menu-picture ${darkMode ? 'dark' : 'light'}`}
                              alt="Delete menu"/>
                     </div>
                     <div className="menu">
