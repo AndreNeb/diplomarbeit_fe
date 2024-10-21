@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Schriftzug anstatt Logo">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,22 +194,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00034" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
-      <option name="closed" value="true" />
-      <created>1728664394781</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1728664394781</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
-      <option name="closed" value="true" />
-      <created>1728667529743</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1728667529743</updated>
     </task>
     <task id="LOCAL-00036" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
       <option name="closed" value="true" />
@@ -545,8 +531,9 @@
       <option name="project" value="LOCAL" />
       <updated>1729416785517</updated>
     </task>
-    <task active="true" id="DA_01-91" summary="Piktogramme">
+    <task id="DA_01-91" summary="Piktogramme">
       <branch name="main" repository="$PROJECT_DIR$" />
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1729367453118</created>
       <option name="issue" value="true" />
@@ -555,14 +542,14 @@
       <option name="presentableId" value="DA_01-91" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729417066046</updated>
+      <updated>1729514989694</updated>
       <workItem from="1729417066212" duration="1175000" />
       <workItem from="1729433353771" duration="249000" />
       <workItem from="1729439875076" duration="138000" />
       <workItem from="1729453373482" duration="219000" />
       <workItem from="1729500377209" duration="109000" />
       <workItem from="1729503320106" duration="261000" />
-      <workItem from="1729513846814" duration="665000" />
+      <workItem from="1729513846814" duration="1141000" />
     </task>
     <task id="LOCAL-00076" summary="Cleaned up code">
       <option name="closed" value="true" />
@@ -596,14 +583,35 @@
       <option name="project" value="LOCAL" />
       <updated>1729439882833</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Login">
+      <option name="closed" value="true" />
+      <created>1729514755805</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1729514755806</updated>
+    </task>
+    <task active="true" id="DA_01-86" summary="Kleinskrams">
+      <branch name="main" repository="$PROJECT_DIR$" />
+      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
+      <created>1728629823208</created>
+      <option name="issue" value="true" />
+      <url>https://wuev06.youtrack.cloud/issue/DA_01-86</url>
+      <option name="number" value="86" />
+      <option name="presentableId" value="DA_01-86" />
+      <option name="project" value="DA_01" />
+      <option name="type" value="FEATURE" />
+      <updated>1729514989694</updated>
+      <workItem from="1729514989980" duration="796000" />
+    </task>
+    <option name="localTasksCounter" value="81" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers>
       <YouTrack url="https://wuev06.youtrack.cloud">
-        <option name="defaultSearch" value="" />
+        <option name="defaultSearch" value="kleinskrams" />
         <username>random</username>
       </YouTrack>
     </servers>
@@ -647,6 +655,7 @@
     <MESSAGE value="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch" />
     <MESSAGE value="Cleaned up code" />
     <MESSAGE value="Schriftzug anstatt Logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Schriftzug anstatt Logo" />
+    <MESSAGE value="Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login" />
   </component>
 </project>

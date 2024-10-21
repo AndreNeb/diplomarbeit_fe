@@ -112,9 +112,16 @@ function Home() {
         <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
             <div className={`hamburger-menu-div ${darkMode ? 'dark' : 'light'}`}>
                 <button className="hamburger-button" onClick={toggleMenu}>
-                    <img src={darkMode ? hamburgerBlack : hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`} alt="HamburgerMenu"/>
+                    <img src={darkMode ? hamburgerBlack : hamburger} className={`icons ${darkMode ? 'dark' : 'light'}`}
+                         alt="HamburgerMenu"/>
                 </button>
-                <img src={apple} className="logo-in-hamburger-menu" alt="Logo"/>
+                <span style={{
+                    color: darkMode ? "white" : "black",
+                    fontSize: "26px",
+                    marginLeft: "30px",
+                    fontWeight: "600",
+                    marginRight: "40%"
+                }}>N A R K O</span>
             </div>
         </div>
 
