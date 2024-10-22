@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {DarkModeContext} from './DarkModeContext';
-import apple from "../pictures/other/NARKO_Logo.png";
 import regelnBlack from "../pictures/darkMode/rules_darkMode.png";
 import regeln from "../pictures/lightMode/regeln_lightMode.png";
 import documentBlack from "../pictures/darkMode/document_darkMode.png";

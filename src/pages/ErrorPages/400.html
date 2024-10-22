@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title"></title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="errorpages.css" rel="stylesheet">
+  <script>
+    async function loadLanguage(lang) {
+      try {
+        const response = await fetch(`${lang}.json`);
+        const data = await response.json();
+
+        document.title = data.title;
+        document.getElementById("suggestions").textContent = data.suggestions;
+        document.getElementById("home").textContent = data.home;
+        document.getElementById("contact").textContent = data.contact;
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    }
+
+    // Sprache ermitteln (z.B. aus der URL oder den Browser-Einstellungen)
+    const userLang = navigator.language || navigator.userLanguage; // Browser-Sprache
+    const lang = userLang.startsWith('en') ? 'en' : 'de'; // Standard: Deutsch, sonst Englisch
+    loadLanguage(lang);
+  </script>
+</head>
+<body>
+<span>N A R K O</span>
+<h1>400</h1>
+<p id="suggestions"></p><br><br>
+<a href="/" id="home"></a><br>
+<a href="/kontakt" id="contact"></a>
+</body>
+</html>
