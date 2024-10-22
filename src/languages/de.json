@@ -55,8 +55,9 @@
   "or": "ODER",
   "greater than": ">",
   "less than": "<",
-  "equal": "=",
+  "then": "DANN",
   "text": "TEXT",
+  "equal": "=",
   "input": "Was wollen Sie eingeben?"
 }
 
