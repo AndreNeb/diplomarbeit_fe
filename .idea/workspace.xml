@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/LoadingPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/loadingpage/loadingpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
       <list>
         <option value="package.json" />
         <option value="tsconfig.json" />
-        <option value="CSS File" />
         <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -191,14 +194,6 @@
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
-    </task>
-    <task id="LOCAL-00044" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728766547150</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1728766547150</updated>
     </task>
     <task id="LOCAL-00045" summary="Leftbar">
       <option name="closed" value="true" />
@@ -392,10 +387,8 @@
       <option name="project" value="LOCAL" />
       <updated>1729350436070</updated>
     </task>
-    <task id="DA_01-79" summary="Websitedesign ">
+    <task active="true" id="DA_01-79" summary="Websitedesign ">
       <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727606892122</created>
       <option name="issue" value="true" />
@@ -404,9 +397,10 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729530553437</updated>
-      <workItem from="1729350547448" duration="16484000" />
-      <workItem from="1729415576124" duration="1487000" />
+      <updated>1729542655721</updated>
+      <workItem from="1729542642817" duration="74000" />
+      <workItem from="1729576229571" duration="195000" />
+      <workItem from="1729577601290" duration="1460000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -524,8 +518,9 @@
       <option name="project" value="LOCAL" />
       <updated>1729514755806</updated>
     </task>
-    <task active="true" id="DA_01-86" summary="Kleinskrams">
+    <task id="DA_01-86" summary="Kleinskrams">
       <branch name="main" repository="$PROJECT_DIR$" />
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1728629823208</created>
       <option name="issue" value="true" />
@@ -534,8 +529,8 @@
       <option name="presentableId" value="DA_01-86" />
       <option name="project" value="DA_01" />
       <option name="type" value="FEATURE" />
-      <updated>1729532673884</updated>
-      <workItem from="1729514989980" duration="17058000" />
+      <updated>1729542641815</updated>
+      <workItem from="1729514989980" duration="17136000" />
     </task>
     <task id="LOCAL-00081" summary="Login">
       <option name="closed" value="true" />
@@ -601,7 +596,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729542470312</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
+      <option name="closed" value="true" />
+      <created>1729542576883</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1729542576883</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
