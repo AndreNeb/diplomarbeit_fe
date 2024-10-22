@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patientenakten - Time Machine Style</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #111, #333);
+            color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .search-bar {
+            position: fixed;
+            top: 20px;
+            z-index: 1000;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 40vw;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .timeline {
+            width: 60vw;
+            height: 170vh; /* Höhe angepasst */
+            padding-top: 20vh;
+            perspective: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .patient-record {
+            width: 100%;
+            height: 60vh; /* Höhere Akten */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            transform-origin: center;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateY(100px) scale(0.8);
+        }
+
+        .patient-record.visible {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+
+        /* Highlight für die Suchfunktion */
+        .highlight {
+            background-color: yellow;
+            color: black;
+            padding: 2px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Suchleiste -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Text in den Patientenakten suchen...">
+    </div>
+
+    <div class="timeline">
+        <div class="patient-record">Patientenakte von Max Mustermann im Jahr 2020: Fieber, Husten, Grippe.</div>
+        <div class="patient-record">Patientenakte von Anna Schmidt im Jahr 2019: Knochenbruch am rechten Bein.</div>
+        <div class="patient-record">Patientenakte von Peter Müller im Jahr 2018: Operation am Herzen erfolgreich.</div>
+        <div class="patient-record">Patientenakte von Maria Kaiser im Jahr 2017: Diagnose: Diabetes Typ 2.</div>
+        <div class="patient-record">Patientenakte von Frank Meier im Jahr 2016: Nachbehandlung nach Autounfall.</div>
+        <div class="patient-record">Patientenakte von Lara Schulz im Jahr 2015: Routineuntersuchung, alles in Ordnung.</div>
+        <div class="patient-record">Patientenakte von Tim Becker im Jahr 2014: Grippeimpfung durchgeführt.</div>
+        <div class="patient-record">Patientenakte von Julia Wagner im Jahr 2013: Beschwerden über Rückenschmerzen.</div>
+        <div class="patient-record">Patientenakte von Thomas Huber im Jahr 2012: Diagnose: Bluthochdruck.</div>
+        <div class="patient-record">Patientenakte von Lisa Fischer im Jahr 2011: Behandlung von Atemwegserkrankungen.</div>
+        <div class="patient-record">Patientenakte von Klaus Bauer im Jahr 2010: Kontrolluntersuchung nach Operation.</div>
+        <div class="patient-record">Patientenakte von Max Mustermann im Jahr 2020: Fieber, Husten, Grippe.</div>
+        <div class="patient-record">Patientenakte von Anna Schmidt im Jahr 2019: Knochenbruch am rechten Bein.</div>
+        <div class="patient-record">Patientenakte von Peter Müller im Jahr 2018: Operation am Herzen erfolgreich.</div>
+        <div class="patient-record">Patientenakte von Maria Kaiser im Jahr 2017: Diagnose: Diabetes Typ 2.</div>
+        <div class="patient-record">Patientenakte von Frank Meier im Jahr 2016: Nachbehandlung nach Autounfall.</div>
+        <div class="patient-record">Patientenakte von Lara Schulz im Jahr 2015: Routineuntersuchung, alles in Ordnung.</div>
+        <div class="patient-record">Patientenakte von Tim Becker im Jahr 2014: Grippeimpfung durchgeführt.</div>
+        <div class="patient-record">Patientenakte von Julia Wagner im Jahr 2013: Beschwerden über Rückenschmerzen.</div>
+        <div class="patient-record">Patientenakte von Thomas Huber im Jahr 2012: Diagnose: Bluthochdruck.</div>
+        <div class="patient-record">Patientenakte von Lisa Fischer im Jahr 2011: Behandlung von Atemwegserkrankungen.</div>
+        <div class="patient-record">Patientenakte von Klaus Bauer im Jahr 2010: Kontrolluntersuchung nach Operation.</div>
+        <div class="patient-record">Patientenakte von Max Mustermann im Jahr 2020: Fieber, Husten, Grippe.</div>
+        <div class="patient-record">Patientenakte von Anna Schmidt im Jahr 2019: Knochenbruch am rechten Bein.</div>
+        <div class="patient-record">Patientenakte von Peter Müller im Jahr 2018: Operation am Herzen erfolgreich.</div>
+        <div class="patient-record">Patientenakte von Maria Kaiser im Jahr 2017: Diagnose: Diabetes Typ 2.</div>
+        <div class="patient-record">Patientenakte von Frank Meier im Jahr 2016: Nachbehandlung nach Autounfall.</div>
+        <div class="patient-record">Patientenakte von Lara Schulz im Jahr 2015: Routineuntersuchung, alles in Ordnung.</div>
+        <div class="patient-record">Patientenakte von Tim Becker im Jahr 2014: Grippeimpfung durchgeführt.</div>
+        <div class="patient-record">Patientenakte von Julia Wagner im Jahr 2013: Beschwerden über Rückenschmerzen.</div>
+        <div class="patient-record">Patientenakte von Thomas Huber im Jahr 2012: Diagnose: Bluthochdruck.</div>
+        <div class="patient-record">Patientenakte von Lisa Fischer im Jahr 2011: Behandlung von Atemwegserkrankungen.</div>
+        <div class="patient-record">Patientenakte von Klaus Bauer im Jahr 2010: Kontrolluntersuchung nach Operation.</div>
+        <!-- Weitere Patientenakten -->
+    </div>
+</div>
+
+<script>
+    const records = document.querySelectorAll('.patient-record');
+    const searchInput = document.querySelector('.search-input');
+
+    function checkVisibility() {
+        records.forEach(record => {
+            const rect = record.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top >= 0 && rect.bottom <= windowHeight) {
+                record.classList.add('visible');
+            } else {
+                record.classList.remove('visible');
+            }
+        });
+    }
+
+    function highlightText(record, query) {
+        // Entferne vorheriges Highlight
+        record.innerHTML = record.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+        // Füge neues Highlight hinzu
+        const regex = new RegExp(`(${query})`, 'gi');
+        record.innerHTML = record.innerHTML.replace(regex, `<span class="highlight">$1</span>`);
+    }
+
+    function scrollToRecord(query) {
+        let foundRecord = null;
+
+        // Finde die entsprechende Akte nach Textsuche
+        records.forEach(record => {
+            const content = record.textContent.toLowerCase();
+            if (content.includes(query.toLowerCase())) {
+                foundRecord = record;
+                highlightText(record, query);
+            } else {
+                // Entferne das Highlight von nicht relevanten Einträgen
+                record.innerHTML = record.textContent;
+            }
+        });
+
+        // Wenn die Akte gefunden wurde, scroll zu ihr
+        if (foundRecord) {
+            foundRecord.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    // Event-Listener für die Suchleiste
+    searchInput.addEventListener('input', (event) => {
+        const query = event.target.value.trim();
+
+        if (query) {
+            scrollToRecord(query);
+        }
+    });
+
+    document.querySelector('.container').addEventListener('scroll', checkVisibility);
+
+    // Initial check to show visible records on page load
+    checkVisibility();
+</script>
+
+</body>
+</html>
