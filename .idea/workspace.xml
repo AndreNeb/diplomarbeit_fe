@@ -141,8 +141,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.404.html" />
       <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="JavaScript Debug.404.html" />
       <item itemvalue="npm.npm start" />
     </list>
     <recent_temporary>
