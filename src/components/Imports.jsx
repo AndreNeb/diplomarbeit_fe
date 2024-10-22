@@ -9,6 +9,11 @@ import '../stylesheets/general/general.css';
 import '../stylesheets/homepage-widgets/small-widgets.css';
 import '../stylesheets/homepage-widgets/big-widgets.css';
 import '../stylesheets/loginoutpage/loginout.css';
+import '../languages/de.json';
+import '../languages/en.json';
+import '../languages/es.json';
+import '../languages/fr.json';
+import '../languages/it.json';
 
 // React
 export { useContext, useState } from 'react';
@@ -37,7 +42,6 @@ export { default as deleteRule } from '../pictures/lightMode/delete_lightMode.pn
 export { default as deleteRuleBlack } from '../pictures/darkMode/delete_darkMode.png';
 export { default as ticklight } from '../pictures/darkMode/tick_darkMode.png';
 export { default as tickdark } from '../pictures/lightMode/tick_lightMode.png';
-export { default as apple } from '../pictures/other/NARKO_Logo.png';
 export { default as hamburger } from '../pictures/lightMode/hamburger-menu_lightMode.png';
 export { default as hamburgerBlack } from '../pictures/darkMode/hamburger-menu_darkMode.png';
 export { default as patienten } from "../pictures/lightMode/patients_lightMode.png";

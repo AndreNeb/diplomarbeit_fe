@@ -54,8 +54,8 @@
   "or": "OR",
   "greater than": ">",
   "less than": "<",
-  "equal": "=",
+  "then": "THEN",
   "text": "TEXT",
-
+  "equal": "=",
   "input": "What would you like to input?"
 }

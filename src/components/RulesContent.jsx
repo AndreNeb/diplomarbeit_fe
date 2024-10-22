@@ -18,7 +18,10 @@ function RulesContent() {
         stylesadd,
         divs,
         handleTextFieldClick,
-    } = ConstVariables(); // Verwende den Hook hier
+        inputValue,
+        handleInputChange,
+        test,
+    } = ConstVariables();
 
 
     return (
@@ -207,12 +210,13 @@ function RulesContent() {
                         <div className="button-section">
                             <button onClick={() => handleAddDiv(t('if'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('if')}</button>
+                            <button onClick={() => handleAddDiv(t('then'))}
+                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('then')}</button>
                             <button onClick={() => handleAddDiv(t('and'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('and')}</button>
                             <button onClick={() => handleAddDiv(t('or'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('or')}</button>
                             <button onClick={() => {
-                                handleAddDiv(t('text'));
                                 handleTextFieldClick(t('text'));
                             }}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('text')}</button>
@@ -220,8 +224,6 @@ function RulesContent() {
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('greater than')}</button>
                             <button onClick={() => handleAddDiv(t('less than'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('less than')}</button>
-                            <button onClick={() => handleAddDiv(t('equal'))}
-                                    className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('equal')}</button>
                         </div>
                     </div>
                 </div>)}
@@ -264,14 +266,20 @@ function RulesContent() {
                             {t('input')}
                         </div>
                         <div className="frame-input">
-                            <input className="input-text-field">
+                            <input className="input-text-field" type="text" value={inputValue}
+                                   onChange={handleInputChange}>
 
                             </input>
-                            <div className="OK-Button">
-                                <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={handlePlusClick}
+                            <div className="OK-Button" onClick={() => {
+                                test(inputValue);
+                                handlePlusClick();
+                            }}>
+                                <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={() => {
+                                    test(inputValue);
+                                    handlePlusClick();
+                                }}
                                      className={` ${darkMode ? 'dark' : 'light'} mode`}
                                      alt="OK Button"/>
-
                             </div>
                         </div>
                     </div>

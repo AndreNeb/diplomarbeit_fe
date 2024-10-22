@@ -2,11 +2,22 @@ import * as Imports from '../components/Imports';
 import {useContext, useState} from "react";
 
 export const ConstVariables = () => {
+    const {t} = Imports.useTranslation();
+    const {i18n} = Imports.useTranslation();
 
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+    };
 
     const [buttonTexts, setButtonTexts] = useState([]);
 
     const [text, setText] = useState("");
+    const [inputValue, setInputValue] = useState(t('text'));
+
+
+    const handleInputChange = (event) => {
+        setInputValue(event.target.value); // Input-Wert speichern
+    };
 
 
     const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
@@ -35,8 +46,8 @@ export const ConstVariables = () => {
 
     const handleTextFieldClick = () => {
         setCurrentDiv('TextField');
-
     };
+
     const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
     const handleAddDiv = (message) => {
@@ -44,6 +55,10 @@ export const ConstVariables = () => {
         setButtonTexts([...buttonTexts, `${message}`]);
     };
 
+    const test =(message)=>{
+        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+        setButtonTexts([...buttonTexts, `${message}`]);
+    }
     const {darkMode, toggleDarkMode} = useContext(Imports.DarkModeContext);
 
     const styles = {
@@ -64,12 +79,7 @@ export const ConstVariables = () => {
     };
 
 
-    const {t} = Imports.useTranslation();
-    const {i18n} = Imports.useTranslation();
 
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    };
 
     const [btnText, setBtnText] = Imports.useState(t('log-text'));
     const [isActive, setIsActive] = Imports.useState(false);
@@ -132,6 +142,9 @@ export const ConstVariables = () => {
         handleHamburgerRulesBuildClick,
         handleTextFieldClick,
         handleAddDiv,
+        handleInputChange,
+        test,
+        inputValue,
         buttonTexts,
         text,
         currentDiv,
