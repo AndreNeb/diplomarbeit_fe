@@ -14,7 +14,7 @@ body.loadingpage.dark {
     background-color: black;
 }
 .loading-text {
-    font-size: 48px;
+    font-size: 60px;
     white-space: nowrap;
     font-family: "Times New Roman", Times, serif;
     animation: slide-in 0.85s forwards;

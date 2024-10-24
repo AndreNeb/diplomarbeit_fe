@@ -12,7 +12,7 @@ const LoadingPage = () => {
     return (
         <body className={`loadingpage ${darkMode ? 'dark' : 'light'}`}>
         <div>
-            <div className={`loading-text ${darkMode ? 'dark' : 'light'}`}>NARKO</div>
+            <div className={`loading-text ${darkMode ? 'dark' : 'light'}`}>N A R K O</div>
         </div>
         </body>
     );
