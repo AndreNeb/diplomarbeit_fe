@@ -15,7 +15,7 @@ export const ConstVariables = () => {
     const [inputValue, setInputValue] = useState("");
     const [currentDiv, setCurrentDiv] = useState('MainPage');
 
-    const [currentLoginStatus , setcurrentLoginStatus] = useState('Start'); // initial div1 sichtbar
+    const [currentLoginStatus, setcurrentLoginStatus] = useState('Start'); // initial div1 sichtbar
 
     const handleLogin = () => {
         setcurrentLoginStatus('Login');
@@ -57,15 +57,40 @@ export const ConstVariables = () => {
 
     const [buttons, setButtons] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
+
     const handleAddDiv = (message) => {
+
         setButtons([...buttons, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
         setButtonTexts([...buttonTexts, `${message}`]);
     };
 
-    const textfieldinput =(message)=>{
-        setButtons([...buttons, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
-        setButtonTexts([...buttonTexts, `${message}`]);
+    const textfieldinput = (message) => {
+        setInputValue('');
+        const newButton = {
+            action: () => {
+                setCurrentDiv("ChangeContent")
+            },
+            id: "textfield",
+            style: {cursor: 'pointer'}
+        }
+            setButtons([...buttons, newButton]);// Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+            setButtonTexts([...buttonTexts, `${message}`]);
     }
+
+    const changeContent=(message) =>{
+        setInputValue('');
+        // eslint-disable-next-line array-callback-return
+        const updatedButtonTexts = buttonTexts.map((text, index) => {
+            // Überprüfe, ob die ID des Buttons mit der übergebenen ID übereinstimmt
+            if (buttons[index]?.id === "textfield") {
+                return message; // Neuer Name für den Button
+            }
+            return text;
+        });
+
+        setButtonTexts(updatedButtonTexts);
+    }
+
     const {darkMode, toggleDarkMode} = useContext(Imports.DarkModeContext);
 
     const styles = {
@@ -84,8 +109,6 @@ export const ConstVariables = () => {
             alignItems: "center", alignContent: "flex-start", boxSizing: "border-box",
         },
     };
-
-
 
 
     const [btnText, setBtnText] = Imports.useState(t('log-text'));
@@ -163,7 +186,7 @@ export const ConstVariables = () => {
         setInputValue,
         handleLogin,
         handleRegister,
-        setcurrentLoginStatus
+        setcurrentLoginStatus, changeContent,
     };
 
 };

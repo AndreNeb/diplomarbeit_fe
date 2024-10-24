@@ -22,6 +22,7 @@ function RulesContent() {
         handleInputChange,
         textfieldinput,
         setInputValue,
+        changeContent,
     } = ConstVariables();
 
 
@@ -153,7 +154,7 @@ function RulesContent() {
 
             </div>)}
 
-            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField') && (
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div
                     className={`name-section ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'name-section-big' : 'name-section'}`}
                     id="shownSidebar3">
@@ -161,13 +162,15 @@ function RulesContent() {
                         className={`button-middle ${darkMode ? 'dark' : 'light'} mode`}>{text}</button>
                 </div>)}
 
-            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField') && (
+            {(currentDiv === 'BuildPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div
                     className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}
                     style={stylesadd.add}>
-                    {buttons.map((div, index) => (<div key={index} className="grid-different-button">
-                            <button key={buttons.id}
-                                    id={buttons.id}
+                    {buttons.map((button, index) => (
+                        <div key={index} className="grid-different-button">
+                            <button key={button.id}
+                                    onClick={button.action}
+                                    style={button.style}
                                     className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
                             <div className="arrow-right">
                                 <img src={darkMode ? Imports.arrowrightlight : Imports.arrowrightdark}
@@ -180,7 +183,8 @@ function RulesContent() {
                     ))}
                 </div>)}
 
-            {(currentDiv === 'BuildPage' || currentDiv === 'TextField') && (
+
+            {(currentDiv === 'BuildPage' || currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
                     <div className={`left-bar-shown ${darkMode ? 'dark' : 'light'}`} id="shownSidebar2">
                         <div className="rules-section">
@@ -218,7 +222,9 @@ function RulesContent() {
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('and')}</button>
                             <button onClick={() => handleAddDiv(t('or'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('or')}</button>
-                            <button onClick={() => {handleTextFieldClick();}}
+                            <button onClick={() => {
+                                handleTextFieldClick();
+                            }}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('text')}</button>
                             <button onClick={() => handleAddDiv(t('greater than'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('greater than')}</button>
@@ -253,13 +259,13 @@ function RulesContent() {
                 </div>
 
             )}
-            {currentDiv === 'TextField' && (
+            {(currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div className={`text-field-frame ${darkMode ? 'dark' : 'light'} `}>
 
                 </div>
 
             )}
-            {currentDiv === 'TextField' && (
+            {(currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div className="input-frame">
                     <div className="information-text-field">
                         <div className="header-text-field">
@@ -276,7 +282,33 @@ function RulesContent() {
                             }}>
                                 <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={() => {
                                     textfieldinput(inputValue);
-                                    setInputValue('')
+                                    handlePlusClick();
+                                }}
+                                     className={` ${darkMode ? 'dark' : 'light'} mode`}
+                                     alt="OK Button"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            )}
+            {currentDiv === 'ChangeContent' && (
+                <div className="input-frame">
+                    <div className="information-text-field">
+                        <div className="header-text-field">
+                            {t('input')}
+                        </div>
+                        <div className="frame-input">
+                            <input className="input-text-field" type="text" value={inputValue}
+                                   onChange={handleInputChange}>
+
+                            </input>
+                            <div className="OK-Button" onClick={() => {
+                                changeContent(inputValue);
+                                handlePlusClick();
+                            }}>
+                                <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={() => {
+                                    changeContent(inputValue);
                                     handlePlusClick();
                                 }}
                                      className={` ${darkMode ? 'dark' : 'light'} mode`}

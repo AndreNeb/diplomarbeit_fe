@@ -1,4 +1,3 @@
-
 .frame-add {
     background-color: transparent;
     z-index: 200;
@@ -7,15 +6,11 @@
     bottom: 15px;
     left: 313px;
     right: 30px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 50px;
-
-
     overflow-y: auto;
-
     padding: 10px;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
@@ -28,21 +23,17 @@
     bottom: 15px;
     left: 113px;
     right: 30px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 50px;
-
-
     overflow-y: auto;
-
     padding: 10px;
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
 }
 
-.text-field-frame{
+.text-field-frame {
     background-color: lightgray;
     z-index: 200;
     position: fixed;
@@ -50,17 +41,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top:56px;
-    bottom:0;
+    top: 56px;
+    bottom: 0;
     width: 100%;
     opacity: 0.7;
     overflow-y: hidden;
-
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
 }
 
-.input-frame{
+.input-frame {
     background-color: transparent;
     z-index: 200;
     position: fixed;
@@ -69,61 +59,51 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top:56px;
-    bottom:0;
+    top: 56px;
+    bottom: 0;
     width: 100%;
     overflow-y: hidden;
-
     transition: opacity 3s ease-in-out, transform 3s ease-in-out;
     backface-visibility: hidden;
 }
 
-
-
-.information-text-field{
+.information-text-field {
     display: flex;
     flex-direction: column;
-    position:relative;
+    position: relative;
     height: 50%;
     width: 70%;
-
     border-radius: 15px;
     border-width: 1px;
     border-style: solid;
     border-color: lightgray;
-
     background-color: rgba(250, 246, 240, 255);
-
     min-height: 250px;
     min-width: 450px;
-
 }
 
-.header-text-field{
+.header-text-field {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 150px;
     font-size: 28px;
-
     margin: 20px;
     padding: 10px;
     border-radius: 15px;
     border-width: 1px;
     border-style: solid;
     border-color: lightgray;
-
     background-color: white;
 }
 
-.input-text-field{
+.input-text-field {
     height: 100%;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     border-radius: 15px;
     border-width: 1px;
     border-style: solid;
@@ -139,18 +119,17 @@
     transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease;
 }
 
-.frame-input{
+.frame-input {
     display: flex;
     flex-direction: row;
-    height:100%;
-    margin:20px;
-
+    height: 100%;
+    margin: 20px;
 }
 
-.OK-Button{
+.OK-Button {
     height: 100%;
-    width:100px;
-    padding:25px;
+    width: 100px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +137,7 @@
     border-radius: 15px;
     border-width: 1px;
     border-color: lightgray;
-    right:20px;
+    right: 20px;
     border-style: solid;
     font-weight: 500;
     font-size: 20px;
@@ -167,6 +146,7 @@
     cursor: pointer;
     transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease;
 }
+
 .grid-different-button {
     display: flex;
     flex-direction: row;
@@ -176,15 +156,12 @@
 .query-button {
     font-size: 26px;
     border-radius: 15px;
-
     transition-duration: 0.15s;
-
     width: 214px;
     height: 110px;
     overflow-wrap: break-word;
     overflow-y: scroll;
-   padding:20px;
-
+    padding: 20px;
     transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease;
 }
 
@@ -221,8 +198,4 @@
 
 .arrow-right-size {
     height: 60px;
-}
-
-.special-style{
-    background-color: red;
 }
