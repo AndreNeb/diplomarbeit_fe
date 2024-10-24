@@ -116,7 +116,7 @@
 
 .contact-inputs {
     width: 80%;
-    height: 10%;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -8,7 +8,7 @@ import DocumentPage from "./DocumentPage";
 import Home from "./Home";
 import StartPage from "./StartPage";
 import { DarkModeProvider } from "../components/DarkModeContext";
-import LoadingPage from './LoadingPage'; // Importiere die Ladekomponente
+import LoadingPage from './LoadingPage';
 
 const AppRoutes = () => {
     const location = useLocation(); // useLocation kann hier verwendet werden, da es innerhalb des Routers ist

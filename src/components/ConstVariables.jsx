@@ -187,8 +187,11 @@ export const ConstVariables = () => {
         stylesadd,
         setInputValue,
         handleLogin,
+        handleStart,
         handleRegister,
-        setcurrentLoginStatus, changeContent,
+        setcurrentLoginStatus,
+        changeContent,
+        currentLoginStatus,
         setCurrentDiv,
         setSelectedButtonId,
         selectedButtonId

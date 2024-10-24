@@ -98,6 +98,7 @@
     border-radius: 15px;
 
     width: 300px;
+    margin: 20px;
     height: 55px;
 
     cursor: pointer;
@@ -154,9 +155,9 @@
 
 .registertext {
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 45px;
 }
+
 .registertext.light {
     color: black;
 }
@@ -169,39 +170,108 @@
 .registertext.dark {
     color: white;
 }
+
 .registertext.dark:hover {
     transform: scale(1.01, 1.01);
     color: #007bff;
 }
 
 form {
-    background-color: transparent;
-
+    display: flex; /* Flexbox verwenden */
+    flex-direction: column; /* Anordnung der Kinder-Elemente untereinander */
+    align-items: center; /* Zentriert alle Kinder-Elemente horizontal */
+    justify-content: center; /* Zentriert alle Kinder-Elemente vertikal */
     width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;  /* Damit die Form-Elemente untereinander angeordnet sind */
-    align-items: center;     /* Zentriert die Form-Elemente horizontal */
-    justify-content: center; /* Zentriert die Form-Elemente vertikal */
-    padding: 20px;  /* Optional: fügt Innenabstand hinzu */
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
 }
+
 
 form > * {
-    display: flex;
-    width: 100%;  /* Optional, damit die Elemente die volle Breite einnehmen */
-    margin-top: 20px;  /* Fügt Abstand zwischen den Elementen hinzu */
-    align-items: center;
-    justify-content: center;
-    background-color: lightgrey;
-    text-align: center;  /* Zentriert den Text in den Eingabefeldern */
+    width: 100%; /* Nutze die volle Breite des Formulars */
+
+    text-align: center; /* Zentriere Text innerhalb der Elemente */
+    display: block; /* Sicherstelle, dass die Elemente Block-Level sind und nicht inline */
 }
+
 
 input, textarea, select {
-    width: 80%;  /* Breite der Eingabefelder (anpassbar) */
-    padding: 10px;  /* Optional: fügt etwas Innenabstand hinzu */
-    text-align: center;  /* Zentriert den Text in den Eingabefeldern */
+    max-width: 500px; /* Maximalbreite für Eingabefelder */
+    width: 800px;
+    padding: 10px;
+    text-align: left;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.registerbutton {
+    font-size: 26px;
+    border-radius: 15px;
+
+    width: 280px;
+    margin: 1px;
+    height: 80px;
+
+    cursor: pointer;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.15s ease;
+}
+
+
+.registerbutton.light {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+}
+
+.registerbutton.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.registerbutton.dark {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.registerbutton.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
+}
+
+
+.registerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 37px;
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+
+    width: 80%;
+    height: 20%;
+
+    border-radius: 20px;
+
+    margin-bottom: 7%;
+    margin-top: 2%;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.3s ease;
+}
+
+.registerText.light {
+    border: 1px solid rgb(204, 202, 202);
+    color: black;
+    background-color: white;
+}
+
+.registerText.dark {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}

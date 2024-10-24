@@ -59,6 +59,5 @@
 
   "register": "Registrati",
   "login": "Accedi",
-  "noaccount": "Non hai un account?",
-  "alreadyhaveanaccount": "Hai già un account?"
+  "back": "Indietro"
 }

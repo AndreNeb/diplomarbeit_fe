@@ -54,6 +54,5 @@
   "input": "What would you like to input?",
   "register": "Register",
   "login": "Login",
-  "noaccount": "Don't have an account?",
-  "alreadyhaveanaccount": "Already have an account?"
+  "back": "Back"
 }

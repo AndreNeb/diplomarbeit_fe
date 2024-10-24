@@ -5,6 +5,7 @@ import {useState} from "react";
 import axios from "axios";
 
 function StartPage() {
+
     const {
 
         t,
@@ -26,11 +27,11 @@ function StartPage() {
     const handleReg = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/register', {user, email, password});
+            const response = await axios.post('http://localhost:3000/', {user, email, password});
             const token = response.data.token; // Assuming the server sends back a token
             localStorage.setItem('token', token); // Store token
             alert(response.data.message);
-            navigate('/startpage'); // Redirect to startpage after registration
+            navigate('/Home'); // Redirect to startpage after registration
         } catch (error) {
             if (error.response && error.response.data) {
                 setErrorMessage(error.response.data.message);
@@ -42,6 +43,8 @@ function StartPage() {
 
 
     return (
+        <>
+
         <body className={`StartPage ${darkMode ? 'dark' : 'light'}`}>
 
 
@@ -69,14 +72,14 @@ function StartPage() {
                 </Link>
 
                 <span onClick={handleStart}
-                      className={`noAccountText ${darkMode ? 'dark' : 'light'}`}>{t('noaccount')}</span>
+                      className={`noAccountText ${darkMode ? 'dark' : 'light'}`}>{t('back')}</span>
             </div>
         )}
 
         {currentLoginStatus === 'Register' && (
             <div className={`outer-div ${darkMode ? 'dark' : 'light'}`}>
                 <form onSubmit={handleRegister}>
-                    <span className={`otherText ${darkMode ? 'dark' : 'light'}`}>{t('register')}</span>
+                    <span className={`registerText ${darkMode ? 'dark' : 'light'}`}>{t('register')}</span>
 
                     <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
                            placeholder={t('username')} value={user} onChange={(e) => setUsername(e.target.value)}
@@ -89,18 +92,20 @@ function StartPage() {
                            required></input>
 
                     <button type="submit"
-                            className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
+                            className={`registerbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
                     {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
 
 
                     <span onClick={handleStart}
-                          className={`registertext ${darkMode ? 'dark' : 'light'}`}>{t('alreadyhaveanaccount')}</span>
+                          className={`registertext ${darkMode ? 'dark' : 'light'}`}>{t('back')}</span>
 
                 </form>
             </div>
         )}
 
         </body>
+
+        </>
     );
 }
 
