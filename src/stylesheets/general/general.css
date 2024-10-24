@@ -47,6 +47,21 @@ body.rules.dark {
     cursor: default;
 }
 
+body.StartPage {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.StartPage.light {
+    background-color: rgba(250, 246, 240, 255);
+}
+body.StartPage.dark {
+    background-color: black;
+}
 
 body.support {
     display: flex;

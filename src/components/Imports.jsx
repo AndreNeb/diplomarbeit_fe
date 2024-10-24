@@ -8,7 +8,7 @@ import '../stylesheets/supportpage/support.css';
 import '../stylesheets/general/general.css';
 import '../stylesheets/homepage-widgets/small-widgets.css';
 import '../stylesheets/homepage-widgets/big-widgets.css';
-import '../stylesheets/loginoutpage/loginout.css';
+import "../stylesheets/login_outandregister/start.css"
 import '../languages/de.json';
 import '../languages/en.json';
 import '../languages/es.json';
@@ -52,6 +52,8 @@ export { default as spritze } from "../pictures/lightMode/syringe_lightMode.png"
 export { default as spritzeBlack } from "../pictures/darkMode/syringe_darkMode.png";
 export { default as wartezimmer } from "../pictures/lightMode/waitingroom_lightMode.png";
 export { default as wartezimmerBlack } from "../pictures/darkMode/waitingroom_darkMode.png";
+
+
 
 
 

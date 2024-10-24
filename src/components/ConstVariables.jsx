@@ -25,6 +25,10 @@ export const ConstVariables = () => {
         setcurrentLoginStatus('Register');
     }
 
+    const handleStart = () => {
+        setcurrentLoginStatus('Start');
+    }
+
     const handleInputChange = (event) => {
         setInputValue(event.target.value); // Input-Wert speichern
     };
@@ -187,6 +191,8 @@ export const ConstVariables = () => {
         handleLogin,
         handleRegister,
         setcurrentLoginStatus, changeContent,
+        handleStart,
+        currentLoginStatus
     };
 
 };

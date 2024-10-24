@@ -5,7 +5,6 @@
   "info": "Information",
   "support": "Support",
   "language": "Change Language",
-  "login": "Log In",
   "logout": "Logout",
   "home": "Home",
   "patient": "Patient",
@@ -15,7 +14,6 @@
   "anesthesia": "Anesthesia",
   "waiting-room": "Waiting Room",
   "waiting-room-usage": "Room Usage",
-
   "child": "Child",
   "lung": "Lung",
   "heart": "Heart",
@@ -28,7 +26,6 @@
   "brain": "Brain",
   "specialized": "Specialized",
   "other": "Other",
-
   "support-text": "Any questions?",
   "name": "Name",
   "email": "E - Mail",
@@ -36,19 +33,16 @@
   "submit": "Submit",
   "thanks": "Thanks",
   "error": "An error has occurred",
-
   "logo": "Logo",
   "documents": "Documents",
   "log-text": "Log in",
   "username": "Username",
   "password": "Password",
-
   "NameCategories": "Category",
   "RuleName": "Name",
   "RuleNumber": "Number",
   "Author": "Author",
   "Date": "Date",
-
   "if": "IF",
   "and": "AND",
   "or": "OR",
@@ -57,5 +51,9 @@
   "then": "THEN",
   "text": "TEXT",
   "equal": "=",
-  "input": "What would you like to input?"
+  "input": "What would you like to input?",
+  "register": "Register",
+  "login": "Login",
+  "noaccount": "Don't have an account?",
+  "alreadyhaveanaccount": "Already have an account?"
 }
