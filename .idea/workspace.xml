@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Languages eingeführt">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Startpage mit Form implementiert und internationalisiert. Searchbar erneuert.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backup" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConstVariables.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConstVariables.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/i18n.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/i18n.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/StartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StartPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/loginoutandregister/start.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/loginoutandregister/start.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/Rules-overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/leftbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/rules/leftbar/leftbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,14 +217,6 @@
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
     </task>
-    <task id="LOCAL-00053" summary="Leftbar">
-      <option name="closed" value="true" />
-      <created>1729005638441</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1729005638441</updated>
-    </task>
     <task id="LOCAL-00054" summary="Leftbar">
       <option name="closed" value="true" />
       <created>1729018687634</created>
@@ -359,7 +349,7 @@
       <option name="presentableId" value="DA_01-79" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729793523062</updated>
+      <updated>1729801081970</updated>
       <workItem from="1729542642817" duration="74000" />
       <workItem from="1729576229571" duration="195000" />
       <workItem from="1729577601290" duration="4721000" />
@@ -369,7 +359,7 @@
       <workItem from="1729628382487" duration="3148000" />
       <workItem from="1729665763276" duration="2040000" />
       <workItem from="1729766189380" duration="1233000" />
-      <workItem from="1729767427840" duration="21571000" />
+      <workItem from="1729767427840" duration="25273000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -637,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729795025388</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Startpage mit Form implementiert und internationalisiert. Searchbar erneuert.">
+      <option name="closed" value="true" />
+      <created>1729798565200</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1729798565200</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -664,7 +662,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Leftbar" />
     <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Umstrukturierung" />
@@ -689,6 +686,7 @@
     <MESSAGE value="Start page" />
     <MESSAGE value="Start page weitergemacht, link im Hidden Header dem Logo hinzugefügt. StartPages internationalisiert und dark mode gerecht gemacht" />
     <MESSAGE value="Languages eingeführt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Languages eingeführt" />
+    <MESSAGE value="Startpage mit Form implementiert und internationalisiert. Searchbar erneuert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Startpage mit Form implementiert und internationalisiert. Searchbar erneuert." />
   </component>
 </project>

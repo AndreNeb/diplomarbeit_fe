@@ -3,7 +3,7 @@
     min-width: 550px;
     width: 55%;
     max-width: 700px;
-    min-height: 480px;
+    min-height: 500px;
     height: 70%;
 
     display: flex;
@@ -131,7 +131,6 @@
 
 .noAccountText {
     cursor: pointer;
-    margin-top: 15px;
 }
 
 .noAccountText.light {
@@ -153,59 +152,29 @@
     color: #007bff;
 }
 
-.registertext {
-    cursor: pointer;
-    margin-top: 45px;
-}
 
-.registertext.light {
-    color: black;
-}
 
-.registertext.light:hover {
-    transform: scale(1.01, 1.01);
-    color: #007bff;
-}
 
-.registertext.dark {
-    color: white;
-}
 
-.registertext.dark:hover {
-    transform: scale(1.01, 1.01);
-    color: #007bff;
-}
+
+
+
 
 form {
     display: flex; /* Flexbox verwenden */
     flex-direction: column; /* Anordnung der Kinder-Elemente untereinander */
     align-items: center; /* Zentriert alle Kinder-Elemente horizontal */
-    justify-content: center; /* Zentriert alle Kinder-Elemente vertikal */
+    justify-content: space-evenly; /* Zentriert alle Kinder-Elemente vertikal */
     width: 100%;
-    height: auto;
-    padding: 20px;
+    height: 100%;
+    min-width: 550px;
+    max-width: 700px;
+    min-height: 480px;
+    padding: 5px;
     background-color: transparent;
 }
 
 
-form > * {
-    width: 100%; /* Nutze die volle Breite des Formulars */
-
-    text-align: center; /* Zentriere Text innerhalb der Elemente */
-    display: block; /* Sicherstelle, dass die Elemente Block-Level sind und nicht inline */
-}
-
-
-input, textarea, select {
-    max-width: 500px; /* Maximalbreite für Eingabefelder */
-    width: 800px;
-    padding: 10px;
-    text-align: left;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 .registerbutton {
     font-size: 26px;
@@ -254,7 +223,7 @@ input, textarea, select {
     font-weight: 500;
 
     width: 80%;
-    height: 20%;
+    height: 13%;
 
     border-radius: 20px;
 

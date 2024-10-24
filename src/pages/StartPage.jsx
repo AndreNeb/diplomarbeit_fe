@@ -79,7 +79,7 @@ function StartPage() {
         {currentLoginStatus === 'Register' && (
             <div className={`outer-div ${darkMode ? 'dark' : 'light'}`}>
                 <form onSubmit={handleRegister}>
-                    <span className={`registerText ${darkMode ? 'dark' : 'light'}`}>{t('register')}</span>
+                    <span className={`otherText ${darkMode ? 'dark' : 'light'}`}>{t('register')}</span>
 
                     <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
                            placeholder={t('username')} value={user} onChange={(e) => setUsername(e.target.value)}
@@ -92,12 +92,12 @@ function StartPage() {
                            required></input>
 
                     <button type="submit"
-                            className={`registerbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
+                            className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
                     {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
 
 
                     <span onClick={handleStart}
-                          className={`registertext ${darkMode ? 'dark' : 'light'}`}>{t('back')}</span>
+                          className={`noAccountText ${darkMode ? 'dark' : 'light'}`}>{t('back')}</span>
 
                 </form>
             </div>

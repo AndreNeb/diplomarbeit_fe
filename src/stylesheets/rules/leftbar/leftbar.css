@@ -90,7 +90,6 @@
     width: 275px;
     height: 100%;
     transition: background-color 1.1s ease;
-
 }
 
 .left-bar-backdiv.light {
@@ -180,7 +179,7 @@
     border-radius: 15px;
     outline: none;
     overflow: hidden;
-    height: 30px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

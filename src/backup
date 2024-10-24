@@ -1,107 +1,93 @@
-import {ConstVariables} from '../components/ConstVariables';
-import * as Imports from '../components/Imports';
-import {Link, useNavigate} from "react-router-dom";
-import {useState} from "react";
-import axios from "axios";
-
-function StartPage() {
-    const {
-
-        t,
-        currentLoginStatus,
-        handleRegister,
-        handleLogin,
-        handleStart,
-        darkMode
-
-    } = ConstVariables();
-
-
-    const [user, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-    const navigate = useNavigate();
-
-    const handleReg = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await axios.post('http://localhost:5000/register', {user, email, password});
-            const token = response.data.token; // Assuming the server sends back a token
-            localStorage.setItem('token', token); // Store token
-            alert(response.data.message);
-            navigate('/startpage'); // Redirect to startpage after registration
-        } catch (error) {
-            if (error.response && error.response.data) {
-                setErrorMessage(error.response.data.message);
-            } else {
-                setErrorMessage('An unknown error occurred');
-            }
-        }
-    };
-
-
-    return (
-        <body className={`StartPage ${darkMode ? 'dark' : 'light'}`}>
-
-
-        {currentLoginStatus === 'Start' && (
-            <div className={`outer-div ${darkMode ? 'dark' : 'light'}`}>
-                <span className={`logoText ${darkMode ? 'dark' : 'light'}`}>N A R K O</span>
-
-                <button onClick={handleLogin}
-                        className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('login')}</button>
-                <button onClick={handleRegister}
-                        className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
-            </div>)}
-
-        {currentLoginStatus === 'Login' && (
-            <div className={`outer-div ${darkMode ? 'dark' : 'light'}`}>
-                <span className={`otherText ${darkMode ? 'dark' : 'light'}`}>{t('login')}</span>
-
-                <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
-                       placeholder={t('username')} required></input>
-                <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
-                       placeholder={t('password')} required></input>
-
-                <Link to="/Home">
-                    <button className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('login')}</button>
-                </Link>
-
-                <span onClick={handleStart}
-                      className={`noAccountText ${darkMode ? 'dark' : 'light'}`}>{t('noaccount')}</span>
-            </div>
-        )}
-
-        {currentLoginStatus === 'Register' && (
-            <div className={`outer-div ${darkMode ? 'dark' : 'light'}`}>
-                <form onSubmit={handleRegister}>
-                    <span className={`otherText ${darkMode ? 'dark' : 'light'}`}>{t('register')}</span>
-
-                    <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
-                           placeholder={t('username')} value={user} onChange={(e) => setUsername(e.target.value)}
-                           required></input>
-                    <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
-                           placeholder={t('email')} value={email} onChange={(e) => setEmail(e.target.value)}
-                           required></input>
-                    <input type="text" name="name" className={`contact-inputs ${darkMode ? 'dark' : 'light'}`}
-                           placeholder={t('password')} value={password} onChange={(e) => setPassword(e.target.value)}
-                           required></input>
-
-                    <button type="submit"
-                            className={`registerandloginbutton ${darkMode ? 'dark' : 'light'}`}>{t('register')}</button>
-                    {errorMessage && <span style={{color: 'red'}}>{errorMessage}</span>}
-
-
-                    <span onClick={handleStart}
-                          className={`registertext ${darkMode ? 'dark' : 'light'}`}>{t('alreadyhaveanaccount')}</span>
-
-                </form>
-            </div>
-        )}
-
-        </body>
-    );
+form {
+    display: flex; /* Flexbox verwenden */
+    flex-direction: column; /* Anordnung der Kinder-Elemente untereinander */
+    align-items: center; /* Zentriert alle Kinder-Elemente horizontal */
+    justify-content: center; /* Zentriert alle Kinder-Elemente vertikal */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
 }
 
-export default StartPage;
+
+form > * {
+    width: 100%; /* Nutze die volle Breite des Formulars */
+
+    text-align: center; /* Zentriere Text innerhalb der Elemente */
+    display: block; /* Sicherstelle, dass die Elemente Block-Level sind und nicht inline */
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.registerbutton {
+    font-size: 26px;
+    border-radius: 15px;
+
+    width: 280px;
+    margin: 1px;
+    height: 80px;
+
+    cursor: pointer;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.15s ease;
+}
+
+
+.registerbutton.light {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+}
+
+.registerbutton.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.registerbutton.dark {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.registerbutton.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
+}
+
+
+.registerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 37px;
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+
+    width: 80%;
+    height: 20%;
+
+    border-radius: 20px;
+
+    margin-bottom: 7%;
+    margin-top: 2%;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.3s ease;
+}
+
+.registerText.light {
+    border: 1px solid rgb(204, 202, 202);
+    color: black;
+    background-color: white;
+}
+
+.registerText.dark {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
