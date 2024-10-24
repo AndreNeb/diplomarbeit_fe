@@ -16,11 +16,12 @@ function RulesContent() {
         buttonTexts,
         text,
         stylesadd,
-        divs,
+        buttons,
         handleTextFieldClick,
         inputValue,
         handleInputChange,
-        test,
+        textfieldinput,
+        setInputValue,
     } = ConstVariables();
 
 
@@ -164,9 +165,10 @@ function RulesContent() {
                 <div
                     className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}
                     style={stylesadd.add}>
-                    {divs.map((div, index) => (<div key={index} className="grid-different-button">
-                            <button
-                                className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
+                    {buttons.map((div, index) => (<div key={index} className="grid-different-button">
+                            <button key={buttons.id}
+                                    id={buttons.id}
+                                    className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
                             <div className="arrow-right">
                                 <img src={darkMode ? Imports.arrowrightlight : Imports.arrowrightdark}
                                      className="arrow-right-size"
@@ -216,9 +218,7 @@ function RulesContent() {
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('and')}</button>
                             <button onClick={() => handleAddDiv(t('or'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('or')}</button>
-                            <button onClick={() => {
-                                handleTextFieldClick(t('text'));
-                            }}
+                            <button onClick={() => {handleTextFieldClick();}}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('text')}</button>
                             <button onClick={() => handleAddDiv(t('greater than'))}
                                     className={`button-general-leftbar-add ${darkMode ? 'dark' : 'light'}`}>{t('greater than')}</button>
@@ -271,11 +271,12 @@ function RulesContent() {
 
                             </input>
                             <div className="OK-Button" onClick={() => {
-                                test(inputValue);
+                                textfieldinput(inputValue);
                                 handlePlusClick();
                             }}>
                                 <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={() => {
-                                    test(inputValue);
+                                    textfieldinput(inputValue);
+                                    setInputValue('')
                                     handlePlusClick();
                                 }}
                                      className={` ${darkMode ? 'dark' : 'light'} mode`}

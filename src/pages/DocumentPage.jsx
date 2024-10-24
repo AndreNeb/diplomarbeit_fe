@@ -1,6 +1,6 @@
 import * as Imports from '../components/Imports';
 import HiddenHeader from "../components/HiddenHeader";
-import { ConstVariables } from '../components/ConstVariables';
+import {ConstVariables} from '../components/ConstVariables';
 
 function DocumentPage() {
     {/*hier können dann die zu importierenden Const importiert werden*/}
