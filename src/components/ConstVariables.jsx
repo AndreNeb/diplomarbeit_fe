@@ -1,5 +1,5 @@
 import * as Imports from '../components/Imports';
-import {useContext, useEffect, useState} from "react";
+import {useContext, useState} from "react";
 
 export const ConstVariables = () => {
     const {t} = Imports.useTranslation();
