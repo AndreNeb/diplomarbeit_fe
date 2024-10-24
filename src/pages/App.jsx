@@ -7,6 +7,7 @@ import InfoPage from "./InfoPage";
 import DocumentPage from "./DocumentPage";
 import LogInOutPage from "./LogInOutPage";
 import Home from "./Home";
+import StartPage from "./StartPage";
 import { DarkModeProvider } from "../components/DarkModeContext";
 import LoadingPage from './LoadingPage'; // Importiere die Ladekomponente
 
@@ -30,7 +31,8 @@ const AppRoutes = () => {
                 <LoadingPage />
             ) : (
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<StartPage />}/>
+                    <Route path="/Home" element={<Home />} />
                     <Route path="/rulesPage" element={<RulesPage />} />
                     <Route path="/documentPage" element={<DocumentPage />} />
                     <Route path="/infoPage" element={<InfoPage />} />

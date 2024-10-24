@@ -56,5 +56,8 @@
   "greater than": ">",
   "less than": "<",
   "equal": "=",
-  "text": "TESTO"
+  "text": "TESTO",
+
+  "register": "Registrati",
+  "login": "Accedi"
 }

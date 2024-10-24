@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Patientenhistorie HTML">
+      <change afterPath="$PROJECT_DIR$/src/pages/StartPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/login_outandregister/start.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/try.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/try.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Imports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/languages/it.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/it.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +27,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JSX File" />
-        <option value="CSS File" />
         <option value="tsconfig.json" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -211,14 +221,6 @@
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
     </task>
-    <task id="LOCAL-00048" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728831417358</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1728831417358</updated>
-    </task>
     <task id="LOCAL-00049" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728832981791</created>
@@ -398,7 +400,9 @@
       <workItem from="1729583502820" duration="1533000" />
       <workItem from="1729608418095" duration="155000" />
       <workItem from="1729628382487" duration="3148000" />
-      <workItem from="1729665763276" duration="1745000" />
+      <workItem from="1729665763276" duration="2040000" />
+      <workItem from="1729766189380" duration="1233000" />
+      <workItem from="1729767427840" duration="5398000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -626,7 +630,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729631519295</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Patientenhistorie HTML">
+      <option name="closed" value="true" />
+      <created>1729667769705</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1729667769705</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

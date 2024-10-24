@@ -5,7 +5,6 @@
   "info": "Information",
   "support": "Support",
   "language": "Change Language",
-  "login": "Log In",
   "logout": "Logout",
   "home": "Home",
   "patient": "Patient",
@@ -57,5 +56,8 @@
   "then": "THEN",
   "text": "TEXT",
   "equal": "=",
-  "input": "What would you like to input?"
+  "input": "What would you like to input?",
+
+  "register": "Register",
+  "login": "Login"
 }
