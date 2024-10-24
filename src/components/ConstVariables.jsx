@@ -1,5 +1,5 @@
 import * as Imports from '../components/Imports';
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 
 export const ConstVariables = () => {
     const {t} = Imports.useTranslation();
@@ -74,19 +74,19 @@ export const ConstVariables = () => {
             action: () => {
                 setCurrentDiv("ChangeContent")
             },
-            id: "textfield",
+            id: `textfield-${buttons.length}`,
             style: {cursor: 'pointer'}
         }
             setButtons([...buttons, newButton]);// Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
             setButtonTexts([...buttonTexts, `${message}`]);
     }
-
-    const changeContent=(message) =>{
+    const [selectedButtonId, setSelectedButtonId] = useState(null);
+    const changeContent=(message, buttonId) =>{
         setInputValue('');
         // eslint-disable-next-line array-callback-return
         const updatedButtonTexts = buttonTexts.map((text, index) => {
             // Überprüfe, ob die ID des Buttons mit der übergebenen ID übereinstimmt
-            if (buttons[index]?.id === "textfield") {
+            if (buttons[index]?.id === buttonId) {
                 return message; // Neuer Name für den Button
             }
             return text;
@@ -108,8 +108,6 @@ export const ConstVariables = () => {
     const stylesadd = {
         add: {
             display: "flex", flexWrap: "wrap", // Elemente umbrechen
-
-            justifyContent: "flex-start", // Start der Buttons links ausrichten
             alignItems: "center", alignContent: "flex-start", boxSizing: "border-box",
         },
     };
@@ -191,8 +189,9 @@ export const ConstVariables = () => {
         handleLogin,
         handleRegister,
         setcurrentLoginStatus, changeContent,
-        handleStart,
-        currentLoginStatus
+        setCurrentDiv,
+        setSelectedButtonId,
+        selectedButtonId
     };
 
 };

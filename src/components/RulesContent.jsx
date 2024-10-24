@@ -23,6 +23,9 @@ function RulesContent() {
         textfieldinput,
         setInputValue,
         changeContent,
+        setCurrentDiv,
+        setSelectedButtonId,
+        selectedButtonId
     } = ConstVariables();
 
 
@@ -169,7 +172,8 @@ function RulesContent() {
                     {buttons.map((button, index) => (
                         <div key={index} className="grid-different-button">
                             <button key={button.id}
-                                    onClick={button.action}
+                                    onClick={() => setCurrentDiv("ChangeContent") /* Aktiviere das Content-Ändern */
+                                        || setSelectedButtonId(button.id)}
                                     style={button.style}
                                     className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
                             <div className="arrow-right">
@@ -182,7 +186,26 @@ function RulesContent() {
 
                     ))}
                 </div>)}
+            {(currentDiv === 'TestPage' || currentDiv === 'Leftbar-hidden-RulesPage' || currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
+                <div
+                    className={`frame-add ${currentDiv === 'Leftbar-hidden-RulesPage' ? 'frame-add-big' : 'frame-add'}`}>
+                    {buttons.map((button, index) => (
+                        <div key={index} className="grid-different-button">
+                            <button key={button.id}
+                                    onClick={() => setCurrentDiv("ChangeContent") /* Aktiviere das Content-Ändern */
+                                        || setSelectedButtonId(button.id)}
+                                    style={button.style}
+                                    className={`query-button ${darkMode ? 'dark' : 'light'}`}>{buttonTexts[index]}</button>
+                            <div className="arrow-right">
+                                <img src={darkMode ? Imports.arrowrightlight : Imports.arrowrightdark}
+                                     className="arrow-right-size"
+                                     alt="Arrow right"/>
+                            </div>
+                        </div>
 
+
+                    ))}
+                </div>)}
 
             {(currentDiv === 'BuildPage' || currentDiv === 'TextField' || currentDiv === 'ChangeContent') && (
                 <div className={`left-bar-backdiv ${darkMode ? 'dark' : 'light'}`}>
@@ -304,11 +327,11 @@ function RulesContent() {
 
                             </input>
                             <div className="OK-Button" onClick={() => {
-                                changeContent(inputValue);
+                                changeContent(inputValue, selectedButtonId);
                                 handlePlusClick();
                             }}>
                                 <img src={darkMode ? Imports.ticklight : Imports.tickdark} onClick={() => {
-                                    changeContent(inputValue);
+                                    changeContent(inputValue, selectedButtonId);
                                     handlePlusClick();
                                 }}
                                      className={` ${darkMode ? 'dark' : 'light'} mode`}
