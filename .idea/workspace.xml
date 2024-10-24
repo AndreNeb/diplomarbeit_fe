@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Start page">
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Start page weitergemacht, link im Hidden Header dem Logo hinzugefügt. StartPages internationalisiert und dark mode gerecht gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConstVariables.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConstVariables.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Imports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Imports.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/it.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/it.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StartPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/general/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/general/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/login_outandregister/start.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/login_outandregister/start.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/loginoutpage/loginout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/supportpage/support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,14 +212,6 @@
       <workItem from="1729240763252" duration="17921000" />
       <workItem from="1729343217850" duration="7316000" />
     </task>
-    <task id="LOCAL-00050" summary="Topbar">
-      <option name="closed" value="true" />
-      <created>1728841669628</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1728841669629</updated>
-    </task>
     <task id="LOCAL-00051" summary="Topbar">
       <option name="closed" value="true" />
       <created>1728930614140</created>
@@ -400,7 +377,7 @@
       <workItem from="1729628382487" duration="3148000" />
       <workItem from="1729665763276" duration="2040000" />
       <workItem from="1729766189380" duration="1233000" />
-      <workItem from="1729767427840" duration="12970000" />
+      <workItem from="1729767427840" duration="14117000" />
     </task>
     <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
       <option name="closed" value="true" />
@@ -644,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729772842873</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Start page weitergemacht, link im Hidden Header dem Logo hinzugefügt. StartPages internationalisiert und dark mode gerecht gemacht">
+      <option name="closed" value="true" />
+      <created>1729781035847</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1729781035847</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -671,7 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Leftbar-Rules" />
     <MESSAGE value="Topbar" />
     <MESSAGE value="Leftbar" />
     <MESSAGE value="Topbar angepasst, min width für Topbar, Buttons neu designed" />
@@ -696,6 +680,7 @@
     <MESSAGE value="öpp" />
     <MESSAGE value="Patientenhistorie HTML" />
     <MESSAGE value="Start page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start page" />
+    <MESSAGE value="Start page weitergemacht, link im Hidden Header dem Logo hinzugefügt. StartPages internationalisiert und dark mode gerecht gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start page weitergemacht, link im Hidden Header dem Logo hinzugefügt. StartPages internationalisiert und dark mode gerecht gemacht" />
   </component>
 </project>

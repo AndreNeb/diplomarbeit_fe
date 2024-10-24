@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {Link} from 'react-router-dom';
 import {DarkModeContext} from './DarkModeContext';
 import regelnBlack from "../pictures/darkMode/rules_darkMode.png";
@@ -22,16 +22,14 @@ import "../stylesheets/topbar/topbar.css"
 function Header() {
 
     const {t} = useTranslation();
-
     const {i18n} = useTranslation();
+    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
+
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
     };
 
-    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
-
     return (
-
         <div className="header"
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
@@ -77,7 +75,6 @@ function Header() {
                             <div className="tooltip">{t('support')}</div>
                         </div>
                     </Link>
-
                 </div>
             </div>
             <div className="middle-section">
@@ -91,24 +88,32 @@ function Header() {
                         borderColor: darkMode ? 'white' : 'rgb(192, 192, 192)'
                     }}
                 />
-
             </div>
             <div className="right-section">
-
                 <img onClick={toggleDarkMode} src={darkMode ? sun : moon}
-                     className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt={t('rules')}
-                     alt="Mode"/>
+                     className={`icons ${darkMode ? 'dark' : 'light'} mode`} alt="Mode"/>
 
-                <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
-                     alt={t('rules')} alt={t('language')}/>
+                {/* Sprachbutton mit Dropdown */}
+                <div className="language-dropdown">
+                    <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
+                         alt={t('language')}/>
+
+                    <div className="dropdown-content">
+                        <span onClick={() => changeLanguage('de')}>Deutsch</span>
+                        <span onClick={() => changeLanguage('en')}>English</span>
+                        <span onClick={() => changeLanguage('fr')}>Français</span>
+                        <span onClick={() => changeLanguage('it')}>Italiano</span>
+                        <span onClick={() => changeLanguage('es')}>Español</span>
+                    </div>
+                </div>
 
                 <Link to="/">
                     <img src={darkMode ? loginBlack : login} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
-                         alt={t('rules')} alt="login"/>
+                         alt="login"/>
                 </Link>
             </div>
-        </div>);
+        </div>
+    );
 }
-
 
 export default Header;
