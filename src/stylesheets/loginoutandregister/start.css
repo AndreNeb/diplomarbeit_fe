@@ -1,8 +1,8 @@
 .outer-div {
     background-color: transparent;
     min-width: 550px;
-    width: 60%;
-    max-width: 800px;
+    width: 55%;
+    max-width: 700px;
     min-height: 480px;
     height: 70%;
 
@@ -71,7 +71,7 @@
     font-weight: 500;
 
     width: 80%;
-    height: 15%;
+    height: 13%;
 
     border-radius: 20px;
 
@@ -173,3 +173,35 @@
     transform: scale(1.01, 1.01);
     color: #007bff;
 }
+
+form {
+    background-color: transparent;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;  /* Damit die Form-Elemente untereinander angeordnet sind */
+    align-items: center;     /* Zentriert die Form-Elemente horizontal */
+    justify-content: center; /* Zentriert die Form-Elemente vertikal */
+    padding: 20px;  /* Optional: fügt Innenabstand hinzu */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > * {
+    display: flex;
+    width: 100%;  /* Optional, damit die Elemente die volle Breite einnehmen */
+    margin-top: 20px;  /* Fügt Abstand zwischen den Elementen hinzu */
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    text-align: center;  /* Zentriert den Text in den Eingabefeldern */
+}
+
+input, textarea, select {
+    width: 80%;  /* Breite der Eingabefelder (anpassbar) */
+    padding: 10px;  /* Optional: fügt etwas Innenabstand hinzu */
+    text-align: center;  /* Zentriert den Text in den Eingabefeldern */
+}
+
