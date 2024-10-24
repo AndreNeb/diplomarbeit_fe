@@ -12,19 +12,26 @@ export const ConstVariables = () => {
     const [buttonTexts, setButtonTexts] = useState([]);
 
     const [text, setText] = useState("");
-    const [inputValue, setInputValue] = useState(t('text'));
+    const [inputValue, setInputValue] = useState("");
+    const [currentDiv, setCurrentDiv] = useState('MainPage');
 
+    const [currentLoginStatus , setcurrentLoginStatus] = useState('Start'); // initial div1 sichtbar
+
+    const handleLogin = () => {
+        setcurrentLoginStatus('Login');
+    }
+
+    const handleRegister = () => {
+        setcurrentLoginStatus('Register');
+    }
 
     const handleInputChange = (event) => {
         setInputValue(event.target.value); // Input-Wert speichern
     };
 
-
-    const [currentDiv, setCurrentDiv] = useState('MainPage'); // initial div1 sichtbar
-
     const handleMainClick = () => {
         setCurrentDiv('MainPage');
-        setDivs([]); //Dadurch wird der text bei dem Button text gelöscht und warum auch immer ein anderer eingefügt;
+        setButtons([]); //Dadurch wird der text bei dem Button text gelöscht und warum auch immer ein anderer eingefügt;
     };
 
     const handleHamburgerClick = () => {
@@ -33,7 +40,7 @@ export const ConstVariables = () => {
 
     const handleCategoriesClick = (message) => {
         setCurrentDiv('Category');
-        setText(message)
+        setText(message);
     };
 
     const handlePlusClick = () => {
@@ -48,15 +55,15 @@ export const ConstVariables = () => {
         setCurrentDiv('TextField');
     };
 
-    const [divs, setDivs] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
+    const [buttons, setButtons] = useState([]); // Array, das die dynamisch hinzugefügten divs enthält
 
     const handleAddDiv = (message) => {
-        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+        setButtons([...buttons, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
         setButtonTexts([...buttonTexts, `${message}`]);
     };
 
-    const test =(message)=>{
-        setDivs([...divs, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
+    const textfieldinput =(message)=>{
+        setButtons([...buttons, {}]); // Füge ein neues leeres Objekt hinzu, um ein weiteres div zu repräsentieren
         setButtonTexts([...buttonTexts, `${message}`]);
     }
     const {darkMode, toggleDarkMode} = useContext(Imports.DarkModeContext);
@@ -143,16 +150,20 @@ export const ConstVariables = () => {
         handleTextFieldClick,
         handleAddDiv,
         handleInputChange,
-        test,
+        textfieldinput,
         inputValue,
         buttonTexts,
         text,
         currentDiv,
-        divs,
+        buttons,
         darkMode,
         toggleDarkMode,
         styles,
         stylesadd,
+        setInputValue,
+        handleLogin,
+        handleRegister,
+        setcurrentLoginStatus
     };
 
 };
