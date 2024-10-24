@@ -1,6 +1,4 @@
 import React, {useContext, useState} from 'react';
-
-import {Link} from "react-router-dom";
 import hamburger from "../pictures/lightMode/hamburger-menu_lightMode.png";
 import hamburgerBlack from "../pictures/darkMode/hamburger-menu_darkMode.png";
 import {useTranslation} from "react-i18next";

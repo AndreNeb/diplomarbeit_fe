@@ -1,5 +1,5 @@
 import * as Imports from '../components/Imports';
-import { ConstVariables } from '../components/ConstVariables';
+import {ConstVariables} from '../components/ConstVariables';
 
 function RulesPage() {
     {/*hier können dann die zu importierenden Const importiert werden*/}

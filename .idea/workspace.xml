@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="öpp">
-      <change afterPath="$PROJECT_DIR$/src/try.html" afterDir="false" />
+    <list default="true" id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="Rules_text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DarkModeContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DarkModeContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/i18n.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/i18n.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DocumentPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoadingPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoadingPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LogInOutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SupportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SupportPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +26,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JSX File" />
-        <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -41,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/AndreNeb/diplomarbeit_fe.git&quot;,
-    &quot;accountId&quot;: &quot;d70321cd-429b-43c5-b7a2-73882bbca8a2&quot;
+    &quot;accountId&quot;: &quot;ded94e49-c306-47c6-8047-7104070e7c5f&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -59,56 +67,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.404.html.executor": "Run",
-    "JavaScript Debug.try.html.executor": "Run",
-    "Node.js.Rules.jsx.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/pictures/darkMode",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
-    "timeTracker.comment": "",
-    "timeTracker.inactivityPeriodInMills": "600000",
-    "timeTracker.isAutoTrackingEnable": "false",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "true",
-    "timeTracker.isPaused": "false",
-    "timeTracker.isPostAfterCommitEnabled": "false",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
-    "timeTracker.isWhenProjectClosedEnabled": "false",
-    "timeTracker.issueId": "DA_01-79",
-    "timeTracker.issueIdReadable": "DA_01-79",
-    "timeTracker.pausedTime": "0",
-    "timeTracker.query": "",
-    "timeTracker.recordedTime": "163",
-    "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1729360835861",
-    "timeTracker.timeInMills": "0",
-    "timeTracker.type": "Entwicklung",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Rules.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/matte/Documents/Diplomarbeit/diplomarbeit_fe/src/pictures/darkMode&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;DA_01-78&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1728670322905&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Entwicklung&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "SVG"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;SVG&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
@@ -118,21 +124,15 @@
       <recent name="$PROJECT_DIR$/src/pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pictures/other" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/stylesheets/rules" />
       <recent name="$PROJECT_DIR$/src/pictures/darkMode" />
       <recent name="$PROJECT_DIR$/src/pictures/lightMode" />
       <recent name="$PROJECT_DIR$/src/scratches" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.try.html">
-    <configuration name="404.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/diplomarbeit_fe/src/pages/ErrorPages/404.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="try.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/diplomarbeit_fe/src/try.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -147,16 +147,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="JavaScript Debug.try.html" />
-      <item itemvalue="JavaScript Debug.404.html" />
       <item itemvalue="npm.npm start" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.try.html" />
-        <item itemvalue="JavaScript Debug.404.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -178,9 +170,64 @@
       <workItem from="1728579397289" duration="12242000" />
       <workItem from="1728648125727" duration="2802000" />
     </task>
-    <task id="DA_01-78" summary="Verbindung der Website mit dem Backend &amp; Datenbanken">
+    <task id="LOCAL-00022" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728630282250</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728630282250</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728632645163</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1728632645163</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added big widgets">
+      <option name="closed" value="true" />
+      <created>1728634576346</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1728634576346</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added big widgets">
+      <option name="closed" value="true" />
+      <created>1728634641155</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1728634641156</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added small widgets">
+      <option name="closed" value="true" />
+      <created>1728638461722</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1728638461722</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added small widgets">
+      <option name="closed" value="true" />
+      <created>1728638799516</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1728638799516</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added small widgets">
+      <option name="closed" value="true" />
+      <created>1728650959346</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1728650959346</updated>
+    </task>
+    <task active="true" id="DA_01-78" summary="Grundfunktionen Website ">
       <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <branch name="main" repository="$PROJECT_DIR$" original="true" />
       <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
       <created>1727465054608</created>
@@ -190,7 +237,7 @@
       <option name="presentableId" value="DA_01-78" />
       <option name="project" value="DA_01" />
       <option name="type" value="BUG" />
-      <updated>1729583324694</updated>
+      <updated>1728677346802</updated>
       <workItem from="1728651349950" duration="8618000" />
       <workItem from="1728660086076" duration="822000" />
       <workItem from="1728670318414" duration="23000" />
@@ -209,7 +256,159 @@
       <workItem from="1729234937863" duration="4418000" />
       <workItem from="1729239368262" duration="1275000" />
       <workItem from="1729240763252" duration="17921000" />
-      <workItem from="1729343217850" duration="7316000" />
+      <workItem from="1729416634140" duration="1660000" />
+      <workItem from="1729424635394" duration="11348000" />
+      <workItem from="1729513800103" duration="5687000" />
+      <workItem from="1729576678264" duration="1085000" />
+      <workItem from="1729577769778" duration="19000" />
+      <workItem from="1729577800207" duration="6383000" />
+      <workItem from="1729668083728" duration="106000" />
+      <workItem from="1729668198702" duration="382000" />
+      <workItem from="1729766254053" duration="440000" />
+    </task>
+    <task id="LOCAL-00029" summary="Edited small widgets">
+      <option name="closed" value="true" />
+      <created>1728656295288</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728656295288</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Finished small Widgets">
+      <option name="closed" value="true" />
+      <created>1728657470405</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1728657470405</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Finished small Widgets">
+      <option name="closed" value="true" />
+      <created>1728660880224</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1728660880225</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Finished small Widgets">
+      <option name="closed" value="true" />
+      <created>1728662522773</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1728662522774</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
+      <option name="closed" value="true" />
+      <created>1728664288551</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1728664288551</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
+      <option name="closed" value="true" />
+      <created>1728664394781</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1728664394781</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
+      <option name="closed" value="true" />
+      <created>1728667529743</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1728667529743</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Piktogramme bei den small widgets richten sich jetzt richtig aus">
+      <option name="closed" value="true" />
+      <created>1728677279716</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1728677279716</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Deletet unneccessary files">
+      <option name="closed" value="true" />
+      <created>1728677685795</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1728677685795</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Deletet unneccessary files">
+      <option name="closed" value="true" />
+      <created>1728680064682</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1728680064682</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Deletet unneccessary files">
+      <option name="closed" value="true" />
+      <created>1728719928518</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1728719928519</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Finished small Widgets">
+      <option name="closed" value="true" />
+      <created>1728730335799</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1728730335799</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Leftbar-Rules">
+      <option name="closed" value="true" />
+      <created>1728753146326</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1728753146326</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Leftbar-Rules">
+      <option name="closed" value="true" />
+      <created>1728754229381</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1728754229381</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728761223327</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1728761223327</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Topbar">
+      <option name="closed" value="true" />
+      <created>1728766547150</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1728766547150</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Leftbar">
+      <option name="closed" value="true" />
+      <created>1728774212991</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1728774212991</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Leftbar">
+      <option name="closed" value="true" />
+      <created>1728809572371</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1728809572371</updated>
     </task>
     <task id="LOCAL-00047" summary="Leftbar">
       <option name="closed" value="true" />
@@ -347,295 +546,60 @@
       <option name="project" value="LOCAL" />
       <updated>1729280998598</updated>
     </task>
-    <task id="LOCAL-00064" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00064" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729282884101</created>
+      <created>1729332946291</created>
       <option name="number" value="00064" />
       <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1729282884101</updated>
+      <updated>1729332946291</updated>
     </task>
-    <task id="LOCAL-00065" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00065" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729343225013</created>
+      <created>1729339208564</created>
       <option name="number" value="00065" />
       <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1729343225017</updated>
+      <updated>1729339208564</updated>
     </task>
-    <task id="LOCAL-00066" summary="White shadow bei small widgets im Dark mode">
+    <task id="LOCAL-00066" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729343231136</created>
+      <created>1729339218023</created>
       <option name="number" value="00066" />
       <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1729343231136</updated>
+      <updated>1729339218023</updated>
     </task>
-    <task id="LOCAL-00067" summary="Started Dark Mode in Rules">
+    <task id="LOCAL-00067" summary="Add-Rules">
       <option name="closed" value="true" />
-      <created>1729350392793</created>
+      <created>1729438582284</created>
       <option name="number" value="00067" />
       <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1729350392793</updated>
+      <updated>1729438582284</updated>
     </task>
-    <task id="LOCAL-00068" summary="Started Dark Mode in Rules">
+    <task id="LOCAL-00068" summary="Aufräumen">
       <option name="closed" value="true" />
-      <created>1729350436070</created>
+      <created>1729530290160</created>
       <option name="number" value="00068" />
       <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1729350436070</updated>
+      <updated>1729530290160</updated>
     </task>
-    <task active="true" id="DA_01-79" summary="Websitedesign ">
-      <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
-      <created>1727606892122</created>
-      <option name="issue" value="true" />
-      <url>https://wuev06.youtrack.cloud/issue/DA_01-79</url>
-      <option name="number" value="79" />
-      <option name="presentableId" value="DA_01-79" />
-      <option name="project" value="DA_01" />
-      <option name="type" value="BUG" />
-      <updated>1729583176349</updated>
-      <workItem from="1729542642817" duration="74000" />
-      <workItem from="1729576229571" duration="195000" />
-      <workItem from="1729577601290" duration="4721000" />
-      <workItem from="1729582478981" duration="28000" />
-      <workItem from="1729583502820" duration="1533000" />
-      <workItem from="1729608418095" duration="155000" />
-      <workItem from="1729628382487" duration="2993000" />
-    </task>
-    <task id="LOCAL-00069" summary="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst.">
+    <task id="LOCAL-00069" summary="Rules_text">
       <option name="closed" value="true" />
-      <created>1729360771782</created>
+      <created>1729610530998</created>
       <option name="number" value="00069" />
       <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1729360771783</updated>
+      <updated>1729610530998</updated>
     </task>
-    <task id="LOCAL-00070" summary="F">
-      <option name="closed" value="true" />
-      <created>1729360817051</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1729360817051</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht">
-      <option name="closed" value="true" />
-      <created>1729364782227</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1729364782227</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch">
-      <option name="closed" value="true" />
-      <created>1729366667301</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1729366667301</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Cleaned up code">
-      <option name="closed" value="true" />
-      <created>1729366898515</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1729366898515</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Cleaned up code">
-      <option name="closed" value="true" />
-      <created>1729367006985</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1729367006985</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Cleaned up code">
-      <option name="closed" value="true" />
-      <created>1729416785517</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1729416785517</updated>
-    </task>
-    <task id="DA_01-91" summary="Piktogramme">
-      <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
-      <created>1729367453118</created>
-      <option name="issue" value="true" />
-      <url>https://wuev06.youtrack.cloud/issue/DA_01-91</url>
-      <option name="number" value="91" />
-      <option name="presentableId" value="DA_01-91" />
-      <option name="project" value="DA_01" />
-      <option name="type" value="BUG" />
-      <updated>1729514989694</updated>
-      <workItem from="1729417066212" duration="1175000" />
-      <workItem from="1729433353771" duration="249000" />
-      <workItem from="1729439875076" duration="138000" />
-      <workItem from="1729453373482" duration="219000" />
-      <workItem from="1729500377209" duration="109000" />
-      <workItem from="1729503320106" duration="261000" />
-      <workItem from="1729513846814" duration="1141000" />
-    </task>
-    <task id="LOCAL-00076" summary="Cleaned up code">
-      <option name="closed" value="true" />
-      <created>1729417197517</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1729417197517</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Schriftzug anstatt Logo">
-      <option name="closed" value="true" />
-      <created>1729418104399</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1729418104399</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Schriftzug anstatt Logo">
-      <option name="closed" value="true" />
-      <created>1729418226239</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1729418226239</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Schriftzug anstatt Logo">
-      <option name="closed" value="true" />
-      <created>1729439882833</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1729439882833</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Login">
-      <option name="closed" value="true" />
-      <created>1729514755805</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1729514755806</updated>
-    </task>
-    <task id="DA_01-86" summary="Kleinskrams">
-      <branch name="main" repository="$PROJECT_DIR$" />
-      <branch name="main" repository="$PROJECT_DIR$" original="true" />
-      <changelist id="2a781fba-3240-44f3-9db1-f8e4dff7d6b5" name="Changes" comment="" />
-      <created>1728629823208</created>
-      <option name="issue" value="true" />
-      <url>https://wuev06.youtrack.cloud/issue/DA_01-86</url>
-      <option name="number" value="86" />
-      <option name="presentableId" value="DA_01-86" />
-      <option name="project" value="DA_01" />
-      <option name="type" value="FEATURE" />
-      <updated>1729542641815</updated>
-      <workItem from="1729514989980" duration="17136000" />
-    </task>
-    <task id="LOCAL-00081" summary="Login">
-      <option name="closed" value="true" />
-      <created>1729515791257</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1729515791257</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Login">
-      <option name="closed" value="true" />
-      <created>1729515857843</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1729515857844</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Login">
-      <option name="closed" value="true" />
-      <created>1729517454769</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1729517454769</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Buttons bei Regel erstellen gemacht">
-      <option name="closed" value="true" />
-      <created>1729517833564</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1729517833564</updated>
-    </task>
-    <task id="LOCAL-00085" summary="HiddenHeader als Component gemacht">
-      <option name="closed" value="true" />
-      <created>1729519596177</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1729519596177</updated>
-    </task>
-    <task id="LOCAL-00086" summary="HiddenHeader als Component gemacht">
-      <option name="closed" value="true" />
-      <created>1729530859824</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1729530859824</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht.">
-      <option name="closed" value="true" />
-      <created>1729534289215</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1729534289215</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
-      <option name="closed" value="true" />
-      <created>1729542470312</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1729542470312</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,...">
-      <option name="closed" value="true" />
-      <created>1729542576883</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1729542576883</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Seitenübergangsanimationen erstellt">
-      <option name="closed" value="true" />
-      <created>1729579356997</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1729579356997</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Errorpages designed &amp; internationalisiert">
-      <option name="closed" value="true" />
-      <created>1729582276022</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1729582276022</updated>
-    </task>
-    <option name="localTasksCounter" value="92" />
+    <option name="localTasksCounter" value="70" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
-    <servers>
-      <YouTrack url="https://wuev06.youtrack.cloud">
-        <option name="defaultSearch" value="" />
-        <username>random</username>
-      </YouTrack>
-    </servers>
+    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -652,6 +616,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Files" />
+    <MESSAGE value="Body3" />
+    <MESSAGE value="Added big widgets" />
+    <MESSAGE value="Added small widgets" />
+    <MESSAGE value="Edited small widgets" />
+    <MESSAGE value="Searchbar verbessert, Regeln als Funktion hinzugefügt, generelle verbesserungen" />
+    <MESSAGE value="Piktogramme bei den small widgets richten sich jetzt richtig aus" />
     <MESSAGE value="Deletet unneccessary files" />
     <MESSAGE value="Finished small Widgets" />
     <MESSAGE value="Leftbar-Rules" />
@@ -661,22 +632,8 @@
     <MESSAGE value="Big widgets für jeden Bildschirm angepasst" />
     <MESSAGE value="Umstrukturierung" />
     <MESSAGE value="Add-Rules" />
-    <MESSAGE value="White shadow bei small widgets im Dark mode" />
-    <MESSAGE value="Started Dark Mode in Rules" />
-    <MESSAGE value="Dark Mode in Rules &amp; Home fertig. Problem mit Search-bar bei rules gelöst." />
-    <MESSAGE value="F" />
-    <MESSAGE value="Problem mit scrollen in Home behoben. Supportpage Darkmode konform gemacht" />
-    <MESSAGE value="Hamburger menu bei 800 px Dark mode konform gemacht; overlay display dark mode kommt erst noch" />
-    <MESSAGE value="Cleaned up code" />
-    <MESSAGE value="Schriftzug anstatt Logo" />
-    <MESSAGE value="Login" />
-    <MESSAGE value="Buttons bei Regel erstellen gemacht" />
-    <MESSAGE value="HiddenHeader als Component gemacht" />
-    <MESSAGE value="Hover - Animation bei Save &amp; Delete Button bei Regeln hinzugefügt. Website Chrome - gerecht gemacht." />
-    <MESSAGE value="Supportform überarbeitet, Big Widgets optimiert, Dark Mode bei Scrollleiste geht ned, Hidden Header internationalisiert, dark mode gerecht gemacht, Links hinterlegt,..." />
-    <MESSAGE value="Seitenübergangsanimationen erstellt" />
-    <MESSAGE value="Errorpages designed &amp; internationalisiert" />
-    <MESSAGE value="öpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="öpp" />
+    <MESSAGE value="Aufräumen" />
+    <MESSAGE value="Rules_text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rules_text" />
   </component>
 </project>

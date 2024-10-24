@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import '../components/i18n';
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes, useLocation} from "react-router-dom";
 import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
 import DocumentPage from "./DocumentPage";
 import LogInOutPage from "./LogInOutPage";
 import Home from "./Home";
-import { DarkModeProvider } from "../components/DarkModeContext";
+import {DarkModeProvider} from "../components/DarkModeContext";
 import LoadingPage from './LoadingPage'; // Importiere die Ladekomponente
 
 const AppRoutes = () => {

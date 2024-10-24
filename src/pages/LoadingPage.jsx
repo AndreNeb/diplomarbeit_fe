@@ -7,7 +7,6 @@ const LoadingPage = () => {
 
     const {
         darkMode,
-        t,
     } = ConstVariables(); // Verwende den Hook hier
 
     return (
