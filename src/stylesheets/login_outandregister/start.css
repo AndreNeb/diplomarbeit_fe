@@ -1,6 +1,7 @@
 .outer-div {
+    background-color: transparent;
     min-width: 550px;
-    width: 65%;
+    width: 60%;
     max-width: 800px;
     min-height: 480px;
     height: 70%;
@@ -12,18 +13,23 @@
 
     border: 1px solid lightgrey;
     border-radius: 23px;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.3s ease;
 }
 
-.outer-div:hover {
+.outer-div.light:hover {
     transform: scale(1.01, 1.01);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
-.logoText {
-    color: black;
-    background-color: white;
+.outer-div.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 20px white;
+    transition: transform 0.3s ease;
+}
 
+.logoText {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,21 +41,135 @@
     width: 80%;
     height: 15%;
 
-    border: 1px solid rgb(204, 202, 202);
+
     border-radius: 20px;
+    border: 1px solid rgb(204, 202, 202);
+    margin-bottom: 4%;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.3s ease;
+}
+
+.logoText.light {
+    border: 1px solid rgb(204, 202, 202);
+    color: black;
+    background-color: white;
+}
+
+.logoText.dark {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+
+.otherText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 37px;
+    font-family: "Quicksand", sans-serif, Arial;
+    font-weight: 500;
+
+    width: 80%;
+    height: 15%;
+
+    border-radius: 20px;
+
+    margin-bottom: 4%;
+    margin-top: 4%;
+
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.3s ease;
+}
+
+.otherText.light {
+    border: 1px solid rgb(204, 202, 202);
+    color: black;
+    background-color: white;
+}
+
+.otherText.dark {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
 }
 
 .registerandloginbutton {
     font-size: 26px;
-    border: 1px solid lightgray;
     border-radius: 15px;
 
-    background-color: white;
-
     width: 300px;
-    height: 50px;
+    height: 55px;
 
     cursor: pointer;
 
-    transition: transform 0.15s ease;
+    transition: background-color 1.1s ease, color 1.1s ease, border-color 1.1s ease, transform 0.15s ease;
+}
+
+.registerandloginbutton.light {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+}
+
+.registerandloginbutton.light:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.registerandloginbutton.dark {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.registerandloginbutton.dark:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 15px white;
+}
+
+
+.noAccountText {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.noAccountText.light {
+    color: black;
+}
+
+.noAccountText.light:hover {
+    transform: scale(1.01, 1.01);
+    color: #007bff;
+}
+
+
+.noAccountText.dark {
+    color: white;
+}
+
+.noAccountText.dark:hover {
+    transform: scale(1.01, 1.01);
+    color: #007bff;
+}
+
+.registertext {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.registertext.light {
+    color: black;
+}
+
+.registertext.light:hover {
+    transform: scale(1.01, 1.01);
+    color: #007bff;
+}
+
+.registertext.dark {
+    color: white;
+}
+.registertext.dark:hover {
+    transform: scale(1.01, 1.01);
+    color: #007bff;
 }

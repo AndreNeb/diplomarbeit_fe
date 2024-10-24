@@ -42,20 +42,21 @@ function HiddenHeader() {
                         marginLeft: "30px",
                         fontWeight: "600",
                         marginRight: "40%",
-                        fontFamily: "Times New Roman"
-                    }}>N A R K O</span>
+                        fontFamily: "Times New Roman",
+                        cursor: "pointer"
+                    }} onClick={() => toggleMenuAndNavigate('/Home')}>N A R K O</span>
                 </div>
             </div>
 
 
             <div className={`menu-overlay ${isOpen ? 'open' : ''}`} style={{backgroundColor: darkMode ? 'black' : 'rgba(250, 246, 240, 255)'}}>
                 <div className="menu-items">
-                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/')}>{t('home')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/Home')}>{t('home')}</a>
                     <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/rulesPage')}>{t('rules')}</a>
                     <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/documentPage')}>{t('documents')}</a>
                     <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/infoPage')}>{t('info')}</a>
                     <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/supportPage')}>{t('support')}</a>
-                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/loginoutpage')}>{t('logout')}</a>
+                    <a style={{cursor: "pointer"}} className={`text-in-hidden-header ${darkMode ? 'dark' : 'light'}`} onClick={() => toggleMenuAndNavigate('/')}>{t('logout')}</a>
                 </div>
             </div>
         </div>

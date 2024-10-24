@@ -5,7 +5,6 @@ import RulesPage from './RulesPage';
 import SupportPage from "./SupportPage";
 import InfoPage from "./InfoPage";
 import DocumentPage from "./DocumentPage";
-import LogInOutPage from "./LogInOutPage";
 import Home from "./Home";
 import StartPage from "./StartPage";
 import { DarkModeProvider } from "../components/DarkModeContext";
@@ -37,7 +36,6 @@ const AppRoutes = () => {
                     <Route path="/documentPage" element={<DocumentPage />} />
                     <Route path="/infoPage" element={<InfoPage />} />
                     <Route path="/supportPage" element={<SupportPage />} />
-                    <Route path="/loginoutpage" element={<LogInOutPage />} />
                 </Routes>
             )}
         </>

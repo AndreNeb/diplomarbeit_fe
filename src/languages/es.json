@@ -58,5 +58,7 @@
   "text": "TEXTO",
 
   "register": "Registrarse",
-  "login": "Iniciar sesión"
+  "login": "Iniciar sesión",
+  "noaccount": "\u00BFNo tienes una cuenta?",
+  "alreadyhaveanaccount": "\u00BFYa tienes una cuenta?"
 }

@@ -60,7 +60,9 @@
   "input": "Was wollen Sie eingeben?",
 
   "register": "Registrieren",
-  "login": "Anmelden"
+  "login": "Anmelden",
+  "noaccount": "Haben Sie noch kein Konto?",
+  "alreadyhaveanaccount": "Haben Sie bereits einen Account?"
 }
 
 

@@ -8,7 +8,6 @@ import '../stylesheets/supportpage/support.css';
 import '../stylesheets/general/general.css';
 import '../stylesheets/homepage-widgets/small-widgets.css';
 import '../stylesheets/homepage-widgets/big-widgets.css';
-import '../stylesheets/loginoutpage/loginout.css';
 import "../stylesheets/login_outandregister/start.css"
 import '../languages/de.json';
 import '../languages/en.json';

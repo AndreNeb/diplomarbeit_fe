@@ -58,5 +58,7 @@
   "text": "TEXTE",
 
   "register": "S'inscrire",
-  "login": "Se connecter"
+  "login": "Se connecter",
+  "noaccount": "Vous n'avez pas de compte?",
+  "alreadyhaveanaccount": "Vous avez déjà un compte?"
 }

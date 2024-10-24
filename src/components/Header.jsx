@@ -35,7 +35,7 @@ function Header() {
         <div className="header"
              style={{backgroundColor: darkMode ? 'black' : 'white', transition: "background-color 1.1s ease"}}>
             <div className="left-section">
-                <Link to="/">
+                <Link to="/Home">
                     <span style={{
                         color: darkMode ? "white" : "black",
                         fontSize: "26px",
@@ -102,7 +102,7 @@ function Header() {
                 <img src={darkMode ? languageBlack : language} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
                      alt={t('rules')} alt={t('language')}/>
 
-                <Link to="/LogInOutPage">
+                <Link to="/">
                     <img src={darkMode ? loginBlack : login} className={`icons ${darkMode ? 'dark' : 'light'} mode`}
                          alt={t('rules')} alt="login"/>
                 </Link>

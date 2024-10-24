@@ -12,7 +12,6 @@ function SupportPage() {
     } = ConstVariables(); // Verwende den Hook hier
 
 
-
     return (
 
         <body className={`support ${darkMode ? 'dark' : 'light'}`}>
